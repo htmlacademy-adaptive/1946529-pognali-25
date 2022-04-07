@@ -101,64 +101,190 @@
                     <input type="checkbox" class="with-children" id="with-children"><label for="with-children" class="with-children-label">Можно с детьми</label>
                   </div>
                   <div class="calendar-header">
-                  <img src="images/form/left-arrow.svg" width="9" height="18" alt="Влево">
+                  <button class="calendar-header__button"><img src="images/form/left-arrow.svg" width="9" height="18" alt="Влево"></button>
                   <p class="calendar-header__text">Март 2019</p>
-                  <img src="images/form/right-arrow.svg" width="9" height="18" alt="Вправо">
+                  <button class="calendar-header__button"><img src="images/form/right-arrow.svg" width="9" height="18" alt="Вправо"></button>
                 </div>
                 <table class="arrival-date__calendar">
                   <tr class="arrival-date__calendar-row">
-                    <td class="arrival-date__calendar-cell cell-decoration">23</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">24</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">25</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">26</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">27</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">28</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">1</td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="23-prev">
+                      <label class="cell-decoration__label" for="23-prev">23</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="24-prev">
+                      <label class="cell-decoration__label" for="24-prev">24</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="25-prev">
+                      <label class="cell-decoration__label" for="25-prev">25</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="26-prev">
+                      <label class="cell-decoration__label" for="26-prev">26</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="27-prev">
+                      <label class="cell-decoration__label" for="27-prev">27</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="28-prev">
+                      <label class="cell-decoration__label" for="28-prev">28</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="1">
+                      <label class="cell-decoration__label" for="1">1</label>
+                    </td>
                   </tr>
                   <tr class="arrival-date__calendar-row">
-                    <td class="arrival-date__calendar-cell cell-decoration">2</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">3</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">4</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">5</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">6</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">7</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">8</td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="2">
+                      <label class="cell-decoration__label" for="2">2</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="3">
+                      <label class="cell-decoration__label" for="3">3</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="4">
+                      <label class="cell-decoration__label" for="4">4</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="5">
+                      <label class="cell-decoration__label" for="5">5</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="6">
+                      <label class="cell-decoration__label" for="6">6</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="7">
+                      <label class="cell-decoration__label" for="7">7</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="8">
+                      <label class="cell-decoration__label" for="8">8</label>
+                    </td>
                   </tr>
                   <tr class="arrival-date__calendar-row">
-                    <td class="arrival-date__calendar-cell cell-decoration">9</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">10</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">11</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">12</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">13</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">14</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">15</td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="9">
+                      <label class="cell-decoration__label" for="9">9</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="10">
+                      <label class="cell-decoration__label" for="10">10</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="11">
+                      <label class="cell-decoration__label" for="11">11</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="12">
+                      <label class="cell-decoration__label" for="12">12</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="13">
+                      <label class="cell-decoration__label" for="13">13</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="14">
+                      <label class="cell-decoration__label" for="14">14</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="15">
+                      <label class="cell-decoration__label" for="15">15</label>
+                    </td>
                   </tr>
                   <tr class="arrival-date__calendar-row">
-                    <td class="arrival-date__calendar-cell cell-decoration">16</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">17</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">18</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">19</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">20</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">21</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">22</td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="16">
+                      <label class="cell-decoration__label" for="16">16</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="17">
+                      <label class="cell-decoration__label" for="17">17</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="18">
+                      <label class="cell-decoration__label" for="18">18</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="19">
+                      <label class="cell-decoration__label" for="19">19</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="20">
+                      <label class="cell-decoration__label" for="20">20</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="21">
+                      <label class="cell-decoration__label" for="21">21</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="22">
+                      <label class="cell-decoration__label" for="22">22</label>
+                    </td>
                   </tr>
                   <tr class="arrival-date__calendar-row">
-                    <td class="arrival-date__calendar-cell cell-decoration">23</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">24</td>
-                    <td class="arrival-date__calendar-cell cell-decoration">25</td>
-                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--choosen cell-decoration--current">26</td>
-                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--choosen">27</td>
-                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--choosen">28</td>
-                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">29</td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="23">
+                      <label class="cell-decoration__label" for="23">23</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="24">
+                      <label class="cell-decoration__label" for="24">24</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="25">
+                      <label class="cell-decoration__label" for="25">25</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--current">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="26">
+                      <label class="cell-decoration__label" for="26">26</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="27">
+                      <label class="cell-decoration__label" for="27">27</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="28">
+                      <label class="cell-decoration__label" for="28">28</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="29">
+                      <label class="cell-decoration__label" for="29">29</label>
+                    </td>
                   </tr>
                   <tr class="arrival-date__calendar-row">
-                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">30</td>
-                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">31</td>
-                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">1</td>
-                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">2</td>
-                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">3</td>
-                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">4</td>
-                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">5</td>
+                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="30">
+                      <label class="cell-decoration__label" for="30">30</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="31">
+                      <label class="cell-decoration__label" for="31">31</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="1-next">
+                      <label class="cell-decoration__label" for="1-next">1</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="2-next">
+                      <label class="cell-decoration__label" for="2-next">2</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="3-next">
+                      <label class="cell-decoration__label" for="3-next">3</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="4-next">
+                      <label class="cell-decoration__label" for="4-next">4</label>
+                    </td>
+                    <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                      <input class="cell-decoration__checkbox" type="checkbox" id="5-next">
+                      <label class="cell-decoration__label" for="5-next">5</label>
+                    </td>
                   </tr>
                 </table>
                 <button class="new-plan-next-button">Следующий шаг</button>
@@ -200,53 +326,161 @@
                   </div>
                   <table class="country-list__table">
                     <tr class="country-list__table-row">
-                      <td class="country-list__table-cell country-list__table-cell--choosen">А</td>
-                      <td class="country-list__table-cell">Б</td>
-                      <td class="country-list__table-cell">В</td>
-                      <td class="country-list__table-cell">Г</td>
-                      <td class="country-list__table-cell">Д</td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="a" checked>
+                        <label class="country-list__label" for="a">А</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="b">
+                        <label class="country-list__label" for="b">Б</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="v">
+                        <label class="country-list__label" for="v">В</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="g">
+                        <label class="country-list__label" for="g">Г</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="d">
+                        <label class="country-list__label" for="d">Д</label>
+                      </td>
                     </tr>
                     <tr class="country-list__table-row">
-                      <td class="country-list__table-cell">Е</td>
-                      <td class="country-list__table-cell">З</td>
-                      <td class="country-list__table-cell">И</td>
-                      <td class="country-list__table-cell">К</td>
-                      <td class="country-list__table-cell">Л</td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="e">
+                        <label class="country-list__label" for="e">Е</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="z">
+                        <label class="country-list__label" for="z">З</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="i">
+                        <label class="country-list__label" for="i">И</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="k">
+                        <label class="country-list__label" for="k">К</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="l">
+                        <label class="country-list__label" for="l">Л</label>
+                      </td>
                     </tr>
                     <tr class="country-list__table-row">
-                      <td class="country-list__table-cell">М</td>
-                      <td class="country-list__table-cell">Н</td>
-                      <td class="country-list__table-cell">О</td>
-                      <td class="country-list__table-cell">П</td>
-                      <td class="country-list__table-cell">Р</td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="m">
+                        <label class="country-list__label" for="m">М</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="n">
+                        <label class="country-list__label" for="n">Н</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="o">
+                        <label class="country-list__label" for="o">О</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="p">
+                        <label class="country-list__label" for="p">П</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="r">
+                        <label class="country-list__label" for="r">Р</label>
+                      </td>
                     </tr>
                     <tr class="country-list__table-row">
-                      <td class="country-list__table-cell">С</td>
-                      <td class="country-list__table-cell">Т</td>
-                      <td class="country-list__table-cell">У</td>
-                      <td class="country-list__table-cell">Ф</td>
-                      <td class="country-list__table-cell">Х</td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="s">
+                        <label class="country-list__label" for="s">С</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="t">
+                        <label class="country-list__label" for="t">Т</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="y">
+                        <label class="country-list__label" for="y">У</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="f">
+                        <label class="country-list__label" for="f">Ф</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="x">
+                        <label class="country-list__label" for="x">Х</label>
+                      </td>
                     </tr>
                     <tr class="country-list__table-row">
-                      <td class="country-list__table-cell">Ч</td>
-                      <td class="country-list__table-cell">Ш</td>
-                      <td class="country-list__table-cell">Э</td>
-                      <td class="country-list__table-cell">Ю</td>
-                      <td class="country-list__table-cell">Я</td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="ch">
+                        <label class="country-list__label" for="ch">Ч</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="sh">
+                        <label class="country-list__label" for="sh">Ш</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="ye">
+                        <label class="country-list__label" for="ye">Э</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="u">
+                        <label class="country-list__label" for="u">Ю</label>
+                      </td>
+                      <td class="country-list__table-cell">
+                        <input class="country-list__checkbox" type="checkbox" id="ya">
+                        <label class="country-list__label" for="ya">Я</label>
+                      </td>
                     </tr>
                   </table>
                   <ul class="table-list">
-                    <li class="table-list__item">Австралия</li>
-                    <li class="table-list__item">Австрия</li>
-                    <li class="table-list__item">Азербайджан</li>
-                    <li class="table-list__item">Албания</li>
-                    <li class="table-list__item">Алжир</li>
-                    <li class="table-list__item">Ангола</li>
-                    <li class="table-list__item">Андорра</li>
-                    <li class="table-list__item">Антигуа и Барбуда</li>
-                    <li class="table-list__item">Аргентина</li>
-                    <li class="table-list__item">Армения</li>
-                    <li class="table-list__item">Афганистан</li>
+                    <li class="table-list__item">
+                      <input class="table-list__checkbox" type="checkbox" id="Australia">
+                      <label class="table-list__label" for="Australia">Австралия</label>
+                    </li>
+                    <li class="table-list__item">
+                      <input class="table-list__checkbox" type="checkbox" id="Austria">
+                      <label class="table-list__label" for="Austria">Австрия</label>
+                    </li>
+                    <li class="table-list__item">
+                      <input class="table-list__checkbox" type="checkbox" id="Azerbaijan">
+                      <label class="table-list__label" for="Azerbaijan">Азербайджан</label>
+                    </li>
+                    <li class="table-list__item">
+                      <input class="table-list__checkbox" type="checkbox" id="Albania">
+                      <label class="table-list__label" for="Albania">Албания</label>
+                    </li>
+                    <li class="table-list__item">
+                      <input class="table-list__checkbox" type="checkbox" id="Algeria">
+                      <label class="table-list__label" for="Algeria">Алжир</label>
+                    </li>
+                    <li class="table-list__item">
+                      <input class="table-list__checkbox" type="checkbox" id="Angola">
+                      <label class="table-list__label" for="Angola">Ангола</label>
+                    </li>
+                    <li class="table-list__item">
+                      <input class="table-list__checkbox" type="checkbox" id="Andorra">
+                      <label class="table-list__label" for="Andorra">Андорра</label>
+                    </li>
+                    <li class="table-list__item">
+                      <input class="table-list__checkbox" type="checkbox" id="Antigua-and-Barbuda">
+                      <label class="table-list__label" for="Antigua-and-Barbuda">Антигуа и Барбуда</label>
+                    </li>
+                    <li class="table-list__item">
+                      <input class="table-list__checkbox" type="checkbox" id="Argentina">
+                      <label class="table-list__label" for="Argentina">Аргентина</label>
+                    </li>
+                    <li class="table-list__item">
+                      <input class="table-list__checkbox" type="checkbox" id="Armenia">
+                      <label class="table-list__label" for="Armenia">Армения</label>
+                    </li>
+                    <li class="table-list__item">
+                      <input class="table-list__checkbox" type="checkbox" id="Afghanistan">
+                      <label class="table-list__label" for="Afghanistan">Афганистан</label>
+                    </li>
                   </ul>
                 </div>
               </li>
@@ -266,7 +500,7 @@
                 </div>
                 <textarea class="about-my-hobbies" rows="10" cols="45" name="text"></textarea>
                 <br>
-                <button class="new-plan-next-button new-plan-send-button">Следующий шаг</button>
+                <button class="new-plan-next-button new-plan-send-button">Отправить</button>
                 <br>
                 <button class="new-plan-previous-button">На шаг назад</button>
               </li>

@@ -31,224 +31,412 @@
   <main class="catalog-wrapper">
     <h1 class="visually-hidden">Выбор попутчиков</h1>
     <section class="companions-filter">
-      <div class="companions-header">
-        <img class="companions-header__icon" src="images/catalog/header-icon-filter.svg" width="16" height="10" alt="">
-        <p class="companions-header__header">Фильтрация по странам</p>
-        <img class="companions-header__icon" src="images/catalog/open-country-icon.svg" width="17" height="3" alt="">
-      </div>
-      <div class="companions-filter__wrapper">
-        <p class="companions-filter__wrapper-header ">Подберите идеального попутчика</p>
-        <section class="accordeon-list">
-          <div class="accordeon-list__item">
-            <p class="accordeon-list__item-text">Хобби</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
+      <form action="https://echo.htmlacademy.ru" class="companions-filter__form">
+        <div class="companions-header">
+          <img class="companions-header__icon" src="images/catalog/header-icon-filter.svg" width="16" height="10" alt="">
+          <p class="companions-header__header">Фильтрация по странам</p>
+          <img class="companions-header__icon" src="images/catalog/open-country-icon.svg" width="17" height="3" alt="">
+        </div>
+        <!-- Окно выбора страны -->
+        <div class="catalog-country-list">
+          <div class="catalog-country-list__header">
+            <p class="catalog-country-list__header-text">Выберите страну</p>
           </div>
-          <div class="accordeon-list__item">
-            <p class="accordeon-list__item-text">Музыка</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
-            <ul class="checkbox-list">
-              <li class="checkbox-list__item">
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" class="accordeon-checkbox" id="hard-rock" checked><div class="check-mark"></div>
-                </div><label class="accordeon-checkbox-label" for="hard-rock">Тяжёлый рок</label>
-              </li>
-              <li class="checkbox-list__item">
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" class="accordeon-checkbox" id="russian-rap" checked><div class="check-mark"></div>
-                </div><label class="accordeon-checkbox-label" for="russian-rap">Русский рэп</label>
-              </li>
-              <li class="checkbox-list__item">
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" class="accordeon-checkbox" id="eurodance"><div class="check-mark"></div>
-                </div><label class="accordeon-checkbox-label" for="eurodance">Евроденс</label>
-              </li>
-            </ul>
-          </div>
-          <div class="accordeon-list__item">
-            <p class="accordeon-list__item-text">Еда</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
-          </div>
-          <div class="accordeon-list__item">
-            <p class="accordeon-list__item-text">Транспорт</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
-            <div class="activity-wrapper">
-              <img class="activity-wrapper__airplane" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
-              <img class="activity-wrapper__bus" width="21" height="21" src="images/catalog/bus-active.svg" alt="Автобус">
-              <img class="activity-wrapper__bicycle activity-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
-              <img class="activity-wrapper__run" width="21" height="21" src="images/catalog/run-active.svg" alt="Бег">
+          <table class="catalog-country-list__table">
+            <tr class="catalog-country-list__table-row">
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="a" checked>
+                <label class="catalog-country-list__label" for="a">А</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="b">
+                <label class="catalog-country-list__label" for="b">Б</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="v">
+                <label class="catalog-country-list__label" for="v">В</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="g">
+                <label class="catalog-country-list__label" for="g">Г</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="d">
+                <label class="catalog-country-list__label" for="d">Д</label>
+              </td>
+            </tr>
+            <tr class="catalog-country-list__table-row">
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="e">
+                <label class="catalog-country-list__label" for="e">Е</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="z">
+                <label class="catalog-country-list__label" for="z">З</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="i">
+                <label class="catalog-country-list__label" for="i">И</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="k">
+                <label class="catalog-country-list__label" for="k">К</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="l">
+                <label class="catalog-country-list__label" for="l">Л</label>
+              </td>
+            </tr>
+            <tr class="catalog-country-list__table-row">
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="m">
+                <label class="catalog-country-list__label" for="m">М</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="n">
+                <label class="catalog-country-list__label" for="n">Н</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="o">
+                <label class="catalog-country-list__label" for="o">О</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="p">
+                <label class="catalog-country-list__label" for="p">П</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="r">
+                <label class="catalog-country-list__label" for="r">Р</label>
+              </td>
+            </tr>
+            <tr class="catalog-country-list__table-row">
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="s">
+                <label class="catalog-country-list__label" for="s">С</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="t">
+                <label class="catalog-country-list__label" for="t">Т</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="y">
+                <label class="catalog-country-list__label" for="y">У</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="f">
+                <label class="catalog-country-list__label" for="f">Ф</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="x">
+                <label class="catalog-country-list__label" for="x">Х</label>
+              </td>
+            </tr>
+            <tr class="catalog-country-list__table-row">
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="ch">
+                <label class="catalog-country-list__label" for="ch">Ч</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="sh">
+                <label class="catalog-country-list__label" for="sh">Ш</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="ye">
+                <label class="catalog-country-list__label" for="ye">Э</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="u">
+                <label class="catalog-country-list__label" for="u">Ю</label>
+              </td>
+              <td class="catalog-country-list__table-cell">
+                <input class="catalog-country-list__checkbox" type="checkbox" id="ya">
+                <label class="catalog-country-list__label" for="ya">Я</label>
+              </td>
+            </tr>
+          </table>
+          <ul class="catalog-table-list">
+            <li class="catalog-table-list__item">
+              <input class="catalog-table-list__checkbox" type="checkbox" id="Australia">
+              <label class="catalog-table-list__label" for="Australia">Австралия</label>
+            </li>
+            <li class="catalog-table-list__item">
+              <input class="catalog-table-list__checkbox" type="checkbox" id="Austria">
+              <label class="catalog-table-list__label" for="Austria">Австрия</label>
+            </li>
+            <li class="catalog-table-list__item">
+              <input class="catalog-table-list__checkbox" type="checkbox" id="Azerbaijan">
+              <label class="catalog-table-list__label" for="Azerbaijan">Азербайджан</label>
+            </li>
+            <li class="catalog-table-list__item">
+              <input class="catalog-table-list__checkbox" type="checkbox" id="Albania">
+              <label class="catalog-table-list__label" for="Albania">Албания</label>
+            </li>
+            <li class="catalog-table-list__item">
+              <input class="catalog-table-list__checkbox" type="checkbox" id="Algeria">
+              <label class="catalog-table-list__label" for="Algeria">Алжир</label>
+            </li>
+            <li class="catalog-table-list__item">
+              <input class="catalog-table-list__checkbox" type="checkbox" id="Angola">
+              <label class="catalog-table-list__label" for="Angola">Ангола</label>
+            </li>
+            <li class="catalog-table-list__item">
+              <input class="catalog-table-list__checkbox" type="checkbox" id="Andorra">
+              <label class="catalog-table-list__label" for="Andorra">Андорра</label>
+            </li>
+            <li class="catalog-table-list__item">
+              <input class="catalog-table-list__checkbox" type="checkbox" id="Antigua-and-Barbuda">
+              <label class="catalog-table-list__label" for="Antigua-and-Barbuda">Антигуа и Барбуда</label>
+            </li>
+            <li class="catalog-table-list__item">
+              <input class="catalog-table-list__checkbox" type="checkbox" id="Argentina">
+              <label class="catalog-table-list__label" for="Argentina">Аргентина</label>
+            </li>
+            <li class="catalog-table-list__item">
+              <input class="catalog-table-list__checkbox" type="checkbox" id="Armenia">
+              <label class="catalog-table-list__label" for="Armenia">Армения</label>
+            </li>
+            <li class="catalog-table-list__item">
+              <input class="catalog-table-list__checkbox" type="checkbox" id="Afghanistan">
+              <label class="catalog-table-list__label" for="Afghanistan">Афганистан</label>
+            </li>
+          </ul>
+        </div>
+        <div class="companions-filter__wrapper">
+          <p class="companions-filter__wrapper-header ">Подберите идеального попутчика</p>
+          <section class="accordeon-list">
+            <div class="accordeon-list__item">
+              <p class="accordeon-list__item-text">Хобби</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
             </div>
-          </div>
-          <div class="accordeon-list__item">
-            <p class="accordeon-list__item-text">Левел</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
-          </div>
-          <div class="companions-level">
-            <input class="companions-level__input-left" type="text" value="30"><input class="companions-level__input-right" type="text" value="100">
-            <div class="range-wrapper">
-              <div class="range-wrapper__track">
-                <div class="range-wrapper__track-active"></div>
+            <div class="accordeon-list__item">
+              <p class="accordeon-list__item-text">Музыка</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
+              <ul class="checkbox-list">
+                <li class="checkbox-list__item">
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" class="accordeon-checkbox" id="hard-rock" checked><div class="check-mark"></div>
+                  </div><label class="accordeon-checkbox-label" for="hard-rock">Тяжёлый рок</label>
+                </li>
+                <li class="checkbox-list__item">
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" class="accordeon-checkbox" id="russian-rap" checked><div class="check-mark"></div>
+                  </div><label class="accordeon-checkbox-label" for="russian-rap">Русский рэп</label>
+                </li>
+                <li class="checkbox-list__item">
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" class="accordeon-checkbox" id="eurodance"><div class="check-mark"></div>
+                  </div><label class="accordeon-checkbox-label" for="eurodance">Евроденс</label>
+                </li>
+              </ul>
+            </div>
+            <div class="accordeon-list__item">
+              <p class="accordeon-list__item-text">Еда</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
+            </div>
+            <div class="accordeon-list__item">
+              <p class="accordeon-list__item-text">Транспорт</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
+              <div class="activity-wrapper">
+                <label class="checkbox-label" for="airplane">
+                  <input type="checkbox" class="activity-wrapper__checkbox" id="airplane">
+                  <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
+                </label>
+                <label class="checkbox-label" for="bus">
+                  <input type="checkbox" class="activity-wrapper__checkbox" id="bus">
+                  <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/bus-active.svg" alt="Автобус">
+                </label>
+                <label class="checkbox-label" for="bicycle">
+                  <input type="checkbox" class="activity-wrapper__checkbox" id="bicycle">
+                  <img class="activity-wrapper__icon activity-wrapper__icon--choosen" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
+                </label>
+                <label class="checkbox-label" for="run">
+                  <input type="checkbox" class="activity-wrapper__checkbox" id="run">
+                  <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/run-active.svg" alt="Бег">
+                </label>
               </div>
-              <input class="companions-range" type="range">
             </div>
-          </div>
-        </section>
-      </div>
+            <div class="accordeon-list__item">
+              <p class="accordeon-list__item-text">Левел</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
+            </div>
+            <div class="companions-level">
+              <input class="companions-level__input-left" type="text" value="30"><input class="companions-level__input-right" type="text" value="100">
+              <div class="range-wrapper">
+                <div class="range-wrapper__track">
+                  <div class="range-wrapper__track-active"></div>
+                </div>
+                <input class="companions-range" type="range">
+              </div>
+            </div>
+          </section>
+        </div>
+      </form>
       <button class="companions-filter__button">Показать</button>
     </section>
     <section class="companions-cards">
       <h2 class="visually-hidden">Попутчики</h2>
-      <div class="companions-cards__item">
-        <div class="companions-cards__item-top">
-          <div class="avatar-wrapper">
-            <img class="avatar-wrapper__image" src="images/catalog/cards/firsova-avatar.png" width="70" height="70" alt="Таня Фирсова">
-            <img class="avatar-wrapper__favorite-icon avatar-wrapper__favorite-icon--active" src="images/catalog/cards/favorite-active.svg" width="31" height="31" alt="В избранное">
-          </div>
-          <p class="companions-cards__item-name">Таня Фирсова</p>
-          <p class="companions-cards__item-distance">1,5 М</p>
-          <span class="companions-cards__check-online">
-            <img class="companions-cards__check-online-icon companions-cards__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
-          </span>
-        </div>
-        <p class="companions-cards__hashtags">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</p>
-        <p class="wish-country">Хочет посетить :</p>
-        <ul class="catalog-country-list">
-          <li class="catalog-country-list__item">
-            <img src="images/catalog/cards/sri-lanka.png" width="35" height="24" alt="Шри-ланка">Шри-Ланка
-          </li>
-          <li class="catalog-country-list__item">
-            <img src="images/catalog/cards/thailand.png" width="35" height="24" alt="Тайланд">Тайланд
-          </li>
-          <li class="catalog-country-list__item">
-            <img src="images/catalog/cards/seychelles.png" width="35" height="24" alt="Сейшеллы">Сейшеллы
-          </li>
-        </ul>
-        <div class="transport-level-header-wrapper">
-          <p class="transport-level-header-wrapper__transport">транспорт :</p>
-          <p class="transport-level-header-wrapper__level">левел :</p>
-        </div>
-        <div class="transport-level-wrapper">
-          <img class="transport-level-wrapper__airplane" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
-          <img class="transport-level-wrapper__bus transport-level-wrapper__bus--inactive" width="21" height="21" src="images/catalog/bus.svg" alt="Автобус">
-          <img class="transport-level-wrapper__bicycle transport-level-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
-          <img class="transport-level-wrapper__run transport-level-wrapper__run--inactive" width="21" height="21" src="images/catalog/run.svg" alt="Бег">
-          <img class="transport-level-wrapper__level" width="45" height="45" src="images/catalog/cards/99-level.svg" alt="Уровень">
-        </div>
-        <button class="companions-cards__button">Позвать!</button>
-      </div>
-      <!-- Вторая карточка -->
-      <div class="companions-cards__item">
-        <div class="companions-cards__item-top">
-          <div class="avatar-wrapper">
-            <img class="avatar-wrapper__image" src="images/catalog/cards/demin-avatar.png" width="70" height="70" alt="Петя Демин">
-            <img class="avatar-wrapper__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
-          </div>
-          <p class="companions-cards__item-name">Петя Демин</p>
-          <p class="companions-cards__item-distance">1500 М</p>
-          <span class="companions-cards__check-online">
-            <img class="companions-cards__check-online-icon companions-cards__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
-          </span>
-        </div>
-        <p class="companions-cards__hashtags">#бургер #бар #футбол #концерт #крафт</p>
-        <p class="wish-country">Хочет посетить :</p>
-        <ul class="catalog-country-list">
-          <li class="catalog-country-list__item">
-            <img src="images/catalog/cards/belgium.png" width="35" height="24" alt="Бельгия">Бельгия
-          </li>
-          <li class="catalog-country-list__item">
-            <img src="images/catalog/cards/czech.png" width="35" height="24" alt="Чехия">Чехия
-          </li>
-        </ul>
-        <div class="transport-level-header-wrapper">
-          <p class="transport-level-header-wrapper__transport">транспорт :</p>
-          <p class="transport-level-header-wrapper__level">левел :</p>
-        </div>
-        <div class="transport-level-wrapper">
-          <img class="transport-level-wrapper__airplane" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
-          <img class="transport-level-wrapper__bus" width="21" height="21" src="images/catalog/bus-active.svg" alt="Автобус">
-          <img class="transport-level-wrapper__bicycle transport-level-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
-          <img class="transport-level-wrapper__run" width="21" height="21" src="images/catalog/run-active.svg" alt="Бег">
-          <img class="transport-level-wrapper__level" width="45" height="45" src="images/catalog/cards/80-level.svg" alt="Уровень">
-        </div>
-        <button class="companions-cards__button">Позвать!</button>
-      </div>
-      <!-- Третья карточка -->
-      <div class="companions-cards__item">
-        <div class="companions-cards__item-top">
-          <div class="avatar-wrapper">
-            <img class="avatar-wrapper__image" src="images/catalog/cards/smolov-avatar.png" width="70" height="70" alt="Марк Смолов">
-            <img class="avatar-wrapper__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
-          </div>
-          <p class="companions-cards__item-name">Марк Смолов</p>
-          <p class="companions-cards__item-distance"></p>
-          <span class="companions-cards__check-online">
-            <img class="companions-cards__check-online-icon companions-cards__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
-          </span>
-        </div>
-        <p class="companions-cards__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
-        <p class="wish-country">Хочет посетить :</p>
-        <ul class="catalog-country-list">
-          <li class="catalog-country-list__item">
-            <img src="images/catalog/cards/usa.png" width="35" height="24" alt="США">США
-          </li>
-          <li class="catalog-country-list__item">
-            <img src="images/catalog/cards/australia.png" width="35" height="24" alt="Австралия">Австралия
-          </li>
-          <li class="catalog-country-list__item">
-            <img src="images/catalog/cards/dominicana.png" width="35" height="24" alt="Доминикана">Доминикана
-          </li>
-        </ul>
-        <div class="transport-level-header-wrapper">
-          <p class="transport-level-header-wrapper__transport">транспорт :</p>
-          <p class="transport-level-header-wrapper__level">левел :</p>
-        </div>
-        <div class="transport-level-wrapper">
-          <img class="transport-level-wrapper__airplane" width="21" height="21" src="images/catalog/cards/airplane.svg" alt="Самолёт">
-          <img class="transport-level-wrapper__bus transport-level-wrapper__bus--inactive" width="21" height="21" src="images/catalog/bus.svg" alt="Автобус">
-          <img class="transport-level-wrapper__bicycle" width="21" height="21" src="images/catalog/cards/bicycle-active.svg" alt="Велосипед">
-          <img class="transport-level-wrapper__run transport-level-wrapper__run--inactive" width="21" height="21" src="images/catalog/cards/run.svg" alt="Бег">
-          <img class="transport-level-wrapper__level" width="45" height="45" src="images/catalog/cards/25-level.svg" alt="Уровень">
-        </div>
-        <button class="companions-cards__button">Позвать!</button>
-      </div>
-      <!-- Четвёртая карточка -->
-      <div class="companions-cards__item">
-        <div class="companions-cards__item-top">
-          <div class="avatar-wrapper">
-            <img class="avatar-wrapper__image" src="images/catalog/cards/rogovaya-avatar.png" width="70" height="70" alt="Лариса Роговая">
-            <img class="avatar-wrapper__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
-          </div>
-          <p class="companions-cards__item-name">Лариса Роговая</p>
-          <p class="companions-cards__item-distance">23 М</p>
-          <span class="companions-cards__check-online">
-            <img class="companions-cards__check-online-icon companions-cards__check-online-icon--online" src="images/catalog/cards/is-online-active.svg" alt="Оффлайн">
-          </span>
-        </div>
-        <p class="companions-cards__hashtags">#образование #карьера #учеба #линкедин</p>
-        <p class="wish-country">Хочет посетить :</p>
-        <ul class="catalog-country-list">
-          <li class="catalog-country-list__item">
-            <img src="images/catalog/cards/uk.png" width="35" height="24" alt="Великобритания">Великобритания
-          </li>
-          <li class="catalog-country-list__item">
-            <img src="images/catalog/cards/germany.png" width="35" height="24" alt="Германия">Германия
-          </li>
-        </ul>
-        <div class="transport-level-header-wrapper">
-          <p class="transport-level-header-wrapper__transport">транспорт :</p>
-          <p class="transport-level-header-wrapper__level">левел :</p>
-        </div>
-        <div class="transport-level-wrapper">
-          <img class="transport-level-wrapper__airplane" width="21" height="21" src="images/catalog/cards/airplane.svg" alt="Самолёт">
-          <img class="transport-level-wrapper__bus" width="21" height="21" src="images/catalog/cards/bus-active.svg" alt="Автобус">
-          <img class="transport-level-wrapper__bicycle transport-level-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/cards/bicycle.svg" alt="Велосипед">
-          <img class="transport-level-wrapper__run transport-level-wrapper__run--inactive" width="21" height="21" src="images/catalog/cards/run.svg" alt="Бег">
-          <img class="transport-level-wrapper__level" width="45" height="45" src="images/catalog/cards/50-level.svg" alt="Уровень">
-        </div>
-        <button class="companions-cards__button">Позвать!</button>
-      </div>
+      <ul class="companions-cards__list catalog-cards-list">
+        <li class="catalog-cards-list__item">
+          <article class="person-card">
+            <div class="person-card__item-top">
+              <div class="avatar-wrapper">
+                <img class="avatar-wrapper__image" src="images/catalog/cards/firsova-avatar.png" width="70" height="70" alt="Таня Фирсова">
+                <img class="avatar-wrapper__favorite-icon avatar-wrapper__favorite-icon--active" src="images/catalog/cards/favorite-active.svg" width="31" height="31" alt="В избранное">
+              </div>
+              <p class="person-card__item-name">Таня Фирсова</p>
+              <p class="person-card__item-distance">1,5 М</p>
+              <span class="person-card__check-online">
+                <img class="person-card__check-online-icon person-card__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
+              </span>
+            </div>
+            <p class="person-card__hashtags">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</p>
+            <p class="wish-country">Хочет посетить :</p>
+            <ul class="catalog-country-list">
+              <li class="catalog-country-list__item">
+                <img src="images/catalog/cards/sri-lanka.png" width="35" height="24" alt="Шри-ланка">Шри-Ланка
+              </li>
+              <li class="catalog-country-list__item">
+                <img src="images/catalog/cards/thailand.png" width="35" height="24" alt="Тайланд">Тайланд
+              </li>
+              <li class="catalog-country-list__item">
+                <img src="images/catalog/cards/seychelles.png" width="35" height="24" alt="Сейшеллы">Сейшеллы
+              </li>
+            </ul>
+            <div class="transport-level-header-wrapper">
+              <p class="transport-level-header-wrapper__transport">транспорт :</p>
+              <p class="transport-level-header-wrapper__level">левел :</p>
+            </div>
+            <div class="transport-level-wrapper">
+              <img class="transport-level-wrapper__airplane" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
+              <img class="transport-level-wrapper__bus transport-level-wrapper__bus--inactive" width="21" height="21" src="images/catalog/bus.svg" alt="Автобус">
+              <img class="transport-level-wrapper__bicycle transport-level-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
+              <img class="transport-level-wrapper__run transport-level-wrapper__run--inactive" width="21" height="21" src="images/catalog/run.svg" alt="Бег">
+              <img class="transport-level-wrapper__level" width="45" height="45" src="images/catalog/cards/99-level.svg" alt="Уровень">
+            </div>
+            <button class="person-card__button">Позвать!</button>
+          </article>
+        </li>
+        <!-- Вторая карточка -->
+        <li class="catalog-cards-list__item">
+          <article class="person-card">
+            <div class="person-card__item-top">
+              <div class="avatar-wrapper">
+                <img class="avatar-wrapper__image" src="images/catalog/cards/demin-avatar.png" width="70" height="70" alt="Петя Демин">
+                <img class="avatar-wrapper__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
+              </div>
+              <p class="person-card__item-name">Петя Демин</p>
+              <p class="person-card__item-distance">1500 М</p>
+              <span class="person-card__check-online">
+                <img class="person-card__check-online-icon person-card__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
+              </span>
+            </div>
+            <p class="person-card__hashtags">#бургер #бар #футбол #концерт #крафт</p>
+            <p class="wish-country">Хочет посетить :</p>
+            <ul class="catalog-country-list">
+              <li class="catalog-country-list__item">
+                <img src="images/catalog/cards/belgium.png" width="35" height="24" alt="Бельгия">Бельгия
+              </li>
+              <li class="catalog-country-list__item">
+                <img src="images/catalog/cards/czech.png" width="35" height="24" alt="Чехия">Чехия
+              </li>
+            </ul>
+            <div class="transport-level-header-wrapper">
+              <p class="transport-level-header-wrapper__transport">транспорт :</p>
+              <p class="transport-level-header-wrapper__level">левел :</p>
+            </div>
+            <div class="transport-level-wrapper">
+              <img class="transport-level-wrapper__airplane" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
+              <img class="transport-level-wrapper__bus" width="21" height="21" src="images/catalog/bus-active.svg" alt="Автобус">
+              <img class="transport-level-wrapper__bicycle transport-level-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
+              <img class="transport-level-wrapper__run" width="21" height="21" src="images/catalog/run-active.svg" alt="Бег">
+              <img class="transport-level-wrapper__level" width="45" height="45" src="images/catalog/cards/80-level.svg" alt="Уровень">
+            </div>
+            <button class="person-card__button">Позвать!</button>
+          </article>
+        </li>
+        <!-- Третья карточка -->
+        <li class="catalog-cards-list__item">
+          <article class="person-card">
+            <div class="person-card__item-top">
+              <div class="avatar-wrapper">
+                <img class="avatar-wrapper__image" src="images/catalog/cards/smolov-avatar.png" width="70" height="70" alt="Марк Смолов">
+                <img class="avatar-wrapper__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
+              </div>
+              <p class="person-card__item-name">Марк Смолов</p>
+              <p class="person-card__item-distance"></p>
+              <span class="person-card__check-online">
+                <img class="person-card__check-online-icon person-card__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
+              </span>
+            </div>
+            <p class="person-card__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+            <p class="wish-country">Хочет посетить :</p>
+            <ul class="catalog-country-list">
+              <li class="catalog-country-list__item">
+                <img src="images/catalog/cards/usa.png" width="35" height="24" alt="США">США
+              </li>
+              <li class="catalog-country-list__item">
+                <img src="images/catalog/cards/australia.png" width="35" height="24" alt="Австралия">Австралия
+              </li>
+              <li class="catalog-country-list__item">
+                <img src="images/catalog/cards/dominicana.png" width="35" height="24" alt="Доминикана">Доминикана
+              </li>
+            </ul>
+            <div class="transport-level-header-wrapper">
+              <p class="transport-level-header-wrapper__transport">транспорт :</p>
+              <p class="transport-level-header-wrapper__level">левел :</p>
+            </div>
+            <div class="transport-level-wrapper">
+              <img class="transport-level-wrapper__airplane" width="21" height="21" src="images/catalog/cards/airplane.svg" alt="Самолёт">
+              <img class="transport-level-wrapper__bus transport-level-wrapper__bus--inactive" width="21" height="21" src="images/catalog/bus.svg" alt="Автобус">
+              <img class="transport-level-wrapper__bicycle" width="21" height="21" src="images/catalog/cards/bicycle-active.svg" alt="Велосипед">
+              <img class="transport-level-wrapper__run transport-level-wrapper__run--inactive" width="21" height="21" src="images/catalog/cards/run.svg" alt="Бег">
+              <img class="transport-level-wrapper__level" width="45" height="45" src="images/catalog/cards/25-level.svg" alt="Уровень">
+            </div>
+            <button class="person-card__button">Позвать!</button>
+          </article>
+        </li>
+        <!-- Четвёртая карточка -->
+        <li class="catalog-cards-list__item">
+          <article class="person-card">
+            <div class="person-card__item-top">
+              <div class="avatar-wrapper">
+                <img class="avatar-wrapper__image" src="images/catalog/cards/rogovaya-avatar.png" width="70" height="70" alt="Лариса Роговая">
+                <img class="avatar-wrapper__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
+              </div>
+              <p class="person-card__item-name">Лариса Роговая</p>
+              <p class="person-card__item-distance">23 М</p>
+              <span class="person-card__check-online">
+                <img class="person-card__check-online-icon person-card__check-online-icon--online" src="images/catalog/cards/is-online-active.svg" alt="Оффлайн">
+              </span>
+            </div>
+            <p class="person-card__hashtags">#образование #карьера #учеба #линкедин</p>
+            <p class="wish-country">Хочет посетить :</p>
+            <ul class="catalog-country-list">
+              <li class="catalog-country-list__item">
+                <img src="images/catalog/cards/uk.png" width="35" height="24" alt="Великобритания">Великобритания
+              </li>
+                <li class="catalog-country-list__item">
+                <img src="images/catalog/cards/germany.png" width="35" height="24" alt="Германия">Германия
+              </li>
+            </ul>
+            <div class="transport-level-header-wrapper">
+              <p class="transport-level-header-wrapper__transport">транспорт :</p>
+              <p class="transport-level-header-wrapper__level">левел :</p>
+            </div>
+            <div class="transport-level-wrapper">
+              <img class="transport-level-wrapper__airplane" width="21" height="21" src="images/catalog/cards/airplane.svg" alt="Самолёт">
+              <img class="transport-level-wrapper__bus" width="21" height="21" src="images/catalog/cards/bus-active.svg" alt="Автобус">
+              <img class="transport-level-wrapper__bicycle transport-level-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/cards/bicycle.svg" alt="Велосипед">
+              <img class="transport-level-wrapper__run transport-level-wrapper__run--inactive" width="21" height="21" src="images/catalog/cards/run.svg" alt="Бег">
+              <img class="transport-level-wrapper__level" width="45" height="45" src="images/catalog/cards/50-level.svg" alt="Уровень">
+            </div>
+            <button class="person-card__button">Позвать!</button>
+          </article>
+        </li>
+      </ul>
     </section>
     <div class="load-more">
       <img class="load-more__icon" src="images/catalog/cards/plus-load.svg" width="18" height="18" alt="Загрузить ещё">
-      <p class="load-more__text">Показать ещё</p>
+      <a href="#" class="load-more__link">Показать ещё</a>
     </div>
     <div class="two-button-navigation">
-      <button class="two-button-navigation__prev"><img src="images/catalog/cards/left-arrow.svg" width="13" height="20" alt="Назад"></button>
-      <button class="two-button-navigation__next"><img src="images/catalog/cards/right-arrow.svg" width="13" height="20" alt="Вперёд"></button>
+      <a href="#" class="two-button-navigation__prev"><img src="images/catalog/cards/left-arrow.svg" width="13" height="20" alt="Назад"></a>
+      <a href="#" class="two-button-navigation__next"><img src="images/catalog/cards/right-arrow.svg" width="13" height="20" alt="Вперёд"></a>
     </div>
   </main>
   <footer class="main-footer">
