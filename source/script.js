@@ -32,6 +32,3 @@ showTariffs.addEventListener('click', ()=> {
 closeTariffs.addEventListener('click', ()=> {
   modalWindow.classList.add('visually-hidden');
 });
-
-
-
