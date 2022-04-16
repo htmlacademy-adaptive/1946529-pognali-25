@@ -3,259 +3,330 @@
   <head>
     <meta charset="utf-8">
     <title>Погнали. Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 <body class="page__body">
-  <header class="main-header">
-    <a href="/" class="header-logo"><img class="header-logo__image" src="images/logo_mobile.svg" width="96" height="15" alt="Погнали?"></a>
-    <nav class="main-menu">
-      <button class="burger-menu-button"><img src="images/burger-menu-icon.svg" width="25" height="11" alt="Меню"></button>
+  <header class="main-header main-header--secondary">
+    <div class="main-header__top">
+      <div class="main-header__top-flex">
+        <a href="/" class="header-logo">
+          <img class="header-logo__image header-logo__image--light" src="images/logo_mobile.svg" width="96" height="15" alt="Погнали?">
+          <img class="header-logo__image header-logo__image--dark visually-hidden" src="images/dark-logo.svg" width="96" height="15" alt="Погнали?">
+        </a>
+        <button class="burger-menu-button">
+          <img class="burger-menu-button__icon" src="images/burger-menu-icon.svg" width="25" height="11" alt="Меню">
+          <img class="burger-menu-button__close visually-hidden" src="images/close-burger-menu.svg" width="19" height="18" alt="Меню">
+        </button>
+      </div>
+    </div>
+    <nav class="main-menu visually-hidden">
       <div class="main-menu__wrapper">
         <ul class="main-menu__list">
           <li class="main-menu__item"><a class="main-menu__link" href="#">О сервисе</a></li>
           <li class="main-menu__item"><a class="main-menu__link" href="#">Направления</a></li>
           <li class="main-menu__item"><a class="main-menu__link" href="#">Попутчики</a></li>
         </ul>
+        <a href="#" class="main-menu__login">Авторизация</a>
         <ul class="navigation-user">
-          <li class="navigation-user__item"><a class="navigation-user__link" href="tel:88005558628">8 800 555-86-28</a></li>
-          <li class="navigation-user__item"><a class="navigation-user__link" href="#">mail@htmlacademy.ru</a></li>
+          <li class="navigation-user__item">
+            <img class="navigation-user__phone" src="images/phone-icon-menu.svg" width="16" height="15" alt="Телефон">
+            <a class="navigation-user__link" href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="navigation-user__item">
+            <span class="navigation-user__email-wrapper">
+              <img class="navigation-user__email" src="images/email-icon-menu.svg" width="18" height="13" alt="Телефон">
+            </span>
+              <a class="navigation-user__link" href="#">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="social">
+          <li class="social__item"><a href="#" class="social__link social__link--facebook"><span class="social__icon visually-hidden"></span></a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--vkontakte"><span class="social__icon visually-hidden"></span></a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--instagram"><span class="social__icon visually-hidden"></span></a></li>
         </ul>
       </div>
-      <ul class="social">
-        <li class="social__item"><a href="#" class="social__link facebook"><span class="visually-hidden"></span></a></li>
-        <li class="social__item"><a href="#" class="social__link vkontakte"><span class="visually-hidden"></span></a></li>
-        <li class="social__item"><a href="#" class="social__link instagram"><span class="visually-hidden"></span></a></li>
-      </ul>
     </nav>
-    <p class="header-name">Попутчики</p>
+    <div class="main-header__bottom">
+      <p class="main-header__bottom-name">Попутчики</p>
+    </div>
   </header>
   <main class="catalog-wrapper">
     <h1 class="visually-hidden">Выбор попутчиков</h1>
     <section class="companions-filter">
       <form action="https://echo.htmlacademy.ru" class="companions-filter__form">
-        <div class="companions-header">
-          <img class="companions-header__icon" src="images/catalog/header-icon-filter.svg" width="16" height="10" alt="">
-          <p class="companions-header__header">Фильтрация по странам</p>
-          <img class="companions-header__icon" src="images/catalog/open-country-icon.svg" width="17" height="3" alt="">
-        </div>
-        <!-- Окно выбора страны -->
-        <div class="catalog-country-list">
-          <div class="catalog-country-list__header">
-            <p class="catalog-country-list__header-text">Выберите страну</p>
+        <div class="companions-filter__modal-wrapper companions-filter__modal-wrapper--active">
+          <div class="companions-header">
+            <img class="companions-header__icon" src="images/catalog/header-icon-filter.svg" width="16" height="10" alt="">
+            <p class="companions-header__header">Фильтрация по странам</p>
+            <div class="companions-header__icon-wrapper">
+              <img class="companions-header__icon companions-header__icon--active" src="images/catalog/open-country-icon.svg" width="17" height="3" alt="">
+              <img class="companions-header__icon companions-header__icon--close" src="images/catalog/close-filter.svg" width="16" height="16" alt="">
+            </div>
           </div>
-          <table class="catalog-country-list__table">
-            <tr class="catalog-country-list__table-row">
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="a" checked>
-                <label class="catalog-country-list__label" for="a">А</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="b">
-                <label class="catalog-country-list__label" for="b">Б</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="v">
-                <label class="catalog-country-list__label" for="v">В</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="g">
-                <label class="catalog-country-list__label" for="g">Г</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="d">
-                <label class="catalog-country-list__label" for="d">Д</label>
-              </td>
-            </tr>
-            <tr class="catalog-country-list__table-row">
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="e">
-                <label class="catalog-country-list__label" for="e">Е</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="z">
-                <label class="catalog-country-list__label" for="z">З</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="i">
-                <label class="catalog-country-list__label" for="i">И</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="k">
-                <label class="catalog-country-list__label" for="k">К</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="l">
-                <label class="catalog-country-list__label" for="l">Л</label>
-              </td>
-            </tr>
-            <tr class="catalog-country-list__table-row">
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="m">
-                <label class="catalog-country-list__label" for="m">М</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="n">
-                <label class="catalog-country-list__label" for="n">Н</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="o">
-                <label class="catalog-country-list__label" for="o">О</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="p">
-                <label class="catalog-country-list__label" for="p">П</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="r">
-                <label class="catalog-country-list__label" for="r">Р</label>
-              </td>
-            </tr>
-            <tr class="catalog-country-list__table-row">
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="s">
-                <label class="catalog-country-list__label" for="s">С</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="t">
-                <label class="catalog-country-list__label" for="t">Т</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="y">
-                <label class="catalog-country-list__label" for="y">У</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="f">
-                <label class="catalog-country-list__label" for="f">Ф</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="x">
-                <label class="catalog-country-list__label" for="x">Х</label>
-              </td>
-            </tr>
-            <tr class="catalog-country-list__table-row">
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="ch">
-                <label class="catalog-country-list__label" for="ch">Ч</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="sh">
-                <label class="catalog-country-list__label" for="sh">Ш</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="ye">
-                <label class="catalog-country-list__label" for="ye">Э</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="u">
-                <label class="catalog-country-list__label" for="u">Ю</label>
-              </td>
-              <td class="catalog-country-list__table-cell">
-                <input class="catalog-country-list__checkbox" type="checkbox" id="ya">
-                <label class="catalog-country-list__label" for="ya">Я</label>
-              </td>
-            </tr>
-          </table>
-          <ul class="catalog-table-list">
-            <li class="catalog-table-list__item">
-              <input class="catalog-table-list__checkbox" type="checkbox" id="Australia">
-              <label class="catalog-table-list__label" for="Australia">Австралия</label>
+          <ul class="companions-header-list visually-hidden">
+            <li class="companions-header-list__item">
+              <input type="checkbox" class="companions-header-list__checkbox" id="europe" checked>
+              <label class="companions-header-list__label" for="europe">Европа</label>
             </li>
-            <li class="catalog-table-list__item">
-              <input class="catalog-table-list__checkbox" type="checkbox" id="Austria">
-              <label class="catalog-table-list__label" for="Austria">Австрия</label>
+            <li class="companions-header-list__item">
+              <input type="checkbox" class="companions-header-list__checkbox" id="asia">
+              <label class="companions-header-list__label" for="asia">Азия</label>
             </li>
-            <li class="catalog-table-list__item">
-              <input class="catalog-table-list__checkbox" type="checkbox" id="Azerbaijan">
-              <label class="catalog-table-list__label" for="Azerbaijan">Азербайджан</label>
+            <li class="companions-header-list__item">
+              <input type="checkbox" class="companions-header-list__checkbox" id="america">
+              <label class="companions-header-list__label" for="america">Америка</label>
             </li>
-            <li class="catalog-table-list__item">
-              <input class="catalog-table-list__checkbox" type="checkbox" id="Albania">
-              <label class="catalog-table-list__label" for="Albania">Албания</label>
-            </li>
-            <li class="catalog-table-list__item">
-              <input class="catalog-table-list__checkbox" type="checkbox" id="Algeria">
-              <label class="catalog-table-list__label" for="Algeria">Алжир</label>
-            </li>
-            <li class="catalog-table-list__item">
-              <input class="catalog-table-list__checkbox" type="checkbox" id="Angola">
-              <label class="catalog-table-list__label" for="Angola">Ангола</label>
-            </li>
-            <li class="catalog-table-list__item">
-              <input class="catalog-table-list__checkbox" type="checkbox" id="Andorra">
-              <label class="catalog-table-list__label" for="Andorra">Андорра</label>
-            </li>
-            <li class="catalog-table-list__item">
-              <input class="catalog-table-list__checkbox" type="checkbox" id="Antigua-and-Barbuda">
-              <label class="catalog-table-list__label" for="Antigua-and-Barbuda">Антигуа и Барбуда</label>
-            </li>
-            <li class="catalog-table-list__item">
-              <input class="catalog-table-list__checkbox" type="checkbox" id="Argentina">
-              <label class="catalog-table-list__label" for="Argentina">Аргентина</label>
-            </li>
-            <li class="catalog-table-list__item">
-              <input class="catalog-table-list__checkbox" type="checkbox" id="Armenia">
-              <label class="catalog-table-list__label" for="Armenia">Армения</label>
-            </li>
-            <li class="catalog-table-list__item">
-              <input class="catalog-table-list__checkbox" type="checkbox" id="Afghanistan">
-              <label class="catalog-table-list__label" for="Afghanistan">Афганистан</label>
+            <li class="companions-header-list__item">
+              <input type="checkbox" class="companions-header-list__checkbox" id="islands">
+              <label class="companions-header-list__label" for="islands">Острова</label>
             </li>
           </ul>
+          <!-- Окно выбора страны -->
+          <div class="catalog-country-list visually-hidden">
+            <div class="catalog-country-list__header">
+              <!-- <p class="catalog-country-list__header-text">Выберите страну</p> -->
+            </div>
+            <table class="catalog-country-list__table">
+              <tr class="catalog-country-list__table-row">
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="a" checked>
+                  <label class="catalog-country-list__label" for="a">А</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="b">
+                  <label class="catalog-country-list__label" for="b">Б</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="v">
+                  <label class="catalog-country-list__label" for="v">В</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="g">
+                  <label class="catalog-country-list__label" for="g">Г</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="d">
+                  <label class="catalog-country-list__label" for="d">Д</label>
+                </td>
+              </tr>
+              <tr class="catalog-country-list__table-row">
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="e">
+                  <label class="catalog-country-list__label" for="e">Е</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="z">
+                  <label class="catalog-country-list__label" for="z">З</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="i">
+                  <label class="catalog-country-list__label" for="i">И</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="k">
+                  <label class="catalog-country-list__label" for="k">К</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="l">
+                  <label class="catalog-country-list__label" for="l">Л</label>
+                </td>
+              </tr>
+              <tr class="catalog-country-list__table-row">
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="m">
+                  <label class="catalog-country-list__label" for="m">М</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="n">
+                  <label class="catalog-country-list__label" for="n">Н</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="o">
+                  <label class="catalog-country-list__label" for="o">О</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="p">
+                  <label class="catalog-country-list__label" for="p">П</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="r">
+                  <label class="catalog-country-list__label" for="r">Р</label>
+                </td>
+              </tr>
+              <tr class="catalog-country-list__table-row">
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="s">
+                  <label class="catalog-country-list__label" for="s">С</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="t">
+                  <label class="catalog-country-list__label" for="t">Т</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="y">
+                  <label class="catalog-country-list__label" for="y">У</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="f">
+                  <label class="catalog-country-list__label" for="f">Ф</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="x">
+                  <label class="catalog-country-list__label" for="x">Х</label>
+                </td>
+              </tr>
+              <tr class="catalog-country-list__table-row">
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="ch">
+                  <label class="catalog-country-list__label" for="ch">Ч</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="sh">
+                  <label class="catalog-country-list__label" for="sh">Ш</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="ye">
+                  <label class="catalog-country-list__label" for="ye">Э</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="u">
+                  <label class="catalog-country-list__label" for="u">Ю</label>
+                </td>
+                <td class="catalog-country-list__table-cell">
+                  <input class="catalog-country-list__checkbox" type="checkbox" id="ya">
+                  <label class="catalog-country-list__label" for="ya">Я</label>
+                </td>
+              </tr>
+            </table>
+            <ul class="catalog-table-list">
+              <li class="catalog-table-list__item">
+                <input class="catalog-table-list__checkbox" type="checkbox" id="Australia">
+                <label class="catalog-table-list__label" for="Australia">Австралия</label>
+              </li>
+              <li class="catalog-table-list__item">
+                <input class="catalog-table-list__checkbox" type="checkbox" id="Austria">
+                <label class="catalog-table-list__label" for="Austria">Австрия</label>
+              </li>
+              <li class="catalog-table-list__item">
+                <input class="catalog-table-list__checkbox" type="checkbox" id="Azerbaijan">
+                <label class="catalog-table-list__label" for="Azerbaijan">Азербайджан</label>
+              </li>
+              <li class="catalog-table-list__item">
+                <input class="catalog-table-list__checkbox" type="checkbox" id="Albania">
+                <label class="catalog-table-list__label" for="Albania">Албания</label>
+              </li>
+              <li class="catalog-table-list__item">
+                <input class="catalog-table-list__checkbox" type="checkbox" id="Algeria">
+                <label class="catalog-table-list__label" for="Algeria">Алжир</label>
+              </li>
+              <li class="catalog-table-list__item">
+                <input class="catalog-table-list__checkbox" type="checkbox" id="Angola">
+                <label class="catalog-table-list__label" for="Angola">Ангола</label>
+              </li>
+              <li class="catalog-table-list__item">
+                <input class="catalog-table-list__checkbox" type="checkbox" id="Andorra">
+                <label class="catalog-table-list__label" for="Andorra">Андорра</label>
+              </li>
+              <li class="catalog-table-list__item">
+                <input class="catalog-table-list__checkbox" type="checkbox" id="Antigua-and-Barbuda">
+                <label class="catalog-table-list__label" for="Antigua-and-Barbuda">Антигуа и Барбуда</label>
+              </li>
+              <li class="catalog-table-list__item">
+                <input class="catalog-table-list__checkbox" type="checkbox" id="Argentina">
+                <label class="catalog-table-list__label" for="Argentina">Аргентина</label>
+              </li>
+              <li class="catalog-table-list__item">
+                <input class="catalog-table-list__checkbox" type="checkbox" id="Armenia">
+                <label class="catalog-table-list__label" for="Armenia">Армения</label>
+              </li>
+              <li class="catalog-table-list__item">
+                <input class="catalog-table-list__checkbox" type="checkbox" id="Afghanistan">
+                <label class="catalog-table-list__label" for="Afghanistan">Афганистан</label>
+              </li>
+            </ul>
+            <button class="companions-filter__modal-close">
+              <img class="companions-filter__modal-close-icon" src="images/catalog/close-filter.svg" width="16" height="16" alt="">
+              Свернуть
+            </button>
+          </div>
         </div>
-        <div class="companions-filter__wrapper">
-          <p class="companions-filter__wrapper-header ">Подберите идеального попутчика</p>
-          <section class="accordeon-list">
+        <section class="companions-filter__wrapper">
+          <p class="companions-filter__wrapper-header">Подберите идеального попутчика</p>
+          <div class="accordeon-list">
             <div class="accordeon-list__item">
-              <p class="accordeon-list__item-text">Хобби</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
+              <p class="accordeon-list__item-text">Хобби</p>
+              <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
             </div>
             <div class="accordeon-list__item">
-              <p class="accordeon-list__item-text">Музыка</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
-              <ul class="checkbox-list">
-                <li class="checkbox-list__item">
-                  <div class="checkbox-wrapper">
-                    <input type="checkbox" class="accordeon-checkbox" id="hard-rock" checked><div class="check-mark"></div>
-                  </div><label class="accordeon-checkbox-label" for="hard-rock">Тяжёлый рок</label>
-                </li>
-                <li class="checkbox-list__item">
-                  <div class="checkbox-wrapper">
-                    <input type="checkbox" class="accordeon-checkbox" id="russian-rap" checked><div class="check-mark"></div>
-                  </div><label class="accordeon-checkbox-label" for="russian-rap">Русский рэп</label>
-                </li>
-                <li class="checkbox-list__item">
-                  <div class="checkbox-wrapper">
-                    <input type="checkbox" class="accordeon-checkbox" id="eurodance"><div class="check-mark"></div>
-                  </div><label class="accordeon-checkbox-label" for="eurodance">Евроденс</label>
-                </li>
-              </ul>
+              <p class="accordeon-list__item-text">Музыка</p>
+              <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
+            </div>
+            <ul class="checkbox-list">
+              <li class="checkbox-list__item">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" class="accordeon-checkbox" id="hard-rock" checked>
+                  <span class="accordeon__check-mark"></span>
+                  <label class="accordeon-checkbox-label" for="hard-rock">Тяжёлый рок</label>
+                </div>
+              </li>
+              <li class="checkbox-list__item">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" class="accordeon-checkbox" id="russian-rap" checked>
+                  <span class="accordeon__check-mark"></span>
+                  <label class="accordeon-checkbox-label" for="russian-rap">Русский рэп</label>
+                </div>
+              </li>
+              <li class="checkbox-list__item">
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" class="accordeon-checkbox" id="eurodance">
+                  <span class="accordeon__check-mark"></span>
+                  <label class="accordeon-checkbox-label" for="eurodance">Евроденс</label>
+                </div>
+              </li>
+            </ul>
+            <div class="accordeon-list__item">
+              <p class="accordeon-list__item-text">Еда</p>
+              <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
             </div>
             <div class="accordeon-list__item">
-              <p class="accordeon-list__item-text">Еда</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
+              <p class="accordeon-list__item-text">Транспорт</p>
+              <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
             </div>
-            <div class="accordeon-list__item">
-              <p class="accordeon-list__item-text">Транспорт</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
-              <div class="activity-wrapper">
-                <label class="checkbox-label" for="airplane">
+            <div class="activity-wrapper">
+              <label class="checkbox-label" for="airplane">
+                <span class="activity-wrapper__icon-wrapper">
                   <input type="checkbox" class="activity-wrapper__checkbox" id="airplane">
                   <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
-                </label>
-                <label class="checkbox-label" for="bus">
+                </span>
+              </label>
+              <label class="checkbox-label" for="bus">
+                <span class="activity-wrapper__icon-wrapper">
                   <input type="checkbox" class="activity-wrapper__checkbox" id="bus">
                   <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/bus-active.svg" alt="Автобус">
-                </label>
-                <label class="checkbox-label" for="bicycle">
-                  <input type="checkbox" class="activity-wrapper__checkbox" id="bicycle">
-                  <img class="activity-wrapper__icon activity-wrapper__icon--choosen" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
-                </label>
-                <label class="checkbox-label" for="run">
+                </span>
+              </label>
+              <label class="checkbox-label" for="bicycle">
+                <span class="activity-wrapper__icon-wrapper">
+                  <input type="checkbox" class="activity-wrapper__checkbox" id="bicycle" checked>
+                  <img class="activity-wrapper__icon activity-wrapper__icon--choosen" width="21" height="21" src="images/catalog/bicycle-active.svg" alt="Велосипед">
+                </span>
+              </label>
+              <label class="checkbox-label" for="run">
+                <span class="activity-wrapper__icon-wrapper">
                   <input type="checkbox" class="activity-wrapper__checkbox" id="run">
                   <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/run-active.svg" alt="Бег">
-                </label>
-              </div>
+                </span>
+              </label>
             </div>
             <div class="accordeon-list__item">
-              <p class="accordeon-list__item-text">Левел</p><img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
+              <p class="accordeon-list__item-text">Левел</p>
+              <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
             </div>
             <div class="companions-level">
-              <input class="companions-level__input-left" type="text" value="30"><input class="companions-level__input-right" type="text" value="100">
+              <div class="companions-level__input-wrpper">
+                <input class="companions-level__input-left" type="text" value="30">
+                <input class="companions-level__input-right" type="text" value="100">
+              </div>
               <div class="range-wrapper">
                 <div class="range-wrapper__track">
                   <div class="range-wrapper__track-active"></div>
@@ -263,10 +334,10 @@
                 <input class="companions-range" type="range">
               </div>
             </div>
-          </section>
-        </div>
+            <button class="companions-filter__button">Показать</button>
+          </div>
+        </section>
       </form>
-      <button class="companions-filter__button">Показать</button>
     </section>
     <section class="companions-cards">
       <h2 class="visually-hidden">Попутчики</h2>
@@ -285,28 +356,42 @@
               </span>
             </div>
             <p class="person-card__hashtags">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</p>
-            <p class="wish-country">Хочет посетить :</p>
-            <ul class="catalog-country-list">
-              <li class="catalog-country-list__item">
-                <img src="images/catalog/cards/sri-lanka.png" width="35" height="24" alt="Шри-ланка">Шри-Ланка
-              </li>
-              <li class="catalog-country-list__item">
-                <img src="images/catalog/cards/thailand.png" width="35" height="24" alt="Тайланд">Тайланд
-              </li>
-              <li class="catalog-country-list__item">
-                <img src="images/catalog/cards/seychelles.png" width="35" height="24" alt="Сейшеллы">Сейшеллы
-              </li>
-            </ul>
-            <div class="transport-level-header-wrapper">
-              <p class="transport-level-header-wrapper__transport">транспорт :</p>
-              <p class="transport-level-header-wrapper__level">левел :</p>
+            <div class="person-card__country-wrapper">
+              <p class="wish-country">Хочет посетить :</p>
+              <ul class="wish-country-list">
+                <li class="wish-country-list__item">
+                  <img  class="wish-country-list__item-flag" src="images/catalog/cards/sri-lanka.png" width="35" height="24" alt="Шри-ланка">Шри-Ланка
+                </li>
+                <li class="wish-country-list__item">
+                  <img class="wish-country-list__item-flag" src="images/catalog/cards/thailand.png" width="35" height="24" alt="Тайланд">Тайланд
+                </li>
+                <li class="wish-country-list__item">
+                  <img class="wish-country-list__item-flag" src="images/catalog/cards/seychelles.png" width="35" height="24" alt="Сейшеллы">Сейшеллы
+                </li>
+              </ul>
             </div>
-            <div class="transport-level-wrapper">
-              <img class="transport-level-wrapper__airplane" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
-              <img class="transport-level-wrapper__bus transport-level-wrapper__bus--inactive" width="21" height="21" src="images/catalog/bus.svg" alt="Автобус">
-              <img class="transport-level-wrapper__bicycle transport-level-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
-              <img class="transport-level-wrapper__run transport-level-wrapper__run--inactive" width="21" height="21" src="images/catalog/run.svg" alt="Бег">
-              <img class="transport-level-wrapper__level" width="45" height="45" src="images/catalog/cards/99-level.svg" alt="Уровень">
+            <div class="transport-wrapper">
+              <p class="transport-wrapper__header">транспорт :</p>
+              <div class="transport-wrapper__icon-wrapper">
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
+                </span>
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon transport-wrapper__bus--inactive" width="21" height="21" src="images/catalog/bus.svg" alt="Автобус">
+                </span>
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon transport-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
+                </span>
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon transport-wrapper__run--inactive" width="21" height="21" src="images/catalog/run.svg" alt="Бег">
+                </span>
+              </div>
+            </div>
+            <div class="level-wrapper">
+              <p class="level-wrapper__header">левел :</p>
+              <div class="level-wrapper__level-image-wrapper">
+                <img class="level-wrapper__level-image" width="45" height="45" src="images/catalog/cards/99-level.svg" alt="Уровень">
+              </div>
             </div>
             <button class="person-card__button">Позвать!</button>
           </article>
@@ -326,25 +411,39 @@
               </span>
             </div>
             <p class="person-card__hashtags">#бургер #бар #футбол #концерт #крафт</p>
-            <p class="wish-country">Хочет посетить :</p>
-            <ul class="catalog-country-list">
-              <li class="catalog-country-list__item">
-                <img src="images/catalog/cards/belgium.png" width="35" height="24" alt="Бельгия">Бельгия
-              </li>
-              <li class="catalog-country-list__item">
-                <img src="images/catalog/cards/czech.png" width="35" height="24" alt="Чехия">Чехия
-              </li>
-            </ul>
-            <div class="transport-level-header-wrapper">
-              <p class="transport-level-header-wrapper__transport">транспорт :</p>
-              <p class="transport-level-header-wrapper__level">левел :</p>
+            <div class="person-card__country-wrapper">
+              <p class="wish-country">Хочет посетить :</p>
+              <ul class="wish-country-list">
+                <li class="wish-country-list__item">
+                  <img class="wish-country-list__item-flag" src="images/catalog/cards/belgium.png" width="35" height="24" alt="Бельгия">Бельгия
+                </li>
+                <li class="wish-country-list__item">
+                  <img class="wish-country-list__item-flag" src="images/catalog/cards/czech.png" width="35" height="24" alt="Чехия">Чехия
+                </li>
+              </ul>
             </div>
-            <div class="transport-level-wrapper">
-              <img class="transport-level-wrapper__airplane" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
-              <img class="transport-level-wrapper__bus" width="21" height="21" src="images/catalog/bus-active.svg" alt="Автобус">
-              <img class="transport-level-wrapper__bicycle transport-level-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
-              <img class="transport-level-wrapper__run" width="21" height="21" src="images/catalog/run-active.svg" alt="Бег">
-              <img class="transport-level-wrapper__level" width="45" height="45" src="images/catalog/cards/80-level.svg" alt="Уровень">
+            <div class="transport-wrapper">
+              <p class="transport-wrapper__header">транспорт :</p>
+              <div class="transport-wrapper__icon-wrapper">
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
+                </span>
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/bus-active.svg" alt="Автобус">
+                </span>
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon transport-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
+                </span>
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/run-active.svg" alt="Бег">
+                </span>
+              </div>
+            </div>
+            <div class="level-wrapper">
+              <p class="level-wrapper__header">левел :</p>
+              <div class="level-wrapper__level-image-wrapper">
+                <img class="level-wrapper__level-image" width="45" height="45" src="images/catalog/cards/80-level.svg" alt="Уровень">
+              </div>
             </div>
             <button class="person-card__button">Позвать!</button>
           </article>
@@ -364,28 +463,42 @@
               </span>
             </div>
             <p class="person-card__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
-            <p class="wish-country">Хочет посетить :</p>
-            <ul class="catalog-country-list">
-              <li class="catalog-country-list__item">
-                <img src="images/catalog/cards/usa.png" width="35" height="24" alt="США">США
-              </li>
-              <li class="catalog-country-list__item">
-                <img src="images/catalog/cards/australia.png" width="35" height="24" alt="Австралия">Австралия
-              </li>
-              <li class="catalog-country-list__item">
-                <img src="images/catalog/cards/dominicana.png" width="35" height="24" alt="Доминикана">Доминикана
-              </li>
-            </ul>
-            <div class="transport-level-header-wrapper">
-              <p class="transport-level-header-wrapper__transport">транспорт :</p>
-              <p class="transport-level-header-wrapper__level">левел :</p>
+            <div class="person-card__country-wrapper">
+              <p class="wish-country">Хочет посетить :</p>
+              <ul class="wish-country-list">
+                <li class="wish-country-list__item">
+                  <img class="wish-country-list__item-flag" src="images/catalog/cards/usa.png" width="35" height="24" alt="США">США
+                </li>
+                <li class="wish-country-list__item">
+                  <img class="wish-country-list__item-flag" src="images/catalog/cards/australia.png" width="35" height="24" alt="Австралия">Австралия
+                </li>
+                <li class="wish-country-list__item">
+                  <img class="wish-country-list__item-flag" src="images/catalog/cards/dominicana.png" width="35" height="24" alt="Доминикана">Доминикана
+                </li>
+              </ul>
             </div>
-            <div class="transport-level-wrapper">
-              <img class="transport-level-wrapper__airplane" width="21" height="21" src="images/catalog/cards/airplane.svg" alt="Самолёт">
-              <img class="transport-level-wrapper__bus transport-level-wrapper__bus--inactive" width="21" height="21" src="images/catalog/bus.svg" alt="Автобус">
-              <img class="transport-level-wrapper__bicycle" width="21" height="21" src="images/catalog/cards/bicycle-active.svg" alt="Велосипед">
-              <img class="transport-level-wrapper__run transport-level-wrapper__run--inactive" width="21" height="21" src="images/catalog/cards/run.svg" alt="Бег">
-              <img class="transport-level-wrapper__level" width="45" height="45" src="images/catalog/cards/25-level.svg" alt="Уровень">
+            <div class="transport-wrapper">
+              <p class="transport-wrapper__header">транспорт :</p>
+              <div class="transport-wrapper__icon-wrapper">
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/cards/airplane.svg" alt="Самолёт">
+                </span>
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon transport-wrapper__bus--inactive" width="21" height="21" src="images/catalog/bus.svg" alt="Автобус">
+                </span>
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/cards/bicycle-active.svg" alt="Велосипед">
+                </span>
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon transport-wrapper__run--inactive" width="21" height="21" src="images/catalog/cards/run.svg" alt="Бег">
+                </span>
+              </div>
+            </div>
+            <div class="level-wrapper">
+              <p class="level-wrapper__header">левел :</p>
+              <div class="level-wrapper__level-image-wrapper">
+                <img class="level-wrapper__level-image" width="45" height="45" src="images/catalog/cards/25-level.svg" alt="Уровень">
+              </div>
             </div>
             <button class="person-card__button">Позвать!</button>
           </article>
@@ -405,39 +518,64 @@
               </span>
             </div>
             <p class="person-card__hashtags">#образование #карьера #учеба #линкедин</p>
-            <p class="wish-country">Хочет посетить :</p>
-            <ul class="catalog-country-list">
-              <li class="catalog-country-list__item">
-                <img src="images/catalog/cards/uk.png" width="35" height="24" alt="Великобритания">Великобритания
-              </li>
-                <li class="catalog-country-list__item">
-                <img src="images/catalog/cards/germany.png" width="35" height="24" alt="Германия">Германия
-              </li>
-            </ul>
-            <div class="transport-level-header-wrapper">
-              <p class="transport-level-header-wrapper__transport">транспорт :</p>
-              <p class="transport-level-header-wrapper__level">левел :</p>
+            <div class="person-card__country-wrapper">
+              <p class="wish-country">Хочет посетить :</p>
+              <ul class="wish-country-list">
+                <li class="wish-country-list__item">
+                  <img class="wish-country-list__item-flag" src="images/catalog/cards/uk.png" width="35" height="24" alt="Великобритания">Великобритания
+                </li>
+                <li class="wish-country-list__item">
+                  <img class="wish-country-list__item-flag" src="images/catalog/cards/germany.png" width="35" height="24" alt="Германия">Германия
+                </li>
+              </ul>
             </div>
-            <div class="transport-level-wrapper">
-              <img class="transport-level-wrapper__airplane" width="21" height="21" src="images/catalog/cards/airplane.svg" alt="Самолёт">
-              <img class="transport-level-wrapper__bus" width="21" height="21" src="images/catalog/cards/bus-active.svg" alt="Автобус">
-              <img class="transport-level-wrapper__bicycle transport-level-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/cards/bicycle.svg" alt="Велосипед">
-              <img class="transport-level-wrapper__run transport-level-wrapper__run--inactive" width="21" height="21" src="images/catalog/cards/run.svg" alt="Бег">
-              <img class="transport-level-wrapper__level" width="45" height="45" src="images/catalog/cards/50-level.svg" alt="Уровень">
+            <div class="transport-wrapper">
+              <p class="transport-wrapper__header">транспорт :</p>
+              <div class="transport-wrapper__icon-wrapper">
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/cards/airplane.svg" alt="Самолёт">
+                </span>
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/cards/bus-active.svg" alt="Автобус">
+                </span>
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon transport-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/cards/bicycle.svg" alt="Велосипед">
+                </span>
+                <span class="transport-wrapper__icon-background">
+                  <img class="transport-wrapper__icon transport-wrapper__run--inactive" width="21" height="21" src="images/catalog/cards/run.svg" alt="Бег">
+                </span>
+              </div>
+            </div>
+            <div class="level-wrapper">
+              <p class="level-wrapper__header">левел :</p>
+              <div class="level-wrapper__level-image-wrapper">
+                <img class="level-wrapper__level-image" width="45" height="45" src="images/catalog/cards/50-level.svg" alt="Уровень">
+              </div>
             </div>
             <button class="person-card__button">Позвать!</button>
           </article>
         </li>
       </ul>
+      <a href="#" class="load-more">
+        <img class="load-more__icon" src="images/catalog/cards/plus-load.svg" width="18" height="18" alt="Загрузить ещё">
+        Показать ещё
+      </a>
+      <div class="two-button-navigation">
+        <a href="#" class="two-button-navigation__prev"><img src="images/catalog/cards/left-arrow.svg" width="13" height="20" alt="Назад"></a>
+        <a href="#" class="two-button-navigation__next"><img src="images/catalog/cards/right-arrow.svg" width="13" height="20" alt="Вперёд"></a>
+      </div>
     </section>
-    <div class="load-more">
-      <img class="load-more__icon" src="images/catalog/cards/plus-load.svg" width="18" height="18" alt="Загрузить ещё">
-      <a href="#" class="load-more__link">Показать ещё</a>
-    </div>
-    <div class="two-button-navigation">
-      <a href="#" class="two-button-navigation__prev"><img src="images/catalog/cards/left-arrow.svg" width="13" height="20" alt="Назад"></a>
-      <a href="#" class="two-button-navigation__next"><img src="images/catalog/cards/right-arrow.svg" width="13" height="20" alt="Вперёд"></a>
-    </div>
+    <section class="socials">
+      <h3 class="visually-hidden">Мы в соцсетях</h3>
+      <div class="socials__wrapper">
+      <img class="socials__logo" src="images/logo-social-mobile.svg" width="96" height="15" alt="Погнали?">
+      <div class="socials-icons">
+        <a href="#" class="socials-icons__link socials-icons__link--telegram"><img class="socials-icons__image" src="images/telegram.svg" width="20" height="18" alt="Телеграм"></a>
+        <a href="#" class="socials-icons__link socials-icons__link--vkontakte"><img class="socials-icons__image" src="images/vkontakte.svg" width="30" height="16" alt="Вконтакте"></a>
+        <a href="#" class="socials-icons__link socials-icons__link--youtube"><img class="socials-icons__image" src="images/youtube.svg" width="20" height="15" alt="Youtube"></a>
+      </div>
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
@@ -445,5 +583,6 @@
       <img class="main-footer__logo" src="images/footer-logo.svg" width="27" height="33" alt="Погнали?">
     </div>
   </footer>
+  <script src="catalog.js"></script>
 </body>
 </html>

@@ -1,0 +1,413 @@
+.companions-filter {
+  position: relative;
+  padding: 76px 25px 0;
+  background-color: #EDEFF6;
+  margin: 0;
+}
+
+.companions-filter__modal-wrapper {
+  position: absolute;
+  display: grid;
+  padding: 50px 25px 15px;
+  top: -30px;
+  left: 0;
+  background-color: #E2E5F2;
+  box-sizing: border-box;
+  width: 320px;
+  border-radius: 0 0 30px 30px;
+  z-index: 2;
+}
+
+.companions-header {
+  display: grid;
+  grid-template-columns: 27px 1fr 20px;
+  align-items: center;
+}
+
+.companions-header__header {
+  margin: 0;
+  color: #192144;
+  font-family: 'Blogger Sans';
+  font-style: normal;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+}
+
+.companions-header__icon {
+  cursor: pointer;
+}
+
+.companions-header__icon--close {
+  display: none;
+}
+
+// Модальное окно
+
+.companions-header-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 26px;
+}
+
+.companions-header-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.companions-header-list__checkbox {
+ display: none;
+}
+
+.companions-header-list__label {
+  display: block;
+  color: #1D2E5B;
+  font-family: 'Blogger Sans';
+  font-style: normal;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  opacity: 0.2;
+
+}
+
+.companions-header-list__checkbox:checked ~ .companions-header-list__label {
+  // background-color: #FFD74B;
+  color: #1D2E5B;
+  opacity: 1;
+}
+
+// Таблица
+
+.catalog-country-list__table {
+  border: 1px solid #CBCED9;
+  border-collapse: collapse;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.catalog-country-list__table-cell {
+  border: 1px solid #CBCED9;
+  width: 43px;
+  height: 41px;
+}
+
+.catalog-country-list__checkbox,
+.catalog-table-list__checkbox {
+  display: none;
+}
+
+.catalog-country-list__label {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: 'Blogger Sans';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1D2E5B;
+  text-transform: uppercase;
+}
+
+.catalog-country-list__checkbox:checked ~ .catalog-country-list__label {
+  background-color: #1D2E5B;
+  color: #FFFFFF;
+}
+
+.catalog-table-list {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 20px 0;
+  // background-color: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 0 0 4px 4px;
+  // border: 1px solid #CBCED9;
+  border-top: none;
+}
+
+.catalog-table-list__label {
+  display: block;
+  font-family: 'Blogger Sans';
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #444444;
+}
+
+.catalog-table-list__checkbox:checked ~ .catalog-table-list__label {
+  background-color: #FFD74B;
+}
+
+.companions-filter__modal-close {
+  display: flex;
+  width: 270px;
+  height: 40px;
+  margin: 28px auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #D6DAED;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  color: #1D2E5B;
+  font-family: 'Blogger Sans';
+  font-style: normal;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+}
+
+.companions-filter__modal-close-icon {
+  margin-right: 15px;
+}
+
+// .companions-filter__modal-wrapper--active {
+//   border-radius: 0 0 30px 30px;
+// }
+
+// Жёлтый раздел фильтрации попутчиков
+
+.companions-filter__wrapper {
+  display: grid;
+  padding: 26px 25px 22px;
+  background-color: #FFD74B;
+  border-radius: 20px;
+  color: #1D2E5B;
+  font-family: 'Blogger Sans';
+  font-style: normal;
+  text-align: left;
+}
+
+.companions-filter__wrapper-header {
+  margin: 0;
+  width: 100px;
+  margin-bottom: 23px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
+
+.accordeon-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #F3C72B;
+  min-height: 40px;
+}
+
+.accordeon-list__item-text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+.checkbox-list {
+  list-style-type: none;
+  margin: 0 0 21px;
+  padding: 0;
+}
+
+.checkbox-list__item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 20px;
+}
+
+.checkbox-list__item:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.checkbox-list__item::before {
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.accordeon-checkbox {
+  position: absolute;
+  bottom: 0;
+  width: 19px;
+  height: 19px;
+  border-radius: 4px;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.accordeon-checkbox-label {
+  margin-left: 27px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.accordeon__check-mark {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  top: 0;
+}
+
+.accordeon-checkbox:checked ~ .accordeon__check-mark::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background: url('../images/check-mark.svg') no-repeat;
+}
+
+// Выбор активности попутчика
+
+.activity-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.activity-wrapper__icon-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.activity-wrapper__checkbox {
+  display: none;
+}
+
+.activity-wrapper__checkbox:checked ~ .activity-wrapper__icon {
+ opacity: 0.2;
+}
+
+.companions-level__input-wrpper {
+  position: relative;
+  display: flex;
+}
+
+.companions-level__input-left,
+.companions-level__input-right {
+  display: block;
+  width: 110px;
+  height: 34px;
+  box-sizing: border-box;
+  border: 1px solid #CBCED9;
+  border-collapse: collapse;
+  font-family: 'Blogger Sans';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0.07em;
+  text-align: center;
+  color: #1D2E5B;
+}
+
+.companions-level__input-left {
+  border-radius: 4px 0 0 4px;
+}
+
+.companions-level__input-right {
+  border-radius: 0 4px 4px 0;
+  border-left: none;
+}
+
+.companions-level__input-wrpper::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 16px;
+  height: 1px;
+  background-color: #CBCED9;
+  z-index: 1;
+}
+
+.companions-level__input-wrpper::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 4px;
+  height: 10px;
+  background-color: #FFFFFF;
+}
+
+.companions-range {
+  display: none;
+}
+
+.range-wrapper {
+  margin: 20px 0;
+}
+
+.range-wrapper__track {
+  position: relative;
+  width: 220px;
+  height: 2px;
+  background: hsla(224, 52%, 24%, 0.2);
+}
+
+.range-wrapper__track-active {
+  width: 154px;
+  height: 2px;
+  background-color: #1D2E5B;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.companions-filter__button {
+  width: 100%;
+  min-height: 41px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  font-family: 'Blogger Sans';
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1D2E5B;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 22px;
+}
+

@@ -1,15 +1,17 @@
 .main-header--secondary {
   border-radius: 0 0 30px 30px;
+  z-index: 3;
 }
 
 .main-header__bottom {
   position: relative;
-  padding: 22px 0 12px 25px;
+  padding: 4px 0 30px 25px;
   background-color: #161C35;
   border-radius: 0 0 30px 30px;
 }
 
 .main-header__bottom-name {
+  display: inline-block;
   margin: 0;
   font-family:'Blogger Sans';
   font-size: 36px;
@@ -19,6 +21,18 @@
   letter-spacing: 0em;
   text-align: left;
   color: #FFFFFF;
+}
+
+.main-header__bottom-name::after {
+content: '';
+width: 55%;
+height: 5px;
+background-color: #FF8D30;
+border-radius: 2px;
+display: block;
+position: absolute;
+bottom: 0;
+transform: translateY(50%);
 }
 
 .main-header__border {
