@@ -1,6 +1,6 @@
 .add-new-plan {
   padding: 30px 25px 73px;
-  background-color: #D4D9EB;
+  background-color: @deep-gray-background;
   border-radius: 30px 30px 0 0;
   margin-bottom: -30px;
 }
@@ -15,7 +15,7 @@
 .plans-header-spot {
   width: 5px;
   height: 5px;
-  background-color: #1D2E5B;
+  background-color: @base-text-color;
   border-radius: 50%;
   opacity: 0.3;
 }
@@ -38,7 +38,7 @@
 
 .new-plan-list__item {
   padding: 24px 25px;
-  background-color: #FFFFFF;
+  background-color: @base-light;
   border-radius: 10px;
 }
 
@@ -48,24 +48,24 @@
 
 .new-plan-list__item-header {
   margin: 0;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   font-style: normal;
   line-height: 20px;
-  letter-spacing: 0em;
-  color: #1D2E5B;
+  letter-spacing: 0;
+  color: @base-text-color;
 }
 
 .new-plan-list__item-text {
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 22px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  color: #444444;
+  color: @base-grey;
 }
 
 .companions-persons {
@@ -76,7 +76,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -84,7 +84,7 @@
   letter-spacing: 0.09em;
   text-align: left;
   text-transform: uppercase;
-  color: #1D2E5B;
+  color: @base-text-color;
 }
 
 .companions-persons__label-text {
@@ -99,14 +99,16 @@
   height: 43px;
   border-radius: 4px;
   text-align: center;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 14px;
-  letter-spacing: 0em;
-  color: #1D2E5B;
-  border: 1px solid #CBCED9;
+  letter-spacing: 0;
+  color: @base-text-color;
+  border: 1px solid @border-gray;
   outline: none;
+  /* stylelint-disable-next-line */
+  -moz-appearance: textfield;
 }
 
 .companions-persons__checkbox-wrapper {
@@ -117,11 +119,11 @@
 
 .companions-persons__checkbox-wrapper::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 26px;
   height: 26px;
   border-radius: 4px;
-  border: 1px solid #CBCED9;
+  border: 1px solid @border-gray;
 }
 
 .with-children {
@@ -134,13 +136,13 @@
 
 .with-children-label {
   margin-left: 16px;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
   font-style: normal;
   line-height: 15px;
-  letter-spacing: 0em;
-  color: #1D2E5B;
+  letter-spacing: 0;
+  color: @base-text-color;
 }
 
 .companions-persons__check-mark {
@@ -153,14 +155,14 @@
 }
 
 .with-children:checked ~ .companions-persons__check-mark::before {
-  content: '';
+  content: "";
   width: 8px;
   height: 8px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  background: url('../images/check-mark.svg') no-repeat;
+  background: url("../images/check-mark.svg") no-repeat;
 }
 
 .companions-persons__wrapper-input {
@@ -186,15 +188,11 @@
   right: 14px;
 }
 
-.input-persons,
-.input-duration {
-  -moz-appearance: textfield;
-}
-
 .input-persons::-webkit-inner-spin-button,
 .input-persons::-webkit-outer-spin-button,
 .input-duration::-webkit-inner-spin-button,
 .input-duration::-webkit-outer-spin-button {
+  /* stylelint-disable-next-line */
   -webkit-appearance: none;
 }
 
@@ -206,22 +204,22 @@
   margin: 25px auto 22px;
   width: 221px;
   min-height: 42px;
-  border-top: 1px solid #D6D9E6;
-  border-bottom: 1px solid #D6D9E6;
+  border-top: 1px solid @secondary-border-gray;
+  border-bottom: 1px solid @secondary-border-gray;
 }
 
 .calendar-header__text {
   display: block;
   align-self: center;
   margin: 0;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   font-style: normal;
   line-height: 20px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
-  color: #1D2E5B;
+  color: @base-text-color;
 }
 
 .calendar-header__button {
@@ -257,33 +255,33 @@
 .arrival-date__table-header-day--weekend {
   display: block;
   margin: 0;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
   line-height: 18px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
 }
 
 .arrival-date__table-header-day {
-  color: #444444;
+  color: @base-grey;
 }
 
 .arrival-date__table-header-day--weekend {
-  color: #FF5C23;
+  color: @bright-orange;
 }
 
 // Календарь
 
 .arrival-date__calendar {
-  border: 1px solid #D6D9E6;
+  border: 1px solid @secondary-border-gray;
   border-collapse: collapse;
   min-width: 221px;
   min-height: 187px;
 }
 
 .arrival-date__calendar-cell {
-  border: 1px solid #D6D9E6;
+  border: 1px solid @secondary-border-gray;
   width: 31px;
   height: 31px;
   box-sizing: border-box;
@@ -298,50 +296,50 @@
   padding: auto;
   width: 100%;
   height: 100%;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
   line-height: 18px;
-  letter-spacing: 0em;
-  color: #444444;
+  letter-spacing: 0;
+  color: @base-grey;
   text-align: center;
   opacity: 0.3;
   align-items: center;
 }
 
 .cell-decoration__label--future {
-  color: #1D2E5B;
+  color: @base-text-color;
   opacity: 1;
 }
 
 .cell-decoration__checkbox:checked ~ .cell-decoration__label {
-  background-color: #1D2E5B;
-  color: #FFFFFF;
+  background-color: @base-text-color;
+  color: @base-light;
   opacity: 1;
 }
 
 .cell-decoration--current {
-  border: 2px solid #FF5C23;
+  border: 2px solid @bright-orange;
 }
 
 .cell-decoration--future {
-  background-color: #CBCED9;
+  background-color: @border-gray;
 }
 
 .new-plan-next-button {
   min-width: 221px;
   min-height: 40px;
-  background-color: #FFD74B;
-  font-family: 'Blogger Sans';
+  background-color: @base-yellow;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
   line-height: 30px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #1D2E5B;
+  color: @base-text-color;
   border-radius: 20px;
   border: none;
   outline: none;
@@ -364,16 +362,16 @@
 
 .choosen-country__select {
   width: 168px;
-  background-color: #FFFFFF;
-  border: 1px solid #CBCED9;
+  background-color: @base-light;
+  border: 1px solid @border-gray;
   border-radius: 4px;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
   line-height: 18px;
   letter-spacing: 0.09em;
-  color: #1D2E5B;
+  color: @base-text-color;
   outline: none;
   text-transform: uppercase;
   padding: 11px 10px;
@@ -387,7 +385,7 @@
   height: 42px;
   align-items: center;
   justify-items: center;
-  border: 1px solid #CBCED9;
+  border: 1px solid @border-gray;
   border-radius: 4px;
   box-sizing: border-box;
 }
@@ -415,15 +413,15 @@
   height: 42px;
   border: none;
   border-radius: 4px;
-  background-color: #EDEFF6;
+  background-color: @light-background;
   padding: 12px 11px;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
   line-height: 18px;
   letter-spacing: 0.09em;
-  color: #1D2E5B;
+  color: @base-text-color;
   outline: none;
   text-transform: uppercase;
   text-align: left;
@@ -441,7 +439,7 @@
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
 
@@ -475,15 +473,15 @@
   min-width: 221px;
   min-height: 40px;
   background: transparent;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
   line-height: 30px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   text-transform: uppercase;
-  color: #1D2E5B;
+  color: @base-text-color;
   border-radius: 20px;
   border: none;
   outline: none;
@@ -507,7 +505,7 @@
   align-items: center;
   width: 100%;
   height: 42px;
-  background-color: #1D2E5B;
+  background-color: @base-text-color;
   padding: 14px 17px;
   box-sizing: border-box;
   border-radius: 4px 4px 0 0;
@@ -516,14 +514,14 @@
 .country-list__header-text {
   display: block;
   margin: 0;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
   line-height: 18px;
   letter-spacing: 0.02em;
   text-align: left;
-  color: #FFFFFF;
+  color: @base-light;
   text-transform: uppercase;
 }
 
@@ -534,13 +532,13 @@
 // Таблица
 
 .country-list__table {
-  border: 1px solid #CBCED9;
+  border: 1px solid @border-gray;
   border-collapse: collapse;
-  background-color: #FFFFFF;
+  background-color: @base-light;
 }
 
 .country-list__table-cell {
-  border: 1px solid #CBCED9;
+  border: 1px solid @border-gray;
   width: 43px;
   height: 41px;
 }
@@ -555,18 +553,18 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
-  color: #1D2E5B;
+  color: @base-text-color;
   text-transform: uppercase;
 }
 
 .country-list__checkbox:checked ~ .country-list__label {
-  background-color: #EDEFF6;
+  background-color: @light-background;
 }
 
 .table-list {
@@ -574,27 +572,27 @@
   list-style-type: none;
   margin: 0;
   padding: 20px;
-  background-color: #FFFFFF;
+  background-color: @base-light;
   box-sizing: border-box;
   border-radius: 0 0 4px 4px;
-  border: 1px solid #CBCED9;
+  border: 1px solid @border-gray;
   border-top: none;
 }
 
 .table-list__label {
   display: block;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 22px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  color: #444444;
+  color: @base-grey;
 }
 
 .table-list__checkbox:checked ~ .table-list__label {
-  background-color: #FFD74B;
+  background-color: @base-yellow;
 }
 
 // Шаг третий
@@ -620,7 +618,7 @@
   min-height: 283px;
   grid-column: 1/2;
   grid-row: 1/4;
-  border: 2px solid #1D2E5B;
+  border: 2px solid @base-text-color;
   border-right: none;
 }
 
@@ -651,14 +649,14 @@
   top: -50%;
   transform: translateY(-50%);
   white-space: nowrap;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
   line-height: 18px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  color: #1D2E5B;
+  color: @base-text-color;
 }
 
 .first-country__flag-wrapper {
@@ -677,35 +675,32 @@
 .about-my-plans {
   grid-column: 2/4;
   grid-row: 2/3;
-}
-
-.about-my-plans {
   width: 220px;
   height: 220px;
-  border: 1px solid #CBCED9;
+  border: 1px solid @border-gray;
   border-radius: 4px;
   padding: 12px 14px;
   box-sizing: border-box;
   outline: none;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 22px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  color: #444444;
+  color: @base-grey;
 }
 
 .about-my-plans::placeholder {
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 22px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  color: #444444;
+  color: @base-grey;
   opacity: 0.3;
 }
 
@@ -731,14 +726,14 @@
   top: 0;
   transform: translateY(-50%);
   white-space: nowrap;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
   line-height: 18px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  color: #1D2E5B;
+  color: @base-text-color;
 }
 
 .second-country__flag-wrapper {
@@ -756,25 +751,21 @@
 
 .about-my-hobbies {
   grid-column: 1/3;
-  // grid-row: 2/3;
-}
-
-.about-my-hobbies {
   width: 220px;
   height: 220px;
-  border: 1px solid #CBCED9;
+  border: 1px solid @border-gray;
   border-radius: 4px;
   padding: 12px 14px;
   box-sizing: border-box;
   outline: none;
-  font-family: 'Blogger Sans';
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
   line-height: 22px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  color: #444444;
+  color: @base-grey;
 }
 
 .new-plan-send-button {
