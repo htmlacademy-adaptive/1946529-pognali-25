@@ -1,0 +1,23 @@
+.two-button-navigation {
+  display: flex;
+  margin: 0 auto;
+}
+
+.two-button-navigation__prev,
+.two-button-navigation__next {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: @base-light;
+  width: 135px;
+  height: 51px;
+}
+
+.two-button-navigation__prev {
+  border-radius: 20px 0 0 20px;
+}
+
+.two-button-navigation__next {
+  border-radius: 0 20px 20px 0;
+  border-left: 1px solid @light-background;
+}

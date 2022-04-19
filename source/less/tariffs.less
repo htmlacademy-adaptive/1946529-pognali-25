@@ -1,0 +1,106 @@
+/* Тарифы */
+
+.tariffs {
+  position: relative;
+  background: @single-grey;
+  padding: 40px 25px 40px 49px;
+  border-radius: 0 0 20px 20px;
+}
+
+.tariffs__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 31px;
+}
+
+.tariffs__wrapper {
+  width: 246px;
+}
+
+.tariffs__header-text {
+  margin: 0;
+  font-family: @base-font-serif;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: @base-orange;
+}
+
+.tariffs__price {
+  display: grid;
+  grid-template-columns: 1fr 44px;
+  grid-auto-rows: minmax(65px, auto);
+}
+
+.tariffs__price-text,
+.tariffs__price-value {
+  display: block;
+}
+
+.tariffs__price-text {
+  width: 200px;
+  height: 65px;
+  border-top: 1px solid @secondary-border;
+  margin: 0;
+  font-family: @base-font-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
+  color: @base-grey;
+  align-self: center;
+  padding: 13px 0 10px;
+  box-sizing: border-box;
+}
+
+.tariffs__price-text--bottom-line {
+  border-bottom: 1px solid @secondary-border;
+}
+
+.tariffs__price-value {
+  margin: 0;
+  font-family: @base-font-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: @base-light;
+  background-color: @base-orange;
+  padding: 9px;
+  justify-self: end;
+  text-align: center;
+  border-radius: 17px;
+  box-sizing: border-box;
+  width: 34px;
+  height: 34px;
+}
+
+.tariffs__price-value--second {
+  background-color: @yellow-orange;
+}
+
+.tariffs__price-value--third {
+  background-color: @base-yellow;
+}
+
+.tariffs__show-link {
+  display: block;
+  margin-top: 31px;
+  font-family: @base-font-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: left;
+  color: @dark-link;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

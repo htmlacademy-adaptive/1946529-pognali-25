@@ -1,0 +1,104 @@
+.first-country {
+  margin-left: -15px;
+  align-items: start;
+  width: 235px;
+  display: grid;
+  grid-template-columns: 15px 1fr 40px;
+  grid-auto-rows: minmax(24px, auto);
+}
+
+.first-country__name,
+.first-country__flag {
+  display: block;
+}
+
+.first-country__border {
+  position: relative;
+  min-height: 283px;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  border: 2px solid @base-text-color;
+  border-right: none;
+}
+
+.first-country__border-circle-top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, calc(-50% - 1px));
+}
+
+.first-country__border-circle-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(50%, calc(50% + 1px));
+}
+
+.first-country__name-wrapper {
+  position: relative;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.first-country__name {
+  position: absolute;
+  margin: 0;
+  left: 8px;
+  top: -50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-family: @base-font-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+  color: @base-text-color;
+}
+
+.first-country__flag-wrapper {
+  position: relative;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.first-country__flag {
+  position: absolute;
+  right: 0;
+  top: -50%;
+  transform: translateY(-50%);
+}
+
+.first-country__about-my-plans {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  width: 220px;
+  height: 220px;
+  border: 1px solid @border-gray;
+  border-radius: 4px;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: @base-font-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  color: @base-grey;
+}
+
+.first-country__about-my-plans::placeholder {
+  font-family: @base-font-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  color: @base-grey;
+  opacity: 0.3;
+}

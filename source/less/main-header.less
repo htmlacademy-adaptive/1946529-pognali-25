@@ -1,0 +1,85 @@
+.main-header {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  background: url("../images/first-screen-bg-mobile.png");
+}
+
+.main-header__top {
+  height: 73px;
+  padding-top: 27px;
+  background-color: @secondary-text-dark;
+  box-sizing: border-box;
+}
+
+.burger-menu-active {
+  background-color: @base-light;
+}
+
+.main-header__burger-menu {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__top-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 270px;
+  min-height: 15px;
+}
+
+// Для второстепенных страниц
+
+.main-header--secondary {
+  border-radius: 0 0 30px 30px;
+  z-index: 3;
+}
+
+.main-header__bottom {
+  position: relative;
+  padding: 4px 0 30px 25px;
+  background-color: @secondary-text-dark;
+  border-radius: 0 0 30px 30px;
+}
+
+.main-header__bottom-name {
+  display: inline-block;
+  margin: 0;
+  font-family: @base-font-serif;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 36px;
+  letter-spacing: 0;
+  text-align: left;
+  color: @base-light;
+}
+
+.main-header__bottom-name::after {
+  content: "";
+  width: 55%;
+  height: 5px;
+  background-color: @base-orange;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.main-header__border {
+  position: absolute;
+  width: 214px;
+  height: 5px;
+  border-radius: 2.5px;
+  bottom: 0;
+  left: 25px;
+  transform: translateY(50%);
+  background-color: @base-orange;
+}

@@ -1,0 +1,26 @@
+// Выбор активности попутчика
+
+.activity-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.activity-wrapper__icon-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  box-sizing: border-box;
+  background-color: @base-light;
+  border-radius: 50%;
+}
+
+.activity-wrapper__checkbox {
+  display: none;
+}
+
+.activity-wrapper__checkbox:checked ~ .activity-wrapper__icon {
+  opacity: 0.2;
+}

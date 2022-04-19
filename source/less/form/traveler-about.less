@@ -1,0 +1,121 @@
+.traveler-about {
+  display: grid;
+  grid-template-columns: 1fr 35px 1fr;
+  padding: 50px 25px 64px;
+  margin: -30px 0 -30px;
+  background-color: @light-background;
+  width: 270px;
+}
+
+.traveler-about__level,
+.traveler-about__avatar {
+  display: block;
+}
+
+.traveler-about__level {
+  justify-self: end;
+}
+
+.traveler-about__button,
+.traveler-about__tags,
+.traveler-about__transport {
+  grid-column: 1/4;
+}
+
+.traveler-about__avatar {
+  grid-column: 3/4;
+}
+
+.traveler-about__button {
+  margin: 17px 0 25px;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: @middle-gray-background;
+  font-family: @base-font-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
+  color: @secondary-text-dark;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  // grid-column: 2/3;
+  // grid-row: 1/3;
+}
+
+.traveler-about__tags {
+  position: relative;
+  border: 1px solid @border-gray;
+  border-radius: 10px;
+  width: 100%;
+  height: 89px;
+  padding: 27px;
+  box-sizing: border-box;
+}
+
+.traveler-about__tags-text {
+  margin: 0;
+  font-family: @base-font-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+  color: @base-grey;
+  opacity: 0.6;
+}
+
+.traveler-about__block-header {
+  margin: 0;
+  width: 74px;
+  text-align: center;
+  background-color: @light-background;
+  position: absolute;
+  display: block;
+  font-family: @base-font-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: @base-text-color;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -60%);
+}
+
+.traveler-about__transport-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  position: relative;
+  border: 1px solid @border-gray;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 63px;
+  padding: 16px 71px;
+  box-sizing: border-box;
+}
+
+.traveler-about__block-header--transport {
+  width: 110px;
+}
+
+.traveler-about__icon-wrapper {
+  display: grid;
+  background-color: @base-light;
+  border-radius: 16px;
+  width: 32px;
+  height: 32px;
+}
+
+.traveler-about__icon {
+  justify-self: center;
+  align-self: center;
+}

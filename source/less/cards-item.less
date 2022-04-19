@@ -1,0 +1,75 @@
+.cards-item {
+  position: relative;
+  min-height: 431px;
+  margin-bottom: 9px;
+}
+
+.cards-item__image {
+  display: block;
+}
+
+.cards-item__flag-wrapper,
+.cards-item__level-image {
+  position: absolute;
+}
+
+.cards-item__level-image {
+  left: 17px;
+  top: 17px;
+}
+
+.cards-item__flag-wrapper {
+  display: flex;
+  min-width: 90px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.cards-item__flag:not(:last-child) {
+  margin-right: 20px;
+}
+
+.cards-item__about-person {
+  display: grid;
+  position: absolute;
+  padding: 27px 41px 22px;
+  background-color: @base-light;
+  border-radius: 0 0 10px 10px;
+}
+
+.cards-item__is-online {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  min-width: 150px;
+}
+
+.cards-item__name-text {
+  margin: 0 0 0 10px;
+  font-family: @base-font-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0;
+  color: @base-text-color;
+}
+
+.cards-item__hashtag-text {
+  font-family: @base-font-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0;
+  color: @base-grey;
+  text-align: center;
+}
+
+.cards-item__activity-wraper {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+  justify-self: center;
+}

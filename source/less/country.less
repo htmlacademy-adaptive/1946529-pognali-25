@@ -1,0 +1,80 @@
+
+.country {
+  height: 188px;
+  position: relative;
+  margin-bottom: 11px;
+}
+
+.country__flag {
+  position: absolute;
+  left: 25px;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.country__information-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 222px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.country__information-counter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+}
+
+.country__information-name,
+.country__information-counter,
+.country__slogan {
+  margin: 0;
+}
+
+.country__information {
+  position: absolute;
+  bottom: 0;
+  background-color: @base-light;
+  padding: 25px 24px;
+  border-radius: 10px;
+}
+
+.country__information-name {
+  font-family: @base-font-serif;
+  font-size: 21px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: 0;
+  text-align: left;
+  color: @black;
+}
+
+.country__information-counter {
+  font-family: @base-font-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+  color: hsla(228, 41%, 15%, 0.3);
+}
+
+.country__information-person-icon {
+  margin-right: 7px;
+}
+
+.country__slogan {
+  grid-column: 1/3;
+  font-family: @base-font-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: left;
+  color: hsla(0, 0%, 27%, 0.3);
+}

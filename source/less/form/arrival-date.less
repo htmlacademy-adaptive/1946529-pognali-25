@@ -1,0 +1,90 @@
+// Заголовок календаря
+
+.arrival-date__header {
+  display: grid;
+  position: relative;
+  margin: 25px auto 22px;
+  width: 221px;
+  min-height: 42px;
+  border-top: 1px solid @secondary-border-gray;
+  border-bottom: 1px solid @secondary-border-gray;
+}
+
+.arrival-date__header-text {
+  display: block;
+  align-self: center;
+  margin: 0;
+  font-family: @base-font-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: center;
+  color: @base-text-color;
+}
+
+.arrival-date__header-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.arrival-date__header-button--prev {
+  left: 0;
+}
+
+.arrival-date__header-button--next {
+  right: 0;
+}
+
+// Таблица, календарь
+
+.arrival-date__table-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 221px;
+  height: 31px;
+  justify-items: center;
+  align-items: center;
+}
+
+.arrival-date__table-header-day,
+.arrival-date__table-header-day--weekend {
+  display: block;
+  margin: 0;
+  font-family: @base-font-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 0;
+}
+
+.arrival-date__table-header-day {
+  color: @base-grey;
+}
+
+.arrival-date__table-header-day--weekend {
+  color: @bright-orange;
+}
+
+// Календарь
+
+.arrival-date__calendar {
+  border: 1px solid @secondary-border-gray;
+  border-collapse: collapse;
+  min-width: 221px;
+  min-height: 187px;
+}
+
+.arrival-date__calendar-cell {
+  border: 1px solid @secondary-border-gray;
+  width: 31px;
+  height: 31px;
+  box-sizing: border-box;
+}
