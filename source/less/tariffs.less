@@ -7,7 +7,7 @@
   border-radius: 0 0 20px 20px;
 }
 
-.tariffs-header {
+.tariffs__header {
   display: flex;
   align-items: center;
   margin-bottom: 31px;
@@ -17,9 +17,9 @@
   width: 246px;
 }
 
-.tariffs-header__text {
+.tariffs__header-text {
   margin: 0;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: @base-font-serif;
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
@@ -29,23 +29,23 @@
   color: @base-orange;
 }
 
-.tariffs-price {
+.tariffs__price {
   display: grid;
   grid-template-columns: 1fr 44px;
   grid-auto-rows: minmax(65px, auto);
 }
 
-.tariffs-price__text,
-.tariffs-price__value {
+.tariffs__price-text,
+.tariffs__price-value {
   display: block;
 }
 
-.tariffs-price__text {
+.tariffs__price-text {
   width: 200px;
   height: 65px;
   border-top: 1px solid @secondary-border;
   margin: 0;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: @base-font-serif;
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
@@ -58,13 +58,13 @@
   box-sizing: border-box;
 }
 
-.tariffs-price__text--bottom-line {
+.tariffs__price-text--bottom-line {
   border-bottom: 1px solid @secondary-border;
 }
 
-.tariffs-price__value {
+.tariffs__price-value {
   margin: 0;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: @base-font-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -80,16 +80,18 @@
   height: 34px;
 }
 
-.tariffs-price__value--second {
+.tariffs__price-value--second {
   background-color: @yellow-orange;
 }
 
-.tariffs-price__value--third {
+.tariffs__price-value--third {
   background-color: @base-yellow;
 }
 
-.show-all-link {
-  font-family: "Blogger Sans", sans-serif;
+.tariffs__show-link {
+  display: block;
+  margin-top: 31px;
+  font-family: @base-font-serif;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -97,88 +99,6 @@
   letter-spacing: 0;
   text-align: left;
   color: @dark-link;
-  background: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.tariffs__show-link {
-  display: block;
-  margin-top: 31px;
-}
-
-//Тарифы, мобальное окно
-
-.section-header--tariffs-modal {
-  text-align: center;
-}
-
-.tariffs-modal {
-  padding: 34px 25px 93px;
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: @base-light;
-  border-radius: 20px;
-  width: 270px;
-  height: 443px;
-  box-sizing: border-box;
-  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
-}
-
-.tariffs-modal__wrapper {
-  display: grid;
-  align-items: center;
-}
-
-.tariffs-modal__text {
-  display: block;
-  width: 220px;
-  min-height: 65px;
-  border-top: 1px solid @secondary-border;
-  margin: 0;
-  font-family: "Blogger Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 22px;
-  letter-spacing: 0;
-  text-align: left;
-  color: @base-grey;
-  align-self: center;
-  padding: 12px 50px 12px 0;
-  box-sizing: border-box;
-}
-
-.tariffs-modal__text--bottom-line {
-  border-bottom: 1px solid @secondary-border;
-}
-
-.tariffs-modal__close {
-  display: grid;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 59px;
-  border-radius: 0 0 20px 20px;
-  background-color: @close-modal-button;
-  text-align: center;
-  align-items: center;
-}
-
-.tariffs-modal__close-link {
-  font-family: "Blogger Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 24px;
-  letter-spacing: 0;
-  text-align: center;
-  color: @base-text-color;
-  text-transform: uppercase;
   background: transparent;
   border: none;
   outline: none;

@@ -1,0 +1,127 @@
+.companions-persons {
+  margin-top: 20px;
+}
+
+.companions-persons__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: @base-font-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-align: left;
+  text-transform: uppercase;
+  color: @base-text-color;
+}
+
+.companions-persons__label-text {
+  margin: 0;
+  opacity: 0.3;
+}
+
+.companions-persons__input-persons,
+.companions-persons__input-duration {
+  margin: 8px auto 20px;
+  width: 220px;
+  height: 43px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: @base-font-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0;
+  color: @base-text-color;
+  border: 1px solid @border-gray;
+  outline: none;
+  /* stylelint-disable-next-line */
+  -moz-appearance: textfield;
+}
+
+.companions-persons__checkbox-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.companions-persons__checkbox-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  border: 1px solid @border-gray;
+}
+
+.companions-persons__with-children {
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.companions-persons__with-children-label {
+  margin-left: 16px;
+  font-family: @base-font-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 15px;
+  letter-spacing: 0;
+  color: @base-text-color;
+}
+
+.companions-persons__check-mark {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 0;
+  top: 0;
+  background: transparent;
+}
+
+.companions-persons__with-children:checked ~ .companions-persons__check-mark::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background: url("../images/check-mark.svg") no-repeat;
+}
+
+.companions-persons__wrapper-input {
+  position: relative;
+}
+
+.companions-persons__control-element {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 5px;
+  width: 14px;
+  height: 14px;
+}
+
+.companions-persons__control-element--minus {
+  left: 14px;
+}
+
+.companions-persons__control-element--plus {
+  right: 14px;
+}
+
+.companions-persons__input-persons::-webkit-inner-spin-button,
+.companions-persons__input-persons::-webkit-outer-spin-button,
+.companions-persons__input-duration::-webkit-inner-spin-button,
+.companions-persons__input-duration::-webkit-outer-spin-button {
+  /* stylelint-disable-next-line */
+  -webkit-appearance: none;
+}

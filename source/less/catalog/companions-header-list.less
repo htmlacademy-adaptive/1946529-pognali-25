@@ -1,0 +1,34 @@
+// Модальное окно
+
+.companions-header-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 26px;
+}
+
+.companions-header-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.companions-header-list__checkbox {
+  display: none;
+}
+
+.companions-header-list__label {
+  display: block;
+  color: @base-text-color;
+  font-family: @base-font-serif;
+  font-style: normal;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  opacity: 0.2;
+}
+
+.companions-header-list__checkbox:checked ~ .companions-header-list__label {
+  color: @base-text-color;
+  opacity: 1;
+}

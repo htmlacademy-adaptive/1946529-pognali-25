@@ -1,0 +1,39 @@
+// Таблица
+
+.catalog-country-list__table {
+  border: 1px solid @border-gray;
+  border-collapse: collapse;
+  background-color: @base-light;
+  margin: 0 auto;
+}
+
+.catalog-country-list__table-cell {
+  border: 1px solid @border-gray;
+  width: 43px;
+  height: 41px;
+}
+
+.catalog-country-list__checkbox,
+.catalog-table-list__checkbox {
+  display: none;
+}
+
+.catalog-country-list__label {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: @base-font-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
+  color: @base-text-color;
+  text-transform: uppercase;
+}
+
+.catalog-country-list__checkbox:checked ~ .catalog-country-list__label {
+  background-color: @base-text-color;
+  color: @base-light;
+}

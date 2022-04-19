@@ -1,0 +1,38 @@
+.flag-wrapper {
+  margin-left: -1px;
+  position: relative;
+  display: grid;
+  height: 42px;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid @border-gray;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.flag-wrapper__close-select {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+
+.flag-wrapper__circle-dark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.flag-wrapper__arrow-down {
+  position: absolute;
+  bottom: -50%;
+  right: 46px;
+  transform: translateY(-50%);
+}
+
+.flag-wrapper__icon {
+  display: block;
+}

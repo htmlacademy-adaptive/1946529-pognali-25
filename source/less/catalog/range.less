@@ -1,0 +1,26 @@
+.range {
+  margin: 20px 0;
+}
+
+.range__track {
+  position: relative;
+  width: 220px;
+  height: 2px;
+  background: hsla(224, 52%, 24%, 0.2);
+}
+
+.range__track-active {
+  width: 154px;
+  height: 2px;
+  background-color: @base-text-color;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.range__range {
+  display: none;
+}
+

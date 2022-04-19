@@ -1,13 +1,13 @@
 // Меню
 
 let mainMenu = document.querySelector('.main-menu');
-let burgerButton = document.querySelector('.burger-menu-button');
-let burgerIcon = document.querySelector('.burger-menu-button__icon');
-let burgerCloseIcon = document.querySelector('.burger-menu-button__close');
+let burgerButton = document.querySelector('.main-header__burger-menu');
+let burgerIcon = document.querySelector('.main-header__burger-menu-icon');
+let burgerCloseIcon = document.querySelector('.main-header__burger-menu-close');
 let headerTop = document.querySelector('.main-header__top');
 let changeHeaderBg = document.querySelector('.burger-menu-active');
-let logoDarkg = document.querySelector('.header-logo__image--dark');
-let logoLight = document.querySelector('.header-logo__image--light');
+let logoDarkg = document.querySelector('.main-header__logo-image--dark');
+let logoLight = document.querySelector('.main-header__logo-image--light');
 
 
 burgerButton.addEventListener('click', ()=> {
@@ -21,14 +21,14 @@ burgerButton.addEventListener('click', ()=> {
 
 // Изменить количество попутчиков
 
-let morePersons = document.querySelector('.more-persons');
-let moreDuration = document.querySelector('.more-duration');
+let morePersons = document.querySelector('.companions-persons__more-persons');
+let moreDuration = document.querySelector('.companions-persons__more-duration');
 
-let lessPersons = document.querySelector('.less-persons');
-let lessDuration = document.querySelector('.less-duration');
+let lessPersons = document.querySelector('.companions-persons__less-persons');
+let lessDuration = document.querySelector('.companions-persons__less-duration');
 
-let personsValue = document.querySelector('.input-persons');
-let durationValue = document.querySelector('.input-duration');
+let personsValue = document.querySelector('.companions-persons__input-persons');
+let durationValue = document.querySelector('.companions-persons__input-duration');
 
 morePersons.addEventListener('click', ()=> {
   let numberPersons = Number(personsValue.value);
@@ -63,7 +63,7 @@ lessDuration.addEventListener('click', ()=> {
 let countryList = document.querySelector('.country-list');
 let closeCountryList = document.querySelector('.country-list__close');
 
-let openCountryList = document.querySelector('.add-new-plus');
+let openCountryList = document.querySelector('.add-new-country__add-new-plus');
 
 closeCountryList.addEventListener('click', ()=> {
   countryList.classList.add('visually-hidden');

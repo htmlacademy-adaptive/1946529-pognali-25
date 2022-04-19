@@ -1,13 +1,13 @@
 // Меню
 
 let mainMenu = document.querySelector('.main-menu');
-let burgerButton = document.querySelector('.burger-menu-button');
-let burgerIcon = document.querySelector('.burger-menu-button__icon');
-let burgerCloseIcon = document.querySelector('.burger-menu-button__close');
+let burgerButton = document.querySelector('.main-header__burger-menu');
+let burgerIcon = document.querySelector('.main-header__burger-menu-icon');
+let burgerCloseIcon = document.querySelector('.main-header__burger-menu-close');
 let headerTop = document.querySelector('.main-header__top');
 let changeHeaderBg = document.querySelector('.burger-menu-active');
-let logoDarkg = document.querySelector('.header-logo__image--dark');
-let logoLight = document.querySelector('.header-logo__image--light');
+let logoDarkg = document.querySelector('.main-header__logo-image--dark');
+let logoLight = document.querySelector('.main-header__logo-image--light');
 
 
 burgerButton.addEventListener('click', ()=> {

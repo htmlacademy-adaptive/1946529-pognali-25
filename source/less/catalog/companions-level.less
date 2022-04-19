@@ -1,0 +1,55 @@
+.companions-level__input-wrpper {
+  position: relative;
+  display: flex;
+}
+
+.companions-level__input-left,
+.companions-level__input-right {
+  display: block;
+  width: 110px;
+  height: 34px;
+  box-sizing: border-box;
+  border: 1px solid @border-gray;
+  border-collapse: collapse;
+  font-family: @base-font-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0.07em;
+  text-align: center;
+  color: @base-text-color;
+}
+
+.companions-level__input-left {
+  border-radius: 4px 0 0 4px;
+}
+
+.companions-level__input-right {
+  border-radius: 0 4px 4px 0;
+  border-left: none;
+}
+
+.companions-level__input-wrpper::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 16px;
+  height: 1px;
+  background-color: @border-gray;
+  z-index: 1;
+}
+
+.companions-level__input-wrpper::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 4px;
+  height: 10px;
+  background-color: @base-light;
+}

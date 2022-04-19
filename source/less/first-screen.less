@@ -4,7 +4,7 @@
 }
 
 .first-screen__header {
-  font-family: "Blogger Sans", sans-serif;
+  font-family: @base-font-serif;
   font-style: normal;
   font-size: 36px;
   font-weight: 700;
@@ -19,50 +19,4 @@
 .first-screen__companions {
   display: block;
   margin: 10px auto 0;
-}
-
-.secondary-navigation {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  min-width: 271px;
-}
-
-.secondary-navigation__link:not(:last-child) {
-  display: block;
-  width: 40px;
-  height: 40px;
-  padding: 12px;
-  border-radius: 20px;
-  box-sizing: border-box;
-}
-
-.secondary-navigation__link--phone {
-  background-color: @base-orange;
-}
-
-.secondary-navigation__link--email {
-  background-color: @base-yellow;
-}
-
-.secondary-navigation__link--login {
-  display: block;
-  margin: 0;
-  width: 190px;
-  height: 40px;
-  font-family: "Blogger Sans", sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0;
-  text-align: center;
-  color: @secondary-text-dark;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 12px 40px;
-  box-sizing: border-box;
-  border-radius: 20px;
-  background-color: @base-yellow;
 }

@@ -9,13 +9,13 @@
   <header class="main-header main-header--secondary">
     <div class="main-header__top">
       <div class="main-header__top-flex">
-        <a href="/" class="header-logo">
-          <img class="header-logo__image header-logo__image--light" src="images/logo_mobile.svg" width="96" height="15" alt="Погнали?">
-          <img class="header-logo__image header-logo__image--dark visually-hidden" src="images/dark-logo.svg" width="96" height="15" alt="Погнали?">
+        <a href="/" class="main-header__logo">
+          <img class="main-header__logo-image main-header__logo-image--light" src="images/logo_mobile.svg" width="96" height="15" alt="Погнали?">
+          <img class="main-header__logo-image main-header__logo-image--dark visually-hidden" src="images/dark-logo.svg" width="96" height="15" alt="Погнали?">
         </a>
-        <button class="burger-menu-button">
-          <img class="burger-menu-button__icon" src="images/burger-menu-icon.svg" width="25" height="11" alt="Меню">
-          <img class="burger-menu-button__close visually-hidden" src="images/close-burger-menu.svg" width="19" height="18" alt="Меню">
+        <button class="main-header__burger-menu">
+          <img class="main-header__burger-menu-icon" src="images/burger-menu-icon.svg" width="25" height="11" alt="Меню">
+          <img class="main-header__burger-menu-close visually-hidden" src="images/close-burger-menu.svg" width="19" height="18" alt="Меню">
         </button>
       </div>
     </div>
@@ -89,19 +89,19 @@
     <section class="traveler-plans">
       <h2 class="visually-hidden">Запланированные поездки</h2>
       <div class="traveler-plans__wrapper">
-        <p class="plans-header">Мои планы:</p>
-        <ul class="plans-list">
-          <li class="plans-list__item">
-            <p class="plans-list__item-header">1. Таиланд, Индонезия</p>
-            <p class="plans-list__item-companions">3 попутчика</p>
-            <p class="plans-list__item-date">26 мар — 29 мар</p>
-            <a href="#" class="plans-list__link">Изменить</a>
+        <p class="traveler-plans__header">Мои планы:</p>
+        <ul class="traveler-plans-list">
+          <li class="traveler-plans-list__item">
+            <p class="traveler-plans-list__item-header">1. Таиланд, Индонезия</p>
+            <p class="traveler-plans-list__item-companions">3 попутчика</p>
+            <p class="traveler-plans-list__item-date">26 мар — 29 мар</p>
+            <a href="#" class="traveler-plans-list__link">Изменить</a>
           </li>
-          <li class="plans-list__item">
-            <p class="plans-list__item-header">1. Франция, Италия</p>
-            <p class="plans-list__item-companions">1 попутчик</p>
-            <p class="plans-list__item-date">1 июл — 15 июл</p>
-            <a href="#" class="plans-list__link">Изменить</a>
+          <li class="traveler-plans-list__item">
+            <p class="traveler-plans-list__item-header">1. Франция, Италия</p>
+            <p class="traveler-plans-list__item-companions">1 попутчик</p>
+            <p class="traveler-plans-list__item-date">1 июл — 15 июл</p>
+            <a href="#" class="traveler-plans-list__link">Изменить</a>
           </li>
         </ul>
       </div>
@@ -110,45 +110,45 @@
       <h3 class="visually-hidden">Сформировать новую поездку</h3>
       <form class="add-new-plan__form" action="https://echo.htmlacademy.ru">
         <div class="add-new-plan__header-wrapper">
-          <p class="plans-header">Добавить план:</p>
-          <div class="plans-header-spots">
-            <span class="plans-header-spot plans-header-spot--active"></span>
-            <span class="plans-header-spot"></span>
-            <span class="plans-header-spot"></span>
+          <p class="add-new-plan__header">Добавить план:</p>
+          <div class="add-new-plan__spots">
+            <span class="add-new-plan__spot add-new-plan__spot--active"></span>
+            <span class="add-new-plan__spot"></span>
+            <span class="add-new-plan__spot"></span>
           </div>
         </div>
         <div class="add-new-plan__wrapper">
           <ul class="add-new-plan__list new-plan-list">
             <li class="new-plan-list__item arrival-date">
-              <span class="new-plan-list__item-header arrival-date__item-heder">
+              <span class="new-plan-list__item-header">
                 Шаг 1.<br>Даты пребывания
               </span>
-              <p class="new-plan-list__item-text arrival-date__item-text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+              <p class="new-plan-list__item-text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
                   <div class="companions-persons">
                     <label class="companions-persons__label" for="persons">Ищу попутчиков:<p class="companions-persons__label-text">Чел.</p></label>
                     <span class="companions-persons__wrapper-input">
-                      <img class="companions-persons__control-element companions-persons__control-element--minus less-persons" src="images/minus.svg" width="14" height="2" alt="Меньше">
-                      <img class="companions-persons__control-element companions-persons__control-element--plus more-persons" src="images/plus.svg" width="14" height="14" alt="Больше">
-                      <input id="persons" class="input-persons" type="number" value="0">
+                      <img class="companions-persons__control-element companions-persons__control-element--minus companions-persons__less-persons" src="images/minus.svg" width="14" height="2" alt="Меньше">
+                      <img class="companions-persons__control-element companions-persons__control-element--plus companions-persons__more-persons" src="images/plus.svg" width="14" height="14" alt="Больше">
+                      <input id="persons" class="companions-persons__input-persons" type="number" value="0">
                     </span>
                     <br>
                     <label class="companions-persons__label" for="duration">Длительность:<p class="companions-persons__label-text">Дн.</p></label>
                     <span class="companions-persons__wrapper-input">
-                      <img class="companions-persons__control-element companions-persons__control-element--minus less-duration" src="images/minus.svg" width="14" height="2" alt="Меньше">
-                      <img class="companions-persons__control-element companions-persons__control-element--plus more-duration" src="images/plus.svg" width="14" height="14" alt="Больше">
-                      <input id="duration" class="input-duration" type="number" value="0">
+                      <img class="companions-persons__control-element companions-persons__control-element--minus companions-persons__less-duration" src="images/minus.svg" width="14" height="2" alt="Меньше">
+                      <img class="companions-persons__control-element companions-persons__control-element--plus companions-persons__more-duration" src="images/plus.svg" width="14" height="14" alt="Больше">
+                      <input id="duration" class="companions-persons__input-duration" type="number" value="0">
                     </span>
                     <br>
                     <div class="companions-persons__checkbox-wrapper">
-                      <input type="checkbox" class="with-children" id="with-children" checked>
+                      <input type="checkbox" class="companions-persons__with-children" id="with-children" checked>
                       <span class="companions-persons__check-mark"></span>
-                      <label for="with-children" class="with-children-label">Можно с детьми</label>
+                      <label for="with-children" class="companions-persons__with-children-label">Можно с детьми</label>
                     </div>
                   </div>
-                  <div class="calendar-header">
-                  <button class="calendar-header__button calendar-header__button--prev"><img src="images/form/left-arrow.svg" width="9" height="18" alt="Влево"></button>
-                  <p class="calendar-header__text">Март 2019</p>
-                  <button class="calendar-header__button calendar-header__button--next"><img src="images/form/right-arrow.svg" width="9" height="18" alt="Вправо"></button>
+                  <div class="arrival-date__header">
+                  <button class="arrival-date__header-button arrival-date__header-button--prev"><img src="images/form/left-arrow.svg" width="9" height="18" alt="Влево"></button>
+                  <p class="arrival-date__header-text">Март 2019</p>
+                  <button class="arrival-date__header-button arrival-date__header-button--next"><img src="images/form/right-arrow.svg" width="9" height="18" alt="Вправо"></button>
                 </div>
                 <div class="arrival-date__table-header">
                   <p class="arrival-date__table-header-day">П</p>
@@ -341,23 +341,23 @@
                     </td>
                   </tr>
                 </table>
-                <button class="new-plan-next-button">Следующий шаг</button>
+                <button class="new-plan-list__next-button">Следующий шаг</button>
               </li>
               <li class="new-plan-list__item route">
-                <span class="new-plan-list__item-header route__item-heder">
+                <span class="new-plan-list__item-header">
                   Шаг 2.<br>Маршрут
                 </span>
-                <p class="new-plan-list__item-text route__item-text">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
-                <div class="route__country-wrapper">
+                <p class="new-plan-list__item-text">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+                <div class="new-plan-list__country-wrapper">
                   <div class="choosen-country">
                     <select class="choosen-country__select" name="choose-first-country" id="choose-first-country">
                       <option class="choosen-country__option" value="Босния и Герцеговина">Босния и Герцеговина</option>
                     </select>
                   </div>
                   <div class="flag-wrapper">
-                    <img class="close-select" src="images/form/choose-country-close.svg" width="21" height="21" alt="Закрыть">
-                    <img class="circle-dark" src="images/form/choose-country-circle-dark.svg" width="8" height="8" alt="">
-                    <img class="arrow-down" src="images/form/choose-country-arrow-down.svg" width="10" height="8" alt="">
+                    <img class="flag-wrapper__close-select" src="images/form/choose-country-close.svg" width="21" height="21" alt="Закрыть">
+                    <img class="flag-wrapper__circle-dark" src="images/form/choose-country-circle-dark.svg" width="8" height="8" alt="">
+                    <img class="flag-wrapper__arrow-down" src="images/form/choose-country-arrow-down.svg" width="10" height="8" alt="">
                     <img class="flag-wrapper__icon" src="images/form/bosnia.png" width="35" height="24" alt="Босния и Герцеговина">
                   </div>
                   <div class="choosen-country">
@@ -366,22 +366,22 @@
                     </select>
                   </div>
                   <div class="flag-wrapper">
-                    <img class="close-select" src="images/form/choose-country-close.svg" width="21" height="21" alt="Закрыть">
-                    <img class="circle-dark" src="images/form/choose-country-circle-dark.svg" width="8" height="8" alt="">
-                    <img class="arrow-down" src="images/form/choose-country-arrow-down.svg" width="10" height="8" alt="">
+                    <img class="flag-wrapper__close-select" src="images/form/choose-country-close.svg" width="21" height="21" alt="Закрыть">
+                    <img class="flag-wrapper__circle-dark" src="images/form/choose-country-circle-dark.svg" width="8" height="8" alt="">
+                    <img class="flag-wrapper__arrow-down" src="images/form/choose-country-arrow-down.svg" width="10" height="8" alt="">
                     <img class="flag-wrapper__icon" src="images/form/czech.png" width="35" height="24" alt="Чехия">
                   </div>
                   <div class="choose-new-country">
-                    <img class="close-select" src="images/form/choose-country-close.svg" width="21" height="21" alt="Закрыть">
-                    <img class="circle-light" src="images/form/choose-country-circle.svg" width="8" height="8" alt="">
-                    <img class="arrow-down" src="images/form/choose-country-arrow-down.svg" width="10" height="8" alt="">
+                    <img class="choose-new-country__close-select" src="images/form/choose-country-close.svg" width="21" height="21" alt="Закрыть">
+                    <img class="choose-new-country__circle-light" src="images/form/choose-country-circle.svg" width="8" height="8" alt="">
+                    <img class="choose-new-country__arrow-down" src="images/form/choose-country-arrow-down.svg" width="10" height="8" alt="">
                     <select class="choosen-country__select choosen-country__select--new-country" name="choose-new-country" id="choose-new-country">
                       <option class="choosen-country__option" value="Выберите">Выберите страну</option>
                     </select>
                   </div>
                   <div class="add-new-country">
-                    <img class="add-new-plus" src="images/form/add-country-plus.svg" width="14" height="14" alt="Закрыть">
-                    <img class="circle-light" src="images/form/choose-country-circle.svg" width="8" height="8" alt="">
+                    <img class="add-new-country__add-new-plus" src="images/form/add-country-plus.svg" width="14" height="14" alt="Закрыть">
+                    <img class="add-new-country__circle-light" src="images/form/choose-country-circle.svg" width="8" height="8" alt="">
                     <button class="add-new-country__button" name="add-country" id="add-country">Добавить страну</button>
                     <!-- Таблица с алфавитом и списком стран -->
                 <div class="country-list visually-hidden">
@@ -550,16 +550,16 @@
                 </div>
                   </div>
                 </div>
-                <button class="new-plan-next-button new-plan-next-button--step-two">Следующий шаг</button>
+                <button class="new-plan-list__next-button new-plan-list__next-button--step-two">Следующий шаг</button>
                 <br>
-                <button class="new-plan-previous-button">На шаг назад</button>
+                <button class="new-plan-list__previous-button">На шаг назад</button>
               </li>
               <li class="new-plan-list__item recreation">
-                <span class="new-plan-list__item-header recreation__heder">
+                <span class="new-plan-list__item-header">
                   Шаг 3.<br>Развлечения
                 </span>
-                <p class="new-plan-list__item-text recreation__item-text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-                <div class="recreation__country-wrapper">
+                <p class="new-plan-list__item-text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                <div class="new-plan-list__recreation-wrapper">
                   <div class="first-country">
                     <span class="first-country__border">
                       <img class="first-country__border-circle-top" src="images/form/country-border-circle.svg" width="6" height="6" alt="">
@@ -571,7 +571,7 @@
                     <div class="first-country__flag-wrapper">
                       <img class="first-country__flag" src="images/form/bosnia.png" width="35" height="24" alt="Босния и Герцеговина">
                     </div>
-                    <textarea class="about-my-plans" rows="10" cols="45" name="text" placeholder="План действий"></textarea>
+                    <textarea class="first-country__about-my-plans" rows="10" cols="45" name="text" placeholder="План действий"></textarea>
                   </div>
                   <div class="second-country">
                     <div class="second-country__name-wrapper">
@@ -580,12 +580,12 @@
                     <div class="second-country__flag-wrapper">
                       <img class="second-country__flag" src="images/form/czech.png" width="35" height="24" alt="Чехия">
                     </div>
-                    <textarea class="about-my-hobbies" rows="10" cols="45" name="text"></textarea>
+                    <textarea class="second-country__about-my-hobbies" rows="10" cols="45" name="text"></textarea>
                   </div>
                   <br>
-                  <button class="new-plan-next-button new-plan-send-button">Отправить</button>
+                  <button class="new-plan-list__next-button new-plan-list__send-button">Отправить</button>
                   <br>
-                  <button class="new-plan-previous-button">На шаг назад</button>
+                  <button class="new-plan-list__previous-button">На шаг назад</button>
                 </div>
               </li>
             </ul>
@@ -595,12 +595,12 @@
     <section class="socials">
       <h3 class="visually-hidden">Мы в соцсетях</h3>
       <div class="socials__wrapper">
-      <img class="socials__logo" src="images/logo-social-mobile.svg" width="96" height="15" alt="Погнали?">
-      <div class="socials-icons">
-        <a href="#" class="socials-icons__link socials-icons__link--telegram"><img class="socials-icons__image" src="images/telegram.svg" width="20" height="18" alt="Телеграм"></a>
-        <a href="#" class="socials-icons__link socials-icons__link--vkontakte"><img class="socials-icons__image" src="images/vkontakte.svg" width="30" height="16" alt="Вконтакте"></a>
-        <a href="#" class="socials-icons__link socials-icons__link--youtube"><img class="socials-icons__image" src="images/youtube.svg" width="20" height="15" alt="Youtube"></a>
-      </div>
+        <img class="socials__logo" src="images/logo-social-mobile.svg" width="96" height="15" alt="Погнали?">
+        <div class="socials__icons">
+          <a href="#" class="socials__icons-link socials__icons-link--telegram"><img class="socials__icons-image" src="images/telegram.svg" width="20" height="18" alt="Телеграм"></a>
+          <a href="#" class="socials__icons-link socials__icons-link--vkontakte"><img class="socials__icons-image" src="images/vkontakte.svg" width="30" height="16" alt="Вконтакте"></a>
+          <a href="#" class="socials__icons-link socials__icons-link--youtube"><img class="socials__icons-image" src="images/youtube.svg" width="20" height="15" alt="Youtube"></a>
+        </div>
       </div>
     </section>
   </main>

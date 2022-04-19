@@ -9,13 +9,13 @@
   <header class="main-header main-header--secondary">
     <div class="main-header__top">
       <div class="main-header__top-flex">
-        <a href="/" class="header-logo">
-          <img class="header-logo__image header-logo__image--light" src="images/logo_mobile.svg" width="96" height="15" alt="Погнали?">
-          <img class="header-logo__image header-logo__image--dark visually-hidden" src="images/dark-logo.svg" width="96" height="15" alt="Погнали?">
+        <a href="/" class="main-header__logo">
+          <img class="main-header__logo-image main-header__logo-image--light" src="images/logo_mobile.svg" width="96" height="15" alt="Погнали?">
+          <img class="main-header__logo-image main-header__logo-image--dark visually-hidden" src="images/dark-logo.svg" width="96" height="15" alt="Погнали?">
         </a>
-        <button class="burger-menu-button">
-          <img class="burger-menu-button__icon" src="images/burger-menu-icon.svg" width="25" height="11" alt="Меню">
-          <img class="burger-menu-button__close visually-hidden" src="images/close-burger-menu.svg" width="19" height="18" alt="Меню">
+        <button class="main-header__burger-menu">
+          <img class="main-header__burger-menu-icon" src="images/burger-menu-icon.svg" width="25" height="11" alt="Меню">
+          <img class="main-header__burger-menu-close visually-hidden" src="images/close-burger-menu.svg" width="19" height="18" alt="Меню">
         </button>
       </div>
     </div>
@@ -263,24 +263,24 @@
             </div>
             <ul class="checkbox-list">
               <li class="checkbox-list__item">
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" class="accordeon-checkbox" id="hard-rock" checked>
-                  <span class="accordeon__check-mark"></span>
-                  <label class="accordeon-checkbox-label" for="hard-rock">Тяжёлый рок</label>
+                <div class="checkbox-list__wrapper">
+                  <input type="checkbox" class="checkbox-list__accordeon" id="hard-rock" checked>
+                  <span class="checkbox-list__check-mark"></span>
+                  <label class="checkbox-list__checkbox-label" for="hard-rock">Тяжёлый рок</label>
                 </div>
               </li>
               <li class="checkbox-list__item">
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" class="accordeon-checkbox" id="russian-rap" checked>
-                  <span class="accordeon__check-mark"></span>
-                  <label class="accordeon-checkbox-label" for="russian-rap">Русский рэп</label>
+                <div class="checkbox-list__wrapper">
+                  <input type="checkbox" class="checkbox-list__accordeon" id="russian-rap" checked>
+                  <span class="checkbox-list__check-mark"></span>
+                  <label class="checkbox-list__checkbox-label" for="russian-rap">Русский рэп</label>
                 </div>
               </li>
               <li class="checkbox-list__item">
-                <div class="checkbox-wrapper">
-                  <input type="checkbox" class="accordeon-checkbox" id="eurodance">
-                  <span class="accordeon__check-mark"></span>
-                  <label class="accordeon-checkbox-label" for="eurodance">Евроденс</label>
+                <div class="checkbox-list__wrapper">
+                  <input type="checkbox" class="checkbox-list__accordeon" id="eurodance">
+                  <span class="checkbox-list__check-mark"></span>
+                  <label class="checkbox-list__checkbox-label" for="eurodance">Евроденс</label>
                 </div>
               </li>
             </ul>
@@ -293,25 +293,25 @@
               <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
             </div>
             <div class="activity-wrapper">
-              <label class="checkbox-label" for="airplane">
+              <label class="activity-wrapper__checkbox-label" for="airplane">
                 <span class="activity-wrapper__icon-wrapper">
                   <input type="checkbox" class="activity-wrapper__checkbox" id="airplane">
                   <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
                 </span>
               </label>
-              <label class="checkbox-label" for="bus">
+              <label class="activity-wrapper__checkbox-label" for="bus">
                 <span class="activity-wrapper__icon-wrapper">
                   <input type="checkbox" class="activity-wrapper__checkbox" id="bus">
                   <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/bus-active.svg" alt="Автобус">
                 </span>
               </label>
-              <label class="checkbox-label" for="bicycle">
+              <label class="activity-wrapper__checkbox-label" for="bicycle">
                 <span class="activity-wrapper__icon-wrapper">
                   <input type="checkbox" class="activity-wrapper__checkbox" id="bicycle" checked>
                   <img class="activity-wrapper__icon activity-wrapper__icon--choosen" width="21" height="21" src="images/catalog/bicycle-active.svg" alt="Велосипед">
                 </span>
               </label>
-              <label class="checkbox-label" for="run">
+              <label class="activity-wrapper__checkbox-label" for="run">
                 <span class="activity-wrapper__icon-wrapper">
                   <input type="checkbox" class="activity-wrapper__checkbox" id="run">
                   <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/run-active.svg" alt="Бег">
@@ -327,11 +327,11 @@
                 <input class="companions-level__input-left" type="text" value="30">
                 <input class="companions-level__input-right" type="text" value="100">
               </div>
-              <div class="range-wrapper">
-                <div class="range-wrapper__track">
-                  <div class="range-wrapper__track-active"></div>
+              <div class="range">
+                <div class="range__track">
+                  <div class="range__track-active"></div>
                 </div>
-                <input class="companions-range" type="range">
+                <input class="range__range" type="range">
               </div>
             </div>
             <button class="companions-filter__button">Показать</button>
@@ -345,9 +345,9 @@
         <li class="catalog-cards-list__item">
           <article class="person-card">
             <div class="person-card__item-top">
-              <div class="avatar-wrapper">
-                <img class="avatar-wrapper__image" src="images/catalog/cards/firsova-avatar.png" width="70" height="70" alt="Таня Фирсова">
-                <img class="avatar-wrapper__favorite-icon avatar-wrapper__favorite-icon--active" src="images/catalog/cards/favorite-active.svg" width="31" height="31" alt="В избранное">
+              <div class="person-card__avatar-wrapper">
+                <img class="person-card__avatar" src="images/catalog/cards/firsova-avatar.png" width="70" height="70" alt="Таня Фирсова">
+                <img class="person-card__favorite-icon person-card__favorite-icon--active" src="images/catalog/cards/favorite-active.svg" width="31" height="31" alt="В избранное">
               </div>
               <p class="person-card__item-name">Таня Фирсова</p>
               <p class="person-card__item-distance">1,5 М</p>
@@ -357,7 +357,7 @@
             </div>
             <p class="person-card__hashtags">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</p>
             <div class="person-card__country-wrapper">
-              <p class="wish-country">Хочет посетить :</p>
+              <p class="person-card__wish-country">Хочет посетить :</p>
               <ul class="wish-country-list">
                 <li class="wish-country-list__item">
                   <img  class="wish-country-list__item-flag" src="images/catalog/cards/sri-lanka.png" width="35" height="24" alt="Шри-ланка">Шри-Ланка
@@ -400,9 +400,9 @@
         <li class="catalog-cards-list__item">
           <article class="person-card">
             <div class="person-card__item-top">
-              <div class="avatar-wrapper">
-                <img class="avatar-wrapper__image" src="images/catalog/cards/demin-avatar.png" width="70" height="70" alt="Петя Демин">
-                <img class="avatar-wrapper__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
+              <div class="person-card__avatar-wrapper">
+                <img class="person-card__avatar" src="images/catalog/cards/demin-avatar.png" width="70" height="70" alt="Петя Демин">
+                <img class="person-card__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
               </div>
               <p class="person-card__item-name">Петя Демин</p>
               <p class="person-card__item-distance">1500 М</p>
@@ -412,7 +412,7 @@
             </div>
             <p class="person-card__hashtags">#бургер #бар #футбол #концерт #крафт</p>
             <div class="person-card__country-wrapper">
-              <p class="wish-country">Хочет посетить :</p>
+              <p class="person-card__wish-country">Хочет посетить :</p>
               <ul class="wish-country-list">
                 <li class="wish-country-list__item">
                   <img class="wish-country-list__item-flag" src="images/catalog/cards/belgium.png" width="35" height="24" alt="Бельгия">Бельгия
@@ -452,9 +452,9 @@
         <li class="catalog-cards-list__item">
           <article class="person-card">
             <div class="person-card__item-top">
-              <div class="avatar-wrapper">
-                <img class="avatar-wrapper__image" src="images/catalog/cards/smolov-avatar.png" width="70" height="70" alt="Марк Смолов">
-                <img class="avatar-wrapper__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
+              <div class="person-card__avatar-wrapper">
+                <img class="person-card__image" src="images/catalog/cards/smolov-avatar.png" width="70" height="70" alt="Марк Смолов">
+                <img class="person-card__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
               </div>
               <p class="person-card__item-name">Марк Смолов</p>
               <p class="person-card__item-distance"></p>
@@ -464,7 +464,7 @@
             </div>
             <p class="person-card__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
             <div class="person-card__country-wrapper">
-              <p class="wish-country">Хочет посетить :</p>
+              <p class="person-card__wish-country">Хочет посетить :</p>
               <ul class="wish-country-list">
                 <li class="wish-country-list__item">
                   <img class="wish-country-list__item-flag" src="images/catalog/cards/usa.png" width="35" height="24" alt="США">США
@@ -507,9 +507,9 @@
         <li class="catalog-cards-list__item">
           <article class="person-card">
             <div class="person-card__item-top">
-              <div class="avatar-wrapper">
-                <img class="avatar-wrapper__image" src="images/catalog/cards/rogovaya-avatar.png" width="70" height="70" alt="Лариса Роговая">
-                <img class="avatar-wrapper__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
+              <div class="person-card__avatar-wrapper">
+                <img class="person-card__image" src="images/catalog/cards/rogovaya-avatar.png" width="70" height="70" alt="Лариса Роговая">
+                <img class="person-card__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
               </div>
               <p class="person-card__item-name">Лариса Роговая</p>
               <p class="person-card__item-distance">23 М</p>
@@ -519,7 +519,7 @@
             </div>
             <p class="person-card__hashtags">#образование #карьера #учеба #линкедин</p>
             <div class="person-card__country-wrapper">
-              <p class="wish-country">Хочет посетить :</p>
+              <p class="person-card__wish-country">Хочет посетить :</p>
               <ul class="wish-country-list">
                 <li class="wish-country-list__item">
                   <img class="wish-country-list__item-flag" src="images/catalog/cards/uk.png" width="35" height="24" alt="Великобритания">Великобритания
@@ -556,8 +556,8 @@
           </article>
         </li>
       </ul>
-      <a href="#" class="load-more">
-        <img class="load-more__icon" src="images/catalog/cards/plus-load.svg" width="18" height="18" alt="Загрузить ещё">
+      <a href="#" class="person-card__load-more">
+        <img class="person-card__load-more-icon" src="images/catalog/cards/plus-load.svg" width="18" height="18" alt="Загрузить ещё">
         Показать ещё
       </a>
       <div class="two-button-navigation">
@@ -568,12 +568,12 @@
     <section class="socials">
       <h3 class="visually-hidden">Мы в соцсетях</h3>
       <div class="socials__wrapper">
-      <img class="socials__logo" src="images/logo-social-mobile.svg" width="96" height="15" alt="Погнали?">
-      <div class="socials-icons">
-        <a href="#" class="socials-icons__link socials-icons__link--telegram"><img class="socials-icons__image" src="images/telegram.svg" width="20" height="18" alt="Телеграм"></a>
-        <a href="#" class="socials-icons__link socials-icons__link--vkontakte"><img class="socials-icons__image" src="images/vkontakte.svg" width="30" height="16" alt="Вконтакте"></a>
-        <a href="#" class="socials-icons__link socials-icons__link--youtube"><img class="socials-icons__image" src="images/youtube.svg" width="20" height="15" alt="Youtube"></a>
-      </div>
+        <img class="socials__logo" src="images/logo-social-mobile.svg" width="96" height="15" alt="Погнали?">
+        <div class="socials__icons">
+          <a href="#" class="socials__icons-link socials__icons-link--telegram"><img class="socials__icons-image" src="images/telegram.svg" width="20" height="18" alt="Телеграм"></a>
+          <a href="#" class="socials__icons-link socials__icons-link--vkontakte"><img class="socials__icons-image" src="images/vkontakte.svg" width="30" height="16" alt="Вконтакте"></a>
+          <a href="#" class="socials__icons-link socials__icons-link--youtube"><img class="socials__icons-image" src="images/youtube.svg" width="20" height="15" alt="Youtube"></a>
+        </div>
       </div>
     </section>
   </main>
