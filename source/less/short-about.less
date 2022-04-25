@@ -1,30 +1,64 @@
 /* Блок под первым экраном ЦИТАТЫ */
 
 .short-about {
+  position: relative;
   height: 285px;
   background-color: @secondary-text-dark;
   padding: 48px 0 109px 50px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    // position: absolute;
+    top: 76px;
+    left: 72px;
+    padding: 0;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    padding: 52px 106px 0 60px;
+    width: 254px;
+    // height: auto;
+    // margin-top: 52px;
+    // margin-right: 106px;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    // width: auto;
+    justify-self: end;
+    box-sizing: content-box;
+  }
 }
 
 .short-about__blockquote {
   margin: 0;
   display: block;
   width: 151px;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
+  font-style: normal;
   line-height: 22px;
   letter-spacing: 0;
   text-align: left;
   color: @base-light;
+
+  @media (min-width: @tablet-width) {
+    // position: absolute;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+    width: 265px;
+  }
 }
 
 .short-about__cite {
   margin-top: 18px;
   display: block;
   width: 161px;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -32,4 +66,16 @@
   letter-spacing: 0;
   text-align: left;
   color: @base-light;
+
+  @media (min-width: @tablet-width) {
+    // position: absolute;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    width: 265px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 35px;
+  }
 }

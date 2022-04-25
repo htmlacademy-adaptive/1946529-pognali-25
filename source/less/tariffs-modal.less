@@ -12,11 +12,34 @@
   height: 443px;
   box-sizing: border-box;
   box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    min-width: 688px;
+    top: 40px;
+    padding: 54px 90px 0;
+    height: auto;
+    border-radius: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 750px;
+    padding: 54px 60px 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .tariffs-modal__wrapper {
   display: grid;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin-bottom: 150px;
+  }
 }
 
 .tariffs-modal__text {
@@ -25,7 +48,7 @@
   min-height: 65px;
   border-top: 1px solid @secondary-border;
   margin: 0;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
@@ -36,10 +59,52 @@
   align-self: center;
   padding: 12px 50px 12px 0;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    min-height: 55px;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+.tariffs-modal__text-value {
+  // display: block;
+  font-family: "Blogger Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  color: @base-grey;
+  margin: -40px 0 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: right;
+    box-sizing: border-box;
+    min-height: 55px;
+    height: auto;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 22px;
+    line-height: 28px;
+    // justify-self: end;
+    margin: 0;
+    border-top: 1px solid @secondary-border;
+  }
 }
 
 .tariffs-modal__text--bottom-line {
   border-bottom: 1px solid @secondary-border;
+}
+
+.tariffs-modal__text-value--bottom-line {
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @secondary-border;
+  }
 }
 
 .tariffs-modal__close {
@@ -53,10 +118,14 @@
   background-color: @close-modal-button;
   text-align: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    min-height: 100px;
+  }
 }
 
 .tariffs-modal__close-link {
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -69,4 +138,10 @@
   border: none;
   outline: none;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    text-transform: none;
+    font-size: 24px;
+    line-height: 28px;
+  }
 }

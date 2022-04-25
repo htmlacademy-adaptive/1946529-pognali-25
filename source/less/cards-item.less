@@ -2,10 +2,44 @@
   position: relative;
   min-height: 431px;
   margin-bottom: 9px;
+
+  @media (min-width: @tablet-width) {
+    width: 285px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    justify-self: end;
+    margin: 60px 0 0;
+    // height: 483px;
+  }
+}
+
+.cards-item:last-of-type {
+
+  @media (min-width: @tablet-width) {
+    justify-self: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
 }
 
 .cards-item__image {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 286px;
+  }
 }
 
 .cards-item__flag-wrapper,
@@ -36,6 +70,15 @@
   padding: 27px 41px 22px;
   background-color: @base-light;
   border-radius: 0 0 10px 10px;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    position: relative;
+    width: 285px;
+    padding: 31px 31px 27px;
+    border-radius: 0 0 20px 20px;
+
+  }
 }
 
 .cards-item__is-online {
@@ -47,17 +90,22 @@
 
 .cards-item__name-text {
   margin: 0 0 0 10px;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
   line-height: 21px;
   letter-spacing: 0;
   color: @base-text-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+    line-height: 22px;
+  }
 }
 
 .cards-item__hashtag-text {
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -65,6 +113,12 @@
   letter-spacing: 0;
   color: @base-grey;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+    margin: 23px 0;
+  }
 }
 
 .cards-item__activity-wraper {

@@ -1,27 +1,62 @@
 /* АДРЕСС */
 
 .adress {
-  z-index: 10;
-  padding: 30px 25px;
+  padding: 60px 25px 30px;
+  margin-top: -30px;
   background-color: @base-yellow;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 88px 75px 84px;
+    margin-top: -40px;
+    border-radius: 0 0 40px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 115px 135px 56px 283px;
+    border-radius: 0 0 60px 60px;
+    margin-top: -60px;
+  }
+}
+
+.adress__wrapper {
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
 }
 
 .adress__text-wrapper {
   display: flex;
   align-items: center;
   width: 205px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .adress__icon-image {
   padding: 12px 14px;
   background: @secondary-background-dark;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    padding: 19px 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 42px;
+    padding: 24px 29px;
+  }
 }
 
 .adress__text {
   margin: 0 0 0 16px;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -29,4 +64,10 @@
   letter-spacing: 0;
   text-align: left;
   color: @base-text-color;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 26px;
+    font-size: 28px;
+    line-height: 28px;
+  }
 }

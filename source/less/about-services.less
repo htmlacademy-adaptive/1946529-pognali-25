@@ -2,14 +2,48 @@
 
 .about-services {
   position: relative;
+  z-index: 3;
   background:
     url("../images/about-service-bg.png") no-repeat bottom center,
     url("../images/about-service-bg-left.png") no-repeat 0% 57%,
     @main-background-dark;
   padding: 0 25px 82px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 0 0 40px 40px;
+    padding: 237px 40px 89px;
+    background:
+      url("../images/about-tablet bg-right.png") no-repeat right bottom 89px,
+      url("../images/about-tablet-bg-top.svg") no-repeat center 32%,
+      @tablet-dark-bg;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 42px 131px 163px;
+    margin-top: -60px;
+    z-index: 4;
+    border-radius: 0 0 60px 60px;
+    background:
+      url("../images/about-desktop-bg-right.png") no-repeat right bottom,
+      url("../images/about-tablet-bg-top.svg") no-repeat center 32%,
+      @main-background-dark;
+  }
 }
 
 .about-services__wrapper {
-  padding: 312px 35px 0 24px;
+  padding: 0 35px 0 24px;
+
+  @media (min-width: @tablet-width) {
+    padding: 41px 0 0 34px;
+    // margin-top: -50px;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: @desktop-width) {
+    // grid-column: 1/2;
+    // grid-row: 1/2;
+  }
 }

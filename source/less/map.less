@@ -6,15 +6,50 @@
   position: relative;
   width: 320px;
   height: 421px;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: relative;
+    background: url("../images/tablet-map-bg.png") no-repeat center center;
+    background-size: cover;
+    width: 768px;
+    height: 581px;
+    z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    background: url("../images/desktop-map-bg.png") no-repeat;
+  }
 }
 
 .map_background {
   z-index: -1;
   position: absolute;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .map_flag {
   position: absolute;
   top: 35%;
   left: 49%;
+
+  @media (min-width: @tablet-width) {
+    width: 54px;
+    height: 54px;
+    top: 40%;
+    left: 45%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 41%;
+    left: 44%;
+  }
 }

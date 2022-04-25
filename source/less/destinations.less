@@ -1,11 +1,62 @@
 /* Направления */
 
 .destinations {
-  padding: 0 25px 35px;
+  position: relative;
+  z-index: 2;
+  padding: 40px 25px 35px;
+  margin-top: -30px;
   background: @light-background;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
+
+  @media (min-width: @tablet-width) {
+    border-radius: 0 0 40px 40px;
+    margin-top: -40px;
+    background:
+      url('../images/destination-tablet-bg-right.png') no-repeat right 40px top 110px,
+      url('../images/destination-tablet-bg-left.png') no-repeat left 40px top 44%,
+      @light-background;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 113px 76px 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 148px 60px 88px;
+    border-radius: 0 0 60px 60px;
+    margin-top: -60px;
+    background:
+      url('../images/destination-tablet-bg-right.png') no-repeat right 60px top 148px,
+      @light-background;
+  }
+}
+
+.destinations__wrapper {
+
+  @media (min-width: @tablet-width) {
+    // margin-top: 100px;
+    grid-column: 1/3;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding: 73px 0 0 71px;
+    background: url('../images/destination-tablet-bg-left.png') no-repeat left top;
+  }
 }
 
 .destinations__header {
   padding: 71px 30px 60px 24px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 378px;
+    padding: 73px 140px 0 0;
+    justify-self: end;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 }

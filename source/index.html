@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>Погнали. Главная страница</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__top">
-        <div class="main-header__top-flex">
+        <!-- <div class="main-header__top-flex"> -->
           <a href="/" class="main-header__logo">
             <img class="main-header__logo-image main-header__logo-image--light" src="images/logo_mobile.svg" width="96" height="15" alt="Погнали?">
             <img class="main-header__logo-image main-header__logo-image--dark visually-hidden" src="images/dark-logo.svg" width="96" height="15" alt="Погнали?">
@@ -17,17 +18,18 @@
             <img class="main-header__burger-menu-icon" src="images/burger-menu-icon.svg" width="25" height="11" alt="Меню">
             <img class="main-header__burger-menu-close visually-hidden" src="images/close-burger-menu.svg" width="19" height="18" alt="Меню">
           </button>
-        </div>
-      </div>
-      <nav class="main-menu visually-hidden">
-        <div class="main-menu__wrapper">
-          <ul class="main-menu__list">
-            <li class="main-menu__item"><a class="main-menu__link" href="#">О сервисе</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Направления</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Попутчики</a></li>
-          </ul>
+        <!-- </div> -->
+        <nav class="main-menu visually-hidden">
+          <div class="main-menu__wrapper">
+            <ul class="main-menu__list">
+              <li class="main-menu__item"><a class="main-menu__link" href="#">О сервисе</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="#">Направления</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="#">Попутчики</a></li>
+            </ul>
+          </div>
+        </nav>
           <a href="#" class="main-menu__login">Авторизация</a>
-          <ul class="navigation-user">
+          <ul class="navigation-user visually-hidden">
             <li class="navigation-user__item">
               <img class="navigation-user__phone" src="images/phone-icon-menu.svg" width="16" height="15" alt="Телефон">
               <a class="navigation-user__link" href="tel:88005558628">8 800 555-86-28</a>
@@ -39,57 +41,61 @@
                 <a class="navigation-user__link" href="#">mail@htmlacademy.ru</a>
             </li>
           </ul>
-          <ul class="social">
+          <ul class="social visually-hidden">
             <li class="social__item"><a href="#" class="social__link social__link--facebook"><span class="social__icon visually-hidden"></span></a></li>
             <li class="social__item"><a href="#" class="social__link social__link--vkontakte"><span class="social__icon visually-hidden"></span></a></li>
             <li class="social__item"><a href="#" class="social__link social__link--instagram"><span class="social__icon visually-hidden"></span></a></li>
           </ul>
         </div>
-      </nav>
-      <section class="first-screen">
-        <p class="first-screen__header">В путешествие<br> с крутыми попутчиками!</p>
-        <img class="first-screen__companions" src="images/first-screen-image-mobile.png" width="192" height="255" alt="Ваш попутчик">
-        <div class="secondary-navigation">
-          <a href="#" class="secondary-navigation__link secondary-navigation__link--phone"><img class="secondary-navigation__icon" src="images/phone.svg" width="16" height="16" alt="Телефон"></a>
-          <a href="#" class="secondary-navigation__link secondary-navigation__link--email"><img class="secondary-navigation__icon" src="images/email.svg" width="16" height="12" alt="E-mail"></a>
-          <a href="#" class="secondary-navigation__link secondary-navigation__link--login">Авторизация</a>
-        </div>
-      </section>
     </header>
     <main class="main-wrapper">
       <h1 class="visually-hidden">Преимущество сервиса Погнали</h1>
-      <section class="short-about">
-        <h2 class="visually-hidden">Коротко о приложении</h2>
-        <blockquote class="short-about__blockquote">«Лучшее приложение, что я видел в жизни!»</blockquote>
-          <cite class="short-about__cite">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
-      </section>
-      <section class="about-services">
+      <section class="first-screen">
+        <p class="first-screen__header">В путешествие с крутыми попутчиками!</p>
+        <img class="first-screen__companions" src="images/first-screen-image-mobile.png" width="192" height="255" alt="Ваш попутчик">
+        <section class="short-about">
+          <h2 class="visually-hidden">Коротко о приложении</h2>
+          <blockquote class="short-about__blockquote">«Лучшее приложение, что я видел в жизни!»</blockquote>
+            <cite class="short-about__cite">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+            <div class="secondary-navigation">
+              <a href="#" class="secondary-navigation__link secondary-navigation__link--phone"><img class="secondary-navigation__icon" src="images/phone.svg" width="16" height="16" alt="Телефон"></a>
+              <a href="#" class="secondary-navigation__link secondary-navigation__link--email"><img class="secondary-navigation__icon" src="images/email.svg" width="16" height="12" alt="E-mail"></a>
+              <a href="#" class="secondary-navigation__link secondary-navigation__link--login">Авторизация</a>
+            </div>
+        </section>
         <div class="short-guide">
-          <div class="short-guide_definition-wrapper short-guide_definition-wrapper--first">
+          <div class="short-guide__definition-wrapper short-guide__definition-wrapper--first">
             <p class="short-guide__definition">Выберите направление</p><span class="short-guide__value">1</span>
           </div>
-          <div class="short-guide_definition-wrapper short-guide_definition-wrapper--second">
+          <div class="short-guide__definition-wrapper short-guide__definition-wrapper--second">
             <p class="short-guide__definition">Изучите идеи путешественников</p><span class="short-guide__value">2</span>
           </div>
-          <div class="short-guide_definition-wrapper short-guide_definition-wrapper--third">
+          <div class="short-guide__definition-wrapper short-guide__definition-wrapper--third">
             <p class="short-guide__definition">Находите тех, кто похож на вас</p><span class="short-guide__value">3</span>
           </div>
-          <div class="short-guide_definition-wrapper short-guide_definition-wrapper--fourth">
+          <div class="short-guide__definition-wrapper short-guide__definition-wrapper--fourth">
             <p class="short-guide__definition">Путешествуйте вместе!</p><span class="short-guide__value">4</span>
           </div>
         </div>
+      </section>
+      <section class="about-services">
         <div class="about-services__wrapper">
           <h3 class="section-header">О сервисе</h3>
-          <p class="text-definition">Любое путешествие веселее<br> с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p class="text-definition text-definition--about-services">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
           <p class="text-definition text-definition--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <a class="show-all-button show-all-button--about-services" href="#">
+            <span class="show-all-button__text">Подробнее
+              <img class="show-all-button__icon" src="images/button-triangle.svg" width="13" height="13" alt="">
+            </span>
+          </a>
         </div>
       </section>
       <section class="destinations">
           <div class="destinations__header">
             <h3 class="section-header">Направления</h3>
-            <p class="text-definition text-definition--dark">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+            <p class="text-definition text-definition--dark text-definition--destinations">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           </div>
-          <!-- <div class="destinations__wrapper"> -->
+          <div class="destinations__wrapper">
             <div class="country">
               <img class="country__image" width="270" height="110" src="images/thailand.png" alt="Тайланд">
               <div class="country__information">
@@ -132,22 +138,22 @@
                 </div>
               </div>
             </div>
-            <a class="show-all-button show-all-button--country" href="#">
-              <span class="show-all-button__text">Показать все
-                <img class="show-all-button__icon" src="images/button-triangle.svg" width="13" height="13" alt="">
-              </span>
-            </a>
-        <!-- </div> -->
+        </div>
+        <a class="show-all-button show-all-button--country" href="#">
+          <span class="show-all-button__text">Показать все
+            <img class="show-all-button__icon" src="images/button-triangle.svg" width="13" height="13" alt="">
+          </span>
+        </a>
       </section>
       <section class="companions">
         <div class="companions__wrapper">
           <div class="companions__header-wrapper">
             <h3 class="section-header">Попутчики</h3>
-            <p class="text-definition">
+            <p class="text-definition text-definition--companions">
             Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-            <p class="text-definition text-definition--bold">Теперь можно легко найти единомышленников!</p>
+            <p class="text-definition text-definition--bold text-definition--companions">Теперь можно легко найти единомышленников!</p>
           </div>
-          <div class="companions__cards-wrapper">
+          <!-- <div class="companions__cards-wrapper"> -->
             <div class="cards-item">
               <img class="cards-item__image" src="images/cards/card-image-1.png" width="270" height="270" alt="">
               <img class="cards-item__level-image" src="images/cards/card-level-1.png" width="60" height="60" alt="">
@@ -170,7 +176,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          <!-- </div> -->
           <div class="cards-item">
             <img class="cards-item__image" src="images/cards/card-image-2.png" width="270" height="270" alt="">
             <img class="cards-item__level-image" src="images/cards/card-level-2.png" width="60" height="60" alt="">
@@ -202,25 +208,35 @@
       <section class="tariffs">
         <h3 class="visually-hidden">Тарифы для участников</h3>
           <div class="tariffs__wrapper">
-            <div class="tariffs__header">
+            <!-- <div class="tariffs__header"> -->
               <p class="tariffs__header-text">Добавьте свой профиль</p>
               <img class="tariffs__header-image" width="100" height="100" src="images/tariffs-header.svg" alt="Тарифы">
-            </div>
+            <!-- </div> -->
             <div class="tariffs__price">
-              <p class="tariffs__price-text">Базовое размещение Бесплатно</p><span class="tariffs__price-value tariffs__price-value--first">1</span>
-              <p class="tariffs__price-text">Вывод на первых позициях 99 руб./мес</p><span class="tariffs__price-value tariffs__price-value--second">2</span>
-              <p class="tariffs__price-text tariffs__price-text--bottom-line">Кастомный цвет карточки 59 руб./мес</p><span class="tariffs__price-value tariffs__price-value--third">3</span>
+              <p class="tariffs__price-text tariffs__price-text--first">Базовое размещение</p>
+              <p class="tariffs__price-value tariffs__price-value--first">Бесплатно</p>
+              <span class="tariffs__number tariffs__number--first">1</span>
+              <p class="tariffs__price-text tariffs__price-text--second">Вывод на первых позициях</p>
+              <p class="tariffs__price-value tariffs__price-value--second">99 руб./мес</p>
+              <span class="tariffs__number tariffs__number--second">2</span>
+              <p class="tariffs__price-text tariffs__price-text--third tariffs__price-text--bottom-line">Кастомный цвет карточки</p>
+              <p class="tariffs__price-value tariffs__price-value--third">59 руб./мес</p>
+              <span class="tariffs__number tariffs__number--third">3</span>
             </div>
+            <button class="show-all-link tariffs__show-link">Показать тарифы для бизнеса</button>
           </div>
-          <button class="show-all-link tariffs__show-link">Показать тарифы для бизнеса</button>
           <!-- Модальное окно Тарифы -->
           <article class="tariffs-modal visually-hidden">
             <h3 class="section-header section-header--tariffs-modal">Бизнес-тарифы</h3>
             <div class="tariffs-modal__wrapper">
-              <p class="tariffs-modal__text">Реклама у блоггера 300 000 руб./пост</p>
-              <p class="tariffs-modal__text">Накрутка подписчиков от 1 руб./шт.</p>
-              <p class="tariffs-modal__text">Лайки от ботов от 20 коп./лайк</p>
-              <p class="tariffs-modal__text tariffs-modal__text--bottom-line">Ваш продакт-плейсмент Индивидуально</p>
+              <p class="tariffs-modal__text">Реклама у блоггера</p>
+              <p class="tariffs-modal__text-value">300 000 руб./пост</p>
+              <p class="tariffs-modal__text">Накрутка подписчиков</p>
+              <p class="tariffs-modal__text-value">от 1 руб./шт.</p>
+              <p class="tariffs-modal__text">Лайки от ботов</p>
+              <p class="tariffs-modal__text-value">от 20 коп./лайк</p>
+              <p class="tariffs-modal__text tariffs-modal__text--bottom-line">Ваш продакт-плейсмент</p>
+              <p class="tariffs-modal__text-value tariffs-modal__text-value--bottom-line">Индивидуально</p>
             </div>
             <div class="tariffs-modal__close">
               <button class="tariffs-modal__close-link">Закрыть окно</button>
@@ -229,9 +245,9 @@
       </section>
       <section class="interesting">
         <div class="interesting__wrapper">
-          <h3 class="section-header">Заинтересовались?</h3>
+          <h3 class="section-header section-header--interesting">Заинтересовались?</h3>
           <p class="text-definition text-definition--interesting">
-            Зарегистрируйтесь,<br> это быстро и бесплатно! <br>Уже зарегистрированы? Тогда скорее
+            Зарегистрируйтесь, это быстро и бесплатно! <br>Уже зарегистрированы? Тогда скорее
             <a href="#" class="interesting__regular-link">авторизуйтесь</a>.
           </p>
         </div>
@@ -246,16 +262,18 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h3 class="visually-hidden">Контакты</h3>
-          <p class="text-definition text-definition--contacts">Остались вопросы? <br>Мы с радостью на них ответим!</p>
-          <div class="contacts__phone-wrapper">
-            <img class="contacts__phone-image" src="images/phone-yellow-icon.svg" width="18" height="17" alt="Телефон">
-            <a class="contacts__phone-link" href="tel:88005558628">8 800 555-86-28</a>
-          </div>
-          <div class="contacts__email-wrapper">
-            <span class="contacts__email-icon-wrapper">
-              <img class="contacts__email-image" src="images/email-yellow-icon.svg" width="18" height="13" alt="E-mail">
-            </span>
-            <a class="contacts__email-link" href="#">mail@htmlacademy.ru</a>
+          <p class="text-definition text-definition--contacts">Остались вопросы? Мы с радостью на них ответим!</p>
+          <div class="contacts__grid-wrapper">
+            <div class="contacts__phone-wrapper">
+              <img class="contacts__phone-image" src="images/phone-yellow-icon.svg" width="18" height="17" alt="Телефон">
+              <a class="contacts__phone-link" href="tel:88005558628">8 800 555-86-28</a>
+            </div>
+            <div class="contacts__email-wrapper">
+              <span class="contacts__email-icon-wrapper">
+                <img class="contacts__email-image" src="images/email-yellow-icon.svg" width="18" height="13" alt="E-mail">
+              </span>
+              <a class="contacts__email-link" href="#">mail@htmlacademy.ru</a>
+            </div>
           </div>
         </div>
       </section>
@@ -276,22 +294,22 @@
         <img class="map_background" src="images/map-bg.png" width="320" height="421" alt="Карта проезда">
         <img class="map_flag" src="images/map-flag.svg" width="41" height="41" alt="Мы тут">
       </section>
+    </main>
+    <footer class="main-footer">
+      <img class="main-footer__logo" src="images/logo-social-mobile.svg" width="96" height="15" alt="Погнали?">
       <section class="socials">
         <h3 class="visually-hidden">Мы в соцсетях</h3>
         <div class="socials__wrapper">
-        <img class="socials__logo" src="images/logo-social-mobile.svg" width="96" height="15" alt="Погнали?">
           <div class="socials__icons">
-            <a href="#" class="socials__icons-link socials__icons-link--telegram"><img class="socials__icons-image" src="images/telegram.svg" width="20" height="18" alt="Телеграм"></a>
-            <a href="#" class="socials__icons-link socials__icons-link--vkontakte"><img class="socials__icons-image" src="images/vkontakte.svg" width="30" height="16" alt="Вконтакте"></a>
-            <a href="#" class="socials__icons-link socials__icons-link--youtube"><img class="socials__icons-image" src="images/youtube.svg" width="20" height="15" alt="Youtube"></a>
+            <a href="#" class="socials__icons-link socials__icons-link--telegram"><img class="socials__icons-image socials__icons-image--telegram" src="images/telegram.svg" width="20" height="18" alt="Телеграм"></a>
+            <a href="#" class="socials__icons-link socials__icons-link--vkontakte"><img class="socials__icons-image socials__icons-image--vkontakte" src="images/vkontakte.svg" width="30" height="16" alt="Вконтакте"></a>
+            <a href="#" class="socials__icons-link socials__icons-link--youtube"><img class="socials__icons-image socials__icons-image--youtube" src="images/youtube.svg" width="20" height="15" alt="Youtube"></a>
           </div>
         </div>
       </section>
-    </main>
-    <footer class="main-footer">
       <div class="main-footer__wrapper">
         <p class="main-footer__text">Разработано</p>
-        <img class="main-footer__logo" src="images/footer-logo.svg" width="27" height="33" alt="Погнали?">
+        <img class="main-footer__logo-left" src="images/footer-logo.svg" width="27" height="33" alt="Погнали?">
       </div>
     </footer>
     <script src="script.js"></script>

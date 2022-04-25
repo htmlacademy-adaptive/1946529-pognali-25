@@ -1,16 +1,30 @@
 /* КОНТАКТЫ */
 
 .contacts {
+  position: relative;
   padding: 5px 25px 25px;
   background-color: @main-background-dark;
   border-radius: 0 0 20px 20px;
+  z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    border-radius: 0 0 40px 40px;
+    padding: 0 75px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 133px 104px;
+    border-radius: 0 0 60px 60px;
+  }
 }
 
-.text-definition--contacts {
-  display: block;
-  margin: 0;
-  padding: 0 27px;
-  text-align: center;
+.contacts__grid-wrapper {
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
 }
 
 .contacts__phone-wrapper {
@@ -20,6 +34,15 @@
   justify-content: flex-start;
   min-width: 180px;
   height: 45px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-self: end;
+    margin: 0 55px 0 0;
+  }
 }
 
 .contacts__phone-image {
@@ -27,12 +50,38 @@
   padding: 14px;
   background: @secondary-background-dark;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 23px;
+    padding: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 30px;
+    padding: 30px 29px;
+  }
+}
+
+.contacts__email-image {
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 28px;
+    height: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 37px;
+    height: 25px;
+  }
 }
 
 .contacts__phone-link,
 .contacts__email-link {
   margin-left: 16px;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -42,6 +91,12 @@
   color: @base-yellow;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 23px;
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .contacts__email-wrapper {
@@ -50,10 +105,32 @@
   justify-content: flex-start;
   min-width: 237px;
   height: 45px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 0 55px;
+  }
 }
 
 .contacts__email-icon-wrapper {
   padding: 14px;
   background: @secondary-background-dark;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    display: grid;
+    width: 68px;
+    height: 68px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 90px;
+    height: 90px;
+  }
 }
