@@ -55,7 +55,7 @@
   font-weight: 700;
   font-style: normal;
   line-height: 18px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: hsla(0, 0%, 27%, 0.3);
 
@@ -79,7 +79,7 @@
   font-weight: 700;
   font-style: normal;
   line-height: 18px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: @base-grey;
   opacity: 0.3;
@@ -124,12 +124,11 @@
 }
 
 .interesting__email-button::before {
-
   @media (min-width: @desktop-width) {
     content: "Регистрация";
     position: absolute;
     display: block;
-    border-radius: 10px;
+    // border-radius: 10px;
     font-family: "Blogger Sans", sans-serif;
     font-style: normal;
     font-weight: 700;

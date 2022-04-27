@@ -2,13 +2,39 @@
   margin-left: -1px;
   position: relative;
   display: grid;
-  height: 42px;
+  height: 44px;
   align-items: center;
   justify-items: center;
   border: 1px solid @border-gray;
   border-radius: 4px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    min-height: 70px;
+    grid-column: 3/4;
+  }
 }
+
+.flag-wrapper::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    width: 22px;
+    height: 24px;
+    background: url("../images/form/country-close-tablet.svg");
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+.flag-wrapper--next {
+  @media (min-width: @tablet-width) {
+    margin-top: 16px;
+  }
+}
+
 
 .flag-wrapper__close-select {
   position: absolute;
@@ -16,14 +42,23 @@
   right: 0;
   transform: translate(50%, -50%);
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .flag-wrapper__circle-dark {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(calc(-50% + 1px), -50%);
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .flag-wrapper__arrow-down {
@@ -31,8 +66,19 @@
   bottom: -50%;
   right: 46px;
   transform: translateY(-50%);
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .flag-wrapper__icon {
   display: block;
+  width: 35px;
+  height: 24px;
+
+  @media (min-width: @tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
 }

@@ -41,3 +41,48 @@ showTariffs.addEventListener('click', ()=> {
 closeTariffs.addEventListener('click', ()=> {
   modalWindow.classList.add('visually-hidden');
 });
+
+
+// Показываем меню при изменении ширины экрана больше 768px
+
+let menuLoginWrapper = document.querySelector('.main-menu__login-wrapper');
+let topPhoneLink = document.querySelector('.secondary-navigation__link--phone');
+let topEmailLink = document.querySelector('.secondary-navigation__link--email');
+let secondaryNavigation = document.querySelector('.secondary-navigation');
+
+
+let resizeOnload = function() {
+  if (document.body.clientWidth < 1440) {
+
+    if (!headerTop.classList.contains('main-header__burger-menu-active')) {
+      mainMenu.classList.add('visually-hidden');
+    }
+
+    secondaryNavigation.prepend(topEmailLink);
+    secondaryNavigation.prepend(topPhoneLink);
+  }
+
+  if (document.body.clientWidth >= 1440) {
+
+
+    if (!headerTop.classList.contains('main-header__burger-menu-active')) {
+      mainMenu.classList.remove('visually-hidden');
+      console.log('hello')
+    }
+
+    menuLoginWrapper.prepend(topEmailLink);
+    menuLoginWrapper.prepend(topPhoneLink);
+  }
+}
+
+window.addEventListener('load', ()=> {
+  resizeOnload();
+})
+
+
+window.addEventListener('resize', ()=> {
+  resizeOnload();
+})
+
+
+

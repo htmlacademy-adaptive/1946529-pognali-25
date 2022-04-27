@@ -8,6 +8,19 @@
   border-radius: 0 0 4px 4px;
   border: 1px solid @border-gray;
   border-top: none;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    // top: 0;
+    // left: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-radius: 0;
+    border: none;
+    min-width: 210px;
+    padding: 37px 0 33px 25px;
+    box-shadow: 8px 8px 16px rgba(54, 80, 148, 0.18);
+  }
 }
 
 .table-list__label {
@@ -20,6 +33,13 @@
   letter-spacing: 0;
   text-align: left;
   color: @base-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .table-list__checkbox:checked ~ .table-list__label {

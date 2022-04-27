@@ -6,8 +6,9 @@
     @main-background-dark;
 
   @media (min-width: @tablet-width) {
-    background: url("../images/first-screen-tablet-bg.png") no-repeat bottom,
-    @tablet-dark-bg;
+    background:
+      url("../images/first-screen-tablet-bg.png") no-repeat bottom,
+      @tablet-dark-bg;
     min-height: 800px;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -21,7 +22,7 @@
     padding: 0 60px;
     height: auto;
     background:
-      url("../images/first-screen-bg-desktop.png") no-repeat top -108px left 0px,
+      url("../images/first-screen-bg-desktop.png") no-repeat top -108px left 0,
       @main-background-dark;
   }
 }
@@ -74,26 +75,14 @@
 }
 
 .first-screen::before {
-
   @media (min-width: @desktop-width) {
     content: "";
     display: block;
     width: 432px;
     height: 640px;
-    background:
-      url("../images/first-screen-companions-desktop.svg");
+    background: url("../images/first-screen-companions-desktop.svg");
     grid-column: 2/3;
     grid-row: 1/2;
     justify-self: end;
   }
 }
-
-// .first-screen::after {
-//   content: "";
-//   background-color: @main-background-dark;
-//   position: absolute;
-//   bottom: 0;
-//   min-width: 1440px;
-//   height: 62px;
-//   z-index: -1000;
-// }
