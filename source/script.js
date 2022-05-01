@@ -43,16 +43,62 @@ closeTariffs.addEventListener('click', ()=> {
 });
 
 
-// Показываем меню при изменении ширины экрана больше 768px
+// Показываем меню при изменении ширины экрана больше 768px + изменяем стили верхнего меню при скроле
 
 let menuLoginWrapper = document.querySelector('.main-menu__login-wrapper');
 let topPhoneLink = document.querySelector('.secondary-navigation__link--phone');
 let topEmailLink = document.querySelector('.secondary-navigation__link--email');
 let secondaryNavigation = document.querySelector('.secondary-navigation');
+let darkBurgerIcon = document.querySelector('.main-header__burger-menu-icon-dark');
 
+let menuLink = document.querySelectorAll('.main-menu__link');
+let menuLinkBefore = document.querySelector('.main-menu__link::before');
+let mainMenuList = document.querySelector('.main-menu__list');
+let mainHeader = document.querySelector('.main-header');
+let bgWrapper = document.querySelector('.bg-wrapper--dark');
 
 let resizeOnload = function() {
-  if (document.body.clientWidth < 1440) {
+
+if (document.body.clientWidth < 768) {
+
+    window.addEventListener('scroll', ()=> {
+      if (window.pageYOffset > 1) {
+        // headerTop.style.position = 'fixed';
+        headerTop.style.background = '#ffffff';
+        logoDarkg.classList.remove('visually-hidden');
+        logoLight.classList.add('visually-hidden');
+        darkBurgerIcon.classList.remove('visually-hidden');
+
+      } else {
+        // headerTop.style.position = 'static';
+        headerTop.style.background = '#161c35';
+        logoDarkg.classList.add('visually-hidden');
+        logoLight.classList.remove('visually-hidden');
+        darkBurgerIcon.classList.add('visually-hidden');
+      }
+    });
+  }
+
+  if (document.body.clientWidth >= 768 && document.body.clientWidth < 1440) {
+
+    // if (document.body.clientWidth < 1440) {
+      window.addEventListener('scroll', ()=> {
+        if (window.pageYOffset > 1) {
+          // headerTop.style.position = 'fixed';
+          headerTop.style.background = '#ffffff';
+          logoDarkg.classList.remove('visually-hidden');
+          logoLight.classList.add('visually-hidden');
+          darkBurgerIcon.classList.remove('visually-hidden');
+
+        } else {
+          // headerTop.style.position = 'static';
+          headerTop.style.background = '#182044';
+          logoDarkg.classList.add('visually-hidden');
+          logoLight.classList.remove('visually-hidden');
+          darkBurgerIcon.classList.add('visually-hidden');
+        }
+      });
+    // }
 
     if (!headerTop.classList.contains('main-header__burger-menu-active')) {
       mainMenu.classList.add('visually-hidden');
@@ -64,6 +110,39 @@ let resizeOnload = function() {
 
   if (document.body.clientWidth >= 1440) {
 
+    window.addEventListener('scroll', ()=> {
+      if (window.pageYOffset > 700) {
+        mainHeader.style.position = 'fixed';
+        // headerTop.style.position = 'fixed';
+        headerTop.style.paddingTop = 23 + 'px';
+        headerTop.style.paddingBottom = 23 + 'px';
+        bgWrapper.style.background = '#ffffff';
+        // headerTop.style.left = 223 + 'px';
+        mainHeader.classList.add('main-header__top--fixed');
+        headerTop.style.background = '#ffffff';
+        logoDarkg.classList.remove('visually-hidden');
+        logoLight.classList.add('visually-hidden');
+        mainMenuList.classList.add('main-menu__list--change-before');
+
+        for (link of menuLink) {
+          link.style.color = '#192144';
+        }
+      } else {
+        mainHeader.style.position = 'static';
+        headerTop.style.paddingTop = 46 + 'px';
+        headerTop.style.paddingBottom = 0;
+        headerTop.style.background = '#161c35';
+        bgWrapper.style.background = '#161c35';
+        logoDarkg.classList.add('visually-hidden');
+        logoLight.classList.remove('visually-hidden');
+        mainMenuList.classList.remove('main-menu__list--change-before');
+        mainHeader.classList.remove('main-header__top--fixed');
+
+        for (link of menuLink) {
+          link.style.color = '#ffffff';
+        }
+      }
+    });
 
     if (!headerTop.classList.contains('main-header__burger-menu-active')) {
       mainMenu.classList.remove('visually-hidden');
@@ -84,5 +163,45 @@ window.addEventListener('resize', ()=> {
   resizeOnload();
 })
 
+// Изменение верхнего меню
+
+// let menuLink = document.querySelectorAll('.main-menu__link');
+// let menuLinkBefore = document.querySelector('.main-menu__link::before');
+// let mainMenuList = document.querySelector('.main-menu__list');
+
+// let onscrollWindow = function() {
+
+  // if (document.body.clientWidth >= 1440) {
+  //   window.addEventListener('scroll', ()=> {
+  //     if (window.pageYOffset > 700) {
+  //       headerTop.style.position = 'fixed';
+  //       headerTop.style.paddingTop = 23 + 'px';
+  //       headerTop.style.paddingBottom = 23 + 'px';
+  //       headerTop.style.background = '#ffffff';
+  //       logoDarkg.classList.remove('visually-hidden');
+  //       logoLight.classList.add('visually-hidden');
+  //       mainMenuList.classList.add('main-menu__list--change-before');
+
+  //       for (link of menuLink) {
+  //         link.style.color = '#192144';
+  //       }
+  //     } else {
+  //       headerTop.style.position = 'static';
+  //       headerTop.style.paddingTop = 46 + 'px';
+  //       headerTop.style.paddingBottom = 0;
+  //       headerTop.style.background = '#161c35';
+  //       logoDarkg.classList.add('visually-hidden');
+  //       logoLight.classList.remove('visually-hidden');
+  //       mainMenuList.classList.remove('main-menu__list--change-before');
+
+  //       for (link of menuLink) {
+  //         link.style.color = '#ffffff';
+  //       }
+  //     }
+  //   });
 
 
+  // }
+// }
+
+// onscrollWindow();

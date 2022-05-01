@@ -4,10 +4,24 @@
   list-style-type: none;
   padding: 0;
   margin: 26px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 0;
+    align-items: center;
+    width: 60%;
+  }
 }
 
 .companions-header-list__item:not(:last-child) {
   margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-right: 28px;
+  }
 }
 
 .companions-header-list__checkbox {
@@ -26,6 +40,13 @@
   letter-spacing: 0;
   text-transform: uppercase;
   opacity: 0.2;
+
+  @media (min-width: @tablet-width) {
+    font-family: "Blogger Sans", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
 }
 
 .companions-header-list__checkbox:checked ~ .companions-header-list__label {

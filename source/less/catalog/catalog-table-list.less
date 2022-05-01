@@ -6,6 +6,11 @@
   box-sizing: border-box;
   border-radius: 0 0 4px 4px;
   border-top: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 59px 0 0;
+    padding: 0 0 0 40px;
+  }
 }
 
 .catalog-table-list__label {
@@ -18,6 +23,11 @@
   letter-spacing: 0;
   text-align: left;
   color: @base-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .catalog-table-list__checkbox:checked ~ .catalog-table-list__label {

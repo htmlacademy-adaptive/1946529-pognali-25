@@ -1,6 +1,18 @@
 /* О сервисе */
 
 .about-services {
+  @media (min-width: @desktop-width) {
+    position: relative;
+    padding-top: 110px;
+    margin-top: -60px;
+    z-index: 3;
+    border-radius: 0 0 60px 60px;
+    background: @main-background-dark;
+    box-sizing: border-box;
+  }
+}
+
+.about-services__main {
   position: relative;
   z-index: 3;
   background:
@@ -16,20 +28,23 @@
     border-radius: 0 0 40px 40px;
     padding: 237px 40px 89px;
     background:
-      url("../images/about-tablet bg-right.png") no-repeat right bottom 89px,
+      url("../images/about-tablet bg-right.png") no-repeat right 60px bottom 89px,
       url("../images/about-tablet-bg-top.svg") no-repeat center 32%,
       @tablet-dark-bg;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 42px 131px 163px;
-    margin-top: -60px;
+    padding: 62px 131px 163px;
+    // margin-top: -60px;
     z-index: 4;
     border-radius: 0 0 60px 60px;
     background:
       url("../images/about-desktop-bg-right.png") no-repeat right bottom,
-      url("../images/about-tablet-bg-top.svg") no-repeat center 32%,
+      url("../images/square-about-services-bg.svg") no-repeat top 50px left 100px,
       @main-background-dark;
+    width: 1440px;
+    margin: -60px auto 0;
+    box-sizing: border-box;
   }
 }
 

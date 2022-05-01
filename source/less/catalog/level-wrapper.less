@@ -1,3 +1,17 @@
+.level-wrapper {
+  position: relative;
+  border-top: 1px solid @light-background;
+  grid-column: 3/4;
+  grid-row: 6/7;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 5/6;
+    grid-row: 3/4;
+    border: 0;
+    padding: 12px 0 0;
+  }
+}
+
 .level-wrapper__header {
   position: absolute;
   margin: 0;
@@ -15,6 +29,10 @@
   text-transform: uppercase;
   right: 12px;
   transform: translate(0, calc(-50% - 2px));
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .level-wrapper__level-image-wrapper {
@@ -24,4 +42,10 @@
 
 .level-wrapper__level-image {
   padding: 15px 21px 0 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    width: 60px;
+    height: 60px;
+  }
 }

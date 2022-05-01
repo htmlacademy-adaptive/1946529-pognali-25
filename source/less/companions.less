@@ -1,6 +1,16 @@
 /* Попутчики */
 
 .companions {
+  @media (min-width: @desktop-width) {
+    position: relative;
+    background: @main-background-dark;
+    border-radius: 0 0 60px 60px;
+    margin-top: -60px;
+    z-index: 1;
+  }
+}
+
+.companions__main {
   z-index: 1;
   position: relative;
   background:
@@ -29,8 +39,11 @@
       url("../images/companions-tablet-bg-man.png") no-repeat top 194px left 547px,
       @main-background-dark;
     padding: 160px 60px 134px;
-    border-radius: 0 0 60px 60px;
-    margin-top: -60px;
+    // border-radius: 0 0 60px 60px;
+    // margin-top: -60px;
+    width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 

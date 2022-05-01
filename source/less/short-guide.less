@@ -9,7 +9,7 @@
   // opacity: 0.4;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
+    // position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 688px;
@@ -24,13 +24,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
+    position: relative;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 1320px;
     transform: translate(0, -39%);
-    margin: 0;
+    margin: 0 0 -200px;
     z-index: 5;
     grid-column: 1/4;
+    grid-row: 2/3;
+    bottom: 20px;
   }
 }
 

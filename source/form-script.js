@@ -155,6 +155,7 @@ let countryList = document.querySelector('.country-list');
 let closeCountryList = document.querySelector('.country-list__close');
 
 let openCountryList = document.querySelector('.add-new-country__add-new-plus');
+let addNewCountry = document.querySelector('.add-new-country');
 
 closeCountryList.addEventListener('click', ()=> {
   countryList.classList.add('visually-hidden');

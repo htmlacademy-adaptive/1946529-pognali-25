@@ -2,7 +2,8 @@
 
 .tariffs-modal {
   padding: 34px 25px 93px;
-  position: absolute;
+  // position: absolute;
+  position: fixed;
   top: -10px;
   left: 50%;
   transform: translateX(-50%);
@@ -12,9 +13,10 @@
   height: 443px;
   box-sizing: border-box;
   box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
-  z-index: 1;
+  z-index: 5;
 
   @media (min-width: @tablet-width) {
+    // position: fixed;
     min-width: 688px;
     top: 40px;
     padding: 54px 90px 0;

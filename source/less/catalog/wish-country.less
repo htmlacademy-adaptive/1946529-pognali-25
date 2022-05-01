@@ -1,6 +1,15 @@
 .wish-country-list {
   padding: 25px 0 22px 25px;
   list-style-type: none;
+  grid-column: 1/4;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    border-top: 1px solid @light-background;
+    width: 100%;
+    padding: 26px 0 0;
+    margin-top: 31px;
+  }
 }
 
 .wish-country-list__item {
@@ -15,18 +24,21 @@
   text-align: left;
   color: @base-text-color;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .wish-country-list__item:not(:last-child) {
   margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 26px 0 0;
+  }
 }
 
 .wish-country-list__item-flag {
   margin-right: 14px;
-}
-
-.transport-wrapper,
-.level-wrapper {
-  position: relative;
-  border-top: 1px solid @light-background;
 }

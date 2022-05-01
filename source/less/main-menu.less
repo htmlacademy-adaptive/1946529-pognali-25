@@ -57,6 +57,19 @@
   }
 }
 
+.main-menu__list--change-before::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: @base-text-color;
+    left: 0;
+    align-self: center;
+    margin-right: 45px;
+  }
+}
+
 .main-menu__item:not(:last-child) {
   @media (min-width: @desktop-width) {
     margin-right: 33px;
@@ -96,6 +109,31 @@
     grid-column: 3/4;
     justify-self: end;
     margin: 0;
+  }
+}
+
+.main-menu__login-link {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 17px;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+}
+
+.main-menu__login-link--phone {
+  @media (min-width: @desktop-width) {
+    background-color: @base-orange;
+  }
+}
+
+.main-menu__login-link--email {
+  @media (min-width: @desktop-width) {
+    background-color: @base-yellow;
   }
 }
 
