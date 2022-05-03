@@ -9,6 +9,8 @@
 </head>
   <body class="page__body">
     <header class="main-header">
+      <!-- <div class="bg-wrapper bg-wrapper--light"> -->
+      <div class="bg-wrapper bg-wrapper--dark">
       <div class="main-header__top">
         <!-- <div class="main-header__top-flex"> -->
           <a href="/" class="main-header__logo">
@@ -17,6 +19,7 @@
           </a>
           <button class="main-header__burger-menu">
             <img class="main-header__burger-menu-icon" src="images/burger-menu-icon.svg" width="25" height="11" alt="Меню">
+            <img class="main-header__burger-menu-icon-dark visually-hidden" src="images/burger-menu-icon-dark.svg" width="25" height="11" alt="Меню">
             <img class="main-header__burger-menu-close visually-hidden" src="images/close-burger-menu.svg" width="19" height="18" alt="Меню">
           </button>
         <!-- </div> -->
@@ -50,9 +53,15 @@
             <li class="social__item"><a href="#" class="social__link social__link--instagram"><span class="social__icon visually-hidden"></span></a></li>
           </ul>
         </div>
+      </div>
+      <!-- </div> -->
     </header>
     <main class="main-wrapper">
       <h1 class="visually-hidden">Преимущество сервиса Погнали</h1>
+      <div class="bg-wrapper bg-wrapper--first-screen">
+        <svg class="bg-wrapper__svg">
+          <rect x="0" y="0" width="100%" height="740" fill="#161c35"/>
+        </svg>
       <section class="first-screen">
         <p class="first-screen__header">В путешествие с крутыми попутчиками!</p>
         <img class="first-screen__companions" src="images/first-screen-image-mobile.png" width="192" height="255" alt="Ваш попутчик">
@@ -81,19 +90,23 @@
           </div>
         </div>
       </section>
+      </div>
       <section class="about-services">
-        <div class="about-services__wrapper">
-          <h3 class="section-header">О сервисе</h3>
-          <p class="text-definition text-definition--about-services">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-          <p class="text-definition text-definition--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
-          <a class="show-all-button show-all-button--about-services" href="#">
-            <span class="show-all-button__text">Подробнее
-              <img class="show-all-button__icon" src="images/button-triangle.svg" width="13" height="13" alt="">
-            </span>
-          </a>
+        <div class="about-services__main">
+          <div class="about-services__wrapper">
+            <h3 class="section-header">О сервисе</h3>
+            <p class="text-definition text-definition--about-services">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+            <p class="text-definition text-definition--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+            <a class="show-all-button show-all-button--about-services" href="#">
+              <span class="show-all-button__text">Подробнее
+                <img class="show-all-button__icon" src="images/button-triangle.svg" width="13" height="13" alt="">
+              </span>
+            </a>
+          </div>
         </div>
       </section>
       <section class="destinations">
+        <div class="destinations__main">
           <div class="destinations__header">
             <h3 class="section-header">Направления</h3>
             <p class="text-definition text-definition--dark text-definition--destinations">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
@@ -147,65 +160,68 @@
             <img class="show-all-button__icon" src="images/button-triangle.svg" width="13" height="13" alt="">
           </span>
         </a>
+      </div>
       </section>
       <section class="companions">
-        <div class="companions__wrapper">
-          <div class="companions__header-wrapper">
-            <h3 class="section-header">Попутчики</h3>
-            <p class="text-definition text-definition--companions">
-            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-            <p class="text-definition text-definition--bold text-definition--companions">Теперь можно легко найти единомышленников!</p>
-          </div>
-          <!-- <div class="companions__cards-wrapper"> -->
+        <div class="companions__main">
+          <div class="companions__wrapper">
+            <div class="companions__header-wrapper">
+              <h3 class="section-header">Попутчики</h3>
+              <p class="text-definition text-definition--companions">
+              Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+              <p class="text-definition text-definition--bold text-definition--companions">Теперь можно легко найти единомышленников!</p>
+            </div>
+            <!-- <div class="companions__cards-wrapper"> -->
+              <div class="cards-item">
+                <img class="cards-item__image" src="images/cards/card-image-1.png" width="270" height="270" alt="">
+                <img class="cards-item__level-image" src="images/cards/card-level-1.png" width="60" height="60" alt="">
+                <div class="cards-item__about-person">
+                  <div class="cards-item__flag-wrapper">
+                    <img class="cards-item__flag" src="images/cards/sri-lanka-flag.png" width="35" height="24" alt="Шри-Ланка">
+                    <img class="cards-item__flag" src="images/cards/thailand-flag.png" width="35" height="24" alt="Тайланд">
+                    <img class="cards-item__flag" src="images/cards/seychelles-flag.png" width="35" height="24" alt="Сейшеллы">
+                  </div>
+                  <span class="cards-item__is-online cards-item__is-online--offline">
+                    <img src="images/cards/is-online-offline.svg" width="6" height="6" alt="">
+                    <p class="cards-item__name-text">Таня Фирсова</p>
+                  </span>
+                  <p class="cards-item__hashtag-text">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                  <div class="cards-item__activity-wraper">
+                    <img class="cards-item__icon" width="21" height="21" src="images/cards/airplane.svg" alt="Самолёт">
+                    <img class="cards-item__icon cards-item__icon--inactive" width="21" height="21" src="images/cards/bus.svg" alt="Автобус">
+                    <img class="cards-item__icon cards-item__icon--inactive" width="21" height="21" src="images/cards/bicycle.svg" alt="Велосипед">
+                    <img class="cards-item__icon cards-item__icon--inactive" width="21" height="21" src="images/cards/run.svg" alt="Бег">
+                  </div>
+                </div>
+              </div>
+            <!-- </div> -->
             <div class="cards-item">
-              <img class="cards-item__image" src="images/cards/card-image-1.png" width="270" height="270" alt="">
-              <img class="cards-item__level-image" src="images/cards/card-level-1.png" width="60" height="60" alt="">
+              <img class="cards-item__image" src="images/cards/card-image-2.png" width="270" height="270" alt="">
+              <img class="cards-item__level-image" src="images/cards/card-level-2.png" width="60" height="60" alt="">
               <div class="cards-item__about-person">
                 <div class="cards-item__flag-wrapper">
-                  <img class="cards-item__flag" src="images/cards/sri-lanka-flag.png" width="35" height="24" alt="Шри-Ланка">
-                  <img class="cards-item__flag" src="images/cards/thailand-flag.png" width="35" height="24" alt="Тайланд">
-                  <img class="cards-item__flag" src="images/cards/seychelles-flag.png" width="35" height="24" alt="Сейшеллы">
+                  <img class="cards-item__flag" src="images/cards/belgium-flag.png" width="35" height="24" alt="Бельгия>">
+                  <img class="cards-item__flag" src="images/cards/czech-flag.png" width="35" height="24" alt="Чехия">
                 </div>
-                <span class="cards-item__is-online cards-item__is-online--offline">
-                  <img src="images/cards/is-online-offline.svg" width="6" height="6" alt="">
-                  <p class="cards-item__name-text">Таня Фирсова</p>
-                </span>
-                <p class="cards-item__hashtag-text">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                  <span class="cards-item__is-online cards-item__is-online--online">
+                    <img src="images/cards/is-online-online.svg" width="6" height="6" alt="">
+                    <p class="cards-item__name-text">Петя Демин</p>
+                  </span>
+                  <p class="cards-item__hashtag-text">#бургер #бар #футбол #концерт #крафт</p>
                 <div class="cards-item__activity-wraper">
                   <img class="cards-item__icon" width="21" height="21" src="images/cards/airplane.svg" alt="Самолёт">
-                  <img class="cards-item__icon cards-item__icon--inactive" width="21" height="21" src="images/cards/bus.svg" alt="Автобус">
+                  <img class="cards-item__icon" width="21" height="21" src="images/cards/bus-active.svg" alt="Автобус">
                   <img class="cards-item__icon cards-item__icon--inactive" width="21" height="21" src="images/cards/bicycle.svg" alt="Велосипед">
-                  <img class="cards-item__icon cards-item__icon--inactive" width="21" height="21" src="images/cards/run.svg" alt="Бег">
+                  <img class="cards-item__icon" width="21" height="21" src="images/cards/run-active.svg" alt="Бег">
                 </div>
               </div>
             </div>
-          <!-- </div> -->
-          <div class="cards-item">
-            <img class="cards-item__image" src="images/cards/card-image-2.png" width="270" height="270" alt="">
-            <img class="cards-item__level-image" src="images/cards/card-level-2.png" width="60" height="60" alt="">
-            <div class="cards-item__about-person">
-              <div class="cards-item__flag-wrapper">
-                <img class="cards-item__flag" src="images/cards/belgium-flag.png" width="35" height="24" alt="Бельгия>">
-                <img class="cards-item__flag" src="images/cards/czech-flag.png" width="35" height="24" alt="Чехия">
-              </div>
-                <span class="cards-item__is-online cards-item__is-online--online">
-                  <img src="images/cards/is-online-online.svg" width="6" height="6" alt="">
-                  <p class="cards-item__name-text">Петя Демин</p>
-                </span>
-                <p class="cards-item__hashtag-text">#бургер #бар #футбол #концерт #крафт</p>
-              <div class="cards-item__activity-wraper">
-                <img class="cards-item__icon" width="21" height="21" src="images/cards/airplane.svg" alt="Самолёт">
-                <img class="cards-item__icon" width="21" height="21" src="images/cards/bus-active.svg" alt="Автобус">
-                <img class="cards-item__icon cards-item__icon--inactive" width="21" height="21" src="images/cards/bicycle.svg" alt="Велосипед">
-                <img class="cards-item__icon" width="21" height="21" src="images/cards/run-active.svg" alt="Бег">
-              </div>
-            </div>
+            <a class="show-all-button show-all-button--companions" href="#">
+              <span class="show-all-button__text">Показать всех
+                <img class="show-all-button__icon" src="images/button-triangle.svg" width="13" height="13" alt="">
+              </span>
+            </a>
           </div>
-          <a class="show-all-button show-all-button--companions" href="#">
-            <span class="show-all-button__text">Показать всех
-              <img class="show-all-button__icon" src="images/button-triangle.svg" width="13" height="13" alt="">
-            </span>
-          </a>
         </div>
       </section>
       <section class="tariffs">
@@ -247,18 +263,20 @@
           </article>
       </section>
       <section class="interesting">
-        <div class="interesting__wrapper">
-          <h3 class="section-header section-header--interesting">Заинтересовались?</h3>
-          <p class="text-definition text-definition--interesting">
-            Зарегистрируйтесь, это быстро и бесплатно! <br>Уже зарегистрированы? Тогда скорее
-            <a href="#" class="interesting__regular-link">авторизуйтесь</a>.
-          </p>
-        </div>
-        <div class="interesting__email">
-          <input class="interesting__email-text" type="text" placeholder="E-mail">
-          <button class="interesting__email-button">
-            <img class="interesting__email-button-icon" src="images/button-triangle.svg" width="13" height="13" alt="">
-          </button>
+        <div class="interesting__main">
+          <div class="interesting__wrapper">
+            <h3 class="section-header section-header--interesting">Заинтересовались?</h3>
+            <p class="text-definition text-definition--interesting">
+              Зарегистрируйтесь, это быстро и бесплатно! <br>Уже зарегистрированы? Тогда скорее
+              <a href="#" class="interesting__regular-link">авторизуйтесь</a>.
+            </p>
+          </div>
+          <div class="interesting__email">
+            <input class="interesting__email-text" type="text" placeholder="E-mail">
+            <button class="interesting__email-button">
+              <img class="interesting__email-button-icon" src="images/button-triangle.svg" width="13" height="13" alt="">
+            </button>
+          </div>
         </div>
       </section>
       <!-- Раздел контакты разделён надве секции для удобства вёрстки -->
@@ -299,20 +317,22 @@
       </section>
     </main>
     <footer class="main-footer">
-      <img class="main-footer__logo" src="images/logo-social-mobile.svg" width="96" height="15" alt="Погнали?">
-      <section class="socials">
-        <h3 class="visually-hidden">Мы в соцсетях</h3>
-        <div class="socials__wrapper">
-          <div class="socials__icons">
-            <a href="#" class="socials__icons-link socials__icons-link--telegram"><img class="socials__icons-image socials__icons-image--telegram" src="images/telegram.svg" width="20" height="18" alt="Телеграм"></a>
-            <a href="#" class="socials__icons-link socials__icons-link--vkontakte"><img class="socials__icons-image socials__icons-image--vkontakte" src="images/vkontakte.svg" width="30" height="16" alt="Вконтакте"></a>
-            <a href="#" class="socials__icons-link socials__icons-link--youtube"><img class="socials__icons-image socials__icons-image--youtube" src="images/youtube.svg" width="20" height="15" alt="Youtube"></a>
+      <div class="main-footer__main">
+        <img class="main-footer__logo" src="images/logo-social-mobile.svg" width="96" height="15" alt="Погнали?">
+        <section class="socials">
+          <h3 class="visually-hidden">Мы в соцсетях</h3>
+          <div class="socials__wrapper">
+            <div class="socials__icons">
+              <a href="#" class="socials__icons-link socials__icons-link--telegram"><img class="socials__icons-image socials__icons-image--telegram" src="images/telegram.svg" width="20" height="18" alt="Телеграм"></a>
+              <a href="#" class="socials__icons-link socials__icons-link--vkontakte"><img class="socials__icons-image socials__icons-image--vkontakte" src="images/vkontakte.svg" width="30" height="16" alt="Вконтакте"></a>
+              <a href="#" class="socials__icons-link socials__icons-link--youtube"><img class="socials__icons-image socials__icons-image--youtube" src="images/youtube.svg" width="20" height="15" alt="Youtube"></a>
+            </div>
           </div>
+        </section>
+        <div class="main-footer__wrapper">
+          <p class="main-footer__text">Разработано</p>
+          <img class="main-footer__logo-left" src="images/footer-logo.svg" width="27" height="33" alt="Погнали?">
         </div>
-      </section>
-      <div class="main-footer__wrapper">
-        <p class="main-footer__text">Разработано</p>
-        <img class="main-footer__logo-left" src="images/footer-logo.svg" width="27" height="33" alt="Погнали?">
       </div>
     </footer>
     <script src="script.js"></script>
