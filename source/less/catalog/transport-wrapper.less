@@ -11,6 +11,13 @@
     justify-self: end;
     padding: 0 16px 0 0;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 6/7;
+    grid-row: 3/4;
+    align-self: end;
+    padding: 0 0 15px 0;
+  }
 }
 
 .transport-wrapper__header {
@@ -42,6 +49,10 @@
   @media (min-width: @tablet-width) {
     display: block;
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
   }
 }
 

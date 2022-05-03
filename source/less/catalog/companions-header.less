@@ -9,6 +9,12 @@
     grid-column: 2/3;
     grid-row: 1/2;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 30px 1fr;
+    grid-column: 1/2;
+    margin-right: 31px;
+  }
 }
 
 .companions-header__header {
@@ -19,12 +25,20 @@
   text-align: left;
   font-size: 16px;
   font-weight: 700;
+  font-style: normal;
   line-height: 18px;
   letter-spacing: 0;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 22px;
   }
 }
 
@@ -46,15 +60,29 @@
     margin: 0;
     justify-self: end;
   }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .companions-header__icon {
   cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .companions-header__icon--left {
   @media (min-width: @tablet-width) {
     display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 23px;
+    height: 15px;
   }
 }
 

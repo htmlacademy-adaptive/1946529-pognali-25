@@ -2,4 +2,12 @@
   padding: 28px 25px 76px;
   background-color: @light-background;
   margin-bottom: -30px;
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: end;
+    margin: 0;
+    padding-bottom: 46px;
+  }
 }

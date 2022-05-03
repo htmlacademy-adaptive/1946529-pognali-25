@@ -1,0 +1,25 @@
+.catalog-table-list-wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-column: 1/3;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 74px;
+  }
+}
+
+.catalog-table-list-wrapper ~ .visually-hidden {
+  @media (min-width: @desktop-width) {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    /* stylelint-disable-next-line */
+    -webkit-clip-path: none;
+    clip-path: none;
+    clip: auto;
+    overflow: visible;
+  }
+}
