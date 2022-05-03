@@ -1,5 +1,15 @@
 .choosen-country {
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0 27px 0 0;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 45px 0 0;
+  }
 }
 
 .choosen-country__select {
@@ -7,7 +17,7 @@
   background-color: @base-light;
   border: 1px solid @border-gray;
   border-radius: 4px;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -18,8 +28,27 @@
   text-transform: uppercase;
   padding: 11px 10px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    width: 100%;
+    min-height: 70px;
+    padding: 27px 23px 23px 25px;
+  }
+}
+
+.choosen-country:not(:first-of-type) {
+  @media (min-width: @tablet-width) {
+    margin-top: 16px;
+  }
 }
 
 .choosen-country__select--new-country {
   width: 220px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }

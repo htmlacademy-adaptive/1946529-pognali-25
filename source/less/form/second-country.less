@@ -1,14 +1,25 @@
-.second-country__name,
-.second-country__flag {
-  display: block;
-}
-
 .second-country {
   display: grid;
   margin: 0;
   width: 220px;
   grid-template-columns: 1fr 40px;
   grid-auto-rows: minmax(24px, auto);
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr 34px;
+    width: 100%;
+    margin-top: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 60px 182px;
+    margin-top: 52px;
+  }
+}
+
+.second-country__name,
+.second-country__flag {
+  display: block;
 }
 
 .second-country__name-wrapper {
@@ -22,7 +33,7 @@
   top: 0;
   transform: translateY(-50%);
   white-space: nowrap;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
@@ -30,10 +41,26 @@
   letter-spacing: 0;
   text-align: left;
   color: @base-text-color;
+
+  @media (min-width: @tablet-width) {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
 }
 
 .second-country__flag-wrapper {
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    min-height: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 3/4;
+  }
 }
 
 .second-country__flag {
@@ -41,6 +68,16 @@
   right: 0;
   top: 0;
   transform: translateY(-50%);
+
+  @media (min-width: @tablet-width) {
+    transform: translateY(0);
+    width: 70px;
+    height: 47px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 42px;
+  }
 }
 
 .second-country__about-my-hobbies {
@@ -52,7 +89,7 @@
   padding: 12px 14px;
   box-sizing: border-box;
   outline: none;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -60,4 +97,15 @@
   letter-spacing: 0;
   text-align: left;
   color: @base-grey;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 142px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/2;
+    height: 142px;
+  }
 }

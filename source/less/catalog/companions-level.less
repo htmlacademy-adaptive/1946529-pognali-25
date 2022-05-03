@@ -1,6 +1,10 @@
 .companions-level__input-wrpper {
   position: relative;
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 3/4;
+  }
 }
 
 .companions-level__input-left,
@@ -11,13 +15,18 @@
   box-sizing: border-box;
   border: 1px solid @border-gray;
   border-collapse: collapse;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 13px;
   letter-spacing: 0.07em;
   text-align: center;
   color: @base-text-color;
+
+  @media (min-width: @tablet-width) {
+    width: 73px;
+    height: 46px;
+  }
 }
 
 .companions-level__input-left {

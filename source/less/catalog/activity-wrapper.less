@@ -3,6 +3,11 @@
 .activity-wrapper {
   display: flex;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 2/4;
+    margin: 0 0 0 18px;
+  }
 }
 
 .activity-wrapper__icon-wrapper {
@@ -15,6 +20,18 @@
   box-sizing: border-box;
   background-color: @base-light;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+.activity-wrapper__icon {
+  @media (min-width: @tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
 }
 
 .activity-wrapper__checkbox {

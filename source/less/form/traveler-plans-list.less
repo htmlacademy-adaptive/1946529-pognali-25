@@ -9,10 +9,29 @@
   background-color: @base-light;
   border-radius: 10px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    padding: 40px 42px 38px;
+  }
 }
 
 .traveler-plans-list__item:not(:last-child) {
   margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .traveler-plans-list__item-header,
@@ -20,7 +39,7 @@
 .traveler-plans-list__item-date {
   margin: 0;
   color: @base-text-color;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-style: normal;
 }
 
@@ -28,23 +47,98 @@
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: 700;
+  font-style: normal;
   line-height: 16px;
   letter-spacing: 0;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    grid-column: 1/4;
+    padding: 39px 32px 34px 40px;
+    margin: 0;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    flex-direction: row;
+    grid-column: 1/2;
+    justify-content: start;
+  }
+}
+
+.traveler-plans-list__item-header-number {
+  @media (min-width: @desktop-width) {
+    margin-right: 36px;
+  }
+}
+
+.traveler-plans-list__item-header::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    display: block;
+    width: 618px;
+    height: 1px;
+    background: @border-gray;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .traveler-plans-list__item-companions,
 .traveler-plans-list__item-date {
   font-size: 14px;
   font-weight: 500;
+  font-style: normal;
   line-height: 14px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.traveler-plans-list__item-companions {
+  @media (min-width: @tablet-width) {
+    padding: 20px 20px 15px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    grid-column: 2/3;
+    text-align: left;
+  }
+}
+
+.traveler-plans-list__item-date {
+  @media (min-width: @tablet-width) {
+    padding: 20px 0 15px 0;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    grid-column: 3/4;
+    text-align: left;
+  }
 }
 
 .traveler-plans-list__link {
   display: block;
   margin: 24px 0 0;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-style: normal;
   font-size: 14px;
   font-weight: 500;
@@ -54,4 +148,18 @@
   opacity: 0.3;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    padding: 20px 20px 15px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    grid-column: 4/5;
+    justify-self: end;
+  }
 }

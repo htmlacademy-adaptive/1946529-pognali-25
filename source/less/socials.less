@@ -1,14 +1,15 @@
 /* СОЦСЕТИ */
 
 .socials {
-  background-color: @base-light;
-  border-radius: 20px 20px 0 0;
-  text-align: center;
-  padding: 37px 25px;
-}
+  // background-color: @base-light;
+  // border-radius: 20px 20px 0 0;
+  // text-align: center;
+  // padding: 37px 25px;
+  margin-bottom: 36px;
 
-.socials__logo {
-  margin: 0 0 40px;
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .socials__icons {
@@ -23,16 +24,54 @@
   background-color: @base-yellow;
   border-radius: 50%;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 62px;
+    height: 62px;
+  }
 }
 
 .socials__icons-link--telegram {
   padding: 12px 11px;
+
+  @media (min-width: @tablet-width) {
+    padding: 18px 17px;
+  }
 }
 
 .socials__icons-link--vkontakte {
   padding: 14px 8px;
+
+  @media (min-width: @tablet-width) {
+    padding: 23px 16px;
+  }
 }
 
 .socials__icons-link--youtube {
   padding: 15px 13px;
+
+  @media (min-width: @tablet-width) {
+    padding: 20px 17px;
+  }
+}
+
+.socials__icons-image--telegram {
+  @media (min-width: @tablet-width) {
+    width: 28px;
+    height: 26px;
+  }
+}
+
+.socials__icons-image--vkontakte {
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 16px;
+  }
+}
+
+.socials__icons-image--youtube {
+  @media (min-width: @tablet-width) {
+    width: 27px;
+    height: 21px;
+  }
 }

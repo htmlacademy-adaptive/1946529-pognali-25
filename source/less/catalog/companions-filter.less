@@ -3,6 +3,10 @@
   padding: 76px 25px 0;
   background-color: @light-background;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 188px 40px 56px;
+  }
 }
 
 .companions-filter__modal-wrapper {
@@ -16,6 +20,13 @@
   width: 320px;
   border-radius: 0 0 30px 30px;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 2fr 1fr;
+    padding: 100px 72px 56px;
+    border-radius: 0 0 40px 40px;
+    width: 100%;
+  }
 }
 
 .companions-filter__modal-close {
@@ -30,7 +41,7 @@
   border: 0;
   outline: none;
   color: @base-text-color;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-style: normal;
   text-align: left;
   font-size: 16px;
@@ -38,10 +49,24 @@
   line-height: 18px;
   letter-spacing: 0;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 615px;
+    min-height: 100px;
+    font-size: 20px;
+    line-height: 20px;
+    grid-column: 1/3;
+    margin: 70px auto 0;
+  }
 }
 
 .companions-filter__modal-close-icon {
   margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 24px;
+  }
 }
 
 // Жёлтый раздел фильтрации попутчиков
@@ -52,9 +77,13 @@
   background-color: @base-yellow;
   border-radius: 20px;
   color: @base-text-color;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-style: normal;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    padding: 37px 35px;
+  }
 }
 
 .companions-filter__wrapper-header {
@@ -65,6 +94,20 @@
   font-weight: 700;
   line-height: 22px;
   letter-spacing: 0.02em;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 38px;
+    border-bottom: 1px solid @filter-border;
+  }
+}
+
+.companions-filter__button-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-top: 36px;
+    border-top: 1px solid @filter-border;
+  }
 }
 
 .companions-filter__button {
@@ -72,7 +115,7 @@
   min-height: 41px;
   box-sizing: border-box;
   background-color: @base-light;
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 17px;
@@ -83,4 +126,11 @@
   border: none;
   outline: none;
   border-radius: 22px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

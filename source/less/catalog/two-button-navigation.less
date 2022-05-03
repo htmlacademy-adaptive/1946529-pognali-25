@@ -1,6 +1,10 @@
 .two-button-navigation {
   display: flex;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .two-button-navigation__prev,
@@ -11,6 +15,10 @@
   background-color: @base-light;
   width: 135px;
   height: 51px;
+
+  @media (min-width: @tablet-width) {
+    width: 41px;
+  }
 }
 
 .two-button-navigation__prev {
@@ -20,4 +28,8 @@
 .two-button-navigation__next {
   border-radius: 0 20px 20px 0;
   border-left: 1px solid @light-background;
+
+  @media (min-width: @tablet-width) {
+    border: 0;
+  }
 }

@@ -1,5 +1,5 @@
 .text-definition {
-  font-family: @base-font-serif;
+  font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
@@ -7,14 +7,82 @@
   letter-spacing: 0;
   text-align: left;
   color: @base-light;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.text-definition--about-services {
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    margin: 40px 0;
+  }
+}
+
+.text-definition--companions {
+  @media (min-width: @tablet-width) {
+    margin: 55px 0 40px;
+  }
+}
+
+.text-definition--companions-bold {
+  @media (min-width: @tablet-width) {
+    margin: 0 0 40px;
+  }
 }
 
 .text-definition--bold {
   font-style: bold;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
 
 .text-definition--dark {
   font-weight: 300;
   color: @base-grey;
+}
+
+.text-definition--destinations {
+  @media (min-width: @tablet-width) {
+    margin: 57px 0;
+  }
+}
+
+.text-definition--interesting {
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 59px 0 65px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 57px 0 60px;
+  }
+}
+
+.text-definition--contacts {
+  display: block;
+  margin: 0;
+  padding: 0 27px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 37px;
+  }
 }
