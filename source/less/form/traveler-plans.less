@@ -1,4 +1,12 @@
 .traveler-plans {
+  @media (min-width: @desktop-width) {
+    background-color: @middle-gray-background;
+    border-radius: 60px 60px 0 0;
+    margin-bottom: -60px;
+  }
+}
+
+.traveler-plans__main {
   padding: 28px 25px 60px;
   background-color: @middle-gray-background;
   border-radius: 30px 30px 0 0;
@@ -12,8 +20,11 @@
 
   @media (min-width: @desktop-width) {
     padding: 54px 60px 124px 124px;
-    border-radius: 60px 60px 0 0;
-    margin-bottom: -60px;
+    // border-radius: 60px 60px 0 0;
+    // margin-bottom: -60px;
+    box-sizing: border-box;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 

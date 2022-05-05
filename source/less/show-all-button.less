@@ -14,6 +14,23 @@
   color: @base-text-color;
   text-decoration: none;
 
+  &:hover {
+    background-color: @yellow-orange;
+  }
+
+  &:hover .show-all-button__icon {
+    fill: @base-light;
+  }
+
+  &:active {
+    background-color: @yellow-orange;
+    color: @base-text-color-opacity;
+  }
+
+  &:active .show-all-button__text {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     grid-column: 1/3;
     padding: 31px 33px;
@@ -21,6 +38,10 @@
     font-size: 24px;
     line-height: 24px;
   }
+}
+
+.show-all-button__icon {
+  fill: @base-text-color;
 }
 
 .show-all-button__text {
@@ -69,6 +90,23 @@
   margin-top: 32px;
   border: 3px solid @main-background-dark;
 
+  &:hover {
+    background-color: @main-background-dark;
+    color: @base-light;
+  }
+
+  &:hover .show-all-button__icon-path {
+    fill: @base-light;
+  }
+
+  &:active {
+    background-color: @main-background-dark;
+  }
+
+  &:active .show-all-button__text {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     margin-top: 44px;
   }
@@ -80,6 +118,10 @@
     justify-self: end;
   }
 }
+
+// .show-all-button__icon-path {
+//   fill: @base-light;
+// }
 
 .show-all-button--about-services {
   display: none;

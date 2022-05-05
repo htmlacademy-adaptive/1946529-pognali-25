@@ -36,6 +36,15 @@
 
 .interesting__regular-link {
   color: @base-yellow;
+
+  &:hover {
+    color: @base-orange;
+  }
+
+  &:active {
+    color: @base-orange;
+    opacity: 0.3;
+  }
 }
 
 .interesting__email {
@@ -69,6 +78,22 @@
   text-align: left;
   color: hsla(0, 0%, 27%, 0.3);
 
+  &:hover {
+    background-color: @light-background;
+  }
+
+  &:active {
+    background-color: @main-background-dark;
+    color: @base-light;
+    border: 4px solid @base-light;
+  }
+
+  &:focus {
+    background-color: @main-background-dark;
+    color: @base-light;
+    border: 4px solid @base-light;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 24px;
     line-height: 24px;
@@ -94,10 +119,19 @@
   color: @base-grey;
   opacity: 0.3;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 24px;
     line-height: 24px;
   }
+}
+
+.interesting__email-text--wrong::placeholder {
+  color: @red-orange;
+  opacity: 1;
 }
 
 .interesting__email-button {
@@ -111,6 +145,20 @@
   outline: none;
   box-sizing: border-box;
   margin: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @yellow-orange;
+  }
+
+  &:active {
+    background-color: @yellow-orange;
+    color: @base-text-color-opacity;
+  }
+
+  &:active .interesting__email-button-icon {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     width: 80px;
@@ -151,4 +199,8 @@
     line-height: 24px;
     grid-column: 1/2;
   }
+}
+
+.interesting__email-button:active::before {
+  opacity: 0.3;
 }

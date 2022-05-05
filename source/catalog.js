@@ -15,8 +15,9 @@ let navigationUser = document.querySelector('.navigation-user');
 let social = document.querySelector('.social');
 let menuLoginHidden = document.querySelector('.main-menu__login--hidden');
 
+headerTop.classList.remove('main-header__top--nojs');
+
 burgerButton.addEventListener('click', ()=> {
-  // mainMenu.classList.toggle('visually-hidden');
   headerTop.classList.toggle('main-header__burger-menu-active');
   logoDarkg.classList.toggle('visually-hidden');
   logoLight.classList.toggle('visually-hidden');
@@ -38,6 +39,13 @@ let catalogCountryList = document.querySelector('.catalog-country-list');
 let catalogTableList = document.querySelector('.catalog-table-list');
 let modalCloseButton = document.querySelector('.companions-filter__modal-close');
 let modalWrapper = document.querySelector('.companions-filter__modal-wrapper');
+
+let mainHeaderBottom = document.querySelector('.main-header__bottom');
+let companionsFilter = document.querySelector('.companions-filter');
+let tableListWrapper = document.querySelector('.catalog-table-list-wrapper');
+let listItemHeader = document.querySelector('.catalog-table-list__item--header');
+let tableListActive = document.querySelector('.catalog-table-list--active');
+let filterIconLeft = document.querySelector('.companions-header__icon--left');
 
 dottedButton.addEventListener('click', ()=> {
   closeButton.style.display = 'block';
@@ -63,7 +71,9 @@ closeButton.addEventListener('click', ()=> {
 
 modalCloseButton.addEventListener('click', (event)=> {
   event.preventDefault();
-  dottedButton.style.display = 'block';
+  if (document.body.clientWidth < 1440) {
+    dottedButton.style.display = 'block';
+  }
   closeButton.style.display = 'none';
   if (document.body.clientWidth < 768) {
     countryList.classList.add('visually-hidden');
@@ -71,64 +81,62 @@ modalCloseButton.addEventListener('click', (event)=> {
   catalogCountryList.classList.add('visually-hidden');
   catalogTableList.classList.add('visually-hidden');
   modalCloseButton.classList.add('visually-hidden');
+  tableListWrapper.classList.add('visually-hidden--secondary');
+  modalCloseButton.classList.remove('visually-hidden');
+  modalCloseButton.classList.add('visually-hidden--secondary');
   // modalWrapper.style.paddingBottom = 56 + 'px';
 });
 
-// Высчитываем высоту
+filterIconLeft.addEventListener('click', ()=> {
+  tableListWrapper.classList.remove('visually-hidden--secondary');
+  modalCloseButton.classList.add('visually-hidden');
+  modalCloseButton.classList.remove('visually-hidden--secondary');
+});
 
-let mainHeaderBottom = document.querySelector('.main-header__bottom');
-let companionsFilter = document.querySelector('.companions-filter');
+// Обработчик onload
 
-let heightCalculate = function() {
+let loadCalculate = function() {
 
   if (document.body.clientWidth < 768) {
-    let headerBottomHeight = mainHeaderBottom.clientHeight;
 
     countryList.classList.add('visually-hidden');
-    companionsFilter.style.marginTop = headerBottomHeight + 'px';
   }
 
   if (document.body.clientWidth >= 768 && document.body.clientWidth < 1440) {
-    let headerBottomHeight = mainHeaderBottom.clientHeight;
 
-    companionsFilter.style.marginTop = headerBottomHeight + 'px';
     countryList.classList.remove('visually-hidden');
+    listItemHeader.classList.add('visually-hidden');
   }
 
   if (document.body.clientWidth >= 1440) {
-    let headerBottomHeight = mainHeaderBottom.clientHeight;
-
-    companionsFilter.style.marginTop = headerBottomHeight + 'px';
+    countryList.classList.remove('visually-hidden');
+    tableListActive.classList.add('visually-hidden--secondary');
+    mainMenu.classList.remove('visually-hidden');
   }
 }
 
-window.addEventListener('resize', ()=> {
-  if (document.body.clientWidth < 768) {
-    let headerBottomHeight = mainHeaderBottom.clientHeight;
+// window.addEventListener('resize', ()=> {
+//   if (document.body.clientWidth < 768) {
+//     let headerBottomHeight = mainHeaderBottom.clientHeight;
 
-    if (!catalogTableList.classList.contains('visually-hidden')) {
-      countryList.classList.remove('visually-hidden');
-    } else {
-      countryList.classList.add('visually-hidden');
-    }
+//     if (!catalogTableList.classList.contains('visually-hidden')) {
+//       countryList.classList.remove('visually-hidden');
+//     } else {
+//       countryList.classList.add('visually-hidden');
+//     }
 
-    companionsFilter.style.marginTop = headerBottomHeight + 'px';
-  }
+//   }
 
-  if (document.body.clientWidth >= 768 && document.body.clientWidth < 1440) {
-    let headerBottomHeight = mainHeaderBottom.clientHeight;
+//   if (document.body.clientWidth >= 768 && document.body.clientWidth < 1440) {
+//     let headerBottomHeight = mainHeaderBottom.clientHeight;
 
-    companionsFilter.style.marginTop = headerBottomHeight + 'px';
-    countryList.classList.remove('visually-hidden');
-  }
+//     countryList.classList.remove('visually-hidden');
+//   }
 
-  if (document.body.clientWidth >= 1440) {
-    let headerBottomHeight = mainHeaderBottom.clientHeight;
-
-    companionsFilter.style.marginTop = headerBottomHeight + 'px';
-  }
-})
+//   // if (document.body.clientWidth >= 1440) {
+//   // }
+// })
 
 window.addEventListener('load', ()=> {
-  heightCalculate();
+  loadCalculate();
 })

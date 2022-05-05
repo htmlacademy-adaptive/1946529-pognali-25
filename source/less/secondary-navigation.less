@@ -30,10 +30,34 @@
 
 .secondary-navigation__link--phone {
   background-color: @base-orange;
+
+  &:hover {
+    background-color: @phone-orange-hover;
+  }
+
+  &:active {
+    background-color: @phone-orange-hover;
+  }
+
+  &:active .secondary-navigation__icon:active {
+    opacity: 0.3;
+  }
 }
 
 .secondary-navigation__link--email {
   background-color: @base-yellow;
+
+  &:hover {
+    background-color: @base-orange;
+  }
+
+  &:active {
+    background-color: @base-orange;
+  }
+
+  &:active .secondary-navigation__icon:active {
+    opacity: 0.3;
+  }
 }
 
 .secondary-navigation__link--login {

@@ -45,25 +45,29 @@
 }
 
 .contacts__phone-image {
-  display: block;
-  padding: 14px;
-  background: @secondary-background-dark;
-  border-radius: 50%;
+  // display: block;
+  // padding: 14px;
+  // background: @secondary-background-dark;
+  // border-radius: 50%;
+  fill: @base-yellow;
 
   @media (min-width: @tablet-width) {
+    display: block;
     width: 24px;
     height: 23px;
-    padding: 22px;
+    // padding: 22px;
   }
 
   @media (min-width: @desktop-width) {
     width: 32px;
     height: 30px;
-    padding: 30px 29px;
+    // padding: 30px 29px;
   }
 }
 
 .contacts__email-image {
+  fill: @base-yellow;
+
   @media (min-width: @tablet-width) {
     display: block;
     width: 28px;
@@ -78,6 +82,8 @@
 
 .contacts__phone-link,
 .contacts__email-link {
+  display: flex;
+  align-items: center;
   margin-left: 16px;
   font-family: "Blogger Sans", sans-serif;
   font-size: 16px;
@@ -90,10 +96,40 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &:hover {
+    color: @yellow-orange;
+  }
+
+  &:active {
+    color: rgba(255, 216, 75, 0.3);
+  }
+
   @media (min-width: @tablet-width) {
     margin-left: 23px;
     font-size: 28px;
     line-height: 28px;
+  }
+}
+
+.contacts__email-link {
+  &:hover .contacts__email-image {
+    fill: @yellow-orange;
+  }
+
+  &:active .contacts__email-image {
+    fill: @base-yellow;
+    opacity: 0.3;
+  }
+}
+
+.contacts__phone-link {
+  &:hover .contacts__phone-image {
+    fill: @yellow-orange;
+  }
+
+  &:active .contacts__phone-image {
+    fill: @base-yellow;
+    opacity: 0.3;
   }
 }
 
@@ -130,5 +166,27 @@
   @media (min-width: @desktop-width) {
     width: 90px;
     height: 90px;
+    margin-right: 31px;
+  }
+}
+
+.contacts__phone-icon-wrapper {
+  padding: 14px;
+  background: @secondary-background-dark;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    display: grid;
+    width: 68px;
+    height: 68px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 90px;
+    height: 90px;
+    margin-right: 31px;
   }
 }

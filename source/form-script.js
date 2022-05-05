@@ -15,6 +15,8 @@ let navigationUser = document.querySelector('.navigation-user');
 let social = document.querySelector('.social');
 let menuLoginHidden = document.querySelector('.main-menu__login--hidden');
 
+headerTop.classList.remove('main-header__top--nojs');
+
 burgerButton.addEventListener('click', ()=> {
   // mainMenu.classList.toggle('visually-hidden');
   headerTop.classList.toggle('main-header__burger-menu-active');
@@ -30,51 +32,51 @@ burgerButton.addEventListener('click', ()=> {
 
 // Высчитываем высоту
 
-let mainHeaderBottom = document.querySelector('.main-header__bottom');
-let travelerAbout = document.querySelector('.traveler-about');
+// let mainHeaderBottom = document.querySelector('.main-header__bottom');
+// let travelerAbout = document.querySelector('.traveler-about');
 
-let heightCalculate = function() {
+// let heightCalculate = function() {
 
-  if (document.body.clientWidth < 768) {
-    // let headerHeight = headerTop.clientHeight;
-    let headerBottomHeight = mainHeaderBottom.clientHeight;
+//   if (document.body.clientWidth < 768) {
+//     // let headerHeight = headerTop.clientHeight;
+//     let headerBottomHeight = mainHeaderBottom.clientHeight;
 
-    // mainHeaderBottom.style.top = headerHeight + 'px';
-    travelerAbout.style.marginTop = headerBottomHeight - 30 + 'px';
-  }
+//     // mainHeaderBottom.style.top = headerHeight + 'px';
+//     travelerAbout.style.marginTop = headerBottomHeight - 30 + 'px';
+//   }
 
-  if (document.body.clientWidth >= 768 && document.body.clientWidth < 1440) {
-    // let headerHeight = headerTop.clientHeight;
-    let headerBottomHeight = mainHeaderBottom.clientHeight;
+//   if (document.body.clientWidth >= 768 && document.body.clientWidth < 1440) {
+//     // let headerHeight = headerTop.clientHeight;
+//     let headerBottomHeight = mainHeaderBottom.clientHeight;
 
-    // mainHeaderBottom.style.top = headerHeight + 'px';
-    travelerAbout.style.marginTop = headerBottomHeight - 40 + 'px';
+//     // mainHeaderBottom.style.top = headerHeight + 'px';
+//     travelerAbout.style.marginTop = headerBottomHeight - 40 + 'px';
 
-    // if (headerTop.classList.contains('main-header__burger-menu-active')) {
-    //   mainHeaderBottom.style.top = 0 + 'px';
-    // }
+//     // if (headerTop.classList.contains('main-header__burger-menu-active')) {
+//     //   mainHeaderBottom.style.top = 0 + 'px';
+//     // }
 
-    // burgerCloseIcon.addEventListener('click', ()=> {
-    //   mainHeaderBottom.style.top = headerHeight + 'px';
-    // })
-  }
+//     // burgerCloseIcon.addEventListener('click', ()=> {
+//     //   mainHeaderBottom.style.top = headerHeight + 'px';
+//     // })
+//   }
 
-  if (document.body.clientWidth >= 1440) {
-    // let headerHeight = headerTop.clientHeight;
-    let headerBottomHeight = mainHeaderBottom.clientHeight;
+//   if (document.body.clientWidth >= 1440) {
+//     // let headerHeight = headerTop.clientHeight;
+//     let headerBottomHeight = mainHeaderBottom.clientHeight;
 
-    // mainHeaderBottom.style.top = headerHeight + 'px';
-    travelerAbout.style.marginTop = headerBottomHeight - 60 + 'px';
-  }
-}
+//     // mainHeaderBottom.style.top = headerHeight + 'px';
+//     travelerAbout.style.marginTop = headerBottomHeight - 60 + 'px';
+//   }
+// }
 
-window.addEventListener('resize', ()=> {
-  heightCalculate();
-})
+// window.addEventListener('resize', ()=> {
+//   heightCalculate();
+// })
 
-window.addEventListener('load', ()=> {
-  heightCalculate();
-})
+// window.addEventListener('load', ()=> {
+//   heightCalculate();
+// })
 
 // Показываем меню при изменении ширины экрана больше 768px
 

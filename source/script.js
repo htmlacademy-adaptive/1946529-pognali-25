@@ -8,12 +8,15 @@ let headerTop = document.querySelector('.main-header__top');
 let changeHeaderBg = document.querySelector('.main-header__burger-menu-active');
 let logoDarkg = document.querySelector('.main-header__logo-image--dark');
 let logoLight = document.querySelector('.main-header__logo-image--light');
+// let headerNoJs = document.querySelector('.main-header__top--nojs');
 
 let mainMenuLogin = document.querySelector('.main-menu__login');
 let menuLoginActive = document.querySelector('.main-menu__login--active');
 let navigationUser = document.querySelector('.navigation-user');
 let social = document.querySelector('.social');
 let menuLoginHidden = document.querySelector('.main-menu__login--hidden');
+
+headerTop.classList.remove('main-header__top--nojs');
 
 burgerButton.addEventListener('click', ()=> {
   // mainMenu.classList.toggle('visually-hidden');
@@ -146,7 +149,6 @@ if (document.body.clientWidth < 768) {
 
     if (!headerTop.classList.contains('main-header__burger-menu-active')) {
       mainMenu.classList.remove('visually-hidden');
-      console.log('hello')
     }
 
     menuLoginWrapper.prepend(topEmailLink);
@@ -162,6 +164,36 @@ window.addEventListener('load', ()=> {
 window.addEventListener('resize', ()=> {
   resizeOnload();
 })
+
+
+// Зумим карточку путешественника
+
+let cardsItem = document.querySelectorAll('.cards-item');
+
+for (let card of cardsItem) {
+  card.addEventListener('mouseover', ()=> {
+    card.style.transform = 'scale(1.03)';
+    card.style.transition = '0.3s';
+  })
+
+  card.addEventListener('mouseleave', ()=> {
+    card.style.transform = 'scale(1)';
+  })
+}
+
+// Проверка заполнения e-mail формы
+
+let emailButton = document.querySelector('.interesting__email-button');
+let emailText = document.querySelector('.interesting__email-text');
+
+emailButton.onclick = function() {
+  if (emailText.value.length < 1) {
+    console.log('Hello!');
+    emailText.placeholder = 'Введите e-mail';
+    emailText.classList.add('interesting__email-text--wrong');
+    emailText.style.background = '#ffffff';
+  }
+}
 
 // Изменение верхнего меню
 
