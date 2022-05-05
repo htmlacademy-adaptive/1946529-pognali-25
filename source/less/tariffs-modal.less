@@ -120,6 +120,18 @@
   text-align: center;
   align-items: center;
 
+  &:hover {
+    background-color: @light-background;
+  }
+
+  &:active {
+    background-color: @light-background;
+  }
+
+  &:active .tariffs-modal__close-link {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 100px;
   }

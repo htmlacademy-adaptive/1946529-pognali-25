@@ -165,6 +165,36 @@ window.addEventListener('resize', ()=> {
   resizeOnload();
 })
 
+
+// Зумим карточку путешественника
+
+let cardsItem = document.querySelectorAll('.cards-item');
+
+for (let card of cardsItem) {
+  card.addEventListener('mouseover', ()=> {
+    card.style.transform = 'scale(1.03)';
+    card.style.transition = '0.3s';
+  })
+
+  card.addEventListener('mouseleave', ()=> {
+    card.style.transform = 'scale(1)';
+  })
+}
+
+// Проверка заполнения e-mail формы
+
+let emailButton = document.querySelector('.interesting__email-button');
+let emailText = document.querySelector('.interesting__email-text');
+
+emailButton.onclick = function() {
+  if (emailText.value.length < 1) {
+    console.log('Hello!');
+    emailText.placeholder = 'Введите e-mail';
+    emailText.classList.add('interesting__email-text--wrong');
+    emailText.style.background = '#ffffff';
+  }
+}
+
 // Изменение верхнего меню
 
 // let menuLink = document.querySelectorAll('.main-menu__link');

@@ -92,13 +92,13 @@
     opacity: 0.3;
   }
 
+  &:hover {
+    color: @base-yellow;
+  }
+
   &:active {
     color: @base-yellow;
     opacity: 0.3;
-  }
-
-  &:hover {
-    color: @base-yellow;
   }
 
   @media (min-width: @tablet-width) {
@@ -172,6 +172,15 @@
   box-sizing: border-box;
   border-radius: 25px;
   background-color: @base-yellow;
+
+  &:hover {
+    background-color: @yellow-orange;
+  }
+
+  &:active {
+    background-color: @yellow-orange;
+    color: @secondary-text-dark-opacity;
+  }
 
   @media (min-width: @tablet-width) {
     display: grid;
