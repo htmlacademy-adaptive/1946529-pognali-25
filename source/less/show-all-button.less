@@ -18,12 +18,16 @@
     background-color: @yellow-orange;
   }
 
+  &:hover .show-all-button__icon {
+    fill: @base-light;
+  }
+
   &:active {
     background-color: @yellow-orange;
     color: @base-text-color-opacity;
   }
 
-  &:active .show-all-button__text:active {
+  &:active .show-all-button__text {
     opacity: 0.3;
   }
 
@@ -34,6 +38,10 @@
     font-size: 24px;
     line-height: 24px;
   }
+}
+
+.show-all-button__icon {
+  fill: #1D2E5B;
 }
 
 .show-all-button__text {

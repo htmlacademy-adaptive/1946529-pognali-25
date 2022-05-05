@@ -25,6 +25,18 @@
   border-radius: 50%;
   box-sizing: border-box;
 
+  &:hover {
+    background-color: @yellow-orange;
+  }
+
+  &:active {
+    background-color: @yellow-orange;
+  }
+
+  &:active .socials__icons-image {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     width: 62px;
     height: 62px;

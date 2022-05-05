@@ -152,10 +152,12 @@
 
 .main-header__top::before {
   @media (min-width: @tablet-width) {
-    position: absolute;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     // transform: translate(-38%, -25%);
-    top: 40px;
-    left: 40px;
+    // top: 40px;
+    // left: 40px;
     z-index: 1;
     content: "";
     width: 155px;
@@ -164,10 +166,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     // transform: translate(-28%, -25%);
-    top: 56px;
-    left: 62px;
+    // top: 56px;
+    // left: 62px;
     z-index: 0;
     content: "";
     width: 187px;
