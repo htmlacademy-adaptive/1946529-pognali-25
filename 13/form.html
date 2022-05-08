@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Погнали. Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+    <base href="https://htmlacademy-adaptive.github.io/1946529-pognali-25/13/">
+</head>
+<body class="page__body">
+  <svg style="display: none;">
+      <symbol width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" id="plus-icon">
+      <line y1="6.69995" x2="14" y2="6.69995" stroke-width="2"/>
+      <line x1="6.7" y1="14" x2="6.7" stroke-width="2"/>
+    </symbol>
+    <symbol width="14" height="14" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg" id="minus-icon">
+        <line y1="1" x2="14" y2="1" stroke-width="2"/>
+    </symbol>
+    <symbol viewBox="0 0 10 19" xmlns="http://www.w3.org/2000/svg" id="calendar-arrow">
+      <path d="M1.06949 18.3693C1.16815 18.481 1.28536 18.5695 1.41439 18.63C1.54343 18.6904
+      1.68176 18.7216 1.82146 18.7216C1.96117 18.7216 2.0995 18.6904 2.22853 18.63C2.35757
+      18.5695 2.47477 18.481 2.57344 18.3693L9.63433 10.398C9.7131 10.3092 9.77559 10.2038
+      9.81823 10.0878C9.86086 9.97171 9.88281 9.84732 9.88281 9.72169C9.88281 9.59605 9.86086
+      9.47166 9.81823 9.35561C9.77559 9.23957 9.7131 9.13416 9.63433 9.04542L2.57344 1.07408C2.15709
+      0.60405 1.48584 0.60405 1.06949 1.07408C0.653145 1.54411 1.32374 2.3591 1.74009 2.82913L7.82453
+      9.72169L1.41439 16.972C1.00654 17.4324 0.653145 17.9089 1.06949 18.3693Z"/>
+    </symbol>
+    <symbol viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" id="add-country">
+      <line x1="7" x2="7" y2="14" stroke-width="2"/>
+      <line y1="7" x2="14" y2="7" stroke-width="2"/>
+    </symbol>
+  </svg>
+  <header class="main-header main-header--secondary">
+    <!-- <div class="bg-wrapper bg-wrapper--light"> -->
+      <div class="bg-wrapper bg-wrapper--dark">
+        <div class="main-header__top main-header__top--nojs">
+          <!-- <div class="main-header__top-flex"> -->
+            <a href="/" class="main-header__logo">
+              <img class="main-header__logo-image main-header__logo-image--light" src="images/logo_mobile.svg" width="96" height="15" alt="Погнали?">
+              <img class="main-header__logo-image main-header__logo-image--dark visually-hidden" src="images/dark-logo.svg" width="96" height="15" alt="Погнали?">
+            </a>
+            <button class="main-header__burger-menu">
+              <img class="main-header__burger-menu-icon" src="images/burger-menu-icon.svg" width="25" height="11" alt="Меню">
+              <img class="main-header__burger-menu-icon-dark visually-hidden" src="images/burger-menu-icon-dark.svg" width="25" height="11" alt="Меню">
+              <img class="main-header__burger-menu-close visually-hidden" src="images/close-burger-menu.svg" width="19" height="18" alt="Меню">
+            </button>
+          <!-- </div> -->
+            <nav class="main-menu visually-hidden">
+              <div class="main-menu__wrapper">
+                <ul class="main-menu__list">
+                  <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="#">О сервисе</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="#">Направления</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="#">Попутчики</a></li>
+                </ul>
+              </div>
+            </nav>
+        <div class="main-menu__login-wrapper">
+          <a href="#" class="main-menu__login-link main-menu__login-link--phone"><img class="main-menu__login-icon" src="images/phone.svg" width="16" height="16" alt="Телефон"></a>
+          <a href="#" class="main-menu__login-link main-menu__login-link--email"><img class="main-menu__login-icon" src="images/email.svg" width="16" height="12" alt="E-mail"></a>
+          <a href="#" class="main-menu__login">Авторизация</a>
+        </div>
+        <ul class="navigation-user visually-hidden">
+          <li class="navigation-user__item">
+            <img class="navigation-user__phone" src="images/phone-icon-menu.svg" width="16" height="15" alt="Телефон">
+            <a class="navigation-user__link" href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="navigation-user__item">
+            <span class="navigation-user__email-wrapper">
+              <img class="navigation-user__email" src="images/email-icon-menu.svg" width="18" height="13" alt="Телефон">
+            </span>
+              <a class="navigation-user__link" href="#">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="social visually-hidden">
+          <li class="social__item"><a href="#" class="social__link social__link--facebook"><span class="social__icon visually-hidden"></span></a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--vkontakte"><span class="social__icon visually-hidden"></span></a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--instagram"><span class="social__icon visually-hidden"></span></a></li>
+        </ul>
+      </div>
+      <div class="main-header__bottom">
+        <div class="main-header__bottom-main">
+          <p class="main-header__bottom-name">Направления</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="form-wrapper">
+    <h1 class="visually-hidden">Страница птуешественника</h1>
+    <section class="traveler-about">
+      <div class="traveler-about__main">
+        <div class="traveler-about__wrapper">
+            <!-- <div class="traveler-about__header"> -->
+          <img class="traveler-about__level" src="images/form/level-1.png" width="100" height="100" alt="Уровень">
+              <!-- <div class="avatar-wrapper"> -->
+          <img class="traveler-about__avatar" src="images/form/avatar-man.png" width="100" height="100" alt="Аватар">
+              <!-- </div> -->
+            <!-- </div> -->
+          <button class="traveler-about__button">Сменить фото</button>
+          <div class="traveler-about__tags">
+            <p class="traveler-about__block-header traveler-about__block-header--tags">Тэги</p>
+            <p class="traveler-about__tags-text">
+              #бургер #бар #футбол #концерт #крафт
+            </p>
+          </div>
+          <div class="traveler-about__transport">
+            <div class="traveler-about__transport-wrapper">
+              <p class="traveler-about__block-header traveler-about__block-header--transport">Транспорт</p>
+              <span class="traveler-about__icon-wrapper">
+                <img class="traveler-about__icon" width="21" height="21" src="images/cards/airplane.svg" alt="Самолёт">
+              </span>
+              <span class="traveler-about__icon-wrapper">
+                <img class="traveler-about__icon" width="21" height="21" src="images/cards/bus-active.svg" alt="Автобус">
+              </span>
+              <span class="traveler-about__icon-wrapper">
+                <img class="traveler-about__icon traveler-about__icon--inactive" width="21" height="21" src="images/cards/bicycle.svg" alt="Велосипед">
+              </span>
+              <span class="traveler-about__icon-wrapper">
+                <img class="traveler-about__icon" width="21" height="21" src="images/cards/run-active.svg" alt="Бег">
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="traveler-plans">
+      <div class="traveler-plans__main">
+        <h2 class="visually-hidden">Запланированные поездки</h2>
+        <div class="traveler-plans__wrapper">
+          <p class="traveler-plans__header">Мои планы:</p>
+          <ul class="traveler-plans-list">
+            <li class="traveler-plans-list__item">
+              <p class="traveler-plans-list__item-header"><span class="traveler-plans-list__item-header-number">1.</span> Франция, Италия</p>
+              <p class="traveler-plans-list__item-companions">3 попутчика</p>
+              <p class="traveler-plans-list__item-date">26 мар — 29 мар</p>
+              <a href="#" class="traveler-plans-list__link">Изменить</a>
+            </li>
+            <li class="traveler-plans-list__item">
+              <p class="traveler-plans-list__item-header"><span class="traveler-plans-list__item-header-number">2.</span> Таиланд, Индонезия</p>
+              <p class="traveler-plans-list__item-companions">1 попутчик</p>
+              <p class="traveler-plans-list__item-date">1 июл — 15 июл</p>
+              <a href="#" class="traveler-plans-list__link">Изменить</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="add-new-plan">
+      <div class="add-new-plan__main">
+        <h3 class="visually-hidden">Сформировать новую поездку</h3>
+        <form class="add-new-plan__form" action="https://echo.htmlacademy.ru">
+          <div class="add-new-plan__header-wrapper">
+            <p class="add-new-plan__header">Добавить план:</p>
+            <div class="add-new-plan__spots">
+              <span class="add-new-plan__spot add-new-plan__spot--active"></span>
+              <span class="add-new-plan__spot"></span>
+              <span class="add-new-plan__spot"></span>
+            </div>
+          </div>
+          <div class="add-new-plan__wrapper">
+            <ul class="add-new-plan__list new-plan-list">
+              <li class="new-plan-list__item arrival-date">
+                <ul class="new-plan-list__item-navigation">
+                  <li class="new-plan-list__item-navigation-text new-plan-list__item-navigation-text--current">Даты</li>
+                  <li class="new-plan-list__item-navigation-text">Маршрут</li>
+                  <li class="new-plan-list__item-navigation-text">Развлечения</li>
+                </ul>
+                <span class="new-plan-list__item-header">
+                  <p class="new-plan-list__item-header-step">Шаг 1.</p>Даты пребывания
+                </span>
+                <p class="new-plan-list__item-text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+                    <div class="companions-persons">
+                      <label class="companions-persons__label" for="persons">Ищу попутчиков:</label>
+                      <p class="companions-persons__label-text">Чел.</p>
+                      <span class="companions-persons__wrapper-input">
+                        <input id="persons" class="companions-persons__input-persons" type="number" value="0">
+                        <svg class="companions-persons__control-element companions-persons__control-element--minus companions-persons__less-persons" width="14" height="2" alt="Меньше">
+                          <use xlink:href="#minus-icon"></use>
+                        </svg>
+                        <svg class="companions-persons__control-element companions-persons__control-element--plus companions-persons__more-persons" width="14" height="14" alt="Больше">
+                          <use xlink:href="#plus-icon"></use>
+                        </svg>
+                      </span>
+                      <br>
+                      <label class="companions-persons__label" for="duration">Длительность:</label>
+                      <p class="companions-persons__label-text">Дн.</p>
+                      <span class="companions-persons__wrapper-input">
+                        <input id="duration" class="companions-persons__input-duration" type="number" value="0">
+                        <svg class="companions-persons__control-element companions-persons__control-element--minus companions-persons__less-duration" width="14" height="2" alt="Меньше">
+                          <use xlink:href="#minus-icon"></use>
+                        </svg>
+                        <svg class="companions-persons__control-element companions-persons__control-element--plus companions-persons__more-duration" width="14" height="14" alt="Больше">
+                          <use xlink:href="#plus-icon"></use>
+                        </svg>
+                      </span>
+                      <br>
+                      <div class="companions-persons__checkbox-wrapper">
+                        <input type="checkbox" class="companions-persons__with-children" id="with-children" checked>
+                        <span class="companions-persons__check-mark"></span>
+                        <label for="with-children" class="companions-persons__with-children-label">Можно с детьми</label>
+                      </div>
+                    </div>
+                    <div class="arrival-date__header">
+                      <button class="arrival-date__header-button arrival-date__header-button--prev">
+                        <svg class="arrival-date__header-button-icon" width="9" height="18" alt="Влево">
+                          <use xlink:href="#calendar-arrow"></use>
+                        </svg>
+                      </button>
+                      <p class="arrival-date__header-text">Март 2019</p>
+                      <button class="arrival-date__header-button arrival-date__header-button--next">
+                        <svg class="arrival-date__header-button-icon" width="9" height="18" alt="Вправо">
+                          <use xlink:href="#calendar-arrow"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="arrival-date__table-header">
+                      <p class="arrival-date__table-header-day">П</p>
+                      <p class="arrival-date__table-header-day">В</p>
+                      <p class="arrival-date__table-header-day">С</p>
+                      <p class="arrival-date__table-header-day">Ч</p>
+                      <p class="arrival-date__table-header-day">П</p>
+                      <p class="arrival-date__table-header-day arrival-date__table-header-day--weekend">С</p>
+                      <p class="arrival-date__table-header-day arrival-date__table-header-day--weekend">В</p>
+                    </div>
+                    <table class="arrival-date__calendar">
+                      <tr class="arrival-date__calendar-row">
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="23-prev">
+                          <label class="cell-decoration__label" for="23-prev">23</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="24-prev">
+                          <label class="cell-decoration__label" for="24-prev">24</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="25-prev">
+                          <label class="cell-decoration__label" for="25-prev">25</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="26-prev">
+                          <label class="cell-decoration__label" for="26-prev">26</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="27-prev">
+                          <label class="cell-decoration__label" for="27-prev">27</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="28-prev">
+                          <label class="cell-decoration__label" for="28-prev">28</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="1">
+                          <label class="cell-decoration__label" for="1">1</label>
+                        </td>
+                      </tr>
+                      <tr class="arrival-date__calendar-row">
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="2">
+                          <label class="cell-decoration__label" for="2">2</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="3">
+                          <label class="cell-decoration__label" for="3">3</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="4">
+                          <label class="cell-decoration__label" for="4">4</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="5">
+                          <label class="cell-decoration__label" for="5">5</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="6">
+                          <label class="cell-decoration__label" for="6">6</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="7">
+                          <label class="cell-decoration__label" for="7">7</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="8">
+                          <label class="cell-decoration__label" for="8">8</label>
+                        </td>
+                      </tr>
+                      <tr class="arrival-date__calendar-row">
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="9">
+                          <label class="cell-decoration__label" for="9">9</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="10">
+                          <label class="cell-decoration__label" for="10">10</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="11">
+                          <label class="cell-decoration__label" for="11">11</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="12">
+                          <label class="cell-decoration__label" for="12">12</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="13">
+                          <label class="cell-decoration__label" for="13">13</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="14">
+                          <label class="cell-decoration__label" for="14">14</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="15">
+                          <label class="cell-decoration__label" for="15">15</label>
+                        </td>
+                      </tr>
+                      <tr class="arrival-date__calendar-row">
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="16">
+                          <label class="cell-decoration__label" for="16">16</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="17">
+                          <label class="cell-decoration__label" for="17">17</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="18">
+                          <label class="cell-decoration__label" for="18">18</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="19">
+                          <label class="cell-decoration__label" for="19">19</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="20">
+                          <label class="cell-decoration__label" for="20">20</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="21">
+                          <label class="cell-decoration__label" for="21">21</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="22">
+                          <label class="cell-decoration__label" for="22">22</label>
+                        </td>
+                      </tr>
+                      <tr class="arrival-date__calendar-row">
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="23">
+                          <label class="cell-decoration__label" for="23">23</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="24">
+                          <label class="cell-decoration__label" for="24">24</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="25">
+                          <label class="cell-decoration__label" for="25">25</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration cell-decoration--checkin">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="26" checked>
+                          <label class="cell-decoration__label cell-decoration__label--current" for="26">26</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="27" checked>
+                          <label class="cell-decoration__label" for="27">27</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration cell-decoration--checkout">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="28" checked>
+                          <label class="cell-decoration__label" for="28">28</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="29">
+                          <label class="cell-decoration__label cell-decoration__label--future" for="29">29</label>
+                        </td>
+                      </tr>
+                      <tr class="arrival-date__calendar-row">
+                        <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="30">
+                          <label class="cell-decoration__label cell-decoration__label--future" for="30">30</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="31">
+                          <label class="cell-decoration__label cell-decoration__label--future" for="31">31</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future cell-decoration--firstday">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="1-next">
+                          <label class="cell-decoration__label cell-decoration__label--future" for="1-next">1</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="2-next">
+                          <label class="cell-decoration__label cell-decoration__label--future" for="2-next">2</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="3-next">
+                          <label class="cell-decoration__label cell-decoration__label--future" for="3-next">3</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="4-next">
+                          <label class="cell-decoration__label cell-decoration__label--future" for="4-next">4</label>
+                        </td>
+                        <td class="arrival-date__calendar-cell cell-decoration cell-decoration--future">
+                          <input class="cell-decoration__checkbox" type="checkbox" id="5-next">
+                          <label class="cell-decoration__label cell-decoration__label--future" for="5-next">5</label>
+                        </td>
+                      </tr>
+                    </table>
+                    <button class="new-plan-list__next-button">Следующий шаг</button>
+                  </li>
+                  <li class="new-plan-list__item route">
+                    <ul class="new-plan-list__item-navigation">
+                      <li class="new-plan-list__item-navigation-text">Даты</li>
+                      <li class="new-plan-list__item-navigation-text new-plan-list__item-navigation-text--current">Маршрут</li>
+                      <li class="new-plan-list__item-navigation-text">Развлечения</li>
+                    </ul>
+                    <span class="new-plan-list__item-header">
+                      <p class="new-plan-list__item-header-step">Шаг 2.</p>Маршрут
+                    </span>
+                  <p class="new-plan-list__item-text">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+                  <div class="new-plan-list__country-wrapper">
+                    <div class="choosen-country">
+                      <select class="choosen-country__select" name="choose-first-country" id="choose-first-country">
+                        <option class="choosen-country__option" value="Босния и Герцеговина">Босния и Герцеговина</option>
+                      </select>
+                    </div>
+                    <div class="flag-wrapper">
+                      <img class="flag-wrapper__close-select" src="images/form/choose-country-close.svg" width="21" height="21" alt="Закрыть">
+                      <img class="flag-wrapper__circle-dark" src="images/form/choose-country-circle-dark.svg" width="8" height="8" alt="">
+                      <img class="flag-wrapper__arrow-down" src="images/form/choose-country-arrow-down.svg" width="10" height="8" alt="">
+                      <img class="flag-wrapper__icon" src="images/form/bosnia.png" width="35" height="24" alt="Босния и Герцеговина">
+                    </div>
+                    <div class="choosen-country">
+                      <select class="choosen-country__select" name="choose-second-country" id="choose-second-country">
+                        <option class="choosen-country__option" value="Босния и Герцеговина">Чехия</option>
+                      </select>
+                    </div>
+                    <div class="flag-wrapper flag-wrapper--next">
+                      <img class="flag-wrapper__close-select" src="images/form/choose-country-close.svg" width="21" height="21" alt="Закрыть">
+                      <img class="flag-wrapper__circle-dark" src="images/form/choose-country-circle-dark.svg" width="8" height="8" alt="">
+                      <img class="flag-wrapper__arrow-down" src="images/form/choose-country-arrow-down.svg" width="10" height="8" alt="">
+                      <img class="flag-wrapper__icon" src="images/form/czech.png" width="35" height="24" alt="Чехия">
+                    </div>
+                    <div class="choose-new-country">
+                      <img class="choose-new-country__close-select" src="images/form/choose-country-close.svg" width="21" height="21" alt="Закрыть">
+                      <img class="choose-new-country__circle-light" src="images/form/choose-country-circle.svg" width="8" height="8" alt="">
+                      <img class="choose-new-country__arrow-down" src="images/form/choose-country-arrow-down.svg" width="10" height="8" alt="">
+                      <select class="choosen-country__select choosen-country__select--new-country" name="choose-new-country" id="choose-new-country">
+                        <option class="choosen-country__option" value="Выберите">Выберите страну</option>
+                      </select>
+                      <!-- Таблица с алфавитом и списком стран -->
+                      <div class="country-list visually-hidden">
+                        <div class="country-list__header">
+                          <p class="country-list__header-text">Выберите страну</p>
+                          <img class="country-list__close" src="images/form/country-list-close-modal.svg" width="9" height="9" alt="Закрыть окно">
+                        </div>
+                        <div class="country-list__table-wrapper">
+                          <table class="country-list__table">
+                            <tr class="country-list__table-row">
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="a" checked>
+                                <label class="country-list__label" for="a">А</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="b">
+                                <label class="country-list__label" for="b">Б</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="v">
+                                <label class="country-list__label" for="v">В</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="g">
+                                <label class="country-list__label" for="g">Г</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="d">
+                                <label class="country-list__label" for="d">Д</label>
+                              </td>
+                            </tr>
+                            <tr class="country-list__table-row">
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="e">
+                                <label class="country-list__label" for="e">Е</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="z">
+                                <label class="country-list__label" for="z">З</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="i">
+                                <label class="country-list__label" for="i">И</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="k">
+                                <label class="country-list__label" for="k">К</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="l">
+                                <label class="country-list__label" for="l">Л</label>
+                              </td>
+                            </tr>
+                            <tr class="country-list__table-row">
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="m">
+                                <label class="country-list__label" for="m">М</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="n">
+                                <label class="country-list__label" for="n">Н</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="o">
+                                <label class="country-list__label" for="o">О</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="p">
+                                <label class="country-list__label" for="p">П</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="r">
+                                <label class="country-list__label" for="r">Р</label>
+                              </td>
+                            </tr>
+                            <tr class="country-list__table-row">
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="s">
+                                <label class="country-list__label" for="s">С</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="t">
+                                <label class="country-list__label" for="t">Т</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="y">
+                                <label class="country-list__label" for="y">У</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="f">
+                                <label class="country-list__label" for="f">Ф</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="x">
+                                <label class="country-list__label" for="x">Х</label>
+                              </td>
+                            </tr>
+                            <tr class="country-list__table-row">
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="ch">
+                                <label class="country-list__label" for="ch">Ч</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="sh">
+                                <label class="country-list__label" for="sh">Ш</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="ye">
+                                <label class="country-list__label" for="ye">Э</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="u">
+                                <label class="country-list__label" for="u">Ю</label>
+                              </td>
+                              <td class="country-list__table-cell">
+                                <input class="country-list__checkbox" type="checkbox" id="ya">
+                                <label class="country-list__label" for="ya">Я</label>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                        <ul class="table-list">
+                          <li class="table-list__item">
+                            <input class="table-list__checkbox" type="checkbox" id="Australia">
+                            <label class="table-list__label" for="Australia">Австралия</label>
+                          </li>
+                          <li class="table-list__item">
+                            <input class="table-list__checkbox" type="checkbox" id="Austria">
+                            <label class="table-list__label" for="Austria">Австрия</label>
+                          </li>
+                          <li class="table-list__item">
+                            <input class="table-list__checkbox" type="checkbox" id="Azerbaijan">
+                            <label class="table-list__label" for="Azerbaijan">Азербайджан</label>
+                          </li>
+                          <li class="table-list__item">
+                            <input class="table-list__checkbox" type="checkbox" id="Albania">
+                            <label class="table-list__label" for="Albania">Албания</label>
+                          </li>
+                          <li class="table-list__item">
+                            <input class="table-list__checkbox" type="checkbox" id="Algeria">
+                            <label class="table-list__label" for="Algeria">Алжир</label>
+                          </li>
+                          <li class="table-list__item">
+                            <input class="table-list__checkbox" type="checkbox" id="Angola">
+                            <label class="table-list__label" for="Angola">Ангола</label>
+                          </li>
+                          <li class="table-list__item">
+                            <input class="table-list__checkbox" type="checkbox" id="Andorra">
+                            <label class="table-list__label" for="Andorra">Андорра</label>
+                          </li>
+                          <li class="table-list__item">
+                            <input class="table-list__checkbox" type="checkbox" id="Antigua-and-Barbuda">
+                            <label class="table-list__label" for="Antigua-and-Barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li class="table-list__item">
+                            <input class="table-list__checkbox" type="checkbox" id="Argentina">
+                            <label class="table-list__label" for="Argentina">Аргентина</label>
+                          </li>
+                          <li class="table-list__item">
+                            <input class="table-list__checkbox" type="checkbox" id="Armenia">
+                            <label class="table-list__label" for="Armenia">Армения</label>
+                          </li>
+                          <li class="table-list__item">
+                            <input class="table-list__checkbox" type="checkbox" id="Afghanistan">
+                            <label class="table-list__label" for="Afghanistan">Афганистан</label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="add-new-country">
+                      <img class="add-new-country__circle-grey" src="images/form/add-country-grey.svg" width="8" height="8" alt="">
+                      <button class="add-new-country__button" name="add-country" id="add-country">Добавить страну
+                        <svg class="add-new-country__add-new-plus" width="14" height="14" alt="Закрыть">
+                          <use xlink:href="#add-country"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="new-plan-list__buttons-wrapper">
+                    <button class="new-plan-list__next-button new-plan-list__next-button--step-two">Следующий шаг</button>
+                    <button class="new-plan-list__previous-button">На шаг назад</button>
+                  </div>
+                </li>
+                <li class="new-plan-list__item recreation">
+                  <ul class="new-plan-list__item-navigation">
+                    <li class="new-plan-list__item-navigation-text">Даты</li>
+                    <li class="new-plan-list__item-navigation-text">Маршрут</li>
+                    <li class="new-plan-list__item-navigation-text new-plan-list__item-navigation-text--current">Развлечения</li>
+                  </ul>
+                  <span class="new-plan-list__item-header">
+                    <p class="new-plan-list__item-header-step">Шаг 3.</p>Развлечения
+                  </span>
+                  <p class="new-plan-list__item-text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                  <div class="new-plan-list__recreation-wrapper">
+                    <div class="first-country">
+                      <span class="first-country__border">
+                        <img class="first-country__border-circle-top" src="images/form/country-border-circle.svg" width="6" height="6" alt="">
+                        <img class="first-country__border-circle-bottom" src="images/form/country-border-circle.svg" width="6" height="6" alt="">
+                      </span>
+                      <div class="first-country__name-wrapper">
+                        <p class="first-country__name">Босния и Герцеговина</p>
+                      </div>
+                      <div class="first-country__flag-wrapper">
+                        <img class="first-country__flag" src="images/form/bosnia.png" width="35" height="24" alt="Босния и Герцеговина">
+                      </div>
+                        <div class="first-country__about-my-plans-wrapper">
+                          <textarea class="first-country__about-my-plans" rows="10" cols="45" name="text" placeholder="План действий"></textarea>
+                          <div class="first-country__error-message visually-hidden">
+                            <p class="first-country__error-message-text">Это поле должно быть заполнено</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="second-country">
+                      <div class="second-country__name-wrapper">
+                        <p class="second-country__name">Чехия</p>
+                      </div>
+                      <div class="second-country__flag-wrapper">
+                        <img class="second-country__flag" src="images/form/czech.png" width="35" height="24" alt="Чехия">
+                      </div>
+                      <div class="second-country__about-my-hobbies-wrapper">
+                        <textarea class="second-country__about-my-hobbies" rows="10" cols="45" name="text"></textarea>
+                        <div class="second-country__error-message visually-hidden">
+                          <p class="second-country__error-message-text">Это поле должно быть заполнено</p>
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="new-plan-list__buttons-wrapper">
+                      <button class="new-plan-list__next-button new-plan-list__send-button">Отправить</button>
+                      <button class="new-plan-list__previous-button">На шаг назад</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__main">
+      <a href="#" class="main-footer__logo">
+        <img class="main-footer__logo-icon" src="images/logo-social-mobile.svg" width="96" height="15" alt="Погнали?">
+      </a>
+      <section class="socials">
+        <h3 class="visually-hidden">Мы в соцсетях</h3>
+        <div class="socials__wrapper">
+          <div class="socials__icons">
+            <a href="#" class="socials__icons-link socials__icons-link--telegram"><img class="socials__icons-image socials__icons-image--telegram" src="images/telegram.svg" width="20" height="18" alt="Телеграм"></a>
+            <a href="#" class="socials__icons-link socials__icons-link--vkontakte"><img class="socials__icons-image socials__icons-image--vkontakte" src="images/vkontakte.svg" width="30" height="16" alt="Вконтакте"></a>
+            <a href="#" class="socials__icons-link socials__icons-link--youtube"><img class="socials__icons-image socials__icons-image--youtube" src="images/youtube.svg" width="20" height="15" alt="Youtube"></a>
+          </div>
+        </div>
+      </section>
+      <a href="#" class="main-footer__logo-link">
+        Разработано
+        <img class="main-footer__logo-left" src="images/footer-logo.svg" width="27" height="33" alt="Погнали?">
+      </a>
+    </div>
+  </footer>
+  <script src="form-script.js"></script>
+</body>
+</html>
