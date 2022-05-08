@@ -130,6 +130,16 @@
   text-transform: uppercase;
   border: none;
   outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #d1d7e9;
+  }
+
+  &:active {
+    background-color: #d1d7e9;
+    color: @secondary-text-dark-opacity;
+  }
 
   @media (min-width: @tablet-width) {
     margin: 51px 0;
@@ -149,6 +159,7 @@
     border-radius: 0 0 10px 10px;
     top: 190px;
     justify-self: end;
+    z-index: 1;
   }
 }
 

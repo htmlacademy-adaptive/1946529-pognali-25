@@ -27,6 +27,18 @@
   }
 }
 
+.activity-wrapper__checkbox-label {
+  cursor: pointer;
+
+  &:hover .activity-wrapper__icon {
+    opacity: 0.7;
+  }
+
+  &:active .activity-wrapper__icon {
+    opacity: 0.3;
+  }
+}
+
 .activity-wrapper__icon {
   @media (min-width: @tablet-width) {
     width: 23px;

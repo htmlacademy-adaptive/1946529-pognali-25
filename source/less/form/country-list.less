@@ -12,7 +12,7 @@
 
   @media (min-width: @tablet-width) {
     // position: relative;
-    min-width: 372px;
+    min-width: 375px;
     left: 0;
     transform: translate(0);
     // left: 0;
@@ -23,6 +23,7 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 241px;
+    min-width: 725px;
     // position: relative;
   }
 }
@@ -74,6 +75,14 @@
 .country-list__close {
   cursor: pointer;
 
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
   @media (min-width: @tablet-width) {
     width: 22px;
     height: 22px;
@@ -120,6 +129,7 @@
   border: 1px solid @border-gray;
   width: 43px;
   height: 41px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 55px;
@@ -128,6 +138,10 @@
 
   @media (min-width: @desktop-width) {
     border-radius: 4px;
+
+    &:hover {
+      border: 1px solid @grey-hover;
+    }
   }
 }
 
@@ -149,6 +163,11 @@
   text-align: center;
   color: @base-text-color;
   text-transform: uppercase;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid @grey-hover;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -158,6 +177,10 @@
 
   @media (min-width: @desktop-width) {
     border-radius: 4px;
+
+    &:hover {
+      border: 0;
+    }
   }
 }
 

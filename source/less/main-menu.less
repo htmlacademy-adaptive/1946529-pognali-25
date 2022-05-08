@@ -113,6 +113,19 @@
   }
 }
 
+.main-menu__link--scroll {
+  color: @main-background-dark;
+
+  &:hover {
+    color: @base-yellow;
+  }
+
+  &:active {
+    color: @base-yellow;
+    opacity: 0.3;
+  }
+}
+
 .main-menu__login-wrapper {
   justify-self: center;
   grid-column: 1/3;
@@ -141,12 +154,36 @@
 }
 
 .main-menu__login-link--phone {
+  &:hover {
+    background-color: @phone-orange-hover;
+  }
+
+  &:active {
+    background-color: @phone-orange-hover;
+  }
+
+  &:active .main-menu__login-icon {
+    opacity: 0.3;
+  }
+
   @media (min-width: @desktop-width) {
     background-color: @base-orange;
   }
 }
 
 .main-menu__login-link--email {
+  &:hover {
+    background-color: @base-orange;
+  }
+
+  &:active {
+    background-color: @base-orange;
+  }
+
+  &:active .main-menu__login-icon {
+    opacity: 0.3;
+  }
+
   @media (min-width: @desktop-width) {
     background-color: @base-yellow;
   }

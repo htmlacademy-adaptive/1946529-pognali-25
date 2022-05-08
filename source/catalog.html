@@ -5,30 +5,51 @@
     <title>Погнали. Главная страница</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
   </head>
 <body class="page__body">
+  <svg style="display: none;">
+    <symbol viewbox="0 0 20 18" id="heart-icon">
+      <path xmlns="http://www.w3.org/2000/svg" clip-rule="evenodd"
+      d="M10 7.12436L11.1175 4.77557C11.395 4.19396 11.8762 3.35764 12.5575 2.68149C13.2275 2.01585 14.03
+      1.5629 15 1.5629C17.095 1.5629 18.75 3.30381 18.75 5.39658C18.75 6.9865 18.0575 8.10903 16.415
+      9.82106C15.9937 10.2596 15.5138 10.7335 14.9825 11.2561C13.5975 12.6215 11.875 14.3204 10
+      16.5917C8.125 14.3204 6.4025 12.6215 5.0175 11.2561C4.48625 10.7335 4.005 10.2583 3.585
+      9.82106C1.9425 8.10903 1.25 6.9865 1.25 5.39658C1.25 3.30381 2.905 1.5629 5 1.5629C5.97
+      1.5629 6.7725 2.01585 7.4425 2.68149C8.12375 3.35764 8.605 4.19396 8.8825 4.77557L10
+      7.12436ZM10.49 18.0109C10.4298 18.0858 10.3548 18.146 10.2701 18.1873C10.1855 18.2286
+      10.0933 18.25 10 18.25C9.90668 18.25 9.81449 18.2286 9.72986 18.1873C9.64523 18.146
+      9.57019 18.0858 9.51 18.0109C7.50875 15.5138 5.6975 13.7283 4.20625 12.2591C1.625
+      9.7134 0 8.11297 0 5.39658C0 2.55414 2.2375 0.25 5 0.25C7 0.25 8.39875 1.62855 9.255
+      2.88631C9.58 3.36552 9.8275 3.82635 10 4.18871C10.2162 3.73519 10.4653 3.29978 10.745
+      2.88631C11.6012 1.62723 13 0.25 15 0.25C17.7625 0.25 20 2.55414 20 5.39658C20 8.11297
+      18.375 9.7134 15.7938 12.2591C14.3025 13.7296 12.4913 15.5151 10.49 18.0096V18.0109Z"/>
+    </symbol>
+  </svg>
   <header class="main-header main-header--secondary">
-    <div class="bg-wrapper bg-wrapper--dark">
-      <div class="main-header__top main-header__top--nojs">
-        <!-- <div class="main-header__top-flex"> -->
-          <a href="/" class="main-header__logo">
-            <img class="main-header__logo-image main-header__logo-image--light" src="images/logo_mobile.svg" width="96" height="15" alt="Погнали?">
-            <img class="main-header__logo-image main-header__logo-image--dark visually-hidden" src="images/dark-logo.svg" width="96" height="15" alt="Погнали?">
-          </a>
-          <button class="main-header__burger-menu">
-            <img class="main-header__burger-menu-icon" src="images/burger-menu-icon.svg" width="25" height="11" alt="Меню">
-            <img class="main-header__burger-menu-close visually-hidden" src="images/close-burger-menu.svg" width="19" height="18" alt="Меню">
-          </button>
-        <!-- </div> -->
-        <nav class="main-menu visually-hidden">
-          <div class="main-menu__wrapper">
-            <ul class="main-menu__list">
-              <li class="main-menu__item"><a class="main-menu__link" href="#">О сервисе</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Направления</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Попутчики</a></li>
-            </ul>
-          </div>
-        </nav>
+    <!-- <div class="bg-wrapper bg-wrapper--light"> -->
+      <div class="bg-wrapper bg-wrapper--dark">
+        <div class="main-header__top main-header__top--nojs">
+          <!-- <div class="main-header__top-flex"> -->
+            <a href="/" class="main-header__logo">
+              <img class="main-header__logo-image main-header__logo-image--light" src="images/logo_mobile.svg" width="96" height="15" alt="Погнали?">
+              <img class="main-header__logo-image main-header__logo-image--dark visually-hidden" src="images/dark-logo.svg" width="96" height="15" alt="Погнали?">
+            </a>
+            <button class="main-header__burger-menu">
+              <img class="main-header__burger-menu-icon" src="images/burger-menu-icon.svg" width="25" height="11" alt="Меню">
+              <img class="main-header__burger-menu-icon-dark visually-hidden" src="images/burger-menu-icon-dark.svg" width="25" height="11" alt="Меню">
+              <img class="main-header__burger-menu-close visually-hidden" src="images/close-burger-menu.svg" width="19" height="18" alt="Меню">
+            </button>
+          <!-- </div> -->
+            <nav class="main-menu visually-hidden">
+              <div class="main-menu__wrapper">
+                <ul class="main-menu__list">
+                  <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="#">О сервисе</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="#">Направления</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="#">Попутчики</a></li>
+                </ul>
+              </div>
+            </nav>
         <div class="main-menu__login-wrapper">
           <a href="#" class="main-menu__login-link main-menu__login-link--phone"><img class="main-menu__login-icon" src="images/phone.svg" width="16" height="16" alt="Телефон"></a>
           <a href="#" class="main-menu__login-link main-menu__login-link--email"><img class="main-menu__login-icon" src="images/email.svg" width="16" height="12" alt="E-mail"></a>
@@ -70,11 +91,11 @@
           <div class="companions-header">
             <img class="companions-header__icon--left" src="images/catalog/header-icon-filter.svg" width="16" height="10" alt="">
             <p class="companions-header__header">Фильтрация по странам</p>
-            <p class="companions-header__show-all">Показать все</p>
-            <div class="companions-header__icon-wrapper">
-              <img class="companions-header__icon companions-header__icon--active" src="images/catalog/open-country-icon.svg" width="17" height="3" alt="">
-              <img class="companions-header__icon companions-header__icon--close" src="images/catalog/close-filter.svg" width="16" height="16" alt="">
-            </div>
+              <p class="companions-header__show-all-text">Показать все</p>
+              <span class="companions-header__icon-wrapper">
+                <img class="companions-header__icon companions-header__icon--active" src="images/catalog/open-country-icon.svg" width="17" height="3" alt="">
+                <img class="companions-header__icon companions-header__icon--close" src="images/catalog/close-filter.svg" width="16" height="16" alt="">
+              </span>
           </div>
           <ul class="companions-header-list visually-hidden">
             <li class="companions-header-list__item">
@@ -983,23 +1004,23 @@
           <ul class="checkbox-list">
             <li class="checkbox-list__item">
               <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="hard-rock" checked>
+                <input type="checkbox" class="checkbox-list__accordeon" id="sport" checked>
                 <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="hard-rock">Тяжёлый рок</label>
+                <label class="checkbox-list__checkbox-label" for="sport">Спортзал</label>
               </div>
             </li>
             <li class="checkbox-list__item">
               <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="russian-rap" checked>
+                <input type="checkbox" class="checkbox-list__accordeon" id="hookah" checked>
                 <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="russian-rap">Русский рэп</label>
+                <label class="checkbox-list__checkbox-label" for="hookah">Кальян</label>
               </div>
             </li>
             <li class="checkbox-list__item">
               <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="eurodance">
+                <input type="checkbox" class="checkbox-list__accordeon" id="sofa">
                 <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="eurodance">Евроденс</label>
+                <label class="checkbox-list__checkbox-label" for="sofa">Диван</label>
               </div>
             </li>
           </ul>
@@ -1037,23 +1058,23 @@
           <ul class="checkbox-list">
             <li class="checkbox-list__item">
               <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="hard-rock" checked>
+                <input type="checkbox" class="checkbox-list__accordeon" id="meet" checked>
                 <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="hard-rock">Тяжёлый рок</label>
+                <label class="checkbox-list__checkbox-label" for="meet">Мясоед</label>
               </div>
             </li>
             <li class="checkbox-list__item">
               <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="russian-rap" checked>
+                <input type="checkbox" class="checkbox-list__accordeon" id="wholefoods" checked>
                 <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="russian-rap">Русский рэп</label>
+                <label class="checkbox-list__checkbox-label" for="wholefoods">Сидит на ПП</label>
               </div>
             </li>
             <li class="checkbox-list__item">
               <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="eurodance">
+                <input type="checkbox" class="checkbox-list__accordeon" id="vegan">
                 <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="eurodance">Евроденс</label>
+                <label class="checkbox-list__checkbox-label" for="vegan">Веган-сыроед</label>
               </div>
             </li>
           </ul>
@@ -1098,7 +1119,11 @@
             </div>
             <div class="range">
               <div class="range__track">
-                <div class="range__track-active"></div>
+                <div class="range__track-active">
+                  <img class="range__track-spot range__track-spot--left" src="/images/slider-spot-icon.svg" width="13" height="13" alt="">
+                  <img class="range__track-spot range__track-spot--right" src="/images/slider-spot-icon.svg" width="13" height="13" alt="">
+
+                </div>
               </div>
               <input class="range__range" type="range">
             </div>
@@ -1118,8 +1143,12 @@
               <div class="person-card__avatar-wrapper">
                 <img class="person-card__avatar" src="images/catalog/cards/firsova-avatar.png" width="70" height="70" alt="Таня Фирсова">
               </div>
-              <img class="person-card__favorite-icon person-card__favorite-icon--active" src="images/catalog/cards/favorite-active.svg" width="31" height="31" alt="В избранное">
-              <p class="person-card__item-name">Таня Фирсова</p>
+              <div class="person-card__favorite-icon-wrapper person-card__favorite-icon-wrapper--active">
+                <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
+                  <use xlink:href="#heart-icon"></use>
+                </svg>
+              </div>
+              <a href="#" class="person-card__item-name">Таня Фирсова</a>
               <p class="person-card__item-distance">1,5 М</p>
               <span class="person-card__check-online">
                 <img class="person-card__check-online-icon person-card__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
@@ -1173,8 +1202,12 @@
               <div class="person-card__avatar-wrapper">
                 <img class="person-card__avatar" src="images/catalog/cards/demin-avatar.png" width="70" height="70" alt="Петя Демин">
               </div>
-              <img class="person-card__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
-              <p class="person-card__item-name">Петя Демин</p>
+              <div class="person-card__favorite-icon-wrapper">
+                <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
+                  <use xlink:href="#heart-icon"></use>
+                </svg>
+              </div>
+              <a href="#" class="person-card__item-name">Петя Демин</a>
               <p class="person-card__item-distance">1500 М</p>
               <span class="person-card__check-online">
                 <img class="person-card__check-online-icon person-card__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
@@ -1225,8 +1258,12 @@
               <div class="person-card__avatar-wrapper">
                 <img class="person-card__avatar" src="images/catalog/cards/smolov-avatar.png" width="70" height="70" alt="Марк Смолов">
               </div>
-              <img class="person-card__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
-              <p class="person-card__item-name">Марк Смолов</p>
+              <div class="person-card__favorite-icon-wrapper">
+                <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
+                  <use xlink:href="#heart-icon"></use>
+                </svg>
+              </div>
+              <a href="#" class="person-card__item-name">Марк Смолов</a>
               <p class="person-card__item-distance"></p>
               <span class="person-card__check-online">
                 <img class="person-card__check-online-icon person-card__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
@@ -1280,8 +1317,12 @@
               <div class="person-card__avatar-wrapper">
                 <img class="person-card__avatar" src="images/catalog/cards/rogovaya-avatar.png" width="70" height="70" alt="Лариса Роговая">
               </div>
-              <img class="person-card__favorite-icon" src="images/catalog/cards/favorite-inactive.svg" width="31" height="31" alt="В избранное">
-              <p class="person-card__item-name">Лариса Роговая</p>
+              <div class="person-card__favorite-icon-wrapper">
+                <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
+                  <use xlink:href="#heart-icon"></use>
+                </svg>
+              </div>
+              <a href="#" class="person-card__item-name">Лариса Роговая</a>
               <p class="person-card__item-distance">23 М</p>
               <span class="person-card__check-online">
                 <img class="person-card__check-online-icon person-card__check-online-icon--online" src="images/catalog/cards/is-online-active.svg" alt="Оффлайн">
@@ -1333,7 +1374,7 @@
       <div class="catalog-bottom-navigation">
         <ol class="catalog-bottom-navigation__list">
           <li class="catalog-bottom-navigation__list-item">
-            <a href="#" class="catalog-bottom-navigation__list-item-link">1</a></li>
+            <a href="#" class="catalog-bottom-navigation__list-item-link catalog-bottom-navigation__list-item-link--active">1</a></li>
           <li class="catalog-bottom-navigation__list-item">
             <a href="#" class="catalog-bottom-navigation__list-item-link">2</a>
           </li>
@@ -1353,7 +1394,9 @@
   </main>
   <footer class="main-footer">
       <div class="main-footer__main">
-        <img class="main-footer__logo" src="images/logo-social-mobile.svg" width="96" height="15" alt="Погнали?">
+        <a href="#" class="main-footer__logo">
+          <img class="main-footer__logo-icon" src="images/logo-social-mobile.svg" width="96" height="15" alt="Погнали?">
+        </a>
         <section class="socials">
           <h3 class="visually-hidden">Мы в соцсетях</h3>
           <div class="socials__wrapper">

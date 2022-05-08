@@ -33,6 +33,9 @@
   right: 15px;
   transform: translateY(-50%);
   cursor: pointer;
+  stroke: @plus-icon;
+  width: 20px;
+  height: 20px;
 
   @media (min-width: @tablet-width) {
     right: 42px;
@@ -62,6 +65,18 @@
   outline: none;
   text-transform: uppercase;
   text-align: left;
+
+  &:hover {
+    background-color: @middle-gray-background;
+  }
+
+  &:hover .add-new-country__add-new-plus {
+    stroke: #b6afaf;
+  }
+
+  &:active .add-new-country__add-new-plus {
+    stroke: hsla(0, 5%, 70%, 0.4);
+  }
 
   @media (min-width: @tablet-width) {
     width: 100%;

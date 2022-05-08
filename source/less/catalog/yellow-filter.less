@@ -89,6 +89,16 @@
   border: none;
   outline: none;
   border-radius: 22px;
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.14));
+  }
+
+  &:active {
+    background: @filter-border;
+    color: @secondary-text-dark-opacity;
+  }
 
   @media (min-width: @tablet-width) {
     min-height: 50px;

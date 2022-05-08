@@ -7,6 +7,12 @@
   // grid-template-columns: 2fr 1fr;
   grid-template-columns: 78px 1fr 90px;
 
+  &:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+    filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.16));
+  }
+
   @media (min-width: @tablet-width) {
     padding: 35px 25px 26px 35px;
     grid-template-columns: 1fr 1fr 1fr 1fr 153px;
@@ -61,14 +67,37 @@
   }
 }
 
-.person-card__favorite-icon {
+.person-card__favorite-icon-wrapper {
   position: absolute;
-  display: block;
+  display: grid;
+  align-items: center;
+  justify-content: center;
   bottom: 15px;
   right: 0;
   grid-column: 1/2;
   grid-row: 1/3;
   transform: translateX(50%);
+  background: @light-background;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+
+  &:hover {
+    background: @modal-background-gray;
+  }
+
+  &:active {
+    background: @modal-background-gray;
+  }
+
+  &:hover .person-card__favorite-icon {
+    opacity: 1;
+  }
+
+  &:active .person-card__favorite-icon {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -78,7 +107,7 @@
     width: 50px;
     height: 50px;
     bottom: 0;
-    padding: 12px 0 0;
+    // padding: 12px 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -86,6 +115,50 @@
     grid-row: 3/4;
     align-self: end;
   }
+}
+
+.person-card__favorite-icon-wrapper--active {
+  background: #f9eaea;
+
+  &:hover {
+    background: #f9d8d8;
+  }
+
+  &:active {
+    background: rgba(249, 216, 216, 0.3);
+  }
+
+  &:hover .person-card__favorite-icon {
+    fill: #f02323;
+    opacity: 1;
+  }
+
+  &:active .person-card__favorite-icon {
+    fill: #f02323;
+    opacity: 0.3;
+  }
+}
+
+.person-card__favorite-icon-wrapper--active .person-card__favorite-icon {
+  fill: #f02323;
+  fill-rule: nonzero;
+}
+
+.person-card__favorite-icon {
+  width: 15px;
+  height: 14px;
+  fill: @main-background-dark;
+  fill-rule: evenodd;
+  opacity: 0.7;
+
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 18px;
+  }
+}
+
+.person-card__favorite-icon-checkbox {
+  display: none;
 }
 
 .person-card__item-name {
@@ -101,6 +174,23 @@
   text-align: left;
   color: @base-text-color;
   padding: 22px 0 0 16px;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover ~ .person-card__check-online {
+    opacity: 0.7;
+  }
+
+  &:active ~ .person-card__check-online {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     grid-column: 2/4;
@@ -247,6 +337,16 @@
   box-sizing: border-box;
   text-transform: uppercase;
   grid-column: 1/4;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @yellow-orange;
+  }
+
+  &:active {
+    background-color: @yellow-orange;
+    color: @secondary-text-dark-opacity;
+  }
 
   @media (min-width: @tablet-width) {
     grid-column: 2/3;
@@ -308,6 +408,14 @@
   color: @base-text-color;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
