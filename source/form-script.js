@@ -3,6 +3,7 @@
 let mainMenu = document.querySelector('.main-menu');
 let burgerButton = document.querySelector('.main-header__burger-menu');
 let burgerIcon = document.querySelector('.main-header__burger-menu-icon');
+let darkBurgerIcon = document.querySelector('.main-header__burger-menu-icon-dark');
 let burgerCloseIcon = document.querySelector('.main-header__burger-menu-close');
 let headerTop = document.querySelector('.main-header__top');
 let changeHeaderBg = document.querySelector('.main-header__burger-menu-active');
@@ -15,76 +16,182 @@ let navigationUser = document.querySelector('.navigation-user');
 let social = document.querySelector('.social');
 let menuLoginHidden = document.querySelector('.main-menu__login--hidden');
 
-headerTop.classList.remove('main-header__top--nojs');
-
-burgerButton.addEventListener('click', ()=> {
-  // mainMenu.classList.toggle('visually-hidden');
-  headerTop.classList.toggle('main-header__burger-menu-active');
-  logoDarkg.classList.toggle('visually-hidden');
-  logoLight.classList.toggle('visually-hidden');
-  burgerIcon.classList.toggle('visually-hidden');
-  burgerCloseIcon.classList.toggle('visually-hidden');
-  mainMenu.classList.toggle('visually-hidden');
-  mainMenuLogin.classList.toggle('main-menu__login--active');
-  navigationUser.classList.toggle('visually-hidden');
-  social.classList.toggle('visually-hidden');
-});
-
-// Высчитываем высоту
-
-// let mainHeaderBottom = document.querySelector('.main-header__bottom');
-// let travelerAbout = document.querySelector('.traveler-about');
-
-// let heightCalculate = function() {
-
-//   if (document.body.clientWidth < 768) {
-//     // let headerHeight = headerTop.clientHeight;
-//     let headerBottomHeight = mainHeaderBottom.clientHeight;
-
-//     // mainHeaderBottom.style.top = headerHeight + 'px';
-//     travelerAbout.style.marginTop = headerBottomHeight - 30 + 'px';
-//   }
-
-//   if (document.body.clientWidth >= 768 && document.body.clientWidth < 1440) {
-//     // let headerHeight = headerTop.clientHeight;
-//     let headerBottomHeight = mainHeaderBottom.clientHeight;
-
-//     // mainHeaderBottom.style.top = headerHeight + 'px';
-//     travelerAbout.style.marginTop = headerBottomHeight - 40 + 'px';
-
-//     // if (headerTop.classList.contains('main-header__burger-menu-active')) {
-//     //   mainHeaderBottom.style.top = 0 + 'px';
-//     // }
-
-//     // burgerCloseIcon.addEventListener('click', ()=> {
-//     //   mainHeaderBottom.style.top = headerHeight + 'px';
-//     // })
-//   }
-
-//   if (document.body.clientWidth >= 1440) {
-//     // let headerHeight = headerTop.clientHeight;
-//     let headerBottomHeight = mainHeaderBottom.clientHeight;
-
-//     // mainHeaderBottom.style.top = headerHeight + 'px';
-//     travelerAbout.style.marginTop = headerBottomHeight - 60 + 'px';
-//   }
-// }
-
-// window.addEventListener('resize', ()=> {
-//   heightCalculate();
-// })
-
-// window.addEventListener('load', ()=> {
-//   heightCalculate();
-// })
-
-// Показываем меню при изменении ширины экрана больше 768px
+// Переменные для меню при изменении ширины экрана больше 768px
 
 let menuLoginWrapper = document.querySelector('.main-menu__login-wrapper');
 let topPhoneLink = document.querySelector('.secondary-navigation__link--phone');
 let topEmailLink = document.querySelector('.secondary-navigation__link--email');
 let secondaryNavigation = document.querySelector('.secondary-navigation');
 
+let menuLink = document.querySelectorAll('.main-menu__link');
+let mainMenuList = document.querySelector('.main-menu__list');
+let mainHeader = document.querySelector('.main-header');
+let mainHeaderBottom = document.querySelector('.main-header__bottom');
+let bgWrapper = document.querySelector('.bg-wrapper--dark');
+
+// Скрываем класс NO JS
+
+headerTop.classList.remove('main-header__top--nojs');
+
+// Открываем/закрываем меню без
+
+  burgerIcon.addEventListener('click', ()=> {
+    headerTop.classList.add('main-header__burger-menu-active');
+    logoDarkg.classList.remove('visually-hidden');
+    logoLight.classList.add('visually-hidden');
+    burgerIcon.classList.add('visually-hidden');
+    burgerCloseIcon.classList.remove('visually-hidden');
+    mainMenu.classList.remove('visually-hidden');
+    mainMenuLogin.classList.add('main-menu__login--active');
+    navigationUser.classList.remove('visually-hidden');
+    social.classList.remove('visually-hidden');
+    headerTop.classList.add('main-header__check-menu-open');
+  });
+
+  darkBurgerIcon.addEventListener('click', ()=> {
+    headerTop.classList.add('main-header__burger-menu-active');
+    logoDarkg.classList.remove('visually-hidden');
+    logoLight.classList.add('visually-hidden');
+    darkBurgerIcon.classList.add('visually-hidden');
+    burgerCloseIcon.classList.remove('visually-hidden');
+    mainMenu.classList.remove('visually-hidden');
+    mainMenuLogin.classList.add('main-menu__login--active');
+    navigationUser.classList.remove('visually-hidden');
+    social.classList.remove('visually-hidden');
+    headerTop.classList.add('main-header__check-menu-open');
+  });
+
+  burgerCloseIcon.addEventListener('click', ()=> {
+    // Проверка была ли прокручена страница
+    if (headerTop.classList.contains('main-header__check-scrol')) {
+      burgerIcon.classList.add('visually-hidden');
+      darkBurgerIcon.classList.remove('visually-hidden');
+      headerTop.classList.add('main-header__burger-menu-active');
+      burgerCloseIcon.classList.add('visually-hidden');
+      mainMenu.classList.add('visually-hidden');
+      mainMenuLogin.classList.remove('main-menu__login--active');
+      navigationUser.classList.add('visually-hidden');
+      social.classList.add('visually-hidden');
+      headerTop.classList.remove('main-header__check-menu-open');
+    } else {
+      headerTop.classList.remove('main-header__burger-menu-active');
+      logoDarkg.classList.add('visually-hidden');
+      logoLight.classList.remove('visually-hidden');
+      burgerIcon.classList.remove('visually-hidden');
+      burgerCloseIcon.classList.add('visually-hidden');
+      mainMenu.classList.add('visually-hidden');
+      mainMenuLogin.classList.remove('main-menu__login--active');
+      navigationUser.classList.add('visually-hidden');
+      social.classList.add('visually-hidden');
+      headerTop.classList.remove('main-header__check-menu-open');
+    }
+  });
+
+console.log(window.pageYOffset);
+
+  if (document.body.clientWidth < 768) {
+
+    window.addEventListener('scroll', ()=> {
+      if (window.pageYOffset >= 200) {
+        console.log(window.pageYOffset);
+        headerTop.classList.add('main-header__check-scrol');
+        headerTop.classList.add('main-header__burger-menu-active');
+        logoDarkg.classList.remove('visually-hidden');
+        logoLight.classList.add('visually-hidden');
+        if (!headerTop.classList.contains('main-header__check-menu-open')) {
+          darkBurgerIcon.classList.remove('visually-hidden');
+        }
+        burgerIcon.classList.add('visually-hidden');
+      }
+
+      if (window.pageYOffset < 200){
+        headerTop.classList.remove('main-header__check-scrol');
+        if (!headerTop.classList.contains('main-header__check-menu-open')) {
+          headerTop.classList.remove('main-header__burger-menu-active');
+          logoDarkg.classList.add('visually-hidden');
+          logoLight.classList.remove('visually-hidden');
+          burgerIcon.classList.remove('visually-hidden');
+        }
+        darkBurgerIcon.classList.add('visually-hidden');
+      }
+    });
+  }
+
+  if (document.body.clientWidth >= 768 && document.body.clientWidth < 1440) {
+
+      window.addEventListener('scroll', ()=> {
+        if (window.pageYOffset >= 200) {
+          console.log(window.pageYOffset);
+          headerTop.classList.add('main-header__check-scrol');
+          headerTop.classList.add('main-header__burger-menu-active');
+          logoDarkg.classList.remove('visually-hidden');
+          logoLight.classList.add('visually-hidden');
+          if (!headerTop.classList.contains('main-header__check-menu-open')) {
+            darkBurgerIcon.classList.remove('visually-hidden');
+          }
+          burgerIcon.classList.add('visually-hidden');
+        }
+
+        if (window.pageYOffset < 200) {
+          headerTop.classList.remove('main-header__check-scrol');
+          if (!headerTop.classList.contains('main-header__check-menu-open')) {
+            headerTop.classList.remove('main-header__burger-menu-active');
+            logoDarkg.classList.add('visually-hidden');
+            logoLight.classList.remove('visually-hidden');
+            burgerIcon.classList.remove('visually-hidden');
+          }
+          // logoDarkg.classList.add('visually-hidden');
+          // logoLight.classList.remove('visually-hidden');
+          darkBurgerIcon.classList.add('visually-hidden');
+          // burgerIcon.classList.remove('visually-hidden');
+          // mainMenuFunc();
+        }
+      });
+
+    if (!headerTop.classList.contains('main-header__burger-menu-active')) {
+      mainMenu.classList.add('visually-hidden');
+    }
+  }
+
+  if (document.body.clientWidth >= 1440) {
+
+    window.addEventListener('scroll', ()=> {
+      if (window.pageYOffset >= 700) {
+        mainHeader.style.position = 'fixed';
+        mainHeader.style.top = '0';
+        headerTop.style.paddingTop = 23 + 'px';
+        headerTop.style.paddingBottom = 23 + 'px';
+        bgWrapper.style.background = '#ffffff';
+        mainHeader.classList.add('main-header__top--fixed');
+        headerTop.style.background = '#ffffff';
+        logoDarkg.classList.remove('visually-hidden');
+        logoLight.classList.add('visually-hidden');
+        mainMenuList.classList.add('main-menu__list--change-before');
+        mainHeaderBottom.style.display = 'none';
+        for (link of menuLink) {
+          link.classList.add('main-menu__link--scroll');
+        }
+      }
+
+      if (window.pageYOffset < 700) {
+        mainHeader.style.position = 'relative';
+        headerTop.style.paddingTop = 46 + 'px';
+        headerTop.style.paddingBottom = 0;
+        headerTop.style.background = '#161c35';
+        bgWrapper.style.background = '#161c35';
+        logoDarkg.classList.add('visually-hidden');
+        logoLight.classList.remove('visually-hidden');
+        mainMenuList.classList.remove('main-menu__list--change-before');
+        mainHeader.classList.remove('main-header__top--fixed');
+        mainHeaderBottom.style.display = 'block';
+        for (link of menuLink) {
+          link.classList.remove('main-menu__link--scroll');
+        }
+      }
+    });
+  }
+
+// Показываем меню при изменении ширины экрана больше 768px
 
 let resizeOnload = function() {
   if (document.body.clientWidth < 1440) {
@@ -105,11 +212,7 @@ let resizeOnload = function() {
 
 window.addEventListener('load', ()=> {
   resizeOnload();
-})
-
-window.addEventListener('resize', ()=> {
-  resizeOnload();
-})
+});
 
 
 // Изменить количество попутчиков
@@ -156,17 +259,43 @@ lessDuration.addEventListener('click', ()=> {
 let countryList = document.querySelector('.country-list');
 let closeCountryList = document.querySelector('.country-list__close');
 
-let openCountryList = document.querySelector('.add-new-country__add-new-plus');
+let openCountryList = document.querySelector('.add-new-country__button');
 let addNewCountry = document.querySelector('.add-new-country');
 
 closeCountryList.addEventListener('click', ()=> {
   countryList.classList.add('visually-hidden');
 });
 
-openCountryList.addEventListener('click', ()=> {
+openCountryList.addEventListener('click', (event)=> {
+  event.preventDefault();
   countryList.classList.remove('visually-hidden');
 });
 
+// Проверка введённого текста
 
+let aboutHobbies = document.querySelector('.second-country__about-my-hobbies');
+let errorMessage = document.querySelector('.second-country__error-message');
 
+aboutHobbies.addEventListener('blur', (event)=> {
+  event.target.style.borderColor = '#f47e7e';
+  errorMessage.classList.remove('visually-hidden');
+});
+
+aboutHobbies.addEventListener('focus', (event)=> {
+  event.target.style.borderColor = '#cbced9';
+  errorMessage.classList.add('visually-hidden');
+})
+
+let aboutPlans = document.querySelector('.first-country__about-my-plans');
+let errorMessagePlans = document.querySelector('.first-country__error-message');
+
+aboutPlans.addEventListener('blur', (event)=> {
+  event.target.style.borderColor = '#f47e7e';
+  errorMessagePlans.classList.remove('visually-hidden');
+});
+
+aboutPlans.addEventListener('focus', (event)=> {
+  event.target.style.borderColor = '#cbced9';
+  errorMessagePlans.classList.add('visually-hidden');
+})
 

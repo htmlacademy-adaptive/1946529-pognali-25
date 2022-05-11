@@ -75,6 +75,19 @@
   letter-spacing: 0;
   text-transform: uppercase;
 
+  &:hover {
+    background: @alone-grey-hover;
+  }
+
+  &:active {
+    background: @alone-grey-hover;
+    color: rgba(25, 33, 68, 0.5);
+  }
+
+  &:active .companions-filter__modal-close-icon {
+    opacity: 0.5;
+  }
+
   @media (min-width: @tablet-width) {
     width: 615px;
     min-height: 100px;

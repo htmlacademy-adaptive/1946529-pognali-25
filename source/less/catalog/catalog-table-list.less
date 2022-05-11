@@ -65,6 +65,15 @@
   letter-spacing: 0;
   text-align: left;
   color: @base-grey;
+  cursor: pointer;
+
+  &:hover {
+    color: @secondary-text-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -77,5 +86,6 @@
 }
 
 .catalog-table-list__checkbox:checked ~ .catalog-table-list__label {
-  background-color: @base-yellow;
+  // background-color: @base-yellow;
+  opacity: 0.3;
 }

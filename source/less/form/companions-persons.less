@@ -113,6 +113,26 @@
   -moz-appearance: textfield;
   box-sizing: border-box;
 
+  &:hover {
+    border: 1px solid @grey-hover;
+  }
+
+  &:hover ~ .companions-persons__control-element {
+    stroke: @grey-hover;
+  }
+
+  &:active {
+    border: 1px solid @secondary-text-dark;
+  }
+
+  &:focus {
+    border: 1px solid @secondary-text-dark;
+  }
+
+  &:focus ~ .companions-persons__control-element {
+    stroke: @secondary-text-dark;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -182,6 +202,22 @@
   height: 26px;
   border-radius: 4px;
   border: 1px solid @border-gray;
+}
+
+.companions-persons__checkbox-wrapper:active .companions-persons__check-mark::before {
+  opacity: 0.3;
+}
+
+.companions-persons__checkbox-wrapper:hover::before {
+  border: 1px solid @grey-hover;
+}
+
+.companions-persons__checkbox-wrapper:active::before {
+  background-color: @modal-background-gray;
+}
+
+.companions-persons__checkbox-wrapper:focus::before {
+  background-color: @modal-background-gray;
 }
 
 .companions-persons__with-children {
@@ -274,12 +310,26 @@
 .companions-persons__control-element {
   display: block;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
+  transform: translateY(-40%);
   cursor: pointer;
   padding: 5px;
   width: 14px;
   height: 14px;
+  stroke: @base-light-grey;
+
+  &:hover {
+    stroke: @grey-hover;
+  }
+
+  &:active {
+    stroke: @secondary-text-dark;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .companions-persons__control-element--minus {

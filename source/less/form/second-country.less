@@ -80,6 +80,22 @@
   }
 }
 
+.second-country__about-my-hobbies-wrapper {
+  grid-column: 1/3;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 142px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1/2;
+    height: 142px;
+  }
+}
+
 .second-country__about-my-hobbies {
   grid-column: 1/3;
   width: 220px;
@@ -98,6 +114,18 @@
   text-align: left;
   color: @base-grey;
 
+  &:hover {
+    border: 1px solid @grey-hover;
+  }
+
+  &:active {
+    border: 1px solid @secondary-text-dark;
+  }
+
+  &:focus {
+    border: 1px solid @secondary-text-dark;
+  }
+
   @media (min-width: @tablet-width) {
     width: 100%;
     height: 142px;
@@ -108,4 +136,33 @@
     grid-column: 1/2;
     height: 142px;
   }
+}
+
+.second-country__error-message {
+  @media (max-width: @tablet-width) {
+    bottom: 5px;
+  }
+
+  display: grid;
+  align-items: center;
+  position: absolute;
+  width: calc(100% - 4px);
+  background: #ffefef;
+  height: 56px;
+  border-radius: 0 0 4px 4px;
+  left: 2px;
+  bottom: -29px;
+  padding: 0 21px;
+  box-sizing: border-box;
+}
+
+.second-country__error-message-text {
+  margin: 0;
+  font-family: "Blogger Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+  color: @red-orange;
 }
