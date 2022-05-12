@@ -28,6 +28,19 @@
   letter-spacing: 0.07em;
   text-align: center;
   color: @base-text-color;
+  outline: none;
+
+  &:hover {
+    border: 1px solid @plus-icon;
+  }
+
+  &:active {
+    border: 1px solid @plus-icon;
+  }
+
+  &:focus {
+    border: 1px solid @black;
+  }
 
   @media (min-width: @tablet-width) {
     width: 73px;

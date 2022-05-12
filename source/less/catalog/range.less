@@ -13,9 +13,14 @@
   width: 100%;
   height: 2px;
   background: hsla(224, 52%, 24%, 0.2);
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+  }
 }
 
 .range__track-active {
+  // position: relative;
   width: 154px;
   height: 2px;
   background-color: @base-text-color;
@@ -28,4 +33,39 @@
 
 .range__range {
   display: none;
+}
+
+.range__track-spot {
+  position: absolute;
+  transform: translateY(calc(-50% + 1px));
+  z-index: 5;
+  cursor: pointer;
+
+  &:hover {
+    width: 19px;
+    height: 19px;
+  }
+
+  &:active {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.range__track-spot--left {
+  &:hover {
+    transform: translate(-3px, calc(-50% + 1px));
+  }
+
+  @media (min-width: @tablet-width) {
+    left: 0;
+  }
+}
+
+.range__track-spot--right {
+  right: 0;
+
+  &:hover {
+    transform: translate(3px, calc(-50% + 1px));
+  }
 }

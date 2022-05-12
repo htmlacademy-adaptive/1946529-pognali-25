@@ -47,6 +47,14 @@
   }
 }
 
+.main-header__top--scroll {
+  background: @base-light;
+}
+
+.main-header__top--no-scroll {
+  background: @secondary-text-dark;
+}
+
 .main-header__top--nojs {
   position: relative;
 
@@ -68,6 +76,14 @@
 
 .main-header__burger-menu-active {
   background-color: @base-light;
+}
+
+.main-header__check-scrol {
+  opacity: 1;
+}
+
+.main-header__check-menu-open {
+  opacity: 1;
 }
 
 .main-header__logo {
@@ -211,13 +227,13 @@
   z-index: 1;
 
   @media (min-width: @tablet-width) {
-    width: 107px;
-    height: 17px;
+    width: 111px;
+    height: 21px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 129px;
-    height: 20px;
+    width: 133px;
+    height: 25px;
   }
 }
 
@@ -310,6 +326,14 @@
     color: @base-light;
     // margin-right: 60px;
     align-self: center;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

@@ -28,13 +28,11 @@
 
 .catalog-bottom-navigation__list-item {
   @media (min-width: @tablet-width) {
+    width: 50px;
+    height: 50px;
     display: grid;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    background: @base-yellow;
-    border-radius: 50%;
   }
 }
 
@@ -47,5 +45,41 @@
     letter-spacing: 0;
     color: @base-text-color;
     text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
+
+    &--active {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: @base-yellow;
+    }
+
+    &:hover {
+      color: @secondary-text-dark-opacity;
+    }
+
+    &:active {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: @base-yellow;
+    }
+
+    &:focus {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: @base-yellow;
+    }
   }
 }

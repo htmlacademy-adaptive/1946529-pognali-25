@@ -17,10 +17,20 @@
   z-index: 3;
   background:
     url("../images/about-service-bg.png") no-repeat bottom center,
-    url("../images/about-service-bg-left.png") no-repeat 0% 57%,
+    url("../images/about-service-bg-left.png") no-repeat 0% 0%,
     @main-background-dark;
   padding: 0 25px 82px;
   border-radius: 0 0 30px 30px;
+
+  @media (min-resolution: 2dppx) {
+    background:
+      url("../images/about-service-bg@2x.png") no-repeat bottom center,
+      url("../images/about-service-bg-left@2x.png") no-repeat 0% 0%,
+      @main-background-dark;
+    background-size:
+      292px auto,
+      113px auto;
+  }
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -29,8 +39,18 @@
     padding: 237px 40px 89px;
     background:
       url("../images/about-tablet bg-right.png") no-repeat right 60px bottom 89px,
-      url("../images/about-tablet-bg-top.svg") no-repeat center 32%,
+      url("../images/about-tablet-bg-top.png") no-repeat center 32%,
       @tablet-dark-bg;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        url("../images/about-tablet bg-right@2x.png") no-repeat right 60px bottom 89px,
+        url("../images/about-tablet-bg-top@2x.png") no-repeat center 32%,
+        @tablet-dark-bg;
+      background-size:
+        376px auto,
+        678px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -40,11 +60,21 @@
     border-radius: 0 0 60px 60px;
     background:
       url("../images/about-desktop-bg-right.png") no-repeat right bottom,
-      url("../images/square-about-services-bg.svg") no-repeat top 50px left 100px,
+      url("../images/about-desktop-bg-top.png") no-repeat top 50px left 100px,
       @main-background-dark;
     width: 1440px;
     margin: -60px auto 0;
     box-sizing: border-box;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        url("../images/about-desktop-bg-right@2x.png") no-repeat right bottom,
+        url("../images/about-desktop-bg-top@2x.png") no-repeat top 50px left 100px,
+        @main-background-dark;
+      background-size:
+        630px auto,
+        212px auto;
+    }
   }
 }
 
