@@ -5,7 +5,10 @@
     <title>Погнали. Главная страница</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple-favicon-180x180.png"> <!-- 180×180 -->
+    <link rel="manifest" href="pognali.webmanifest">
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -34,7 +37,7 @@
           7.88189Z"/>
       </symbol>
       <symbol viewbox="0 0 18 17" id="email-icon">
-        <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
+        <path xmlns="http://www.w3.org/2000/svg"  fill-rule="evenodd" clip-rule="evenodd"
           d="M16.1393 10.4663L11.8089 6.5L16.1393 2.53365L15.5488 1.90264L9.25 7.67188L2.9512 1.90264L2.36068
           2.53365L6.69111 6.5L2.36068 10.4663L2.9512 11.0974L7.33083 7.08594L9.25 8.84375L11.1692
           7.08594L15.5488 11.0974L16.1393 10.4663ZM1.57596 0.25C0.766947 0.25 0.111111 0.948839
@@ -42,9 +45,8 @@
           12.75 18.3889 12.0512 18.3889 11.1921V1.80786C18.3889 0.947478 17.7384 0.25 16.924
           0.25H1.57596Z"/>
       </symbol>
-      <symbol viewbox="0 0 18 17" id="button-icon">
-        <path xmlns="http://www.w3.org/2000/svg"
-        d="M11.2587 7L0.832153 13.0622V0.937822L11.2587 7Z"/>
+      <symbol viewbox="0 0 11 12" width="13" height="13" id="button-icon">
+        <path xmlns="http://www.w3.org/2000/svg" d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z"/>
       </symbol>
     </svg>
     <header class="main-header">
@@ -53,8 +55,16 @@
       <div class="main-header__top main-header__top--nojs">
         <!-- <div class="main-header__top-flex"> -->
           <a href="/" class="main-header__logo">
-            <img class="main-header__logo-image main-header__logo-image--light" src="images/logo_mobile.svg" width="96" height="15" alt="Погнали?">
-            <img class="main-header__logo-image main-header__logo-image--dark visually-hidden" src="images/dark-logo.svg" width="96" height="15" alt="Погнали?">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+              <img class="main-header__logo-image main-header__logo-image--light" src="images/logo-mobile.svg" width="96" height="15" alt="Погнали?">
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/dark-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="images/dark-logo-tablet.svg">
+              <img class="main-header__logo-image main-header__logo-image--dark visually-hidden" src="images/dark-logo.svg" width="96" height="15" alt="Погнали?">
+            </picture>
           </a>
           <button class="main-header__burger-menu">
             <img class="main-header__burger-menu-icon" src="images/burger-menu-icon.svg" width="25" height="11" alt="Меню">
@@ -65,9 +75,9 @@
           <nav class="main-menu visually-hidden">
             <div class="main-menu__wrapper">
               <ul class="main-menu__list">
-                <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="#">О сервисе</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Направления</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Попутчики</a></li>
+                <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="index.html">О сервисе</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="form.html">Направления</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Попутчики</a></li>
               </ul>
             </div>
           </nav>
@@ -105,7 +115,11 @@
         </svg>
       <section class="first-screen">
         <p class="first-screen__header">В путешествие с крутыми попутчиками!</p>
-        <img class="first-screen__companions" src="images/first-screen-image-mobile.png" width="192" height="255" alt="Ваш попутчик">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/first-screen-image-desktop.png 1x, images/first-screen-image-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="images/first-screen-image-tablet.png 1x, images/first-screen-image-tablet@2x.png 2x">
+          <img class="first-screen__companions" src="images/first-screen-image-mobile.png" srcset="images/first-screen-image-mobile@2x.png 2x" alt="Ваш попутчик">
+        </picture>
         <section class="short-about">
           <h2 class="visually-hidden">Коротко о приложении</h2>
           <blockquote class="short-about__blockquote">«Лучшее приложение, что я видел в жизни!»</blockquote>
@@ -154,7 +168,10 @@
           </div>
           <div class="destinations__wrapper">
             <div class="country">
-              <img class="country__image" width="270" height="110" src="images/thailand.png" alt="Тайланд">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/thailand-tablet.png 1x, images/thailand-tablet@2x.png 2x">
+                <img class="country__image" width="270" height="110" src="images/thailand.jpg" srcset="images/thailand@2x.jpg 2x" alt="Тайланд">
+              </picture>
               <div class="country__information">
                 <div class="country__information-wrapper">
                   <img class="country__flag" src="images/thailand-flag.png" width="35" height="24" alt="Флаг Тайланда">
@@ -168,7 +185,10 @@
               </div>
             </div>
             <div class="country">
-              <img class="country__image" width="270" height="110" src="images/france.png" alt="Франция">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/france-tablet.png 1x, images/france-tablet@2x.png 2x">
+                <img class="country__image" width="270" height="110" src="images/france.jpg" srcset="images/france@2x.jpg 2x" alt="Франция">
+              </picture>
               <div class="country__information">
                 <div class="country__information-wrapper">
                   <img class="country__flag" src="images/france-flag.png" width="35" height="24" alt="Флаг Франции">
@@ -182,7 +202,10 @@
               </div>
             </div>
             <div class="country">
-              <img class="country__image" width="270" height="110" src="images/czech.png" alt="Чехия">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/czech-tablet.png 1x, images/czech-tablet@2x.png 2x">
+                <img class="country__image" width="270" height="110" src="images/czech.jpg" srcset="images/czech@2x.jpg 2x" alt="Чехия">
+              </picture>
               <div class="country__information">
                 <div class="country__information-wrapper">
                   <img class="country__flag" src="images/czech-flag.png" width="35" height="24" alt="Флаг Чехии">
@@ -191,12 +214,12 @@
                     <img class="country__information-person-icon" src="images/person-icon.svg" width="11" height="12" alt="">
                     <p class="country__information-counter">5326</p>
                   </div>
-                  <p class="country__slogan">Закоулки старой<br> Европы</p>
+                  <p class="country__slogan">Закоулки старой Европы</p>
                 </div>
               </div>
             </div>
         </div>
-        <a class="show-all-button show-all-button--country" href="#">
+        <a href="form.html" class="show-all-button show-all-button--country">
           <span class="show-all-button__text">Показать все
             <img class="show-all-button__icon" src="images/button-triangle.svg" width="13" height="13" alt="">
           </span>
@@ -214,13 +237,13 @@
             </div>
             <!-- <div class="companions__cards-wrapper"> -->
               <div class="cards-item">
-                <img class="cards-item__image" src="images/cards/card-image-1.png" width="270" height="270" alt="">
+                <img class="cards-item__image" src="images/cards/card-image-1.png" srcset="images/cards/card-image-1@2x.png 2x" width="270" height="270" alt="">
                 <img class="cards-item__level-image" src="images/cards/card-level-1.png" width="60" height="60" alt="">
                 <div class="cards-item__about-person">
                   <div class="cards-item__flag-wrapper">
-                    <img class="cards-item__flag" src="images/cards/sri-lanka-flag.png" width="35" height="24" alt="Шри-Ланка">
-                    <img class="cards-item__flag" src="images/cards/thailand-flag.png" width="35" height="24" alt="Тайланд">
-                    <img class="cards-item__flag" src="images/cards/seychelles-flag.png" width="35" height="24" alt="Сейшеллы">
+                    <img class="cards-item__flag" src="images/cards/sri-lanka-flag.png" srcset="images/cards/sri-lanka-flag@2x.png 2x" width="35" height="24" alt="Шри-Ланка">
+                    <img class="cards-item__flag" src="images/cards/thailand-flag.png" srcset="images/cards/thailand-flag@2x.png 2x" width="35" height="24" alt="Тайланд">
+                    <img class="cards-item__flag" src="images/cards/seychelles-flag.png" srcset="images/cards/seychelles-flag@2x.png 2x" width="35" height="24" alt="Сейшеллы">
                   </div>
                   <a href="#" class="cards-item__is-online cards-item__is-online--offline">
                     <img class="cards-item__is-online-icon" src="images/cards/is-online-offline.svg" width="6" height="6" alt="">
@@ -249,12 +272,16 @@
               </div>
             <!-- </div> -->
             <div class="cards-item">
-              <img class="cards-item__image" src="images/cards/card-image-2.png" width="270" height="270" alt="">
+              <picture>
+                <!-- <source type="image/webp" srcset="img/photo-1-phone.webp 1x, img/photo-1-phone@2x.webp 2x"> -->
+                <source type="image/webp" srcset="images/cards/webp/card-image-2.webp 1x, images/cards/webp/card-image-2@2x.webp 2x">
+                <img class="cards-item__image" src="images/cards/card-image-2.png" srcset="images/cards/card-image-2@2x.png 2x" width="270" height="270" alt="">
+              </picture>
               <img class="cards-item__level-image" src="images/cards/card-level-2.png" width="60" height="60" alt="">
               <div class="cards-item__about-person">
                 <div class="cards-item__flag-wrapper">
-                  <img class="cards-item__flag" src="images/cards/belgium-flag.png" width="35" height="24" alt="Бельгия>">
-                  <img class="cards-item__flag" src="images/cards/czech-flag.png" width="35" height="24" alt="Чехия">
+                  <img class="cards-item__flag" src="images/cards/belgium-flag.png" srcset="images/cards/belgium-flag@2x.png 2x" width="35" height="24" alt="Бельгия>">
+                  <img class="cards-item__flag" src="images/cards/czech-flag.png" srcset="images/cards/czech-flag@2x.png 2x" width="35" height="24" alt="Чехия">
                 </div>
                   <a href="#" class="cards-item__is-online cards-item__is-online--online">
                     <img class="cards-item__is-online-icon" src="images/cards/is-online-online.svg" width="6" height="6" alt="">
@@ -281,7 +308,7 @@
                 </div>
               </div>
             </div>
-            <a class="show-all-button show-all-button--companions" href="#">
+            <a href="catalog.html" class="show-all-button show-all-button--companions">
               <span class="show-all-button__text">Показать всех
                 <img class="show-all-button__icon" src="images/button-triangle.svg" width="13" height="13" alt="">
               </span>
@@ -333,7 +360,7 @@
             <h3 class="section-header section-header--interesting">Заинтересовались?</h3>
             <p class="text-definition text-definition--interesting">
               Зарегистрируйтесь, это быстро и бесплатно! <br>Уже зарегистрированы? Тогда скорее
-              <a href="#" class="interesting__regular-link">авторизуйтесь</a>.
+              <a href="login.html" class="interesting__regular-link">авторизуйтесь</a>.
             </p>
           </div>
           <form method="post" action="https://echo.htmlacademy.ru" class="interesting__email">
@@ -378,7 +405,10 @@
             <p class="adress__text">ул. Большая Конюшенная, 19/8</p>
           </div>
           <a class="show-all-button show-all-button--adress" href="#">
-            <span class="show-all-button__text">Проложить маршрут
+            <span class="show-all-button__text">
+              Проложить маршрут
+            </span>
+            <span class="show-all-button__icon-wrapper">
               <svg class="show-all-button__icon" width="13" height="13">
                 <use xlink:href="#button-icon"></use>
               </svg>
@@ -387,8 +417,9 @@
         </div>
       </section>
       <section class="map">
-        <img class="map_background" src="images/map-bg.png" width="320" height="421" alt="Карта проезда">
-        <img class="map_flag" src="images/map-flag.svg" width="41" height="41" alt="Мы тут">
+          <iframe class="map_background" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada68d69f6b3fabbb98cc34536d24532ed40f5d1a75120ec15acc325a8e7ff57c&amp;source=constructor" frameborder="0"></iframe>
+        <!-- <img class="map_background" src="images/map-bg.png" width="320" height="421" alt="Карта проезда">
+        <img class="map_flag" src="images/map-flag.svg" width="41" height="41" alt="Мы тут"> -->
       </section>
     </main>
     <footer class="main-footer">
@@ -406,7 +437,7 @@
             </div>
           </div>
         </section>
-        <a href="#" class="main-footer__logo-link">
+        <a href="index.html" class="main-footer__logo-link">
           Разработано
           <img class="main-footer__logo-left" src="images/footer-logo.svg" width="27" height="33" alt="Погнали?">
         </a>

@@ -37,20 +37,25 @@
     width: 70px;
     height: 47px;
     top: 17px;
-    left: 100%;
-    transform: translate(-20%, -50%);
+    left: 90%;
+    transform: translate(-30%, -50%);
+    z-index: 1;
   }
 }
 
 .country__image {
+  border-radius: 10px 10px 0 0;
+
   @media (min-width: @tablet-width) {
     position: absolute;
     display: block;
     grid-column: 2/3;
     align-self: flex-end;
     justify-self: flex-end;
-    min-height: 140px;
-    width: 200px;
+    height: auto;
+    width: 186px;
+    z-index: 1;
+    right: 0;
     object-fit: cover;
     border-radius: 0 20px 20px 0;
   }

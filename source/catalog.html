@@ -5,7 +5,10 @@
     <title>Погнали. Главная страница</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple-favicon-180x180.png"> <!-- 180×180 -->
+    <link rel="manifest" href="pognali.webmanifest">
   </head>
 <body class="page__body">
   <svg style="display: none;">
@@ -31,9 +34,17 @@
       <div class="bg-wrapper bg-wrapper--dark">
         <div class="main-header__top main-header__top--nojs">
           <!-- <div class="main-header__top-flex"> -->
-            <a href="/" class="main-header__logo">
-              <img class="main-header__logo-image main-header__logo-image--light" src="images/logo_mobile.svg" width="96" height="15" alt="Погнали?">
-              <img class="main-header__logo-image main-header__logo-image--dark visually-hidden" src="images/dark-logo.svg" width="96" height="15" alt="Погнали?">
+            <a href="index.html" class="main-header__logo">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+                <img class="main-header__logo-image main-header__logo-image--light" src="images/logo-mobile.svg" width="96" height="15" alt="Погнали?">
+              </picture>
+              <picture>
+                <source media="(min-width: 1440px)" srcset="images/dark-logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="images/dark-logo-tablet.svg">
+                <img class="main-header__logo-image main-header__logo-image--dark visually-hidden" src="images/dark-logo.svg" width="96" height="15" alt="Погнали?">
+              </picture>
             </a>
             <button class="main-header__burger-menu">
               <img class="main-header__burger-menu-icon" src="images/burger-menu-icon.svg" width="25" height="11" alt="Меню">
@@ -44,9 +55,9 @@
             <nav class="main-menu visually-hidden">
               <div class="main-menu__wrapper">
                 <ul class="main-menu__list">
-                  <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="#">О сервисе</a></li>
-                  <li class="main-menu__item"><a class="main-menu__link" href="#">Направления</a></li>
-                  <li class="main-menu__item"><a class="main-menu__link" href="#">Попутчики</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="index.html">О сервисе</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="form.html">Направления</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Попутчики</a></li>
                 </ul>
               </div>
             </nav>
@@ -994,7 +1005,7 @@
       </form>
     </section>
     <section class="yellow-filter">
-      <div class="yellow-filter__wrapper">
+      <form class="yellow-filter__wrapper">
         <p class="yellow-filter__wrapper-header">Подберите идеального попутчика</p>
         <div class="accordeon-list">
           <div class="accordeon-list__item">
@@ -1132,7 +1143,7 @@
         <div class="yellow-filter__button-wrapper">
           <button class="yellow-filter__button">Показать</button>
         </div>
-      </div>
+      </form>
     </section>
     <section class="companions-cards">
       <h2 class="visually-hidden">Попутчики</h2>
@@ -1141,7 +1152,15 @@
           <article class="person-card">
             <!-- <div class="person-card__item-top"> -->
               <div class="person-card__avatar-wrapper">
-                <img class="person-card__avatar" src="images/catalog/cards/firsova-avatar.png" width="70" height="70" alt="Таня Фирсова">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/cards/webp/firsova-desktop.webp 1x, images/catalog/cards/webp/firsova-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog/cards/webp/firsova-tablet.webp 1x, images/catalog/cards/webp/firsova-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/catalog/cards/webp/firsova-mobile.webp 1x, images/catalog/cards/webp/firsova-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1440px)" srcset="images/catalog/cards/firsova-desktop.png 1x, images/catalog/cards/firsova-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="images/catalog/cards/firsova-tablet.png 1x, images/catalog/cards/firsova-tablet@2x.png 2x">
+                  <img class="person-card__avatar" src="images/catalog/cards/firsova-mobile.png" srcset="images/catalog/cards/firsova-mobile@2x.png 2x" width="70" height="70" alt="Таня Фирсова">
+                </picture>
               </div>
               <div class="person-card__favorite-icon-wrapper person-card__favorite-icon-wrapper--active">
                 <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
@@ -1200,7 +1219,11 @@
           <article class="person-card">
             <!-- <div class="person-card__item-top"> -->
               <div class="person-card__avatar-wrapper">
-                <img class="person-card__avatar" src="images/catalog/cards/demin-avatar.png" width="70" height="70" alt="Петя Демин">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="images/catalog/cards/demin-desktop.png 1x, images/catalog/cards/demin-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="images/catalog/cards/demin-tablet.png 1x, images/catalog/cards/demin-tablet@2x.png 2x">
+                  <img class="person-card__avatar" src="images/catalog/cards/demin-mobile.png" srcset="images/catalog/cards/demin-mobile@2x.png 2x" width="70" height="70" alt="Таня Фирсова">
+                </picture>
               </div>
               <div class="person-card__favorite-icon-wrapper">
                 <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
@@ -1256,7 +1279,11 @@
           <article class="person-card">
             <!-- <div class="person-card__item-top"> -->
               <div class="person-card__avatar-wrapper">
-                <img class="person-card__avatar" src="images/catalog/cards/smolov-avatar.png" width="70" height="70" alt="Марк Смолов">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="images/catalog/cards/rogovaya-desktop.png 1x, images/catalog/cards/rogovaya-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="images/catalog/cards/rogovaya-tablet.png 1x, images/catalog/cards/rogovaya-tablet@2x.png 2x">
+                  <img class="person-card__avatar" src="images/catalog/cards/rogovaya-mobile.png" srcset="images/catalog/cards/rogovaya-mobile@2x.png 2x" width="70" height="70" alt="Таня Фирсова">
+                </picture>
               </div>
               <div class="person-card__favorite-icon-wrapper">
                 <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
@@ -1315,7 +1342,11 @@
           <article class="person-card">
             <!-- <div class="person-card__item-top"> -->
               <div class="person-card__avatar-wrapper">
-                <img class="person-card__avatar" src="images/catalog/cards/rogovaya-avatar.png" width="70" height="70" alt="Лариса Роговая">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="images/catalog/cards/smolov-desktop.png 1x, images/catalog/cards/smolov-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="images/catalog/cards/smolov-tablet.png 1x, images/catalog/cards/smolov-tablet@2x.png 2x">
+                  <img class="person-card__avatar" src="images/catalog/cards/smolov-mobile.png" srcset="images/catalog/cards/smolov-mobile@2x.png 2x" width="70" height="70" alt="Таня Фирсова">
+                </picture>
               </div>
               <div class="person-card__favorite-icon-wrapper">
                 <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
@@ -1407,7 +1438,7 @@
             </div>
           </div>
         </section>
-        <a href="#" class="main-footer__logo-link">
+        <a href="index.html" class="main-footer__logo-link">
           Разработано
           <img class="main-footer__logo-left" src="images/footer-logo.svg" width="27" height="33" alt="Погнали?">
         </a>

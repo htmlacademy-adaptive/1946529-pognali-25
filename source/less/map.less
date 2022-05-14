@@ -3,37 +3,21 @@
 
 .map {
   margin: -45px 0;
-  position: relative;
+}
+
+.map_background {
+  display: block;
   width: 320px;
   height: 421px;
+  // margin: -45px 0;
 
   @media (min-width: @tablet-width) {
-    content: "";
-    position: relative;
-    background: url("../images/tablet-map-bg.png") no-repeat center center;
-    background-size: cover;
     width: 768px;
     height: 581px;
-    z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    background: url("../images/desktop-map-bg.png") no-repeat center;
-    background-size: cover;
-  }
-}
-
-.map_background {
-  z-index: -1;
-  position: absolute;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
   }
 }
 
