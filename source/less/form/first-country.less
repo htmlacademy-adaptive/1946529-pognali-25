@@ -26,7 +26,9 @@
 
 .first-country__border {
   position: relative;
-  height: 283px;
+  min-height: 206px;
+  height: 100%;
+  top: 10px;
   grid-column: 1/2;
   grid-row: 1/4;
   border: 2px solid @base-text-color;
@@ -38,14 +40,16 @@
     grid-column: 3/4;
     grid-row: 1/3;
     border: none;
+    top: 30px;
     right: 0;
+    height: 100%;
     border-right: 2px solid @base-text-color;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 2/3;
     top: 23px;
-    height: 266px;
+    min-height: 256px;
   }
 }
 
@@ -88,12 +92,12 @@
 }
 
 .first-country__name {
-  position: absolute;
+  position: relative;
   margin: 0;
   left: 8px;
-  top: -50%;
-  transform: translateY(-50%);
-  white-space: nowrap;
+  // top: -50%;
+  // transform: translateY(-50%);
+  // white-space: nowrap;
   font-family: "Blogger Sans", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -102,10 +106,14 @@
   letter-spacing: 0;
   text-align: left;
   color: @base-text-color;
+  width: 180px;
 
   @media (min-width: @tablet-width) {
-    top: 50%;
-    transform: translate(0, -50%);
+    position: relative;
+    width: 400px;
+    // white-space: wrap;
+    top: 10px;
+    transform: translateY(0);
     font-size: 30px;
     line-height: 30px;
     letter-spacing: 0;
@@ -121,28 +129,33 @@
     grid-column: 2/3;
     grid-row: 1/2;
     min-height: 47px;
+    justify-self: end;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 3/4;
+    justify-self: start;
   }
 }
 
 .first-country__flag {
-  position: absolute;
+  position: relative;
   right: 0;
-  top: -50%;
-  transform: translateY(-50%);
+  // top: -50%;
+  // transform: translateY(-50%);
 
   @media (min-width: @tablet-width) {
-    top: 0;
-    transform: translate(0);
+    position: relative;
+    justify-self: end;
+    // top: 0;
+    transform: translate(0, 0);
     width: 70px;
     height: 47px;
   }
 
   @media (min-width: @desktop-width) {
     left: 42px;
+    justify-self: start;
   }
 }
 
@@ -162,6 +175,7 @@
 }
 
 .first-country__about-my-plans {
+  margin: 10px 0 -10px;
   grid-column: 2/4;
   grid-row: 2/3;
   width: 220px;
@@ -193,7 +207,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: 30px;
+    margin: 30px 0;
     padding: 18px 19px;
     grid-column: 1/3;
     grid-row: 2/3;
@@ -250,6 +264,10 @@
 
   @media (min-width: @desktop-width) {
     bottom: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 36px;
   }
 }
 

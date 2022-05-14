@@ -13,6 +13,7 @@
     width: 100%;
     margin: 36px 0 0;
     min-height: 86px;
+    justify-content: center;
   }
 }
 
@@ -28,10 +29,13 @@
   letter-spacing: 0;
   text-align: center;
   color: @base-text-color;
+  width: 150px;
+  justify-self: center;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    width: 500px;
   }
 }
 
@@ -78,14 +82,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   width: 221px;
-  height: 31px;
+  min-height: 31px;
   justify-items: center;
   align-items: center;
+  word-break: break-word;
 
   @media (min-width: @tablet-width) {
     width: 100%;
     min-height: 66px;
     align-items: end;
+    word-break: break-word;
   }
 }
 
@@ -115,6 +121,7 @@
   border: 1px solid @secondary-border-gray;
   border-collapse: collapse;
   min-width: 221px;
+  max-width: 222px;
   min-height: 187px;
   box-sizing: border-box;
 

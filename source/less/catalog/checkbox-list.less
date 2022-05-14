@@ -13,6 +13,7 @@
   @media (min-width: @desktop-width) {
     display: block;
     margin: 0 0 10px;
+    justify-self: start;
   }
 }
 
@@ -20,7 +21,7 @@
   display: flex;
   position: relative;
   align-items: center;
-  height: 20px;
+  min-height: 20px;
 }
 
 .checkbox-list__item:not(:last-child) {
@@ -36,12 +37,13 @@
 }
 
 .checkbox-list__item::before {
-  position: absolute;
+  position: relative;
   content: "";
   width: 18px;
   height: 18px;
   border-radius: 4px;
   background-color: @base-light;
+  align-self: end;
 }
 
 .checkbox-list__item:hover::before {
@@ -55,6 +57,7 @@
 .checkbox-list__accordeon {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 19px;
   height: 19px;
   border-radius: 4px;
@@ -70,29 +73,35 @@
   line-height: 20px;
   letter-spacing: 0;
   color: @black;
+  display: block;
+  width: 180px;
 
   @media (min-width: @tablet-width) {
+    width: 130px;
+    word-break: break-all;
     font-size: 20px;
     line-height: 20px;
-    margin-right: 26px;
+    margin: 0 0 0 20px;
   }
 }
 
 .checkbox-list__check-mark {
-  position: absolute;
+  // position: relative;
   width: 18px;
   height: 18px;
   left: 0;
-  top: 0;
+  // bottom: 0;
+  // top: 0;
+  // align-self: end;
 }
 
 .checkbox-list__accordeon:checked ~ .checkbox-list__check-mark::before {
   content: "";
   width: 8px;
   height: 8px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  bottom: 0;
+  transform: translate(60%, -60%);
   position: absolute;
   background: url("../images/check-mark.svg") no-repeat;
 }

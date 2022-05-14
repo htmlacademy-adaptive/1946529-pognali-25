@@ -45,6 +45,7 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    width: 700px;
   }
 }
 
@@ -89,7 +90,9 @@
     display: block;
     position: absolute;
     min-width: 182px;
+    max-width: 250px;
     min-height: 105px;
+    word-break: break-all;
     // top: 0;
     right: 160px;
     list-style-type: none;
@@ -240,6 +243,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     max-width: 286px;
     margin-top: 57px;
   }
@@ -251,6 +256,7 @@
     width: 14px;
     height: 14px;
     position: relative;
+    justify-self: end;
     background: url("../images/form/button-arrow.svg") no-repeat;
   }
 }
@@ -311,7 +317,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
     justify-self: end;
+    word-break: break-all;
   }
 }
 
@@ -321,9 +330,10 @@
     width: 14px;
     height: 14px;
     position: relative;
+    justify-self: start;
     background: url("../images/form/button-arrow.svg") no-repeat;
     transform: rotate(180deg);
-    padding-left: 65px;
+    // padding-left: 65px;
   }
 }
 

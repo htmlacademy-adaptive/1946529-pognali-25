@@ -28,6 +28,8 @@ let mainMenuList = document.querySelector('.main-menu__list');
 let mainHeader = document.querySelector('.main-header');
 let mainHeaderBottom = document.querySelector('.main-header__bottom');
 let bgWrapper = document.querySelector('.bg-wrapper--dark');
+let travelerAbout = document.querySelector('.traveler-about');
+let bgWrapperTop = document.querySelector('.bg-wrapper--dark');
 
 // Скрываем класс NO JS
 
@@ -155,8 +157,13 @@ console.log(window.pageYOffset);
 
   if (document.body.clientWidth >= 1440) {
 
+    let mainHeaderBottom = document.querySelector('.main-header__bottom');
+    let travelerAbout = document.querySelector('.traveler-about');
+    let headerBottomHeight = mainHeaderBottom.clientHeight;
+    let headerTopHeight = headerTop.clientHeight;
+
     window.addEventListener('scroll', ()=> {
-      if (window.pageYOffset >= 700) {
+      if (window.pageYOffset >= 10) {
         mainHeader.style.position = 'fixed';
         mainHeader.style.top = '0';
         headerTop.style.paddingTop = 23 + 'px';
@@ -167,13 +174,16 @@ console.log(window.pageYOffset);
         logoDarkg.classList.remove('visually-hidden');
         logoLight.classList.add('visually-hidden');
         mainMenuList.classList.add('main-menu__list--change-before');
-        mainHeaderBottom.style.display = 'none';
+        // mainHeaderBottom.style.display = 'none';
+        mainHeaderBottom.style.top = headerTopHeight + 'px';
+        travelerAbout.style.marginTop = headerTopHeight -60 + 'px';
+        // bgWrapperTop.classList.add('bg-wrapper--dark-active');
         for (link of menuLink) {
           link.classList.add('main-menu__link--scroll');
         }
       }
 
-      if (window.pageYOffset < 700) {
+      if (window.pageYOffset < 10) {
         mainHeader.style.position = 'relative';
         headerTop.style.paddingTop = 46 + 'px';
         headerTop.style.paddingBottom = 0;
@@ -183,7 +193,10 @@ console.log(window.pageYOffset);
         logoLight.classList.remove('visually-hidden');
         mainMenuList.classList.remove('main-menu__list--change-before');
         mainHeader.classList.remove('main-header__top--fixed');
-        mainHeaderBottom.style.display = 'block';
+        // mainHeaderBottom.style.display = 'block';
+        travelerAbout.style.marginTop = -60 + 'px';
+        mainHeaderBottom.style.top = 0 + 'px';
+        // bgWrapperTop.classList.remove('bg-wrapper--dark-active');
         for (link of menuLink) {
           link.classList.remove('main-menu__link--scroll');
         }

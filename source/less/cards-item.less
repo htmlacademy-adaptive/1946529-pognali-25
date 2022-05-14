@@ -36,6 +36,8 @@
 
 .cards-item__image {
   display: block;
+  position: relative;
+  z-index: -1;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -71,7 +73,7 @@
 
 .cards-item__about-person {
   display: grid;
-  position: absolute;
+  position: relative;
   padding: 27px 41px 22px;
   background-color: @base-light;
   border-radius: 0 0 10px 10px;
@@ -84,6 +86,10 @@
     border-radius: 0 0 20px 20px;
   }
 }
+
+// .cards-item__about-person:not(:last-child) {
+//   z-index: 1;
+// }
 
 .cards-item__is-online {
   display: flex;
@@ -151,6 +157,7 @@
   // left: -100%;
   transform: translateX(-58%);
   height: 0;
+  z-index: 2;
 }
 
 .cards-item__icon-wrapper:hover .cards-item__tooltip {

@@ -84,16 +84,16 @@
           <li class="social__item"><a href="#" class="social__link social__link--instagram"><span class="social__icon visually-hidden"></span></a></li>
         </ul>
       </div>
-      <div class="main-header__bottom">
-        <div class="main-header__bottom-main main-header__bottom-main--catalog">
-          <p class="main-header__bottom-name">Направления</p>
-          <a href="#" class="main-header__bottom-link">На главную
-            <img class="main-header__bottom-icon" src="../images/catalog/back-arrow.svg" alt="">
-          </a>
-        </div>
-      </div>
     </div>
   </header>
+  <div class="main-header__bottom">
+    <div class="main-header__bottom-main main-header__bottom-main--catalog">
+      <p class="main-header__bottom-name">Направления</p>
+      <a href="#" class="main-header__bottom-link">На главную
+        <img class="main-header__bottom-icon" src="../images/catalog/back-arrow.svg" alt="">
+      </a>
+    </div>
+  </div>
   <main class="catalog-wrapper">
     <h1 class="visually-hidden">Выбор попутчиков</h1>
     <section class="companions-filter">
@@ -1004,423 +1004,425 @@
         </div>
       </form>
     </section>
-    <section class="yellow-filter">
-      <form class="yellow-filter__wrapper">
-        <p class="yellow-filter__wrapper-header">Подберите идеального попутчика</p>
-        <div class="accordeon-list">
-          <div class="accordeon-list__item">
-            <p class="accordeon-list__item-text">Хобби<span class="accordeon-list__item-doublespot">:</span></p>
-            <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
-          </div>
-          <ul class="checkbox-list">
-            <li class="checkbox-list__item">
-              <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="sport" checked>
-                <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="sport">Спортзал</label>
-              </div>
-            </li>
-            <li class="checkbox-list__item">
-              <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="hookah" checked>
-                <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="hookah">Кальян</label>
-              </div>
-            </li>
-            <li class="checkbox-list__item">
-              <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="sofa">
-                <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="sofa">Диван</label>
-              </div>
-            </li>
-          </ul>
-          <div class="accordeon-list__item">
-            <p class="accordeon-list__item-text">Музыка<span class="accordeon-list__item-doublespot">:</span></p>
-            <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
-          </div>
-          <ul class="checkbox-list">
-            <li class="checkbox-list__item">
-              <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="hard-rock" checked>
-                <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="hard-rock">Тяжёлый рок</label>
-              </div>
-            </li>
-            <li class="checkbox-list__item">
-              <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="russian-rap" checked>
-                <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="russian-rap">Русский рэп</label>
-              </div>
-            </li>
-            <li class="checkbox-list__item">
-              <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="eurodance">
-                <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="eurodance">Евроденс</label>
-              </div>
-            </li>
-          </ul>
-          <div class="accordeon-list__item">
-            <p class="accordeon-list__item-text">Еда<span class="accordeon-list__item-doublespot">:</span></p>
-            <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
-          </div>
-          <ul class="checkbox-list">
-            <li class="checkbox-list__item">
-              <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="meet" checked>
-                <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="meet">Мясоед</label>
-              </div>
-            </li>
-            <li class="checkbox-list__item">
-              <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="wholefoods" checked>
-                <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="wholefoods">Сидит на ПП</label>
-              </div>
-            </li>
-            <li class="checkbox-list__item">
-              <div class="checkbox-list__wrapper">
-                <input type="checkbox" class="checkbox-list__accordeon" id="vegan">
-                <span class="checkbox-list__check-mark"></span>
-                <label class="checkbox-list__checkbox-label" for="vegan">Веган-сыроед</label>
-              </div>
-            </li>
-          </ul>
-          <div class="accordeon-list__item">
-            <p class="accordeon-list__item-text">Транспорт<span class="accordeon-list__item-doublespot">:</span></p>
-            <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
-          </div>
-          <div class="activity-wrapper">
-            <label class="activity-wrapper__checkbox-label" for="airplane">
-              <span class="activity-wrapper__icon-wrapper">
-                <input type="checkbox" class="activity-wrapper__checkbox" id="airplane">
-                <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
-              </span>
-            </label>
-            <label class="activity-wrapper__checkbox-label" for="bus">
-              <span class="activity-wrapper__icon-wrapper">
-                <input type="checkbox" class="activity-wrapper__checkbox" id="bus">
-                <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/bus-active.svg" alt="Автобус">
-              </span>
-            </label>
-            <label class="activity-wrapper__checkbox-label" for="bicycle">
-              <span class="activity-wrapper__icon-wrapper">
-                <input type="checkbox" class="activity-wrapper__checkbox" id="bicycle" checked>
-                <img class="activity-wrapper__icon activity-wrapper__icon--choosen" width="21" height="21" src="images/catalog/bicycle-active.svg" alt="Велосипед">
-              </span>
-            </label>
-            <label class="activity-wrapper__checkbox-label" for="run">
-              <span class="activity-wrapper__icon-wrapper">
-                <input type="checkbox" class="activity-wrapper__checkbox" id="run">
-                <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/run-active.svg" alt="Бег">
-              </span>
-            </label>
-          </div>
-          <div class="accordeon-list__item accordeon-list__item--level">
-            <p class="accordeon-list__item-text">Левел<span class="accordeon-list__item-doublespot">:</span></p>
-            <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
-          </div>
-          <!-- <div class="companions-level"> -->
-            <div class="companions-level__input-wrpper">
-              <input class="companions-level__input-left" type="text" value="30">
-              <input class="companions-level__input-right" type="text" value="100">
+    <section class="catalog-main-content">
+      <section class="yellow-filter">
+        <form class="yellow-filter__wrapper">
+          <p class="yellow-filter__wrapper-header">Подберите идеального попутчика</p>
+          <div class="accordeon-list">
+            <div class="accordeon-list__item">
+              <p class="accordeon-list__item-text">Хобби<span class="accordeon-list__item-doublespot">:</span></p>
+              <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
             </div>
-            <div class="range">
-              <div class="range__track">
-                <div class="range__track-active">
-                  <img class="range__track-spot range__track-spot--left" src="/images/slider-spot-icon.svg" width="13" height="13" alt="">
-                  <img class="range__track-spot range__track-spot--right" src="/images/slider-spot-icon.svg" width="13" height="13" alt="">
+            <ul class="checkbox-list">
+              <li class="checkbox-list__item">
+                <div class="checkbox-list__wrapper">
+                  <input type="checkbox" class="checkbox-list__accordeon" id="sport" checked>
+                  <span class="checkbox-list__check-mark"></span>
+                  <label class="checkbox-list__checkbox-label" for="sport">Спортзал</label>
+                </div>
+              </li>
+              <li class="checkbox-list__item">
+                <div class="checkbox-list__wrapper">
+                  <input type="checkbox" class="checkbox-list__accordeon" id="hookah" checked>
+                  <span class="checkbox-list__check-mark"></span>
+                  <label class="checkbox-list__checkbox-label" for="hookah">Кальян</label>
+                </div>
+              </li>
+              <li class="checkbox-list__item">
+                <div class="checkbox-list__wrapper">
+                  <input type="checkbox" class="checkbox-list__accordeon" id="sofa">
+                  <span class="checkbox-list__check-mark"></span>
+                  <label class="checkbox-list__checkbox-label" for="sofa">Диван</label>
+                </div>
+              </li>
+            </ul>
+            <div class="accordeon-list__item">
+              <p class="accordeon-list__item-text">Музыка<span class="accordeon-list__item-doublespot">:</span></p>
+              <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
+            </div>
+            <ul class="checkbox-list">
+              <li class="checkbox-list__item">
+                <div class="checkbox-list__wrapper">
+                  <input type="checkbox" class="checkbox-list__accordeon" id="hard-rock" checked>
+                  <span class="checkbox-list__check-mark"></span>
+                  <label class="checkbox-list__checkbox-label" for="hard-rock">Тяжёлый рок</label>
+                </div>
+              </li>
+              <li class="checkbox-list__item">
+                <div class="checkbox-list__wrapper">
+                  <input type="checkbox" class="checkbox-list__accordeon" id="russian-rap" checked>
+                  <span class="checkbox-list__check-mark"></span>
+                  <label class="checkbox-list__checkbox-label" for="russian-rap">Русский рэп</label>
+                </div>
+              </li>
+              <li class="checkbox-list__item">
+                <div class="checkbox-list__wrapper">
+                  <input type="checkbox" class="checkbox-list__accordeon" id="eurodance">
+                  <span class="checkbox-list__check-mark"></span>
+                  <label class="checkbox-list__checkbox-label" for="eurodance">Евроденс</label>
+                </div>
+              </li>
+            </ul>
+            <div class="accordeon-list__item">
+              <p class="accordeon-list__item-text">Еда<span class="accordeon-list__item-doublespot">:</span></p>
+              <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
+            </div>
+            <ul class="checkbox-list">
+              <li class="checkbox-list__item">
+                <div class="checkbox-list__wrapper">
+                  <input type="checkbox" class="checkbox-list__accordeon" id="meet" checked>
+                  <span class="checkbox-list__check-mark"></span>
+                  <label class="checkbox-list__checkbox-label" for="meet">Мясоед</label>
+                </div>
+              </li>
+              <li class="checkbox-list__item">
+                <div class="checkbox-list__wrapper">
+                  <input type="checkbox" class="checkbox-list__accordeon" id="wholefoods" checked>
+                  <span class="checkbox-list__check-mark"></span>
+                  <label class="checkbox-list__checkbox-label" for="wholefoods">Сидит на ПП</label>
+                </div>
+              </li>
+              <li class="checkbox-list__item">
+                <div class="checkbox-list__wrapper">
+                  <input type="checkbox" class="checkbox-list__accordeon" id="vegan">
+                  <span class="checkbox-list__check-mark"></span>
+                  <label class="checkbox-list__checkbox-label" for="vegan">Веган-сыроед</label>
+                </div>
+              </li>
+            </ul>
+            <div class="accordeon-list__item">
+              <p class="accordeon-list__item-text">Транспорт<span class="accordeon-list__item-doublespot">:</span></p>
+              <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
+            </div>
+            <div class="activity-wrapper">
+              <label class="activity-wrapper__checkbox-label" for="airplane">
+                <span class="activity-wrapper__icon-wrapper">
+                  <input type="checkbox" class="activity-wrapper__checkbox" id="airplane">
+                  <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
+                </span>
+              </label>
+              <label class="activity-wrapper__checkbox-label" for="bus">
+                <span class="activity-wrapper__icon-wrapper">
+                  <input type="checkbox" class="activity-wrapper__checkbox" id="bus">
+                  <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/bus-active.svg" alt="Автобус">
+                </span>
+              </label>
+              <label class="activity-wrapper__checkbox-label" for="bicycle">
+                <span class="activity-wrapper__icon-wrapper">
+                  <input type="checkbox" class="activity-wrapper__checkbox" id="bicycle" checked>
+                  <img class="activity-wrapper__icon activity-wrapper__icon--choosen" width="21" height="21" src="images/catalog/bicycle-active.svg" alt="Велосипед">
+                </span>
+              </label>
+              <label class="activity-wrapper__checkbox-label" for="run">
+                <span class="activity-wrapper__icon-wrapper">
+                  <input type="checkbox" class="activity-wrapper__checkbox" id="run">
+                  <img class="activity-wrapper__icon" width="21" height="21" src="images/catalog/run-active.svg" alt="Бег">
+                </span>
+              </label>
+            </div>
+            <div class="accordeon-list__item accordeon-list__item--level">
+              <p class="accordeon-list__item-text">Левел<span class="accordeon-list__item-doublespot">:</span></p>
+              <img  class="accordeon-list__item-icon" src="images/catalog/accordeon-icon-arrow.svg" width="10" height="6" alt="">
+            </div>
+            <!-- <div class="companions-level"> -->
+              <div class="companions-level__input-wrpper">
+                <input class="companions-level__input-left" type="text" value="30">
+                <input class="companions-level__input-right" type="text" value="100">
+              </div>
+              <div class="range">
+                <div class="range__track">
+                  <div class="range__track-active">
+                    <img class="range__track-spot range__track-spot--left" src="/images/slider-spot-icon.svg" width="13" height="13" alt="">
+                    <img class="range__track-spot range__track-spot--right" src="/images/slider-spot-icon.svg" width="13" height="13" alt="">
 
+                  </div>
+                </div>
+                <input class="range__range" type="range">
+              </div>
+            <!-- </div> -->
+          </div>
+          <div class="yellow-filter__button-wrapper">
+            <button class="yellow-filter__button">Показать</button>
+          </div>
+        </form>
+      </section>
+      <section class="companions-cards">
+        <h2 class="visually-hidden">Попутчики</h2>
+        <ul class="companions-cards__list catalog-cards-list">
+          <li class="catalog-cards-list__item">
+            <article class="person-card">
+              <!-- <div class="person-card__item-top"> -->
+                <div class="person-card__avatar-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/cards/webp/firsova-desktop.webp 1x, images/catalog/cards/webp/firsova-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog/cards/webp/firsova-tablet.webp 1x, images/catalog/cards/webp/firsova-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="images/catalog/cards/webp/firsova-mobile.webp 1x, images/catalog/cards/webp/firsova-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" srcset="images/catalog/cards/firsova-desktop.png 1x, images/catalog/cards/firsova-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="images/catalog/cards/firsova-tablet.png 1x, images/catalog/cards/firsova-tablet@2x.png 2x">
+                    <img class="person-card__avatar" src="images/catalog/cards/firsova-mobile.png" srcset="images/catalog/cards/firsova-mobile@2x.png 2x" width="70" height="70" alt="Таня Фирсова">
+                  <!-- </picture> -->
+                </div>
+                <div class="person-card__favorite-icon-wrapper person-card__favorite-icon-wrapper--active">
+                  <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
+                    <use xlink:href="#heart-icon"></use>
+                  </svg>
+                </div>
+                <a href="#" class="person-card__item-name">Таня Фирсова</a>
+                <p class="person-card__item-distance">1,5 М</p>
+                <span class="person-card__check-online">
+                  <img class="person-card__check-online-icon person-card__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
+                </span>
+              <!-- </div> -->
+              <p class="person-card__hashtags">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</p>
+              <div class="person-card__country-wrapper">
+                <p class="person-card__wish-country">Хочет посетить :</p>
+                <ul class="wish-country-list">
+                  <li class="wish-country-list__item">
+                    <img  class="wish-country-list__item-flag" src="images/catalog/cards/sri-lanka.png" width="35" height="24" alt="Шри-ланка">Шри-Ланка
+                  </li>
+                  <li class="wish-country-list__item">
+                    <img class="wish-country-list__item-flag" src="images/catalog/cards/thailand.png" width="35" height="24" alt="Тайланд">Тайланд
+                  </li>
+                  <li class="wish-country-list__item">
+                    <img class="wish-country-list__item-flag" src="images/catalog/cards/seychelles.png" width="35" height="24" alt="Сейшеллы">Сейшеллы
+                  </li>
+                </ul>
+              </div>
+              <div class="transport-wrapper">
+                <p class="transport-wrapper__header">транспорт :</p>
+                <div class="transport-wrapper__icon-wrapper">
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
+                  </span>
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon transport-wrapper__bus--inactive" width="21" height="21" src="images/catalog/bus.svg" alt="Автобус">
+                  </span>
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon transport-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
+                  </span>
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon transport-wrapper__run--inactive" width="21" height="21" src="images/catalog/run.svg" alt="Бег">
+                  </span>
                 </div>
               </div>
-              <input class="range__range" type="range">
-            </div>
-          <!-- </div> -->
-        </div>
-        <div class="yellow-filter__button-wrapper">
-          <button class="yellow-filter__button">Показать</button>
-        </div>
-      </form>
-    </section>
-    <section class="companions-cards">
-      <h2 class="visually-hidden">Попутчики</h2>
-      <ul class="companions-cards__list catalog-cards-list">
-        <li class="catalog-cards-list__item">
-          <article class="person-card">
-            <!-- <div class="person-card__item-top"> -->
-              <div class="person-card__avatar-wrapper">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/cards/webp/firsova-desktop.webp 1x, images/catalog/cards/webp/firsova-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog/cards/webp/firsova-tablet.webp 1x, images/catalog/cards/webp/firsova-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="images/catalog/cards/webp/firsova-mobile.webp 1x, images/catalog/cards/webp/firsova-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1440px)" srcset="images/catalog/cards/firsova-desktop.png 1x, images/catalog/cards/firsova-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="images/catalog/cards/firsova-tablet.png 1x, images/catalog/cards/firsova-tablet@2x.png 2x">
-                  <img class="person-card__avatar" src="images/catalog/cards/firsova-mobile.png" srcset="images/catalog/cards/firsova-mobile@2x.png 2x" width="70" height="70" alt="Таня Фирсова">
-                </picture>
+              <div class="level-wrapper">
+                <p class="level-wrapper__header">левел :</p>
+                <div class="level-wrapper__level-image-wrapper">
+                  <img class="level-wrapper__level-image" width="45" height="45" src="images/catalog/cards/99-level.svg" alt="Уровень">
+                </div>
               </div>
-              <div class="person-card__favorite-icon-wrapper person-card__favorite-icon-wrapper--active">
-                <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
-                  <use xlink:href="#heart-icon"></use>
-                </svg>
-              </div>
-              <a href="#" class="person-card__item-name">Таня Фирсова</a>
-              <p class="person-card__item-distance">1,5 М</p>
-              <span class="person-card__check-online">
-                <img class="person-card__check-online-icon person-card__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
-              </span>
-            <!-- </div> -->
-            <p class="person-card__hashtags">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</p>
-            <div class="person-card__country-wrapper">
-              <p class="person-card__wish-country">Хочет посетить :</p>
-              <ul class="wish-country-list">
-                <li class="wish-country-list__item">
-                  <img  class="wish-country-list__item-flag" src="images/catalog/cards/sri-lanka.png" width="35" height="24" alt="Шри-ланка">Шри-Ланка
-                </li>
-                <li class="wish-country-list__item">
-                  <img class="wish-country-list__item-flag" src="images/catalog/cards/thailand.png" width="35" height="24" alt="Тайланд">Тайланд
-                </li>
-                <li class="wish-country-list__item">
-                  <img class="wish-country-list__item-flag" src="images/catalog/cards/seychelles.png" width="35" height="24" alt="Сейшеллы">Сейшеллы
-                </li>
-              </ul>
-            </div>
-            <div class="transport-wrapper">
-              <p class="transport-wrapper__header">транспорт :</p>
-              <div class="transport-wrapper__icon-wrapper">
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
-                </span>
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon transport-wrapper__bus--inactive" width="21" height="21" src="images/catalog/bus.svg" alt="Автобус">
-                </span>
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon transport-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
-                </span>
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon transport-wrapper__run--inactive" width="21" height="21" src="images/catalog/run.svg" alt="Бег">
-                </span>
-              </div>
-            </div>
-            <div class="level-wrapper">
-              <p class="level-wrapper__header">левел :</p>
-              <div class="level-wrapper__level-image-wrapper">
-                <img class="level-wrapper__level-image" width="45" height="45" src="images/catalog/cards/99-level.svg" alt="Уровень">
-              </div>
-            </div>
-            <button class="person-card__button">Позвать!</button>
-          </article>
-        </li>
-        <!-- Вторая карточка -->
-        <li class="catalog-cards-list__item">
-          <article class="person-card">
-            <!-- <div class="person-card__item-top"> -->
-              <div class="person-card__avatar-wrapper">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="images/catalog/cards/demin-desktop.png 1x, images/catalog/cards/demin-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="images/catalog/cards/demin-tablet.png 1x, images/catalog/cards/demin-tablet@2x.png 2x">
-                  <img class="person-card__avatar" src="images/catalog/cards/demin-mobile.png" srcset="images/catalog/cards/demin-mobile@2x.png 2x" width="70" height="70" alt="Таня Фирсова">
-                </picture>
-              </div>
-              <div class="person-card__favorite-icon-wrapper">
-                <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
-                  <use xlink:href="#heart-icon"></use>
-                </svg>
-              </div>
-              <a href="#" class="person-card__item-name">Петя Демин</a>
-              <p class="person-card__item-distance">1500 М</p>
-              <span class="person-card__check-online">
-                <img class="person-card__check-online-icon person-card__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
-              </span>
-            <!-- </div> -->
-            <p class="person-card__hashtags">#бургер #бар #футбол #концерт #крафт</p>
-            <div class="person-card__country-wrapper">
-              <p class="person-card__wish-country">Хочет посетить :</p>
-              <ul class="wish-country-list">
-                <li class="wish-country-list__item">
-                  <img class="wish-country-list__item-flag" src="images/catalog/cards/belgium.png" width="35" height="24" alt="Бельгия">Бельгия
-                </li>
-                <li class="wish-country-list__item">
-                  <img class="wish-country-list__item-flag" src="images/catalog/cards/czech.png" width="35" height="24" alt="Чехия">Чехия
-                </li>
-              </ul>
-            </div>
-            <div class="transport-wrapper">
-              <p class="transport-wrapper__header">транспорт :</p>
-              <div class="transport-wrapper__icon-wrapper">
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
-                </span>
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/bus-active.svg" alt="Автобус">
-                </span>
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon transport-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
-                </span>
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/run-active.svg" alt="Бег">
-                </span>
-              </div>
-            </div>
-            <div class="level-wrapper">
-              <p class="level-wrapper__header">левел :</p>
-              <div class="level-wrapper__level-image-wrapper">
-                <img class="level-wrapper__level-image" width="45" height="45" src="images/catalog/cards/80-level.svg" alt="Уровень">
-              </div>
-            </div>
-            <button class="person-card__button">Позвать!</button>
-          </article>
-        </li>
-        <!-- Третья карточка -->
-        <li class="catalog-cards-list__item">
-          <article class="person-card">
-            <!-- <div class="person-card__item-top"> -->
-              <div class="person-card__avatar-wrapper">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="images/catalog/cards/rogovaya-desktop.png 1x, images/catalog/cards/rogovaya-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="images/catalog/cards/rogovaya-tablet.png 1x, images/catalog/cards/rogovaya-tablet@2x.png 2x">
-                  <img class="person-card__avatar" src="images/catalog/cards/rogovaya-mobile.png" srcset="images/catalog/cards/rogovaya-mobile@2x.png 2x" width="70" height="70" alt="Таня Фирсова">
-                </picture>
-              </div>
-              <div class="person-card__favorite-icon-wrapper">
-                <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
-                  <use xlink:href="#heart-icon"></use>
-                </svg>
-              </div>
-              <a href="#" class="person-card__item-name">Марк Смолов</a>
-              <p class="person-card__item-distance"></p>
-              <span class="person-card__check-online">
-                <img class="person-card__check-online-icon person-card__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
-              </span>
-            <!-- </div> -->
-            <p class="person-card__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
-            <div class="person-card__country-wrapper">
-              <p class="person-card__wish-country">Хочет посетить :</p>
-              <ul class="wish-country-list">
-                <li class="wish-country-list__item">
-                  <img class="wish-country-list__item-flag" src="images/catalog/cards/usa.png" width="35" height="24" alt="США">США
-                </li>
-                <li class="wish-country-list__item">
-                  <img class="wish-country-list__item-flag" src="images/catalog/cards/australia.png" width="35" height="24" alt="Австралия">Австралия
-                </li>
-                <li class="wish-country-list__item">
-                  <img class="wish-country-list__item-flag" src="images/catalog/cards/dominicana.png" width="35" height="24" alt="Доминикана">Доминикана
-                </li>
-              </ul>
-            </div>
-            <div class="transport-wrapper">
-              <p class="transport-wrapper__header">транспорт :</p>
-              <div class="transport-wrapper__icon-wrapper">
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/cards/airplane.svg" alt="Самолёт">
-                </span>
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon transport-wrapper__bus--inactive" width="21" height="21" src="images/catalog/bus.svg" alt="Автобус">
-                </span>
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/cards/bicycle-active.svg" alt="Велосипед">
-                </span>
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon transport-wrapper__run--inactive" width="21" height="21" src="images/catalog/cards/run.svg" alt="Бег">
-                </span>
-              </div>
-            </div>
-            <div class="level-wrapper">
-              <p class="level-wrapper__header">левел :</p>
-              <div class="level-wrapper__level-image-wrapper">
-                <img class="level-wrapper__level-image" width="45" height="45" src="images/catalog/cards/25-level.svg" alt="Уровень">
-              </div>
-            </div>
-            <button class="person-card__button">Позвать!</button>
-          </article>
-        </li>
-        <!-- Четвёртая карточка -->
-        <li class="catalog-cards-list__item">
-          <article class="person-card">
-            <!-- <div class="person-card__item-top"> -->
-              <div class="person-card__avatar-wrapper">
-                <picture>
-                  <source media="(min-width: 1440px)" srcset="images/catalog/cards/smolov-desktop.png 1x, images/catalog/cards/smolov-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="images/catalog/cards/smolov-tablet.png 1x, images/catalog/cards/smolov-tablet@2x.png 2x">
-                  <img class="person-card__avatar" src="images/catalog/cards/smolov-mobile.png" srcset="images/catalog/cards/smolov-mobile@2x.png 2x" width="70" height="70" alt="Таня Фирсова">
-                </picture>
-              </div>
-              <div class="person-card__favorite-icon-wrapper">
-                <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
-                  <use xlink:href="#heart-icon"></use>
-                </svg>
-              </div>
-              <a href="#" class="person-card__item-name">Лариса Роговая</a>
-              <p class="person-card__item-distance">23 М</p>
-              <span class="person-card__check-online">
-                <img class="person-card__check-online-icon person-card__check-online-icon--online" src="images/catalog/cards/is-online-active.svg" alt="Оффлайн">
-              </span>
-            <!-- </div> -->
-            <p class="person-card__hashtags">#образование #карьера #учеба #линкедин</p>
-            <div class="person-card__country-wrapper">
-              <p class="person-card__wish-country">Хочет посетить :</p>
-              <ul class="wish-country-list">
-                <li class="wish-country-list__item">
-                  <img class="wish-country-list__item-flag" src="images/catalog/cards/uk.png" width="35" height="24" alt="Великобритания">Великобритания
-                </li>
-                <li class="wish-country-list__item">
-                  <img class="wish-country-list__item-flag" src="images/catalog/cards/germany.png" width="35" height="24" alt="Германия">Германия
-                </li>
-              </ul>
-            </div>
-            <div class="transport-wrapper">
-              <p class="transport-wrapper__header">транспорт :</p>
-              <div class="transport-wrapper__icon-wrapper">
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/cards/airplane.svg" alt="Самолёт">
-                </span>
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/cards/bus-active.svg" alt="Автобус">
-                </span>
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon transport-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/cards/bicycle.svg" alt="Велосипед">
-                </span>
-                <span class="transport-wrapper__icon-background">
-                  <img class="transport-wrapper__icon transport-wrapper__run--inactive" width="21" height="21" src="images/catalog/cards/run.svg" alt="Бег">
-                </span>
-              </div>
-            </div>
-            <div class="level-wrapper">
-              <p class="level-wrapper__header">левел :</p>
-              <div class="level-wrapper__level-image-wrapper">
-                <img class="level-wrapper__level-image" width="45" height="45" src="images/catalog/cards/50-level.svg" alt="Уровень">
-              </div>
-            </div>
-            <button class="person-card__button">Позвать!</button>
-          </article>
-        </li>
-      </ul>
-      <a href="#" class="person-card__load-more">
-        <img class="person-card__load-more-icon" src="images/catalog/cards/plus-load.svg" width="18" height="18" alt="Загрузить ещё">
-        Показать ещё
-      </a>
-      <div class="catalog-bottom-navigation">
-        <ol class="catalog-bottom-navigation__list">
-          <li class="catalog-bottom-navigation__list-item">
-            <a href="#" class="catalog-bottom-navigation__list-item-link catalog-bottom-navigation__list-item-link--active">1</a></li>
-          <li class="catalog-bottom-navigation__list-item">
-            <a href="#" class="catalog-bottom-navigation__list-item-link">2</a>
+              <button class="person-card__button">Позвать!</button>
+            </article>
           </li>
-          <li class="catalog-bottom-navigation__list-item">
-            <a href="#" class="catalog-bottom-navigation__list-item-link">3</a>
+          <!-- Вторая карточка -->
+          <li class="catalog-cards-list__item">
+            <article class="person-card">
+              <!-- <div class="person-card__item-top"> -->
+                <div class="person-card__avatar-wrapper">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="images/catalog/cards/demin-desktop.png 1x, images/catalog/cards/demin-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="images/catalog/cards/demin-tablet.png 1x, images/catalog/cards/demin-tablet@2x.png 2x">
+                    <img class="person-card__avatar" src="images/catalog/cards/demin-mobile.png" srcset="images/catalog/cards/demin-mobile@2x.png 2x" width="70" height="70" alt="Таня Фирсова">
+                  </picture>
+                </div>
+                <div class="person-card__favorite-icon-wrapper">
+                  <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
+                    <use xlink:href="#heart-icon"></use>
+                  </svg>
+                </div>
+                <a href="#" class="person-card__item-name">Петя Демин</a>
+                <p class="person-card__item-distance">1500 М</p>
+                <span class="person-card__check-online">
+                  <img class="person-card__check-online-icon person-card__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
+                </span>
+              <!-- </div> -->
+              <p class="person-card__hashtags">#бургер #бар #футбол #концерт #крафт</p>
+              <div class="person-card__country-wrapper">
+                <p class="person-card__wish-country">Хочет посетить :</p>
+                <ul class="wish-country-list">
+                  <li class="wish-country-list__item">
+                    <img class="wish-country-list__item-flag" src="images/catalog/cards/belgium.png" width="35" height="24" alt="Бельгия">Бельгия
+                  </li>
+                  <li class="wish-country-list__item">
+                    <img class="wish-country-list__item-flag" src="images/catalog/cards/czech.png" width="35" height="24" alt="Чехия">Чехия
+                  </li>
+                </ul>
+              </div>
+              <div class="transport-wrapper">
+                <p class="transport-wrapper__header">транспорт :</p>
+                <div class="transport-wrapper__icon-wrapper">
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
+                  </span>
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/bus-active.svg" alt="Автобус">
+                  </span>
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon transport-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/bicycle.svg" alt="Велосипед">
+                  </span>
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/run-active.svg" alt="Бег">
+                  </span>
+                </div>
+              </div>
+              <div class="level-wrapper">
+                <p class="level-wrapper__header">левел :</p>
+                <div class="level-wrapper__level-image-wrapper">
+                  <img class="level-wrapper__level-image" width="45" height="45" src="images/catalog/cards/80-level.svg" alt="Уровень">
+                </div>
+              </div>
+              <button class="person-card__button">Позвать!</button>
+            </article>
           </li>
-          <li class="catalog-bottom-navigation__list-item">
-            <a href="#" class="catalog-bottom-navigation__list-item-link">4</a>
+          <!-- Третья карточка -->
+          <li class="catalog-cards-list__item">
+            <article class="person-card">
+              <!-- <div class="person-card__item-top"> -->
+                <div class="person-card__avatar-wrapper">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="images/catalog/cards/rogovaya-desktop.png 1x, images/catalog/cards/rogovaya-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="images/catalog/cards/rogovaya-tablet.png 1x, images/catalog/cards/rogovaya-tablet@2x.png 2x">
+                    <img class="person-card__avatar" src="images/catalog/cards/rogovaya-mobile.png" srcset="images/catalog/cards/rogovaya-mobile@2x.png 2x" width="70" height="70" alt="Таня Фирсова">
+                  </picture>
+                </div>
+                <div class="person-card__favorite-icon-wrapper">
+                  <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
+                    <use xlink:href="#heart-icon"></use>
+                  </svg>
+                </div>
+                <a href="#" class="person-card__item-name">Марк Смолов</a>
+                <p class="person-card__item-distance"></p>
+                <span class="person-card__check-online">
+                  <img class="person-card__check-online-icon person-card__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
+                </span>
+              <!-- </div> -->
+              <p class="person-card__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+              <div class="person-card__country-wrapper">
+                <p class="person-card__wish-country">Хочет посетить :</p>
+                <ul class="wish-country-list">
+                  <li class="wish-country-list__item">
+                    <img class="wish-country-list__item-flag" src="images/catalog/cards/usa.png" width="35" height="24" alt="США">США
+                  </li>
+                  <li class="wish-country-list__item">
+                    <img class="wish-country-list__item-flag" src="images/catalog/cards/australia.png" width="35" height="24" alt="Австралия">Австралия
+                  </li>
+                  <li class="wish-country-list__item">
+                    <img class="wish-country-list__item-flag" src="images/catalog/cards/dominicana.png" width="35" height="24" alt="Доминикана">Доминикана
+                  </li>
+                </ul>
+              </div>
+              <div class="transport-wrapper">
+                <p class="transport-wrapper__header">транспорт :</p>
+                <div class="transport-wrapper__icon-wrapper">
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/cards/airplane.svg" alt="Самолёт">
+                  </span>
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon transport-wrapper__bus--inactive" width="21" height="21" src="images/catalog/bus.svg" alt="Автобус">
+                  </span>
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/cards/bicycle-active.svg" alt="Велосипед">
+                  </span>
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon transport-wrapper__run--inactive" width="21" height="21" src="images/catalog/cards/run.svg" alt="Бег">
+                  </span>
+                </div>
+              </div>
+              <div class="level-wrapper">
+                <p class="level-wrapper__header">левел :</p>
+                <div class="level-wrapper__level-image-wrapper">
+                  <img class="level-wrapper__level-image" width="45" height="45" src="images/catalog/cards/25-level.svg" alt="Уровень">
+                </div>
+              </div>
+              <button class="person-card__button">Позвать!</button>
+            </article>
           </li>
-        </ol>
-        <div class="two-button-navigation">
-          <a href="#" class="two-button-navigation__prev"><img src="images/catalog/cards/left-arrow.svg" width="13" height="20" alt="Назад"></a>
-          <a href="#" class="two-button-navigation__next"><img src="images/catalog/cards/right-arrow.svg" width="13" height="20" alt="Вперёд"></a>
+          <!-- Четвёртая карточка -->
+          <li class="catalog-cards-list__item">
+            <article class="person-card">
+              <!-- <div class="person-card__item-top"> -->
+                <div class="person-card__avatar-wrapper">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="images/catalog/cards/smolov-desktop.png 1x, images/catalog/cards/smolov-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="images/catalog/cards/smolov-tablet.png 1x, images/catalog/cards/smolov-tablet@2x.png 2x">
+                    <img class="person-card__avatar" src="images/catalog/cards/smolov-mobile.png" srcset="images/catalog/cards/smolov-mobile@2x.png 2x" width="70" height="70" alt="Таня Фирсова">
+                  </picture>
+                </div>
+                <div class="person-card__favorite-icon-wrapper">
+                  <svg class="person-card__favorite-icon" width="20" height="18" alt="В избранное">
+                    <use xlink:href="#heart-icon"></use>
+                  </svg>
+                </div>
+                <a href="#" class="person-card__item-name">Лариса Роговая</a>
+                <p class="person-card__item-distance">23 М</p>
+                <span class="person-card__check-online">
+                  <img class="person-card__check-online-icon person-card__check-online-icon--online" src="images/catalog/cards/is-online-active.svg" alt="Оффлайн">
+                </span>
+              <!-- </div> -->
+              <p class="person-card__hashtags">#образование #карьера #учеба #линкедин</p>
+              <div class="person-card__country-wrapper">
+                <p class="person-card__wish-country">Хочет посетить :</p>
+                <ul class="wish-country-list">
+                  <li class="wish-country-list__item">
+                    <img class="wish-country-list__item-flag" src="images/catalog/cards/uk.png" width="35" height="24" alt="Великобритания">Великобритания
+                  </li>
+                  <li class="wish-country-list__item">
+                    <img class="wish-country-list__item-flag" src="images/catalog/cards/germany.png" width="35" height="24" alt="Германия">Германия
+                  </li>
+                </ul>
+              </div>
+              <div class="transport-wrapper">
+                <p class="transport-wrapper__header">транспорт :</p>
+                <div class="transport-wrapper__icon-wrapper">
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/cards/airplane.svg" alt="Самолёт">
+                  </span>
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/cards/bus-active.svg" alt="Автобус">
+                  </span>
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon transport-wrapper__bicycle--inactive" width="21" height="21" src="images/catalog/cards/bicycle.svg" alt="Велосипед">
+                  </span>
+                  <span class="transport-wrapper__icon-background">
+                    <img class="transport-wrapper__icon transport-wrapper__run--inactive" width="21" height="21" src="images/catalog/cards/run.svg" alt="Бег">
+                  </span>
+                </div>
+              </div>
+              <div class="level-wrapper">
+                <p class="level-wrapper__header">левел :</p>
+                <div class="level-wrapper__level-image-wrapper">
+                  <img class="level-wrapper__level-image" width="45" height="45" src="images/catalog/cards/50-level.svg" alt="Уровень">
+                </div>
+              </div>
+              <button class="person-card__button">Позвать!</button>
+            </article>
+          </li>
+        </ul>
+        <a href="#" class="person-card__load-more">
+          <img class="person-card__load-more-icon" src="images/catalog/cards/plus-load.svg" width="18" height="18" alt="Загрузить ещё">
+          Показать ещё
+        </a>
+        <div class="catalog-bottom-navigation">
+          <ol class="catalog-bottom-navigation__list">
+            <li class="catalog-bottom-navigation__list-item">
+              <a href="#" class="catalog-bottom-navigation__list-item-link catalog-bottom-navigation__list-item-link--active">1</a></li>
+            <li class="catalog-bottom-navigation__list-item">
+              <a href="#" class="catalog-bottom-navigation__list-item-link">2</a>
+            </li>
+            <li class="catalog-bottom-navigation__list-item">
+              <a href="#" class="catalog-bottom-navigation__list-item-link">3</a>
+            </li>
+            <li class="catalog-bottom-navigation__list-item">
+              <a href="#" class="catalog-bottom-navigation__list-item-link">4</a>
+            </li>
+          </ol>
+          <div class="two-button-navigation">
+            <a href="#" class="two-button-navigation__prev"><img src="images/catalog/cards/left-arrow.svg" width="13" height="20" alt="Назад"></a>
+            <a href="#" class="two-button-navigation__next"><img src="images/catalog/cards/right-arrow.svg" width="13" height="20" alt="Вперёд"></a>
+          </div>
         </div>
-      </div>
+      </section>
     </section>
   </main>
   <footer class="main-footer">

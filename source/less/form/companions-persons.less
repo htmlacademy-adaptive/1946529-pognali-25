@@ -37,6 +37,7 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+    width: 150px;
   }
 }
 
@@ -229,7 +230,7 @@
 }
 
 .companions-persons__with-children-label {
-  margin-left: 16px;
+  // margin-left: 16px;
   font-family: "Blogger Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -237,6 +238,7 @@
   line-height: 15px;
   letter-spacing: 0;
   color: @base-text-color;
+  width: 150px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -245,13 +247,17 @@
     letter-spacing: 0.1em;
     margin-left: 23px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 350px;
+  }
 }
 
 .companions-persons__check-mark {
-  position: absolute;
+  position: relative;
   width: 26px;
   height: 26px;
-  left: 0;
+  left: -26px;
   top: 0;
   background: transparent;
 

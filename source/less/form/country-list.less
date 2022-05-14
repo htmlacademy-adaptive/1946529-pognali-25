@@ -13,6 +13,7 @@
   @media (min-width: @tablet-width) {
     // position: relative;
     min-width: 375px;
+    max-width: 376px;
     left: 0;
     transform: translate(0);
     // left: 0;
@@ -93,6 +94,8 @@
 // Таблица
 
 .country-list__table-wrapper {
+  width: 221px;
+
   @media (min-width: @tablet-width) {
     padding: 35px 80px 33px 27px;
     box-sizing: border-box;
@@ -100,10 +103,12 @@
     border-right: 1px solid @border-gray;
     grid-column: 1/2;
     grid-row: 2/3;
+    width: 376px;
     box-shadow: 0 8px 16px rgba(54, 80, 148, 0.2);
   }
 
   @media (min-width: @desktop-width) {
+    width: 490px;
     padding: 20px 76px 18px 24px;
   }
 }
@@ -164,6 +169,7 @@
   color: @base-text-color;
   text-transform: uppercase;
   box-sizing: border-box;
+  word-break: break-all;
 
   &:hover {
     border: 1px solid @grey-hover;
@@ -173,6 +179,7 @@
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0;
+    word-break: break-all;
   }
 
   @media (min-width: @desktop-width) {
