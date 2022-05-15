@@ -41,6 +41,7 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -138,6 +139,10 @@
     justify-self: end;
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    align-items: center;
+  }
 }
 
 .main-menu__login-link {
@@ -195,8 +200,9 @@
   align-content: center;
   display: none;
   margin: 52px 0;
+  padding: 0 12px;
   width: 270px;
-  height: 50px;
+  min-height: 50px;
   font-family: "Blogger Sans", sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -209,6 +215,7 @@
   box-sizing: border-box;
   border-radius: 25px;
   background-color: @base-yellow;
+  word-break: break-word;
 
   &:hover {
     background-color: @yellow-orange;

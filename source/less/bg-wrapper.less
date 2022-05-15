@@ -1,25 +1,21 @@
-// .bg-wrapper--light {
-//   background-color: red;
-//   width: 100px;
-//   height: 100px;
-//   position: relative;
-//   z-index: 10;
-// }
-
 .bg-wrapper--dark {
   @media (min-width: @desktop-width) {
     background-color: @secondary-text-dark;
     width: 100%;
-    // position: relative;
+  }
+}
+
+.bg-wrapper--dark-active {
+  @media (min-width: @desktop-width) {
+    border-radius: 0;
   }
 }
 
 .bg-wrapper--first-screen {
-  // background: red;
-  // background-size: 100% 100px;
-  // width: 100%;
-  // position: absolute;
-  // z-index: -1;
+  position: relative;
+  z-index: 4;
+  border-radius: 0 0 60px 60px;
+  background: @secondary-text-dark;
 }
 
 .bg-wrapper__svg {
@@ -34,10 +30,3 @@
     border-radius: 0 0 60px 60px;
   }
 }
-
-// .bg-wrapper--about-services {
-//   @media (min-width: @desktop-width) {
-//     background: red;
-//     width: 100%;
-//   }
-// }
