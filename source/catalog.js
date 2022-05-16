@@ -15,22 +15,17 @@ let menuLoginActive = document.querySelector('.main-menu__login--active');
 let navigationUser = document.querySelector('.navigation-user');
 let social = document.querySelector('.social');
 let menuLoginHidden = document.querySelector('.main-menu__login--hidden');
-
-
-// Добавить в избранное
-
-// let addToFavorite = document.querySelector('.person-card__favorite-icon-wrapper');
-// let addTo = document.querySelector('.person-card__favorite-icon');
-
-
-// addTo.onclick = function() {
-//   console.log('hello');
-//   // addToFavorite.classList.add('person-card__favorite-icon-wrapper--active');
-// };
+let personCardLink = document.querySelectorAll('.person-card__button-link');
+let loadMoreCard = document.querySelector('.person-card__load-more');
 
 // Скрываем класс NO JS
 
 headerTop.classList.remove('main-header__top--nojs');
+loadMoreCard.removeAttribute('href');
+
+for (let card of personCardLink) {
+  card.removeAttribute('href');
+}
 
 // Открываем/закрываем меню
 

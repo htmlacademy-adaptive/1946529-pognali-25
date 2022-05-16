@@ -49,7 +49,7 @@
   @media (min-width: @desktop-width) {
     content: "";
     display: block;
-    width: 60px;
+    min-width: 60px;
     height: 2px;
     background: @base-light;
     left: 0;
@@ -77,6 +77,18 @@
   }
 }
 
+.main-menu__item {
+  display: grid;
+  min-height: 20px;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
 .main-menu__link {
   font-family: "Blogger Sans", sans-serif;
   font-size: 30px;
@@ -87,6 +99,9 @@
   color: @main-background-dark;
   text-transform: uppercase;
   text-decoration: none;
+  word-break: break-all;
+  display: block;
+  transition: 0.5s;
 
   &--active {
     color: @base-yellow;
@@ -95,6 +110,8 @@
 
   &:hover {
     color: @base-yellow;
+    transform: translateY(-100%);
+    transition: 0.5s;
   }
 
   &:active {
@@ -109,6 +126,34 @@
 
   @media (min-width: @desktop-width) {
     color: @base-light;
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 150px;
+  }
+}
+
+.main-menu__link::before {
+  display: block;
+  content: attr(data-hover);
+  position: absolute;
+  font-family: "Blogger Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 35px;
+  letter-spacing: 0;
+  color: @base-yellow;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translate(0, 100%);
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 20px;
   }

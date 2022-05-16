@@ -26,11 +26,13 @@ let secondaryNavigation = document.querySelector('.secondary-navigation');
 let menuLink = document.querySelectorAll('.main-menu__link');
 let mainMenuList = document.querySelector('.main-menu__list');
 let mainHeader = document.querySelector('.main-header');
-let bgWrapper = document.querySelector('.bg-wrapper--dark');
+let bgWrapper = document.querySelector('.bg-wrapper--dark')
+let mapBackground = document.querySelector('.map_background');
 
 // Скрываем класс NO JS
 
 headerTop.classList.remove('main-header__top--nojs');
+// mapBackground.classList.remove('main-header__top--nojs');
 
 // Открываем/закрываем меню без
 
