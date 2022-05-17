@@ -8,17 +8,17 @@
 }
 
 .interesting__main {
-  padding: 100px 25px 25px;
+  padding: 98px 25px 22px;
   margin-top: -30px;
   background-color: @main-background-dark;
 
   @media (min-width: @tablet-width) {
-    padding: 116px 75px 60px;
+    padding: 108px 75px 60px;
     margin-top: -40px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 169px 133px 70px;
+    padding: 162px 133px 70px;
     // margin-top: -60px;
     width: 1440px;
     margin: -60px auto 0;
@@ -48,7 +48,7 @@
 }
 
 .interesting__email {
-  margin-top: 30px;
+  margin-top: 32px;
   position: relative;
   display: flex;
   width: 270px;
@@ -203,4 +203,16 @@
 
 .interesting__email-button:active::before {
   opacity: 0.3;
+}
+
+.interesting__wrapper .interesting__wrapper__br-first {
+  display: none;
+}
+
+.interesting__wrapper .brinteresting__wrapper__br-second {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }

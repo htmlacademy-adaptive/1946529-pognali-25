@@ -19,20 +19,20 @@
   border-radius: 0 0 30px 30px;
 
   @media (min-width: @tablet-width) {
-    border-radius: 0 0 40px 40px;
+    border-radius: 0 0 60px 60px;
     margin-top: -40px;
     background:
-      url("../images/destination-tablet-bg-right.png") no-repeat right 40px top 110px,
-      url("../images/destination-tablet-bg-left.png") no-repeat left 40px top 44%,
+      url("../images/destination-tablet-bg-right.png") no-repeat right 40px top 120px,
+      url("../images/destination-tablet-bg-left.png") no-repeat left 40px top 46%,
       @light-background;
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 113px 76px 80px;
+    padding: 108px 76px 80px 73px;
 
     @media (min-resolution: 2dppx) {
       background:
-        url("../images/destination-tablet-bg-right@2x.png") no-repeat right 40px top 110px,
-        url("../images/destination-tablet-bg-left@2x.png") no-repeat left 40px top 44%,
+        url("../images/destination-tablet-bg-right@2x.png") no-repeat right 40px top 120px,
+        url("../images/destination-tablet-bg-left@2x.png") no-repeat left 40px top 46%,
         @light-background;
       background-size:
         288px auto,
@@ -41,7 +41,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 148px 60px 88px;
+    padding: 148px 60px 132px;
     grid-template-columns: 1fr 1fr;
     background:
       url("../images/destination-tablet-bg-right.png") no-repeat right 60px top 148px,
@@ -54,7 +54,7 @@
 
 .destinations__wrapper {
   @media (min-width: @tablet-width) {
-    // margin-top: 100px;
+    margin-top: 20px;
     grid-column: 1/3;
   }
 
@@ -62,12 +62,13 @@
     grid-column: 1/2;
     grid-row: 1/3;
     padding: 73px 0 0 71px;
+    margin: 0;
     background: url("../images/destination-tablet-bg-left.png") no-repeat left top;
   }
 }
 
 .destinations__header {
-  padding: 71px 30px 60px 24px;
+  padding: 61px 30px 45px 24px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -79,5 +80,13 @@
     justify-self: end;
     grid-column: 2/3;
     grid-row: 1/2;
+  }
+}
+
+.destinations__header br {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }

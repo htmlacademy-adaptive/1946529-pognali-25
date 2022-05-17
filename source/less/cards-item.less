@@ -6,6 +6,7 @@
   @media (min-width: @tablet-width) {
     width: 285px;
     box-sizing: border-box;
+    margin-top: 20px;
   }
 
   &:hover {
@@ -17,8 +18,8 @@
   @media (min-width: @desktop-width) {
     grid-column: 2/3;
     grid-row: 1/3;
-    justify-self: end;
-    margin: 60px 0 0;
+    justify-self: center;
+    margin: 32px -10px 0 0;
     // height: 483px;
   }
 }
@@ -31,6 +32,7 @@
   @media (min-width: @desktop-width) {
     grid-column: 3/4;
     grid-row: 1/3;
+    margin: 32px 0 0;
   }
 }
 
@@ -42,6 +44,7 @@
   @media (min-width: @tablet-width) {
     width: 100%;
     border-radius: 20px 20px 0 0;
+    min-height: 285px;
   }
 
   @media (min-width: @desktop-width) {
@@ -57,6 +60,11 @@
 .cards-item__level-image {
   left: 17px;
   top: 17px;
+
+  @media (min-width: @tablet-width) {
+    left: 20px;
+    top: 20px;
+  }
 }
 
 .cards-item__flag-wrapper {
@@ -77,6 +85,8 @@
   padding: 27px 41px 22px;
   background-color: @base-light;
   border-radius: 0 0 10px 10px;
+  min-height: 158px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     box-sizing: border-box;
@@ -97,6 +107,7 @@
   justify-self: center;
   min-width: 150px;
   text-decoration: none;
+  // margin-bottom: 3px;
 
   &:hover {
     opacity: 0.7;
@@ -104,6 +115,26 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.cards-item__is-online--firsova {
+  margin-right: 20px;
+}
+
+.cards-item__is-online--demin {
+  margin-left: 8px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: -37px;
+  }
+}
+
+.cards-item__is-online-icon {
+  @media (min-width: @tablet-width) {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
   }
 }
 
@@ -132,11 +163,12 @@
   letter-spacing: 0;
   color: @base-grey;
   text-align: center;
+  margin: 13px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 23px;
-    margin: 23px 0;
+    margin: 23px 0 26px;
   }
 }
 

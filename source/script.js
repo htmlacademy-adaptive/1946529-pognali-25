@@ -152,6 +152,9 @@ console.log(window.pageYOffset);
 
   if (document.body.clientWidth >= 1440) {
 
+    let firstScreen = document.querySelector('.first-screen');
+    let headerTopHeight = headerTop.clientHeight;
+
     window.addEventListener('scroll', ()=> {
       if (window.pageYOffset > 700) {
         mainHeader.style.position = 'fixed';
@@ -163,6 +166,9 @@ console.log(window.pageYOffset);
         logoDarkg.classList.remove('visually-hidden');
         logoLight.classList.add('visually-hidden');
         mainMenuList.classList.add('main-menu__list--change-before');
+        firstScreen.style.marginTop = headerTopHeight + 'px';
+        mainHeader.style.top = '0';
+        // headerTop.style.top = 0 + 'px';
         for (link of menuLink) {
           link.classList.add('main-menu__link--scroll');
         }
@@ -178,6 +184,7 @@ console.log(window.pageYOffset);
         logoLight.classList.remove('visually-hidden');
         mainMenuList.classList.remove('main-menu__list--change-before');
         mainHeader.classList.remove('main-header__top--fixed');
+        firstScreen.style.marginTop = 0 + 'px';
         for (link of menuLink) {
           link.classList.remove('main-menu__link--scroll');
         }

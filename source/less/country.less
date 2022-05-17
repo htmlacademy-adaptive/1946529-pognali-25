@@ -2,7 +2,6 @@
 .country {
   min-height: 188px;
   position: relative;
-  margin-bottom: 11px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -10,22 +9,34 @@
     width: 616px;
     grid-column: 1/3;
     min-height: 140px;
+    margin-bottom: 11px;
   }
+
+  // @media (min-width: @desktop-width) {
+  //   min-width: 300px;
+  // }
 }
 
 .country__information-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 0;
   width: 222px;
   justify-content: space-between;
   margin: 0 auto;
-  align-items: center;
+  align-items: flex-end;
+  min-height: 89px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     position: relative;
     grid-gap: 0;
     min-width: 381px;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-items: end;
   }
 }
 
@@ -43,10 +54,16 @@
     transform: translate(35%, -50%);
     z-index: 1;
   }
+
+  @media (min-width: @desktop-width) {
+    transform: translate(0, -46%);
+    left: 80%;
+  }
 }
 
 .country__image {
   border-radius: 10px 10px 0 0;
+  margin-bottom: -5px;
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -56,9 +73,9 @@
     justify-self: flex-end;
     height: 100%;
     // margin-left: -55px;
-    width: 186px;
+    width: 194px;
     z-index: -1;
-    right: 0;
+    right: 8px;
     object-fit: cover;
     border-radius: 0 20px 20px 0;
   }
@@ -88,14 +105,29 @@
   transform: translateY(-10px);
   bottom: 0;
   background-color: @base-light;
-  padding: 25px 24px;
+  padding: 0 24px;
   border-radius: 10px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/2;
     grid-row: 1/2;
     transform: translateY(0);
     border-radius: 20px 0 0 20px;
+    padding: 26px 30px;
+    min-width: 433px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 370px;
+  }
+}
+
+.country__information-wrapper--czech {
+  padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
   }
 }
 
@@ -115,6 +147,10 @@
     line-height: 24px;
     margin-bottom: 5px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -5px;
+  }
 }
 
 .country__information-counter {
@@ -131,13 +167,17 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-left: 3px;
   }
 }
 
 .country__information-person-icon {
   margin-right: 7px;
-  width: 20px;
-  height: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .country__slogan {
@@ -150,9 +190,20 @@
   letter-spacing: 0;
   text-align: left;
   color: hsla(0, 0%, 27%, 0.3);
+  align-self: flex-start;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -5px;
+  }
+}
+
+.country__slogan br {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }

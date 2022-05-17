@@ -22,7 +22,7 @@
     113px auto,
     143px auto,
     64px auto;
-  padding: 40px 25px 35px;
+  padding: 40px 25px 30px;
   margin-top: -30px;
   border-radius: 0 0 30px 30px;
 
@@ -40,11 +40,11 @@
 
   @media (min-width: @tablet-width) {
     padding: 181px 73px 87px;
-    border-radius: 0 0 40px 40px;
+    border-radius: 0 0 60px 60px;
     margin-top: -40px;
     background:
-      url("../images/companions-tablet-bg-1.png") no-repeat top 80px left 40px,
-      url("../images/companions-tablet-bg-3.png") no-repeat top 80px right 74px,
+      url("../images/companions-tablet-bg-1.png") no-repeat top 110px left 40px,
+      url("../images/companions-tablet-bg-3.png") no-repeat top 120px right 74px,
       url("../images/companions-tablet-bg-2.png") no-repeat top 38% left 40px,
       @main-background-dark;
 
@@ -63,8 +63,9 @@
 
   @media (min-width: @desktop-width) {
     background:
-      url("../images/companions-tablet-bg-3.png") no-repeat bottom 80px left 190px,
+      url("../images/companions-tablet-bg-3.png") no-repeat bottom 110px left 190px,
       url("../images/companions-tablet-bg-2.png") no-repeat top 194px left 547px,
+      url("../images/companions-tablet-bg-1.png") no-repeat top 130px left 58px,
       @main-background-dark;
     padding: 160px 60px 134px;
     // border-radius: 0 0 60px 60px;
@@ -75,12 +76,14 @@
 
     @media (min-resolution: 2dppx) {
       background:
-        url("../images/companions-tablet-bg-3@2x.png") no-repeat bottom 80px left 190px,
+        url("../images/companions-tablet-bg-3@2x.png") no-repeat bottom 110px left 190px,
         url("../images/companions-tablet-bg-2@2x.png") no-repeat top 194px left 547px,
+        url("../images/companions-tablet-bg-1@2x.png") no-repeat top 130px left 58px,
         @main-background-dark;
       background-size:
         285px auto,
-        143px auto;
+        143px auto,
+        212px auto;
     }
   }
 }
@@ -97,7 +100,7 @@
 }
 
 .companions__header-wrapper {
-  padding: 71px 30px 60px 24px;
+  padding: 53px 30px 40px 24px;
 
   @media (min-width: @tablet-width) {
     width: 429px;
@@ -108,12 +111,6 @@
   @media (min-width: @desktop-width) {
     grid-column: 1/2;
     grid-row: 1/2;
-    padding: 60px 0 0 70px;
-    background: url("../images/companions-tablet-bg-1.png") no-repeat top left;
-
-    @media (min-resolution: 2dppx) {
-      background: url("../images/companions-tablet-bg-1@2x.png") no-repeat top left;
-      background-size: 212px auto;
-    }
+    padding: 28px 0 0 70px;
   }
 }
