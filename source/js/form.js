@@ -311,4 +311,3 @@ aboutPlans.addEventListener('focus', (event)=> {
   event.target.style.borderColor = '#cbced9';
   errorMessagePlans.classList.add('visually-hidden');
 })
-
