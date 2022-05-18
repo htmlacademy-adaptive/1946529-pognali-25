@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Погнали. Главная страница</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
@@ -12,7 +12,7 @@
   </head>
   <body class="page__body">
     <svg style="display: none;">
-      <symbol viewbox="0 0 16 15" id="phone-icon">
+      <symbol viewbox="0 0 16 15" id="bottom-phone-icon">
         <path xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"
           d="M9.5 1.08594C6.70356 1.08594 3.90038 1.55861 2.88327 2.50071C2.0394 3.2823 1.75809
           4.66308 1.66327 5.53732C1.66327 5.53732 1.6502 5.62371 1.6502 5.66087C1.6502 6.0037
@@ -36,7 +36,7 @@
           12.8244C8.05431 12.8244 6.88341 11.7185 6.88341 10.3531C6.88341 8.98774 8.05431 7.88189 9.5
           7.88189Z"/>
       </symbol>
-      <symbol viewbox="0 0 18 13" id="email-icon">
+      <symbol viewbox="0 0 18 13" id="bottom-email-icon">
         <path xmlns="http://www.w3.org/2000/svg"  fill-rule="evenodd" clip-rule="evenodd"
           d="M16.1393 10.4663L11.8089 6.5L16.1393 2.53365L15.5488 1.90264L9.25 7.67188L2.9512 1.90264L2.36068
           2.53365L6.69111 6.5L2.36068 10.4663L2.9512 11.0974L7.33083 7.08594L9.25 8.84375L11.1692
@@ -45,7 +45,7 @@
           12.75 18.3889 12.0512 18.3889 11.1921V1.80786C18.3889 0.947478 17.7384 0.25 16.924
           0.25H1.57596Z"/>
       </symbol>
-      <symbol viewbox="0 0 11 12" width="13" height="13" id="button-icon">
+      <symbol viewbox="0 0 11 12" width="13" height="13" id="route-button-icon">
         <path xmlns="http://www.w3.org/2000/svg" d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z"/>
       </symbol>
     </svg>
@@ -382,7 +382,7 @@
               <a class="contacts__phone-link" href="tel:88005558628">
                 <span class="contacts__phone-icon-wrapper">
                   <svg class="contacts__phone-image" width="18" height="13">
-                    <use xlink:href="#phone-icon"></use>
+                    <use xlink:href="#bottom-phone-icon"></use>
                   </svg>
                 </span>
               8 800 555-86-28</a>
@@ -391,7 +391,7 @@
               <a class="contacts__email-link" href="#">
                 <span class="contacts__email-icon-wrapper">
                   <svg class="contacts__email-image" width="18" height="13">
-                    <use xlink:href="#email-icon"></use>
+                    <use xlink:href="#bottom-email-icon"></use>
                   </svg>
                 </span>
               mail@htmlacademy.ru</a>
@@ -411,7 +411,7 @@
             </span>
             <span class="show-all-button__icon-wrapper">
               <svg class="show-all-button__icon" width="13" height="13">
-                <use xlink:href="#button-icon"></use>
+                <use xlink:href="#route-button-icon"></use>
               </svg>
             </span>
           </a>
@@ -444,6 +444,6 @@
         </a>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
