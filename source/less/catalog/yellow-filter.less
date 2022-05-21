@@ -2,18 +2,18 @@
 
 .yellow-filter {
   margin-top: -30px;
-  padding: 50px 25px 0;
+  padding: 36px 25px 0;
   background: @light-background;
 
   @media (min-width: @tablet-width) {
-    padding: 230px 40px 40px;
+    padding: 205px 40px 0;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 2/3;
     justify-self: start;
     width: 285px;
-    padding: 45px 25px 46px;
+    padding: 39px 25px 46px;
     margin: 40px 0 0;
   }
 }
@@ -24,30 +24,33 @@
   background-color: @base-yellow;
   border-radius: 20px;
   color: @base-text-color;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-style: normal;
   text-align: left;
 
   @media (min-width: @tablet-width) {
-    padding: 37px 35px;
+    padding: 35px 35px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 46px;
     box-sizing: border-box;
+    max-width: 285px;
   }
 }
 
 .yellow-filter__wrapper-header {
   margin: 0;
   width: 100px;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   font-size: 22px;
   font-weight: 700;
   line-height: 22px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
 
   @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
     width: 100%;
     margin: 0;
     padding-bottom: 38px;
@@ -58,14 +61,15 @@
     width: 100%;
     font-size: 30px;
     line-height: 30px;
-    padding-bottom: 34px;
+    padding: 0 0 0 2px;
     border: 0;
+    max-width: 170px;
   }
 }
 
 .yellow-filter__button-wrapper {
   @media (min-width: @tablet-width) {
-    padding-top: 36px;
+    padding-top: 32px;
     border-top: 1px solid @filter-border;
   }
 
@@ -76,11 +80,12 @@
 }
 
 .yellow-filter__button {
+  margin-top: 5px;
   width: 100%;
   min-height: 41px;
   box-sizing: border-box;
   background-color: @base-light;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 17px;

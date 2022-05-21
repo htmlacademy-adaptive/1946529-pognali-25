@@ -9,6 +9,14 @@
     <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/favicons/apple-favicon-180x180.png"> <!-- 180×180 -->
     <link rel="manifest" href="pognali.webmanifest">
+    <link rel="preload" href="fonts/bloggersans-400.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-bold-700.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-bolditalic-700.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-italic-400.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-light-300.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-lightitalic-300.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-medium-500.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-mediumitalic-500.woff2" as="font">
   </head>
   <body class="page__body">
     <svg style="display: none;">
@@ -51,8 +59,8 @@
     </svg>
     <header class="main-header">
       <!-- <div class="bg-wrapper bg-wrapper--light"> -->
-      <div class="bg-wrapper bg-wrapper--dark">
-      <div class="main-header__top main-header__top--nojs">
+      <div class="bg-wrapper bg-wrapper--dark bg-wrapper--main-page">
+      <div class="main-header__top main-header__top--main-page main-header__top--nojs">
         <!-- <div class="main-header__top-flex"> -->
           <a href="/" class="main-header__logo">
             <picture>
@@ -123,7 +131,7 @@
         <section class="short-about">
           <h2 class="visually-hidden">Коротко о приложении</h2>
           <blockquote class="short-about__blockquote">«Лучшее приложение, что я видел в жизни!»</blockquote>
-            <cite class="short-about__cite">Мурат Эльтазин<br> главный редактор газеты<br> «гаджетлайф»</cite>
+            <cite class="short-about__cite">Мурат Эльтазин<br> главный редактор газеты<br class="short-about__cite-br-second"> «гаджетлайф»</cite>
             <div class="secondary-navigation">
               <a href="#" class="secondary-navigation__link secondary-navigation__link--phone"><img class="secondary-navigation__icon" src="images/phone.svg" width="16" height="16" alt="Телефон"></a>
               <a href="#" class="secondary-navigation__link secondary-navigation__link--email"><img class="secondary-navigation__icon" src="images/email.svg" width="16" height="12" alt="E-mail"></a>
@@ -232,7 +240,7 @@
             <div class="companions__header-wrapper">
               <h3 class="section-header">Попутчики</h3>
               <p class="text-definition text-definition--companions">
-              Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль,<br> а другому маршрут для хайкинга.</p>
+              Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль,<br class="text-definition--companions-br"> а другому маршрут для хайкинга.</p>
               <p class="text-definition text-definition--bold text-definition--companions">Теперь можно легко<br> найти единомышленников!</p>
             </div>
             <!-- <div class="companions__cards-wrapper"> -->

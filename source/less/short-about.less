@@ -35,7 +35,7 @@
   margin: 0;
   display: block;
   width: 151px;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
@@ -65,7 +65,7 @@
   margin-top: 18px;
   display: block;
   width: 161px;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -85,5 +85,11 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 45px;
+  }
+}
+
+.short-about__cite-br-second {
+  @media (max-width: @tablet-width) {
+    display: none;
   }
 }

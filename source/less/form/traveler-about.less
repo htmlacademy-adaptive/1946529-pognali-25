@@ -7,19 +7,18 @@
 
   @media (min-width: @desktop-width) {
     background: @light-background;
-    margin: -60px 0 -247px;
+    margin: -60px 0 -242px;
     // width: 100%;
   }
 }
 
 .traveler-about__main {
-
   padding: 50px 25px 64px;
   background: @light-background;
   width: 270px;
 
   @media (min-width: @tablet-width) {
-    padding: 106px 75px 88px;
+    padding: 106px 75px 97px;
     background: @light-background;
     width: 100%;
     box-sizing: border-box;
@@ -58,6 +57,8 @@
 
   @media (min-width: @tablet-width) {
     justify-self: start;
+    width: 94px;
+    height: 94px;
   }
 
   @media (min-width: @desktop-width) {
@@ -142,6 +143,8 @@
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
+    width: 94px;
+    height: 94px;
     border-radius: 7px;
     justify-self: end;
   }
@@ -160,17 +163,17 @@
 }
 
 .traveler-about__button {
-  margin: 17px 0 25px;
+  margin: 17px 0 34px;
   width: 100%;
   min-height: 40px;
   border-radius: 20px;
   background-color: @middle-gray-background;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
   font-style: normal;
   line-height: 18px;
-  letter-spacing: 0;
+  letter-spacing: 0.09em;
   text-align: center;
   color: @secondary-text-dark;
   text-transform: uppercase;
@@ -213,6 +216,21 @@
   }
 }
 
+.traveler-about__button--until-tablet {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.traveler-about__button--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    z-index: 10;
+  }
+}
+
 .traveler-about__tags {
   position: relative;
   border: 1px solid @border-gray;
@@ -232,7 +250,7 @@
   @media (min-width: @desktop-width) {
     grid-column: 1/2;
     grid-row: 3/4;
-    margin-top: 73px;
+    margin-top: 26px;
     width: 732px;
   }
 }
@@ -242,7 +260,7 @@
     content: "Теги";
     display: block;
     position: absolute;
-    font-family: "Blogger Sans", sans-serif;
+    font-family: "Blogger Sans", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
@@ -265,7 +283,7 @@
 
 .traveler-about__tags-text {
   margin: 0;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -280,14 +298,14 @@
   box-sizing: border-box;
   outline: none;
   border: 0;
-  padding: 27px;
+  padding: 23px;
   // height: auto;
   width: 100%;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    padding: 36px 39px;
+    padding: 34px 39px;
     height: 94px;
   }
 }
@@ -299,7 +317,7 @@
   background-color: @light-background;
   position: absolute;
   display: block;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -324,14 +342,14 @@
   border: 1px solid @border-gray;
   border-radius: 10px;
   width: 100%;
-  min-height: 63px;
-  padding: 16px 71px;
+  min-height: 60px;
+  padding: 15px 71px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     width: 308px;
-    height: 105px;
+    min-height: 95px;
     padding: 0;
     justify-content: center;
     align-items: center;
@@ -339,7 +357,7 @@
 
   @media (min-width: @desktop-width) {
     height: 95px;
-    margin: 73px 0 0;
+    margin: 26px 0 0;
     min-width: 384px;
   }
 }
@@ -349,7 +367,7 @@
     content: "Транспорт";
     display: block;
     position: absolute;
-    font-family: "Blogger Sans", sans-serif;
+    font-family: "Blogger Sans", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;

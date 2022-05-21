@@ -1,34 +1,55 @@
 .checkbox-list {
   list-style-type: none;
-  margin: 0 0 21px;
+  margin: 0 0 18px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
     grid-column: 2/4;
-    margin: 0 0 0 18px;
+    margin: 0 0 0 10px;
     align-items: center;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
-    margin: 0 0 10px;
+    margin: 18px 0 20px;
     justify-self: start;
+  }
+}
+
+.checkbox-list--hobbie,
+.checkbox-list--food {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
 .checkbox-list__item {
   display: flex;
   position: relative;
-  align-items: center;
+  align-items: end;
   min-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 190px;
+  }
 }
 
 .checkbox-list__item:not(:last-child) {
-  margin-bottom: 11px;
+  margin-bottom: 9px;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    // margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -44,6 +65,11 @@
   border-radius: 4px;
   background-color: @base-light;
   align-self: end;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .checkbox-list__item:hover::before {
@@ -64,24 +90,35 @@
   margin: 0;
   opacity: 0;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .checkbox-list__checkbox-label {
-  margin-left: 27px;
+  margin: 3px 0 0 7px;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0;
   color: @black;
   display: block;
-  width: 180px;
+  max-width: 170px;
+  align-self: center;
 
   @media (min-width: @tablet-width) {
-    width: 130px;
+    min-width: 120px;
+    max-width: 140px;
     word-break: break-all;
     font-size: 20px;
     line-height: 20px;
-    margin: 0 0 0 20px;
+    margin: 2px 8px 3px 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 8px 3px 14px;
   }
 }
 
@@ -104,6 +141,17 @@
   transform: translate(60%, -60%);
   position: absolute;
   background: url("../images/check-mark.svg") no-repeat;
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    width: 11px;
+    height: 11px;
+    left: 0;
+    bottom: 0;
+    transform: translate(60%, -60%);
+    position: absolute;
+    background: url("../images/check-mark-tablet-catalog.svg") no-repeat;
+  }
 }
 
 .checkbox-list__wrapper:active .checkbox-list__check-mark::before {

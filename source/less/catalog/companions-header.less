@@ -13,14 +13,15 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: 30px 1fr;
     grid-column: 1/2;
-    margin-right: 31px;
+    margin: 7px 31px 0 20px;
+    align-self: start;
   }
 }
 
 .companions-header__header {
   margin: 0;
   color: @main-background-dark;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-style: normal;
   text-align: left;
   font-size: 16px;
@@ -37,7 +38,8 @@
     display: block;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 22px;
+    margin-left: 15px;
+    max-width: 300px;
   }
 }
 
@@ -54,7 +56,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    font-family: "Blogger Sans", sans-serif;
+    font-family: "Blogger Sans", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 700;
     font-style: normal;
@@ -64,7 +66,7 @@
     text-transform: uppercase;
     color: @base-text-color;
     grid-column: 3/4;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 -5px;
     justify-self: start;
   }
 
@@ -75,7 +77,8 @@
 
 .companions-header__icon {
   cursor: pointer;
-  padding: 10px 0;
+  // padding: 10px 0;
+  align-self: center;
 
   &:hover {
     opacity: 0.7;
@@ -116,7 +119,7 @@
     justify-self: end;
     width: 30px;
     height: 6px;
-    margin-left: 23px;
+    // margin-left: 23px;
   }
 }
 
@@ -125,5 +128,7 @@
 
   @media (min-width: @tablet-width) {
     justify-self: end;
+    width: 27px;
+    height: 27px;
   }
 }

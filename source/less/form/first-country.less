@@ -10,12 +10,12 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr 34px;
     width: 100%;
-    margin: 27px 0 0;
+    margin: 27px 0 0 -5px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 60px 182px;
-    margin: 75px 0 0;
+    grid-template-columns: 1fr 16px 228px;
+    margin: 66px 0 0;
   }
 }
 
@@ -26,9 +26,9 @@
 
 .first-country__border {
   position: relative;
-  min-height: 206px;
+  min-height: 275px;
   height: 100%;
-  top: 10px;
+  top: 14px;
   grid-column: 1/2;
   grid-row: 1/4;
   border: 2px solid @base-text-color;
@@ -42,6 +42,7 @@
     border: none;
     top: 30px;
     right: 0;
+    min-height: 255px;
     height: 100%;
     border-right: 2px solid @base-text-color;
   }
@@ -49,7 +50,8 @@
   @media (min-width: @desktop-width) {
     grid-column: 2/3;
     top: 23px;
-    min-height: 256px;
+    min-height: 260px;
+    // justify-self: start;
   }
 }
 
@@ -83,22 +85,25 @@
   position: relative;
   grid-column: 2/3;
   grid-row: 1/2;
+  // min-height: 30px;
+  padding-top: 4px;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/2;
     grid-row: 1/2;
     min-height: 47px;
+    padding: 0;
   }
 }
 
 .first-country__name {
   position: relative;
   margin: 0;
-  left: 8px;
+  left: 10px;
   // top: -50%;
   // transform: translateY(-50%);
   // white-space: nowrap;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
@@ -112,9 +117,11 @@
     position: relative;
     width: 400px;
     // white-space: wrap;
-    top: 10px;
+    top: 8px;
+    left: 0;
     transform: translateY(0);
     font-size: 30px;
+    font-weight: 700;
     line-height: 30px;
     letter-spacing: 0;
   }
@@ -124,30 +131,32 @@
   position: relative;
   grid-column: 3/4;
   grid-row: 1/2;
+  justify-self: end;
+  align-self: center;
 
   @media (min-width: @tablet-width) {
     grid-column: 2/3;
     grid-row: 1/2;
     min-height: 47px;
-    justify-self: end;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 3/4;
+    align-self: start;
     justify-self: start;
+    top: 8px;
   }
 }
 
 .first-country__flag {
   position: relative;
   right: 0;
-  // top: -50%;
+  // top: 0;
   // transform: translateY(-50%);
 
   @media (min-width: @tablet-width) {
     position: relative;
     justify-self: end;
-    // top: 0;
     transform: translate(0, 0);
     width: 70px;
     height: 47px;
@@ -163,14 +172,18 @@
   grid-column: 2/4;
   grid-row: 2/3;
   position: relative;
+  margin-top: 5px;
 
   @media (min-width: @tablet-width) {
     grid-column: 1/3;
     grid-row: 2/3;
+    margin-left: 5px;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 1/2;
+    margin-left: 0;
+    width: 728px;
   }
 }
 
@@ -182,10 +195,10 @@
   height: 220px;
   border: 1px solid @border-gray;
   border-radius: 4px;
-  padding: 12px 14px;
+  padding: 9px 13px;
   box-sizing: border-box;
   outline: none;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -211,7 +224,7 @@
     padding: 18px 19px;
     grid-column: 1/3;
     grid-row: 2/3;
-    width: 100%;
+    width: 500px;
     height: 140px;
     font-size: 20px;
     line-height: 23px;
@@ -220,11 +233,13 @@
 
   @media (min-width: @desktop-width) {
     grid-column: 1/2;
+    height: 140px;
+    width: 728px;
   }
 }
 
 .first-country__about-my-plans::placeholder {
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
@@ -273,7 +288,7 @@
 
 .first-country__error-message-text {
   margin: 0;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 20px;

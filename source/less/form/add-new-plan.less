@@ -7,7 +7,7 @@
 }
 
 .add-new-plan__main {
-  padding: 30px 25px 73px;
+  padding: 27px 25px 73px;
   background-color: @deep-gray-background;
   border-radius: 30px 30px 0 0;
   margin-bottom: -30px;
@@ -15,10 +15,10 @@
   @media (min-width: @tablet-width) {
     border-radius: 40px 40px 0 0;
     margin-bottom: -40px;
-    padding: 53px 74px 103px;
+    padding: 53px 74px 123px;
 
     @media (min-width: @desktop-width) {
-      // padding: 54px 60px 124px 124px;
+      padding: 50px 60px 134px;
       border-radius: 60px 60px 0 0;
       // margin-bottom: -60px;
       box-sizing: border-box;
@@ -37,7 +37,7 @@
 
 .add-new-plan__header {
   margin: 0;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -49,15 +49,25 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 50px;
+  }
 }
 
 .add-new-plan__spots {
   display: flex;
   justify-content: space-between;
   width: 47px;
+  margin-top: 2px;
 
   @media (min-width: @tablet-width) {
     width: 76px;
+    transform: translateX(25%);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 

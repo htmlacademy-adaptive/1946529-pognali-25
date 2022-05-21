@@ -9,14 +9,22 @@
     <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/favicons/apple-favicon-180x180.png"> <!-- 180×180 -->
     <link rel="manifest" href="pognali.webmanifest">
+    <link rel="preload" href="fonts/bloggersans-400.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-bold-700.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-bolditalic-700.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-italic-400.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-light-300.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-lightitalic-300.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-medium-500.woff2" as="font">
+    <link rel="preload" href="fonts/bloggersans-mediumitalic-500.woff2" as="font">
   </head>
 <body class="page__body">
   <svg style="display: none;">
-      <symbol width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" id="plus-icon">
+      <symbol viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" id="plus-icon">
       <line y1="6.69995" x2="14" y2="6.69995" stroke-width="2"/>
       <line x1="6.7" y1="14" x2="6.7" stroke-width="2"/>
     </symbol>
-    <symbol width="14" height="14" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg" id="minus-icon">
+    <symbol viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg" id="minus-icon">
         <line y1="1" x2="14" y2="1" stroke-width="2"/>
     </symbol>
     <symbol viewBox="0 0 10 19" xmlns="http://www.w3.org/2000/svg" id="calendar-arrow">
@@ -112,7 +120,8 @@
           </picture>
               <!-- </div> -->
             <!-- </div> -->
-          <button class="traveler-about__button">Сменить фото</button>
+          <button class="traveler-about__button traveler-about__button--until-tablet">Сменить фото</button>
+          <button class="traveler-about__button traveler-about__button--desktop">Фото</button>
           <div class="traveler-about__tags">
             <p class="traveler-about__block-header traveler-about__block-header--tags">Тэги</p>
             <textarea class="traveler-about__tags-text">#бургер #бар #футбол #концерт #крафт</textarea>
@@ -157,14 +166,14 @@
           <ul class="traveler-plans-list">
             <li class="traveler-plans-list__item">
               <p class="traveler-plans-list__item-header"><span class="traveler-plans-list__item-header-number">1.</span> Франция, Италия</p>
-              <p class="traveler-plans-list__item-companions">3 попутчика</p>
-              <p class="traveler-plans-list__item-date">26 мар — 29 мар</p>
+              <p class="traveler-plans-list__item-companions traveler-plans-list__item-companions--first">3 попутчика</p>
+              <p class="traveler-plans-list__item-date">26 мар -- 29 мар</p>
               <a href="edit.html" class="traveler-plans-list__link">Изменить</a>
             </li>
             <li class="traveler-plans-list__item">
               <p class="traveler-plans-list__item-header"><span class="traveler-plans-list__item-header-number">2.</span> Таиланд, Индонезия</p>
               <p class="traveler-plans-list__item-companions">1 попутчик</p>
-              <p class="traveler-plans-list__item-date">1 июл — 15 июл</p>
+              <p class="traveler-plans-list__item-date">1 июл -- 15 июл</p>
               <a href="edit.html" class="traveler-plans-list__link">Изменить</a>
             </li>
           </ul>
@@ -241,12 +250,19 @@
                     </div>
                     <div class="arrival-date__table-header">
                       <p class="arrival-date__table-header-day">П</p>
+                      <span class="arrival-date__table-header-day-tablet">Пн</span>
                       <p class="arrival-date__table-header-day">В</p>
+                      <span class="arrival-date__table-header-day-tablet">Вт</span>
                       <p class="arrival-date__table-header-day">С</p>
+                      <span class="arrival-date__table-header-day-tablet">Ср</span>
                       <p class="arrival-date__table-header-day">Ч</p>
+                      <span class="arrival-date__table-header-day-tablet">Чт</span>
                       <p class="arrival-date__table-header-day">П</p>
+                      <span class="arrival-date__table-header-day-tablet">Пт</span>
                       <p class="arrival-date__table-header-day arrival-date__table-header-day--weekend">С</p>
+                      <span class="arrival-date__table-header-day-tablet arrival-date__table-header-day--weekend-tablet">Сб</span>
                       <p class="arrival-date__table-header-day arrival-date__table-header-day--weekend">В</p>
+                      <span class="arrival-date__table-header-day-tablet arrival-date__table-header-day--weekend-tablet">Вс</span>
                     </div>
                     <table class="arrival-date__calendar">
                       <tr class="arrival-date__calendar-row">
@@ -432,7 +448,7 @@
                     </table>
                     <a href="#step-2" class="new-plan-list__next-button">Следующий шаг</a>
                   </li>
-                  <li class="new-plan-list__item route" id="step-2">
+                  <li class="new-plan-list__item new-plan-list__item--step-two route" id="step-2">
                     <ul class="new-plan-list__item-navigation">
                       <li class="new-plan-list__item-navigation-text">Даты</li>
                       <li class="new-plan-list__item-navigation-text new-plan-list__item-navigation-text--current">Маршрут</li>
@@ -441,7 +457,7 @@
                     <span class="new-plan-list__item-header">
                       <p class="new-plan-list__item-header-step">Шаг 2.</p>Маршрут
                     </span>
-                  <p class="new-plan-list__item-text">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+                  <p class="new-plan-list__item-text new-plan-list__item-text--step-two">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
                   <div class="new-plan-list__country-wrapper">
                     <div class="choosen-country">
                       <select class="choosen-country__select" name="choose-first-country" id="choose-first-country">
@@ -654,7 +670,7 @@
                     <a href="#step-1" class="new-plan-list__previous-button">На шаг назад</a>
                   </div>
                 </li>
-                <li class="new-plan-list__item recreation" id="step-3">
+                <li class="new-plan-list__item new-plan-list__item--step-third recreation" id="step-3">
                   <ul class="new-plan-list__item-navigation">
                     <li class="new-plan-list__item-navigation-text">Даты</li>
                     <li class="new-plan-list__item-navigation-text">Маршрут</li>
@@ -663,7 +679,7 @@
                   <span class="new-plan-list__item-header">
                     <p class="new-plan-list__item-header-step">Шаг 3.</p>Развлечения
                   </span>
-                  <p class="new-plan-list__item-text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                  <p class="new-plan-list__item-text new-plan-list__item-text--step-third">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
                   <div class="new-plan-list__recreation-wrapper">
                     <div class="first-country">
                       <span class="first-country__border">
@@ -698,7 +714,7 @@
                       </div>
                     </div>
                     <br>
-                    <div class="new-plan-list__buttons-wrapper">
+                    <div class="new-plan-list__buttons-wrapper new-plan-list__buttons-wrapper--step-third">
                       <button class="new-plan-list__next-button new-plan-list__send-button">Отправить</button>
                       <a href="#step-2" class="new-plan-list__previous-button">На шаг назад</a>
                     </div>

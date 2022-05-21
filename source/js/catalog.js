@@ -183,8 +183,8 @@ console.log(window.pageYOffset);
         mainHeader.style.position = 'relative';
         headerTop.style.paddingTop = 46 + 'px';
         headerTop.style.paddingBottom = 0;
-        headerTop.style.background = '#161c35';
-        bgWrapper.style.background = '#161c35';
+        headerTop.style.background = '#192144';
+        bgWrapper.style.background = '#192144';
         logoDarkg.classList.add('visually-hidden');
         logoLight.classList.remove('visually-hidden');
         mainMenuList.classList.remove('main-menu__list--change-before');
@@ -225,6 +225,13 @@ dottedButton.addEventListener('click', ()=> {
   catalogCountryList.classList.remove('visually-hidden');
   catalogTableList.classList.remove('visually-hidden');
   modalCloseButton.classList.remove('visually-hidden');
+  tableListActive.classList.remove('visually-hidden');
+  tableListWrapper.classList.remove('visually-hidden--secondary');
+  modalCloseButton.classList.remove('visually-hidden--secondary');
+  if (document.body.clientWidth >= 768 && document.body.clientWidth < 1440) {
+    modalWrapper.style.paddingBottom = 76 + 'px';
+  }
+
   // Заменяем текст после ОТКРЫТИЯ окна фильтра
   showAllFilter.textContent = showAllFilter.textContent.replace = ('Показать все', 'Свернуть');
 });
@@ -239,6 +246,9 @@ closeButton.addEventListener('click', ()=> {
   catalogTableList.classList.add('visually-hidden');
   modalCloseButton.classList.add('visually-hidden');
   // Заменяем текст после закрытия окна фильтра
+  if (document.body.clientWidth >= 768 && document.body.clientWidth < 1440) {
+    modalWrapper.style.paddingBottom = 56 + 'px';
+  }
   showAllFilter.textContent = showAllFilter.textContent.replace = ('Свернуть', 'Показать все');
 });
 
@@ -295,7 +305,9 @@ modalCloseButton.addEventListener('click', (event)=> {
   modalCloseButton.classList.remove('visually-hidden');
   modalCloseButton.classList.add('visually-hidden--secondary');
   showAllFilter.textContent = showAllFilter.textContent.replace = ('Свернуть', 'Показать все');
-  // modalWrapper.style.paddingBottom = 56 + 'px';
+  if (document.body.clientWidth >= 768 && document.body.clientWidth < 1440) {
+    modalWrapper.style.paddingBottom = 56 + 'px';
+  }
 });
 
 // Открытие окна фильтра при нажатии на три иконку слева
@@ -309,10 +321,9 @@ filterIconLeft.addEventListener('click', ()=> {
 
 // Обработчик onload
 
-let loadCalculate = function() {
+// let loadCalculate = function() {
 
   if (document.body.clientWidth < 768) {
-
     countryList.classList.add('visually-hidden');
   }
 
@@ -328,9 +339,9 @@ let loadCalculate = function() {
     tableListActive.classList.remove('visually-hidden');
     mainMenu.classList.remove('visually-hidden');
   }
-}
+// }
 
-loadCalculate();
+// loadCalculate();
 
 
 // Показываем меню при изменении ширины экрана больше 768px + изменяем стили верхнего меню при скроле

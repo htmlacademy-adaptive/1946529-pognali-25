@@ -1,19 +1,18 @@
 .companions-cards {
-  padding: 28px 25px 76px;
+  padding: 12px 25px 76px;
   background-color: @light-background;
   margin-bottom: -30px;
-  // grid-column: 1/2;
 
-  // @media (min-width: @tablet-width) {
-  //   // grid-row: 1/2;
-  // }
+  @media (min-width: @tablet-width) {
+    padding: 26px 38px 90px;
+  }
 
   @media (min-width: @desktop-width) {
     grid-column: 1/2;
     grid-row: 1/2;
     justify-self: end;
     // margin: 0;
-    padding-bottom: 46px;
-    margin: 40px 0 0;
+    padding: 24px 38px 82px 30px;
+    margin: 40px 20px 0 0;
   }
 }

@@ -89,13 +89,13 @@ headerTop.classList.remove('main-header__top--nojs');
     }
   });
 
-console.log(window.pageYOffset);
+// console.log(window.pageYOffset);
 
   if (document.body.clientWidth < 768) {
 
     window.addEventListener('scroll', ()=> {
       if (window.pageYOffset >= 200) {
-        console.log(window.pageYOffset);
+        // console.log(window.pageYOffset);
         headerTop.classList.add('main-header__check-scrol');
         headerTop.classList.add('main-header__burger-menu-active');
         logoDarkg.classList.remove('visually-hidden');
@@ -123,7 +123,7 @@ console.log(window.pageYOffset);
 
       window.addEventListener('scroll', ()=> {
         if (window.pageYOffset >= 200) {
-          console.log(window.pageYOffset);
+          // console.log(window.pageYOffset);
           headerTop.classList.add('main-header__check-scrol');
           headerTop.classList.add('main-header__burger-menu-active');
           logoDarkg.classList.remove('visually-hidden');
@@ -187,8 +187,8 @@ console.log(window.pageYOffset);
         mainHeader.style.position = 'relative';
         headerTop.style.paddingTop = 46 + 'px';
         headerTop.style.paddingBottom = 0;
-        headerTop.style.background = '#161c35';
-        bgWrapper.style.background = '#161c35';
+        headerTop.style.background = '#192144';
+        bgWrapper.style.background = '#192144';
         logoDarkg.classList.add('visually-hidden');
         logoLight.classList.remove('visually-hidden');
         mainMenuList.classList.remove('main-menu__list--change-before');
@@ -218,7 +218,7 @@ let resizeOnload = function() {
 
     if (!headerTop.classList.contains('main-header__burger-menu-active')) {
       mainMenu.classList.remove('visually-hidden');
-      console.log('hello')
+      // console.log('hello')
     }
   }
 }

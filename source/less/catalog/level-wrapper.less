@@ -14,7 +14,8 @@
   @media (min-width: @desktop-width) {
     grid-column: 7/8;
     grid-row: 3/4;
-    padding: 36px 0 0;
+    padding: 36px 0 0 5px;
+    justify-self: start;
   }
 }
 
@@ -24,7 +25,7 @@
   display: block;
   background-color: @base-light;
   padding: 0 10px 0;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 400;
   font-style: normal;
@@ -32,9 +33,9 @@
   letter-spacing: 0;
   text-align: left;
   color: @base-grey;
-  text-transform: uppercase;
+  text-transform: lowercase;
   right: 12px;
-  transform: translate(0, calc(-50% - 2px));
+  transform: translate(2px, calc(-50% - 2px));
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -53,5 +54,30 @@
     padding: 0;
     width: 60px;
     height: 60px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.level-wrapper--smolov {
+  @media (min-width: @desktop-width) {
+    padding-top: 26px;
+  }
+}
+
+.level-wrapper__level-image--mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.level-wrapper__level-image--tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }

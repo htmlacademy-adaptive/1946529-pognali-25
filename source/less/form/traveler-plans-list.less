@@ -1,11 +1,11 @@
 .traveler-plans-list {
-  margin: 29px 0 0;
+  margin: 32px 0 0;
   list-style-type: none;
   padding: 0;
 }
 
 .traveler-plans-list__item {
-  padding: 24px 25px;
+  padding: 22px 23px 23px;
   background-color: @base-light;
   border-radius: 10px;
   box-sizing: border-box;
@@ -17,8 +17,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    padding: 40px 42px 38px;
+    grid-template-columns: 3fr 1fr 1.2fr 1fr;
+    padding: 35px 42px 38px;
   }
 }
 
@@ -39,7 +39,7 @@
 .traveler-plans-list__item-date {
   margin: 0;
   color: @base-text-color;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-style: normal;
 }
 
@@ -110,6 +110,8 @@
 }
 
 .traveler-plans-list__item-companions {
+  padding: 2px 3px 0;
+
   @media (min-width: @tablet-width) {
     padding: 20px 20px 15px;
     text-align: center;
@@ -119,10 +121,23 @@
     padding: 0;
     grid-column: 2/3;
     text-align: left;
+    margin-left: 18px;
+  }
+}
+
+.traveler-plans-list__item-companions--first {
+  @media (min-width: @tablet-width) {
+    margin-left: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 18px;
   }
 }
 
 .traveler-plans-list__item-date {
+  padding: 5px 3px 0;
+
   @media (min-width: @tablet-width) {
     padding: 20px 0 15px 0;
     text-align: center;
@@ -137,8 +152,8 @@
 
 .traveler-plans-list__link {
   display: block;
-  margin: 24px 0 0;
-  font-family: "Blogger Sans", sans-serif;
+  margin: 24px 0 0 2px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 14px;
   font-weight: 500;
@@ -163,6 +178,8 @@
     margin: 0;
     padding: 20px 20px 15px;
     text-align: center;
+    letter-spacing: 0.1em;
+    margin-left: 20px;
   }
 
   @media (min-width: @desktop-width) {
