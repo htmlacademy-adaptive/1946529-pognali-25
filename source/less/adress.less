@@ -2,15 +2,15 @@
 
 .adress {
   position: relative;
-  padding: 60px 25px 30px;
-  margin-top: -30px;
+  padding: 64px 25px 34px;
+  margin-top: -35px;
   background-color: @base-yellow;
   border-radius: 0 0 30px 30px;
 
   @media (min-width: @tablet-width) {
-    padding: 88px 75px 84px;
-    margin-top: -40px;
-    border-radius: 0 0 40px 40px;
+    padding: 108px 75px 84px;
+    margin-top: -60px;
+    border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -23,9 +23,9 @@
 .adress__wrapper {
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
-    width: 1082px;
+    width: 1020px;
     margin: 0 auto;
     box-sizing: border-box;
   }
@@ -42,11 +42,13 @@
 }
 
 .adress__icon-image {
-  padding: 12px 14px;
+  padding: 12px 14px 13px 15px;
   background: @secondary-background-dark;
   border-radius: 50%;
 
   @media (min-width: @tablet-width) {
+    width: 23px;
+    height: 32px;
     padding: 19px 22px;
   }
 
@@ -59,7 +61,7 @@
 
 .adress__text {
   margin: 0 0 0 16px;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -67,6 +69,7 @@
   letter-spacing: 0;
   text-align: left;
   color: @base-text-color;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     margin-left: 26px;

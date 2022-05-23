@@ -8,17 +8,17 @@
 }
 
 .interesting__main {
-  padding: 100px 25px 25px;
+  padding: 98px 25px 22px;
   margin-top: -30px;
   background-color: @main-background-dark;
 
   @media (min-width: @tablet-width) {
-    padding: 116px 75px 60px;
-    margin-top: -40px;
+    padding: 132px 75px 54px;
+    margin-top: -60px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 169px 133px 70px;
+    padding: 165px 133px 66px;
     // margin-top: -60px;
     width: 1440px;
     margin: -60px auto 0;
@@ -48,7 +48,7 @@
 }
 
 .interesting__email {
-  margin-top: 30px;
+  margin-top: 32px;
   position: relative;
   display: flex;
   width: 270px;
@@ -68,8 +68,8 @@
   outline: none;
   margin: 0;
   box-sizing: border-box;
-  padding: 22px 25px;
-  font-family: "Blogger Sans", sans-serif;
+  padding: 10px 25px 15px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   font-style: normal;
@@ -100,7 +100,7 @@
     width: 90%;
     min-height: 80px;
     border-radius: 20px 0 0 20px;
-    padding: 28px 36px;
+    padding: 24px 36px 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -109,7 +109,7 @@
 }
 
 .interesting__email-text::placeholder {
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   font-style: normal;
@@ -145,6 +145,7 @@
   outline: none;
   box-sizing: border-box;
   margin: 0;
+  padding-right: 4px;
   cursor: pointer;
 
   &:hover {
@@ -167,7 +168,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 330px;
+    min-width: 325px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -187,7 +188,7 @@
     position: absolute;
     display: block;
     // border-radius: 10px;
-    font-family: "Blogger Sans", sans-serif;
+    font-family: "Blogger Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0;
@@ -203,4 +204,22 @@
 
 .interesting__email-button:active::before {
   opacity: 0.3;
+}
+
+.interesting__wrapper .interesting__wrapper__br-first {
+  @media (max-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.interesting__wrapper .brinteresting__wrapper__br-second {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }

@@ -17,7 +17,7 @@
   background-color: @base-light;
   border: 1px solid @border-gray;
   border-radius: 4px;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -26,28 +26,25 @@
   color: @base-text-color;
   outline: none;
   text-transform: uppercase;
-  padding: 11px 10px;
+  padding: 10px 5px;
   box-sizing: border-box;
 
   &:hover {
     border: 1px solid @grey-hover;
   }
 
-  // &:hover ~ .companions-persons__control-element {
-  //   stroke: @grey-hover;
-  // }
-
-  // &:active {
-  //   border: 2px solid @secondary-text-dark;
-  // }
-
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
-    width: 100%;
+    width: 370px;
     min-height: 70px;
-    padding: 27px 23px 23px 25px;
+    padding: 20px 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 725px;
+    padding: 20px 16px;
   }
 }
 
@@ -62,5 +59,9 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 725px;
   }
 }

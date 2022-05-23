@@ -3,7 +3,7 @@
 .arrival-date__header {
   display: grid;
   position: relative;
-  margin: 25px auto 22px;
+  margin: 6px auto 15px;
   width: 221px;
   min-height: 42px;
   border-top: 1px solid @secondary-border-gray;
@@ -11,9 +11,13 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    margin: 36px 0 0;
+    margin: 18px 0 0;
     min-height: 86px;
     justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 0;
   }
 }
 
@@ -21,7 +25,7 @@
   display: block;
   align-self: center;
   margin: 0;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 700;
   font-style: normal;
@@ -47,6 +51,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  opacity: 0.3;
 }
 
 .arrival-date__header-button-icon {
@@ -68,12 +73,30 @@
 }
 
 .arrival-date__header-button--prev {
-  left: 0;
-  transform: translateY(-50%) rotate(180deg);
+  left: -5px;
+  transform: translateY(-55%) rotate(180deg);
+
+  @media (min-width: @tablet-width) {
+    left: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -10px;
+    top: 55%;
+  }
 }
 
 .arrival-date__header-button--next {
-  right: 0;
+  right: -5px;
+
+  @media (min-width: @tablet-width) {
+    right: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 0;
+    top: 55%;
+  }
 }
 
 // Таблица, календарь
@@ -85,6 +108,7 @@
   min-height: 31px;
   justify-items: center;
   align-items: center;
+  // padding-bottom: 1px;
   word-break: break-word;
 
   @media (min-width: @tablet-width) {
@@ -93,27 +117,83 @@
     align-items: end;
     word-break: break-word;
   }
+
+  @media (min-width: @desktop-width) {
+    align-items: center;
+  }
 }
 
 .arrival-date__table-header-day,
 .arrival-date__table-header-day--weekend {
   display: block;
   margin: 0;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
   line-height: 18px;
   letter-spacing: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    display: none;
+  }
 }
 
 .arrival-date__table-header-day {
   color: @base-grey;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 10px;
+    display: none;
+  }
 }
 
 .arrival-date__table-header-day--weekend {
   color: @bright-orange;
 }
+
+.arrival-date__table-header-day-tablet,
+.arrival-date__table-header-day--weekend-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin: 0;
+    font-family: "Blogger Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-self: start;
+    margin-left: 15px;
+  }
+}
+
+.arrival-date__table-header-day-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    color: @base-grey;
+    margin-bottom: 10px;
+  }
+}
+
+.arrival-date__table-header-day--weekend-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    color: @bright-orange;
+  }
+}
+
 
 // Календарь
 
@@ -126,8 +206,13 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
-    min-height: 441px;
+    min-width: 540px;
+    min-height: 414px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 996px;
+    min-height: 420px;
   }
 }
 

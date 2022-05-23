@@ -1,15 +1,16 @@
 .companions-level__input-wrpper {
   position: relative;
   display: flex;
-  margin-top: 5px;
+  margin: 5px 0 0;
 
   @media (min-width: @tablet-width) {
     grid-column: 3/4;
+    margin: 12px 2px 0 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    // margin: 0 auto;
+    margin: 20px auto 0;
     justify-content: center;
   }
 }
@@ -22,7 +23,7 @@
   box-sizing: border-box;
   border: 1px solid @border-gray;
   border-collapse: collapse;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 13px;
@@ -46,6 +47,14 @@
   @media (min-width: @tablet-width) {
     width: 73px;
     height: 46px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 94px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 

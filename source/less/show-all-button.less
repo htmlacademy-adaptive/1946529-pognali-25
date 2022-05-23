@@ -5,7 +5,7 @@
   padding: 22px 23px;
   background-color: @base-yellow;
   border-radius: 10px;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -38,6 +38,7 @@
     font-size: 24px;
     line-height: 24px;
     padding: 0 33px;
+    min-height: 82px;
   }
 }
 
@@ -59,7 +60,7 @@
     min-width: 275px;
     // padding: 0 33px;
     box-sizing: border-box;
-    min-height: 80px;
+    min-height: 82px;
   }
 
   @media (min-width: @desktop-width) {
@@ -68,10 +69,13 @@
 }
 
 .show-all-button--country {
-  margin-top: 20px;
+  margin-top: 18px;
+  padding-right: 19px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 46px;
+    margin-top: 35px;
+    padding: 0 28px 0 33px;
+    min-height: 82px;
   }
 
   @media (min-width: @desktop-width) {
@@ -80,21 +84,22 @@
     min-width: 275px;
     min-height: 80px;
     display: grid;
-    align-items: center;
-    // justify-self: center;
     padding: 0;
     margin: 0 242px 0 0;
     justify-self: end;
-    align-self: center;
+    align-self: end;
+    margin-bottom: 0;
   }
 }
 
 .show-all-button--adress {
   display: grid;
   grid-template-columns: 8fr 1fr;
-  margin-top: 32px;
+  margin-top: 34px;
   border: 3px solid @main-background-dark;
   box-sizing: border-box;
+  min-height: 62px;
+  padding: 0 22px 0 20px;
 
   &:hover {
     background-color: @main-background-dark;
@@ -118,8 +123,9 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: 44px;
+    margin-top: 42px;
     padding: 0 33px;
+    min-height: 72px;
   }
 
   @media (min-width: @desktop-width) {
@@ -130,12 +136,18 @@
   }
 }
 
+.show-all-button__text--tablet {
+  min-height: 70px;
+}
+
 .show-all-button--adress .show-all-button__text {
-  // padding: 0 23px 0 0;
+  padding: 0 13px 0 0;
+  min-height: 52px;
   min-width: 200px;
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     padding: 0;
+    min-height: 72px;
   }
 }
 
@@ -148,10 +160,14 @@
     width: 276px;
     min-height: 80px;
     border-radius: 20px;
-    font-family: "Blogger Sans", sans-serif;
+    font-family: "Blogger Sans", "Arial", sans-serif;
     font-size: 24px;
     line-height: 24px;
     margin-top: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 87px;
   }
 }
 
@@ -162,8 +178,13 @@
 }
 
 .show-all-button--companions {
+  margin-top: 18px;
+  padding-right: 19px;
+
   @media (min-width: @tablet-width) {
-    margin-top: 81px;
+    margin-top: 75px;
+    padding-right: 35px;
+    margin-right: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -174,9 +195,19 @@
     padding: 0;
     display: grid;
     align-items: center;
-    margin: 30px 0 0 70px;
+    margin: 65px 0 0 70px;
   }
 }
+
+// .show-all-button--companions .show-all-button__text {
+//   @media (min-width: @desktop-width) {
+//     padding: 0 33px;
+//   }
+// }
+
+// .show-all-button__text--companions {
+//   min-height: 70px;
+// }
 
 .show-all-button__icon-wrapper {
   align-self: center;

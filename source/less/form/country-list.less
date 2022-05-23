@@ -34,29 +34,30 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-height: 42px;
+  min-height: 40px;
   background-color: @base-text-color;
-  padding: 14px 17px;
+  padding: 12px 17px;
   box-sizing: border-box;
   border-radius: 4px 4px 0 0;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 368px;
     min-height: 70px;
-    padding: 0 25px;
+    padding: 0 24px;
     grid-column: 1/2;
     grid-row: 1/2;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 1/3;
+    width: 728px;
   }
 }
 
 .country-list__header-text {
   display: block;
   margin: 0;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -94,7 +95,8 @@
 // Таблица
 
 .country-list__table-wrapper {
-  width: 221px;
+  // width: 221px;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     padding: 35px 80px 33px 27px;
@@ -103,13 +105,13 @@
     border-right: 1px solid @border-gray;
     grid-column: 1/2;
     grid-row: 2/3;
-    width: 376px;
+    width: 368px;
     box-shadow: 0 8px 16px rgba(54, 80, 148, 0.2);
   }
 
   @media (min-width: @desktop-width) {
     width: 490px;
-    padding: 20px 76px 18px 24px;
+    padding: 20px 86px 18px 10px;
   }
 }
 
@@ -117,6 +119,7 @@
   border: 1px solid @border-gray;
   border-collapse: collapse;
   background-color: @base-light;
+  min-height: 203px;
 
   @media (min-width: @tablet-width) {
     min-width: 262px;
@@ -132,17 +135,19 @@
 
 .country-list__table-cell {
   border: 1px solid @border-gray;
-  width: 43px;
-  height: 41px;
+  width: 45px;
+  height: 40px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 55px;
-    height: 70px;
+    height: 68px;
   }
 
   @media (min-width: @desktop-width) {
     border-radius: 4px;
+    width: 60px;
+    height: 70px;
 
     &:hover {
       border: 1px solid @grey-hover;
@@ -160,7 +165,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;

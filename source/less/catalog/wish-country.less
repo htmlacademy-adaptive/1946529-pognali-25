@@ -1,5 +1,5 @@
 .wish-country-list {
-  padding: 25px 0 22px 25px;
+  padding: 25px 0 20px 25px;
   list-style-type: none;
   grid-column: 1/4;
 
@@ -7,23 +7,62 @@
     display: flex;
     border-top: 1px solid @light-background;
     width: 100%;
-    padding: 26px 0 0;
-    margin-top: 31px;
+    padding: 26px 0 0 3px;
+    margin-top: 22px;
   }
 
   @media (min-width: @desktop-width) {
     display: block;
     padding: 0;
-    margin-top: 49px;
-    // margin: 0;
+    margin: 46px 0 0 50px;
+    grid-column: 6/8;
+    grid-row: 1/3;
     border: 0;
+    width: 200px;
+  }
+}
+
+.wish-country-list--demin {
+  margin-bottom: 6px;
+
+  @media (min-width: @desktop-width) {
+    margin: -3px 0 0 52px;
+  }
+}
+
+.wish-country-list--smolov {
+  margin-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 28px;
+    padding-left: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 43px;
+    padding-left: 1px;
+  }
+}
+
+.wish-country-list--rogovaya {
+  margin-bottom: 7px;
+  padding-top: 23px;
+  padding-left: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 28px;
+    padding-left: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: -4px 0 0 51px;
   }
 }
 
 .wish-country-list__item {
   display: flex;
   align-items: center;
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 500;
   font-style: normal;
@@ -34,10 +73,17 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    width: 180px;
+    max-width: 210px;
     // word-break: break-all;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 180px;
+    max-width: 200px;
+    justify-self: start;
+    margin: 5px 0 0 0;
   }
 }
 
@@ -45,14 +91,26 @@
   margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 26px 0 0;
+    margin: 0 24px 0 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 14px;
+    margin: 5px 0 14px 0;
   }
 }
 
 .wish-country-list__item-flag {
   margin-right: 14px;
+  width: 26px;
+  height: 18px;
+
+  @media (min-width: @tablet-width) {
+    width: 36px;
+    height: 24px;
+    margin-right: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 17px;
+  }
 }

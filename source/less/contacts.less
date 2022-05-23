@@ -2,13 +2,13 @@
 
 .contacts {
   position: relative;
-  padding: 5px 25px 25px;
+  padding: 5px 25px 30px;
   background-color: @main-background-dark;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
   z-index: 3;
 
   @media (min-width: @tablet-width) {
-    border-radius: 0 0 40px 40px;
+    border-radius: 0 0 60px 60px;
     padding: 0 75px 60px;
   }
 
@@ -22,6 +22,12 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contacts__wrapper br {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -47,7 +53,7 @@
 
   @media (min-width: @desktop-width) {
     justify-self: end;
-    margin: 0 55px 0 0;
+    margin: 0 105px 0 0;
     // min-height: 90px;
   }
 }
@@ -93,8 +99,8 @@
   display: flex;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin-left: 16px;
-  font-family: "Blogger Sans", sans-serif;
+  // margin-left: 16px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
@@ -114,7 +120,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-left: 23px;
+    // margin-left: 23px;
     font-size: 28px;
     line-height: 28px;
   }
@@ -163,23 +169,26 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 0 55px;
+    margin: 0 0 0 5px;
     // min-height: 90px;
   }
 }
 
 .contacts__email-icon-wrapper {
-  padding: 14px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   background: @secondary-background-dark;
   border-radius: 50%;
+  min-width: 45px;
+  min-height: 45px;
+  box-sizing: border-box;
+  margin-right: 16px;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
-    display: grid;
     min-width: 68px;
     min-height: 68px;
-    align-items: center;
-    justify-content: center;
     margin-right: 22px;
   }
 
@@ -191,17 +200,20 @@
 }
 
 .contacts__phone-icon-wrapper {
-  padding: 14px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   background: @secondary-background-dark;
   border-radius: 50%;
+  min-width: 45px;
+  min-height: 45px;
+  box-sizing: border-box;
+  margin-right: 16px;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
-    display: grid;
     min-width: 68px;
     min-height: 68px;
-    align-items: center;
-    justify-content: center;
     margin-right: 22px;
   }
 

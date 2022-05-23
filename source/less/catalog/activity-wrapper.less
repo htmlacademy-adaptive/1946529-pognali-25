@@ -2,11 +2,16 @@
 
 .activity-wrapper {
   display: flex;
-  margin: 5px 0 20px;
+  margin: 6px 0 20px;
 
   @media (min-width: @tablet-width) {
     grid-column: 2/4;
-    margin: 0 0 0 18px;
+    margin: 4px 0 0 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2/4;
+    margin: 14px 0 20px;
   }
 }
 
@@ -24,6 +29,7 @@
   @media (min-width: @tablet-width) {
     width: 43px;
     height: 43px;
+    margin-right: 1px;
   }
 }
 
