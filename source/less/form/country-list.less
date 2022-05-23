@@ -34,22 +34,23 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-height: 42px;
+  min-height: 40px;
   background-color: @base-text-color;
-  padding: 13px 17px;
+  padding: 12px 17px;
   box-sizing: border-box;
   border-radius: 4px 4px 0 0;
 
   @media (min-width: @tablet-width) {
-    width: 370px;
+    width: 368px;
     min-height: 70px;
-    padding: 0 25px;
+    padding: 0 24px;
     grid-column: 1/2;
     grid-row: 1/2;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 1/3;
+    width: 728px;
   }
 }
 
@@ -104,13 +105,13 @@
     border-right: 1px solid @border-gray;
     grid-column: 1/2;
     grid-row: 2/3;
-    width: 370px;
+    width: 368px;
     box-shadow: 0 8px 16px rgba(54, 80, 148, 0.2);
   }
 
   @media (min-width: @desktop-width) {
     width: 490px;
-    padding: 20px 76px 18px 24px;
+    padding: 20px 86px 18px 10px;
   }
 }
 
@@ -118,6 +119,7 @@
   border: 1px solid @border-gray;
   border-collapse: collapse;
   background-color: @base-light;
+  min-height: 203px;
 
   @media (min-width: @tablet-width) {
     min-width: 262px;
@@ -139,11 +141,13 @@
 
   @media (min-width: @tablet-width) {
     width: 55px;
-    height: 70px;
+    height: 68px;
   }
 
   @media (min-width: @desktop-width) {
     border-radius: 4px;
+    width: 60px;
+    height: 70px;
 
     &:hover {
       border: 1px solid @grey-hover;

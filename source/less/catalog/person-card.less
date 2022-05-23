@@ -14,7 +14,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 28px 25px 22px 35px;
+    padding: 28px 25px 25px 35px;
     grid-template-columns: 1fr 1fr 1fr 1fr 153px;
     grid-template-rows: minmax(50px, auto);
     box-sizing: border-box;
@@ -33,7 +33,7 @@
 .person-card--smolov,
 .person-card--rogovaya {
   @media (min-width: @tablet-width) {
-    padding: 28px 25px 18px 35px;
+    padding: 28px 25px 22px 35px;
   }
 
   @media (min-width: @desktop-width) {
@@ -75,12 +75,24 @@
   }
 }
 
+.person-card__avatar-wrapper--demin {
+  padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 5px;
+  }
+}
+
 .person-card__favorite-icon-wrapper {
   position: absolute;
   display: grid;
   align-items: center;
   justify-content: center;
-  top: 50px;
+  top: 55px;
   right: -5px;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -123,6 +135,7 @@
     grid-column: 4/5;
     grid-row: 3/4;
     align-self: end;
+    top: 5px;
   }
 }
 
@@ -154,8 +167,8 @@
 }
 
 .person-card__favorite-icon {
-  width: 15px;
-  height: 14px;
+  width: 14px;
+  height: 13px;
   fill: @main-background-dark;
   fill-rule: evenodd;
   opacity: 0.7;
@@ -183,7 +196,7 @@
   max-width: 80px;
   text-align: left;
   color: @base-text-color;
-  padding: 12px 0 0 26px;
+  padding: 10px 0 0 26px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -216,11 +229,17 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 49px 0 0 9px;
+    padding: 45px 0 0 9px;
     grid-column: 3/5;
     grid-row: 1/2;
     min-width: 220px;
     max-width: 250px;
+  }
+}
+
+.person-card__item-name--demin {
+  @media (min-width: @desktop-width) {
+    padding-top: 44px;
   }
 }
 
@@ -255,7 +274,7 @@
     grid-column: 5/6;
     grid-row: 3/4;
     align-self: end;
-    padding: 0 0 30px 10px;
+    padding: 0 0 25px 10px;
   }
 }
 
@@ -343,6 +362,7 @@
 
 .person-card__hashtags--demin {
   padding-top: 10px;
+  padding-bottom: 23px;
 
   @media (min-width: @tablet-width) {
     padding-top: 4px;
@@ -420,13 +440,17 @@
   @media (min-width: @desktop-width) {
     grid-column: 3/4;
     grid-row: 3/4;
-    margin: 37px 0 8px;
+    margin: 37px 0 7px;
   }
 }
 
 .person-card__button--smolov {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 2px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-top: 26px;
+    margin-top: 30px;
   }
 }
 
@@ -448,7 +472,7 @@
   text-transform: lowercase;
 
   @media (min-width: @tablet-width) {
-    margin-top: 28px;
+    margin-top: 24px;
     left: 26px;
   }
 
@@ -474,6 +498,7 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  transform: translateX(-2%);
 
   &:hover {
     opacity: 0.7;
@@ -494,7 +519,7 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 20px;
-    margin: 66px auto 68px;
+    margin: 60px auto 68px;
     min-width: 186px;
     transform: translateX(-20%);
   }
@@ -515,14 +540,41 @@
 
 .person-card__favorite-icon-wrapper--demin,
 .person-card__favorite-icon-wrapper--rogovaya {
+  top: 55px;
+
+  @media (min-width: @tablet-width) {
+    top: 5px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-bottom: 6px;
+    top: 5px;
+  }
+}
+
+.person-card__favorite-icon-wrapper--rogovaya {
+  top: 55px;
+
+  @media (min-width: @tablet-width) {
+    top: 6px;
+    left: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 5px;
+    left: 3px;
   }
 }
 
 .person-card__favorite-icon-wrapper--smolov {
+  top: 55px;
+
+  @media (min-width: @tablet-width) {
+    top: 8px;
+    left: 1px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-bottom: 16px;
+    left: 4px;
   }
 }
 
@@ -533,13 +585,30 @@
   }
 }
 
-.person-card__item-distance--smolov {
+.person-card__item-distance--demin {
+  padding-bottom: 4px;
+
   @media (min-width: @desktop-width) {
-    padding-bottom: 36px;
+    padding-bottom: 28px;
   }
 }
 
-.person-card__button--demin,
+.person-card__item-distance--smolov {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 23px;
+  }
+}
+
+.person-card__button--demin {
+  @media (min-width: @desktop-width) {
+    margin-top: 20px;
+  }
+}
+
 .person-card__button--rogovaya {
   @media (min-width: @desktop-width) {
     margin-bottom: 0;

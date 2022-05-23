@@ -234,6 +234,7 @@ dottedButton.addEventListener('click', ()=> {
 
   // Заменяем текст после ОТКРЫТИЯ окна фильтра
   showAllFilter.textContent = showAllFilter.textContent.replace = ('Показать все', 'Свернуть');
+  showAllFilter.style.marginLeft = 5 + 'px';
 });
 
 closeButton.addEventListener('click', ()=> {
@@ -250,6 +251,7 @@ closeButton.addEventListener('click', ()=> {
     modalWrapper.style.paddingBottom = 56 + 'px';
   }
   showAllFilter.textContent = showAllFilter.textContent.replace = ('Свернуть', 'Показать все');
+  showAllFilter.style.marginLeft = -5 + 'px';
 });
 
 // Изменение цвета кнопки "Показать все" при наведении
@@ -305,6 +307,7 @@ modalCloseButton.addEventListener('click', (event)=> {
   modalCloseButton.classList.remove('visually-hidden');
   modalCloseButton.classList.add('visually-hidden--secondary');
   showAllFilter.textContent = showAllFilter.textContent.replace = ('Свернуть', 'Показать все');
+  showAllFilter.style.marginLeft = -5 + 'px';
   if (document.body.clientWidth >= 768 && document.body.clientWidth < 1440) {
     modalWrapper.style.paddingBottom = 56 + 'px';
   }

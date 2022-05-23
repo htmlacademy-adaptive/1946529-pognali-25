@@ -14,7 +14,7 @@
   @media (min-width: @desktop-width) {
     grid-column: 7/8;
     grid-row: 3/4;
-    padding: 36px 0 0 5px;
+    padding: 32px 0 0 9px;
     justify-self: start;
   }
 }
@@ -34,7 +34,7 @@
   text-align: left;
   color: @base-grey;
   text-transform: lowercase;
-  right: 12px;
+  right: 16px;
   transform: translate(2px, calc(-50% - 2px));
 
   @media (min-width: @tablet-width) {
@@ -62,9 +62,29 @@
   }
 }
 
+.level-wrapper--demin {
+  @media (min-width: @desktop-width) {
+    padding-top: 20px;
+  }
+}
+
 .level-wrapper--smolov {
+  @media (min-width: @tablet-width) {
+    padding-top: 6px;
+  }
+
   @media (min-width: @desktop-width) {
     padding-top: 26px;
+  }
+}
+
+.level-wrapper--rogovaya {
+  @media (min-width: @tablet-width) {
+    padding-top: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 38px;
   }
 }
 

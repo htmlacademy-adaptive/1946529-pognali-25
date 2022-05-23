@@ -3,19 +3,19 @@
 .tariffs {
   position: relative;
   background: @single-grey;
-  padding: 66px 25px 40px 49px;
+  padding: 66px 25px 39px 49px;
   margin-top: -30px;
   border-radius: 0 0 30px 30px;
 
   @media (min-width: @tablet-width) {
-    padding: 110px 40px 65px;
+    padding: 110px 40px 60px;
     margin-top: -40px;
     background-color: @light-background;
     border-radius: 0 0 60px 60px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 166px 130px;
+    padding: 160px 130px 164px;
     margin-top: -60px;
     border-radius: 0 0 60px 60px;
   }
@@ -39,7 +39,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 1177px;
+    min-width: 1181px;
     grid-template-columns: 1fr 1fr 1fr 99px;
     margin: 0 auto;
   }
@@ -60,7 +60,7 @@
   width: 130px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 73px;
+    margin-bottom: 70px;
     grid-column: 1/4;
     text-align: center;
     font-size: 45px;
@@ -84,7 +84,7 @@
     align-self: end;
     margin: 0;
     z-index: 1;
-    transform: translate(-49%, 16%);
+    transform: translate(-47%, 16%);
   }
 
   @media (min-width: @desktop-width) {
@@ -93,7 +93,7 @@
     align-self: center;
     width: 198px;
     height: 198px;
-    transform: translate(0);
+    transform: translate(-3%, 3%);
   }
 }
 
@@ -107,6 +107,7 @@
     grid-column: 1/4;
     grid-template-columns: 68px 1fr 200px;
     position: relative;
+    margin-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -131,6 +132,8 @@
   @media (min-width: @desktop-width) {
     width: 446px;
     height: 300px;
+    right: 18px;
+    top: -45px;
   }
 }
 
@@ -165,6 +168,7 @@
     // padding: 22px 0;
     font-size: 28px;
     line-height: 28px;
+    padding: 10px 0 13px;
     // align-self: flex-start;
   }
 
@@ -204,7 +208,7 @@
   @media (min-width: @tablet-width) {
     grid-column: 2/3;
     grid-row: 3/4;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
   }
 }
 
@@ -288,7 +292,7 @@
 }
 
 .tariffs__number {
-  margin: 0;
+  margin: 5px 0 0;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -312,6 +316,7 @@
     min-height: 68px;
     border-radius: 34px;
     padding: 22px;
+    margin: 0;
   }
 }
 
@@ -379,6 +384,11 @@
     font-size: 20px;
     line-height: 20px;
     align-items: center;
+    margin-top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 30px;
   }
 }
 

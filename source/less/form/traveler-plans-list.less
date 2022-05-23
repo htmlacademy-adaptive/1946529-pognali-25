@@ -30,7 +30,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 }
 
@@ -68,6 +68,17 @@
     flex-direction: row;
     grid-column: 1/2;
     justify-content: start;
+    margin-top: -3px;
+    margin-left: -3px;
+  }
+}
+
+.traveler-plans-list__item-header--second {
+  margin-left: 2px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: -3px;
+    margin-left: -3px;
   }
 }
 
@@ -115,6 +126,7 @@
   @media (min-width: @tablet-width) {
     padding: 20px 20px 15px;
     text-align: center;
+    letter-spacing: 0.09em;
   }
 
   @media (min-width: @desktop-width) {
@@ -122,6 +134,12 @@
     grid-column: 2/3;
     text-align: left;
     margin-left: 18px;
+  }
+}
+
+.traveler-plans-list__item-date--first {
+  @media (min-width: @tablet-width) {
+    margin-right: 5px;
   }
 }
 

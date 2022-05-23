@@ -1,7 +1,7 @@
 .cards-item {
   position: relative;
   min-height: 431px;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 
   @media (min-width: @tablet-width) {
     width: 285px;
@@ -19,7 +19,8 @@
     grid-column: 2/3;
     grid-row: 1/3;
     justify-self: center;
-    margin: 32px -10px 0 0;
+    margin: 0 -10px 2px 0;
+    align-self: end;
     // height: 483px;
   }
 }
@@ -32,7 +33,7 @@
   @media (min-width: @desktop-width) {
     grid-column: 3/4;
     grid-row: 1/3;
-    margin: 32px 0 0;
+    margin: 32px 0 2px;
   }
 }
 
@@ -40,6 +41,7 @@
   display: block;
   position: relative;
   z-index: -1;
+  border-radius: 10px 10px 0 0;
 
   @media (min-width: @tablet-width) {
     width: 100%;
@@ -72,7 +74,11 @@
   min-width: 90px;
   left: 50%;
   top: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
+
+  @media (min-width: @tablet-width) {
+    transform: translate(-50%, -45%);
+  }
 }
 
 .cards-item__flag:not(:last-child) {
@@ -82,7 +88,7 @@
 .cards-item__about-person {
   display: grid;
   position: relative;
-  padding: 27px 41px 22px;
+  padding: 27px 41px 16px;
   background-color: @base-light;
   border-radius: 0 0 10px 10px;
   min-height: 158px;
@@ -92,7 +98,7 @@
     box-sizing: border-box;
     position: relative;
     width: 285px;
-    padding: 31px 31px 27px;
+    padding: 31px 31px 25px;
     border-radius: 0 0 20px 20px;
   }
 }
@@ -120,10 +126,15 @@
 
 .cards-item__is-online--firsova {
   margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -3px;
+  }
 }
 
 .cards-item__is-online--demin {
-  margin-left: 8px;
+  margin-left: 0;
+  margin-top: -2px;
 
   @media (min-width: @tablet-width) {
     margin-left: 0;
@@ -131,11 +142,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 42px;
+    margin-right: 50px;
   }
 }
 
 .cards-item__is-online-icon {
+  @media (max-width: @tablet-width) {
+    margin-left: 4px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 10px;
     height: 10px;
@@ -202,6 +217,25 @@
   transition: 0.3s;
 }
 
-// .cards-item__tooltip  {
+.cards-item__icon {
+  @media (max-width: @tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
+}
 
-// }
+.cards-item__activity-wraper--demin {
+  @media (max-width: @tablet-width) {
+    margin-left: 5px;
+  }
+}
+
+.cards-item__hashtag-text--demin {
+  @media (max-width: @tablet-width) {
+    margin-left: -2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -6px;
+  }
+}

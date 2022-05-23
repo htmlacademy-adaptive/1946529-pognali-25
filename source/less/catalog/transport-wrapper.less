@@ -17,14 +17,19 @@
     grid-row: 3/4;
     align-self: end;
     justify-self: start;
-    padding: 0 0 25px 40px;
+    padding: 0 0 20px 45px;
   }
 }
 
-.transport-wrapper--demin,
-.transport-wrapper--rogovaya {
+.transport-wrapper--demin {
   @media (min-width: @desktop-width) {
     padding-bottom: 10px;
+  }
+}
+
+.transport-wrapper--rogovaya {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 15px;
   }
 }
 
@@ -61,6 +66,24 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+  }
+}
+
+.transport-wrapper__icon-wrapper--demin {
+  padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 10px;
+  }
+}
+
+.transport-wrapper__icon-wrapper--smolov {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
   }
 }
 

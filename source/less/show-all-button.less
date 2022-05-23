@@ -38,6 +38,7 @@
     font-size: 24px;
     line-height: 24px;
     padding: 0 33px;
+    min-height: 82px;
   }
 }
 
@@ -59,7 +60,7 @@
     min-width: 275px;
     // padding: 0 33px;
     box-sizing: border-box;
-    min-height: 80px;
+    min-height: 82px;
   }
 
   @media (min-width: @desktop-width) {
@@ -68,10 +69,13 @@
 }
 
 .show-all-button--country {
-  margin-top: 20px;
+  margin-top: 18px;
+  padding-right: 19px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 32px;
+    margin-top: 35px;
+    padding: 0 28px 0 33px;
+    min-height: 82px;
   }
 
   @media (min-width: @desktop-width) {
@@ -84,14 +88,14 @@
     margin: 0 242px 0 0;
     justify-self: end;
     align-self: end;
-    margin-bottom: 3px;
+    margin-bottom: 0;
   }
 }
 
 .show-all-button--adress {
   display: grid;
   grid-template-columns: 8fr 1fr;
-  margin-top: 32px;
+  margin-top: 34px;
   border: 3px solid @main-background-dark;
   box-sizing: border-box;
   min-height: 62px;
@@ -119,8 +123,9 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: 44px;
+    margin-top: 42px;
     padding: 0 33px;
+    min-height: 72px;
   }
 
   @media (min-width: @desktop-width) {
@@ -136,12 +141,13 @@
 }
 
 .show-all-button--adress .show-all-button__text {
-  // padding: 0 23px 0 0;
-  min-height: 58px;
+  padding: 0 13px 0 0;
+  min-height: 52px;
   min-width: 200px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    min-height: 72px;
   }
 }
 
@@ -172,10 +178,13 @@
 }
 
 .show-all-button--companions {
-  margin-top: 16px;
+  margin-top: 18px;
+  padding-right: 19px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 71px;
+    margin-top: 75px;
+    padding-right: 35px;
+    margin-right: 5px;
   }
 
   @media (min-width: @desktop-width) {

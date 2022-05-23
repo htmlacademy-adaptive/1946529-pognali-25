@@ -2,7 +2,7 @@
   width: 100%;
   list-style-type: none;
   margin: 0;
-  padding: 20px 19px 11px;
+  padding: 19px 18px 11px;
   background-color: @base-light;
   box-sizing: border-box;
   border-radius: 0 0 4px 4px;
@@ -17,9 +17,13 @@
     grid-row: 2/3;
     border-radius: 0;
     border: none;
-    min-width: 210px;
-    padding: 32px 0 33px 25px;
+    min-width: 206px;
+    padding: 34px 0 33px 25px;
     box-shadow: 8px 8px 16px rgba(54, 80, 148, 0.18);
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 238px;
   }
 }
 

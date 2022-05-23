@@ -22,7 +22,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 57px 0 0;
+    margin: 61px 0 0;
     width: 620px;
   }
 }
@@ -34,8 +34,17 @@
 // }
 
 .text-definition--companions {
+  margin-top: 21px;
+
   @media (min-width: @tablet-width) {
-    margin: 55px 0 40px;
+    margin: 57px 0 40px;
+    line-height: 34px;
+  }
+}
+
+.text-definition--companions br {
+  @media (max-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -74,7 +83,7 @@
 
 .text-definition--destinations {
   @media (min-width: @tablet-width) {
-    margin: 57px 0;
+    margin: 60px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -83,7 +92,7 @@
 }
 
 .text-definition--interesting {
-  margin: 0;
+  margin: 21px 3px 0 0;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -95,7 +104,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 57px auto 60px;
+    margin: 57px auto 62px;
     width: 680px;
   }
 }
@@ -105,11 +114,11 @@
   margin: 0;
   padding: 0 27px;
   text-align: center;
+  letter-spacing: 0.01em;
 
   @media (min-width: @tablet-width) {
-    margin-top: -2px;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   @media (min-width: @desktop-width) {

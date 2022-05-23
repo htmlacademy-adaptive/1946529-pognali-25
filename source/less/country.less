@@ -2,19 +2,20 @@
 .country {
   min-height: 188px;
   position: relative;
+  margin-bottom: 3px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 616px;
     grid-column: 1/3;
-    min-height: 140px;
-    margin-bottom: 11px;
+    min-height: 136px;
+    margin-bottom: 8px;
   }
 
-  // @media (min-width: @desktop-width) {
-  //   min-width: 300px;
-  // }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 9px;
+  }
 }
 
 .country__information-wrapper {
@@ -51,12 +52,12 @@
     height: 47px;
     top: 17px;
     left: 90%;
-    transform: translate(35%, -50%);
+    transform: translate(40%, -55%);
     z-index: 1;
   }
 
   @media (min-width: @desktop-width) {
-    transform: translate(0, -46%);
+    transform: translate(3%, -43%);
     left: 80%;
   }
 }
@@ -92,6 +93,10 @@
     justify-self: start;
     margin-top: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 28px;
+  }
 }
 
 .country__information-name,
@@ -114,21 +119,33 @@
     grid-row: 1/2;
     transform: translateY(0);
     border-radius: 20px 0 0 20px;
-    padding: 26px 30px;
+    padding: 25px 30px 20px;
     min-width: 433px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 370px;
-    padding: 24px 30px;
+    padding: 26px 30px 20px 27px;
   }
 }
 
 .country__information-wrapper--czech {
-  padding-top: 15px;
+  padding-top: 20px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
+  }
+}
+
+.country--czech {
+  @media (max-width: @tablet-width) {
+    margin-top: -5px;
+  }
+}
+
+.country__information-wrapper--czech > .country__information-counter-wrapper {
+  @media (max-width: @tablet-width) {
+    margin-right: 9px;
   }
 }
 
@@ -191,6 +208,7 @@
   letter-spacing: 0;
   text-align: left;
   color: hsla(0, 0%, 27%, 0.3);
+  margin-top: 3px;
   align-self: flex-start;
 
   @media (min-width: @tablet-width) {
@@ -199,7 +217,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: -5px;
+    margin-top: 0;
   }
 }
 

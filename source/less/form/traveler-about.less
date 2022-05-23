@@ -13,7 +13,7 @@
 }
 
 .traveler-about__main {
-  padding: 50px 25px 64px;
+  padding: 55px 25px 64px;
   background: @light-background;
   width: 270px;
 
@@ -25,7 +25,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 73px 60px 105px 124px;
+    padding: 73px 60px 105px 122px;
     min-height: 353px;
     width: 1440px;
     margin: 0 auto;
@@ -156,7 +156,7 @@
     grid-column: 2/3;
     grid-row: 1/2;
     border-radius: 15px 15px 0 0;
-    margin: 0 95px 0 0;
+    margin: 0 98px 0 0;
     justify-self: end;
     z-index: 3;
   }
@@ -173,7 +173,7 @@
   font-weight: 500;
   font-style: normal;
   line-height: 18px;
-  letter-spacing: 0.09em;
+  letter-spacing: 0;
   text-align: center;
   color: @secondary-text-dark;
   text-transform: uppercase;
@@ -195,16 +195,18 @@
     width: 100%;
     min-height: 60px;
     border-radius: 10px;
+    letter-spacing: 0.09em;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
     display: grid;
     align-items: end;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     margin: 0;
     width: 190px;
     min-height: 47px;
+    letter-spacing: 0;
     // height: 100%;
     grid-column: 2/3;
     grid-row: 2/3;
@@ -343,11 +345,11 @@
   border-radius: 10px;
   width: 100%;
   min-height: 60px;
-  padding: 15px 71px;
+  padding: 15px 71px 15px 68px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    margin: 0 0 0 -3px;
     width: 308px;
     min-height: 95px;
     padding: 0;
@@ -403,9 +405,11 @@
 .traveler-about__icon {
   justify-self: center;
   align-self: center;
+  width: 16px;
+  height: 16px;
 
   @media (min-width: @tablet-width) {
-    width: 23px;
-    height: 23px;
+    width: 21px;
+    height: 21px;
   }
 }

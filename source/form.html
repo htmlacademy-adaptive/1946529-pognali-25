@@ -46,7 +46,7 @@
       <div class="bg-wrapper bg-wrapper--dark">
         <div class="main-header__top main-header__top--nojs">
           <!-- <div class="main-header__top-flex"> -->
-            <a href="index.html" class="main-header__logo">
+            <a href="index.html" class="main-header__logo main-header__logo--secondary">
               <picture>
                 <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="images/logo-tablet.svg">
@@ -67,8 +67,8 @@
             <nav class="main-menu visually-hidden">
               <div class="main-menu__wrapper">
                 <ul class="main-menu__list">
-                  <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" data-hover="О сервисе" href="index.html">О сервисе</a></li>
-                  <li class="main-menu__item"><a class="main-menu__link" data-hover="Направления" href="form.html">Направления</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" data-hover="О сервисе" href="index.html">О сервисе</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" data-hover="Направления" href="form.html">Направления</a></li>
                   <li class="main-menu__item"><a class="main-menu__link" data-hover="Попутчики" href="catalog.html">Попутчики</a></li>
                 </ul>
               </div>
@@ -111,6 +111,7 @@
             <!-- <div class="traveler-about__header"> -->
           <picture>
             <source media="(min-width: 1440px)" srcset="images/form/level-80-desktop.png 1x, images/form/level-80-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="images/form/level-80-tablet.png 1x, images/form/level-80-tablet@2x.png 2x">
             <img class="traveler-about__level" src="images/form/level-80.png" srcset="images/form/level-80@2x.png 2x" width="100" height="100" alt="Уровень">
           </picture>
               <!-- <div class="avatar-wrapper"> -->
@@ -167,11 +168,11 @@
             <li class="traveler-plans-list__item">
               <p class="traveler-plans-list__item-header"><span class="traveler-plans-list__item-header-number">1.</span> Франция, Италия</p>
               <p class="traveler-plans-list__item-companions traveler-plans-list__item-companions--first">3 попутчика</p>
-              <p class="traveler-plans-list__item-date">26 мар -- 29 мар</p>
+              <p class="traveler-plans-list__item-date traveler-plans-list__item-date--first">26 мар -- 29 мар</p>
               <a href="edit.html" class="traveler-plans-list__link">Изменить</a>
             </li>
             <li class="traveler-plans-list__item">
-              <p class="traveler-plans-list__item-header"><span class="traveler-plans-list__item-header-number">2.</span> Таиланд, Индонезия</p>
+              <p class="traveler-plans-list__item-header traveler-plans-list__item-header--second"><span class="traveler-plans-list__item-header-number">2.</span> Таиланд, Индонезия</p>
               <p class="traveler-plans-list__item-companions">1 попутчик</p>
               <p class="traveler-plans-list__item-date">1 июл -- 15 июл</p>
               <a href="edit.html" class="traveler-plans-list__link">Изменить</a>
@@ -208,7 +209,7 @@
                       <label class="companions-persons__label" for="persons">Ищу попутчиков:</label>
                       <p class="companions-persons__label-text">Чел.</p>
                       <span class="companions-persons__wrapper-input">
-                        <input id="persons" class="companions-persons__input-persons" type="number" value="0">
+                        <input id="persons" class="companions-persons__input-persons" type="number" value="2">
                         <svg class="companions-persons__control-element companions-persons__control-element--minus companions-persons__less-persons" width="14" height="2" alt="Меньше">
                           <use xlink:href="#minus-icon"></use>
                         </svg>
@@ -218,9 +219,9 @@
                       </span>
                       <br>
                       <label class="companions-persons__label" for="duration">Длительность:</label>
-                      <p class="companions-persons__label-text">Дн.</p>
+                      <p class="companions-persons__label-text companions-persons__label-text--second">Дн.</p>
                       <span class="companions-persons__wrapper-input">
-                        <input id="duration" class="companions-persons__input-duration" type="number" value="0">
+                        <input id="duration" class="companions-persons__input-duration" type="number" value="2">
                         <svg class="companions-persons__control-element companions-persons__control-element--minus companions-persons__less-duration" width="14" height="2" alt="Меньше">
                           <use xlink:href="#minus-icon"></use>
                         </svg>
@@ -676,8 +677,8 @@
                     <li class="new-plan-list__item-navigation-text">Маршрут</li>
                     <li class="new-plan-list__item-navigation-text new-plan-list__item-navigation-text--current">Развлечения</li>
                   </ul>
-                  <span class="new-plan-list__item-header">
-                    <p class="new-plan-list__item-header-step">Шаг 3.</p>Развлечения
+                  <span class="new-plan-list__item-header new-plan-list__item-header--third">
+                    <p class="new-plan-list__item-header-step new-plan-list__item-header-step--third">Шаг 3.</p>Развлечения
                   </span>
                   <p class="new-plan-list__item-text new-plan-list__item-text--step-third">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
                   <div class="new-plan-list__recreation-wrapper">

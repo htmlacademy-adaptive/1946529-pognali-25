@@ -42,7 +42,7 @@
       <div class="bg-wrapper bg-wrapper--dark">
         <div class="main-header__top main-header__top--nojs">
           <!-- <div class="main-header__top-flex"> -->
-            <a href="index.html" class="main-header__logo">
+            <a href="index.html" class="main-header__logo main-header__logo--catalog">
               <picture>
                 <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="images/logo-tablet.svg">
@@ -63,9 +63,9 @@
             <nav class="main-menu visually-hidden">
               <div class="main-menu__wrapper">
                 <ul class="main-menu__list">
-                  <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" data-hover="О сервисе" href="index.html">О сервисе</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link" data-hover="О сервисе" href="index.html">О сервисе</a></li>
                   <li class="main-menu__item"><a class="main-menu__link" data-hover="Направления" href="form.html">Направления</a></li>
-                  <li class="main-menu__item"><a class="main-menu__link" data-hover="Попутчики" href="catalog.html">Попутчики</a></li>
+                  <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" data-hover="Попутчики" href="catalog.html">Попутчики</a></li>
                 </ul>
               </div>
             </nav>
@@ -96,7 +96,7 @@
   </header>
   <div class="main-header__bottom">
     <div class="main-header__bottom-main main-header__bottom-main--catalog">
-      <p class="main-header__bottom-name">Попутчики</p>
+      <p class="main-header__bottom-name main-header__bottom-name--catalog">Попутчики</p>
       <a href="index.html" class="main-header__bottom-link">На главную
         <img class="main-header__bottom-icon" src="../images/catalog/back-arrow.svg" alt="">
       </a>
@@ -1053,7 +1053,7 @@
                 <div class="checkbox-list__wrapper">
                   <input type="checkbox" class="checkbox-list__accordeon" id="hard-rock" checked>
                   <span class="checkbox-list__check-mark"></span>
-                  <label class="checkbox-list__checkbox-label" for="hard-rock">Тяжёлый рок</label>
+                  <label class="checkbox-list__checkbox-label checkbox-list__checkbox-label--hard-rock" for="hard-rock">Тяжёлый рок</label>
                 </div>
               </li>
               <li class="checkbox-list__item">
@@ -1234,7 +1234,7 @@
           <li class="catalog-cards-list__item">
             <article class="person-card person-card--demin">
               <!-- <div class="person-card__item-top"> -->
-                <a href="demin.html" class="person-card__avatar-wrapper">
+                <a href="demin.html" class="person-card__avatar-wrapper person-card__avatar-wrapper--demin">
                   <picture>
                     <source media="(min-width: 1440px)" srcset="images/catalog/cards/demin-desktop.png 1x, images/catalog/cards/demin-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="images/catalog/cards/demin-tablet.png 1x, images/catalog/cards/demin-tablet@2x.png 2x">
@@ -1246,7 +1246,7 @@
                     <use xlink:href="#heart-icon"></use>
                   </svg>
                 </div>
-                <a href="demin.html" class="person-card__item-name">Петя Демин
+                <a href="demin.html" class="person-card__item-name person-card__item-name--demin">Петя Демин
                   <span class="person-card__check-online">
                     <img class="person-card__check-online-icon person-card__check-online-icon--offline" src="images/catalog/cards/is-online-inactive.svg" alt="Оффлайн">
                   </span>
@@ -1270,7 +1270,7 @@
               </div>
               <div class="transport-wrapper transport-wrapper--demin">
                 <p class="transport-wrapper__header">транспорт:</p>
-                <div class="transport-wrapper__icon-wrapper">
+                <div class="transport-wrapper__icon-wrapper transport-wrapper__icon-wrapper--demin">
                   <span class="transport-wrapper__icon-background">
                     <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/airplane.svg" alt="Самолёт">
                   </span>
@@ -1285,7 +1285,7 @@
                   </span>
                 </div>
               </div>
-              <div class="level-wrapper">
+              <div class="level-wrapper level-wrapper--demin">
                 <p class="level-wrapper__header">левел:</p>
                 <div class="level-wrapper__level-image-wrapper">
                   <img class="level-wrapper__level-image level-wrapper__level-image--mobile" width="45" height="45" src="images/catalog/cards/80-level-mobile.svg" alt="Уровень">
@@ -1340,7 +1340,7 @@
               </div>
               <div class="transport-wrapper">
                 <p class="transport-wrapper__header">транспорт:</p>
-                <div class="transport-wrapper__icon-wrapper">
+                <div class="transport-wrapper__icon-wrapper transport-wrapper__icon-wrapper--smolov">
                   <span class="transport-wrapper__icon-background">
                     <img class="transport-wrapper__icon" width="21" height="21" src="images/catalog/cards/airplane.svg" alt="Самолёт">
                   </span>
@@ -1422,7 +1422,7 @@
                   </span>
                 </div>
               </div>
-              <div class="level-wrapper">
+              <div class="level-wrapper level-wrapper--rogovaya">
                 <p class="level-wrapper__header">левел:</p>
                 <div class="level-wrapper__level-image-wrapper">
                   <img class="level-wrapper__level-image level-wrapper__level-image--mobile" width="45" height="45" src="images/catalog/cards/50-level-mobile.svg" alt="Уровень">
