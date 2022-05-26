@@ -27,7 +27,7 @@
       @light-background;
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 108px 76px 82px 73px;
+    padding: 108px 76px 80px 73px;
 
     @media (min-resolution: 2dppx) {
       background:
@@ -84,7 +84,9 @@
 }
 
 .destinations__header br {
-  display: none;
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 
   @media (min-width: @desktop-width) {
     display: block;

@@ -73,10 +73,10 @@
                 </ul>
               </div>
             </nav>
-        <div class="main-menu__login-wrapper">
-          <a href="#" class="main-menu__login-link main-menu__login-link--phone"><img class="main-menu__login-icon" src="images/phone.svg" width="16" height="16" alt="Телефон"></a>
-          <a href="#" class="main-menu__login-link main-menu__login-link--email"><img class="main-menu__login-icon" src="images/email.svg" width="16" height="12" alt="E-mail"></a>
-          <a href="#" class="main-menu__login">Авторизация</a>
+        <div class="header-login">
+          <a href="#" class="header-login__contacts header-login__contacts--phone"><img class="header-login__contacts-icon" src="images/phone.svg" width="16" height="16" alt="Телефон"></a>
+          <a href="#" class="header-login__contacts header-login__contacts--email"><img class="header-login__contacts-icon" src="images/email.svg" width="16" height="12" alt="E-mail"></a>
+          <a href="#" class="header-login__link">Авторизация</a>
         </div>
         <ul class="navigation-user visually-hidden">
           <li class="navigation-user__item">
@@ -98,9 +98,9 @@
       </div>
     </div>
   </header>
-  <div class="main-header__bottom">
-    <div class="main-header__bottom-main">
-      <p class="main-header__bottom-name">Направления</p>
+  <div class="main-header-bottom">
+    <div class="main-header-bottom__main">
+      <p class="main-header-bottom__name">Направления</p>
     </div>
   </div>
   <main class="form-wrapper">
@@ -124,7 +124,7 @@
           <button class="traveler-about__button traveler-about__button--until-tablet">Сменить фото</button>
           <button class="traveler-about__button traveler-about__button--desktop">Фото</button>
           <div class="traveler-about__tags">
-            <p class="traveler-about__block-header traveler-about__block-header--tags">Тэги</p>
+            <label class="traveler-about__block-header traveler-about__block-header--tags">Тэги</label>
             <textarea class="traveler-about__tags-text">#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
           <div class="traveler-about__transport">
@@ -201,19 +201,19 @@
                   <li class="new-plan-list__item-navigation-text">Маршрут</li>
                   <li class="new-plan-list__item-navigation-text">Развлечения</li>
                 </ul>
-                <span class="new-plan-list__item-header">
-                  <p class="new-plan-list__item-header-step">Шаг 1.</p>Даты пребывания
-                </span>
-                <p class="new-plan-list__item-text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+                <p class="new-plan-list__item-header">
+                  <span class="new-plan-list__item-header-step">Шаг 1.</span><br>Даты пребывания
+                </p>
+                <p class="new-plan-list__item-text">Укажите предпочтительное количество попутчиков, которых<br> вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
                     <div class="companions-persons">
                       <label class="companions-persons__label" for="persons">Ищу попутчиков:</label>
                       <p class="companions-persons__label-text">Чел.</p>
                       <span class="companions-persons__wrapper-input">
                         <input id="persons" class="companions-persons__input-persons" type="number" value="2">
-                        <svg class="companions-persons__control-element companions-persons__control-element--minus companions-persons__less-persons" width="14" height="2" alt="Меньше">
+                        <svg class="companions-persons__control-element companions-persons__control-element--minus companions-persons__less-persons" width="14" height="2">
                           <use xlink:href="#minus-icon"></use>
                         </svg>
-                        <svg class="companions-persons__control-element companions-persons__control-element--plus companions-persons__more-persons" width="14" height="14" alt="Больше">
+                        <svg class="companions-persons__control-element companions-persons__control-element--plus companions-persons__more-persons" width="14" height="14">
                           <use xlink:href="#plus-icon"></use>
                         </svg>
                       </span>
@@ -221,11 +221,11 @@
                       <label class="companions-persons__label" for="duration">Длительность:</label>
                       <p class="companions-persons__label-text companions-persons__label-text--second">Дн.</p>
                       <span class="companions-persons__wrapper-input">
-                        <input id="duration" class="companions-persons__input-duration" type="number" value="2">
-                        <svg class="companions-persons__control-element companions-persons__control-element--minus companions-persons__less-duration" width="14" height="2" alt="Меньше">
+                        <input id="duration" class="companions-persons__input-duration" type="number" value="3">
+                        <svg class="companions-persons__control-element companions-persons__control-element--minus companions-persons__less-duration" width="14" height="2">
                           <use xlink:href="#minus-icon"></use>
                         </svg>
-                        <svg class="companions-persons__control-element companions-persons__control-element--plus companions-persons__more-duration" width="14" height="14" alt="Больше">
+                        <svg class="companions-persons__control-element companions-persons__control-element--plus companions-persons__more-duration" width="14" height="14">
                           <use xlink:href="#plus-icon"></use>
                         </svg>
                       </span>
@@ -238,13 +238,13 @@
                     </div>
                     <div class="arrival-date__header">
                       <button class="arrival-date__header-button arrival-date__header-button--prev">
-                        <svg class="arrival-date__header-button-icon" width="9" height="18" alt="Влево">
+                        <svg class="arrival-date__header-button-icon" width="9" height="18">
                           <use xlink:href="#calendar-arrow"></use>
                         </svg>
                       </button>
                       <p class="arrival-date__header-text">Март 2019</p>
                       <button class="arrival-date__header-button arrival-date__header-button--next">
-                        <svg class="arrival-date__header-button-icon" width="9" height="18" alt="Вправо">
+                        <svg class="arrival-date__header-button-icon" width="9" height="18">
                           <use xlink:href="#calendar-arrow"></use>
                         </svg>
                       </button>
@@ -261,12 +261,12 @@
                       <p class="arrival-date__table-header-day">П</p>
                       <span class="arrival-date__table-header-day-tablet">Пт</span>
                       <p class="arrival-date__table-header-day arrival-date__table-header-day--weekend">С</p>
-                      <span class="arrival-date__table-header-day-tablet arrival-date__table-header-day--weekend-tablet">Сб</span>
+                      <span class="arrival-date__table-header-day-tablet arrival-date__table-header-day-tablet--weekend">Сб</span>
                       <p class="arrival-date__table-header-day arrival-date__table-header-day--weekend">В</p>
-                      <span class="arrival-date__table-header-day-tablet arrival-date__table-header-day--weekend-tablet">Вс</span>
+                      <span class="arrival-date__table-header-day-tablet arrival-date__table-header-day-tablet--weekend">Вс</span>
                     </div>
                     <table class="arrival-date__calendar">
-                      <tr class="arrival-date__calendar-row">
+                      <tr class="arrival-date__calendar-row arrival-date__calendar-row--first-row">
                         <td class="arrival-date__calendar-cell cell-decoration">
                           <input class="cell-decoration__checkbox" type="checkbox" id="23-prev">
                           <label class="cell-decoration__label" for="23-prev">23</label>
@@ -455,9 +455,9 @@
                       <li class="new-plan-list__item-navigation-text new-plan-list__item-navigation-text--current">Маршрут</li>
                       <li class="new-plan-list__item-navigation-text">Развлечения</li>
                     </ul>
-                    <span class="new-plan-list__item-header">
-                      <p class="new-plan-list__item-header-step">Шаг 2.</p>Маршрут
-                    </span>
+                    <p class="new-plan-list__item-header">
+                      <span class="new-plan-list__item-header-step">Шаг 2.</span><br>Маршрут
+                    </p>
                   <p class="new-plan-list__item-text new-plan-list__item-text--step-two">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
                   <div class="new-plan-list__country-wrapper">
                     <div class="choosen-country">
@@ -486,8 +486,8 @@
                       <img class="choose-new-country__close-select" src="images/form/choose-country-close.svg" width="21" height="21" alt="Закрыть">
                       <img class="choose-new-country__circle-light" src="images/form/choose-country-circle.svg" width="8" height="8" alt="">
                       <img class="choose-new-country__arrow-down" src="images/form/choose-country-arrow-down.svg" width="10" height="8" alt="">
-                      <select class="choosen-country__select choosen-country__select--new-country" name="choose-new-country" id="choose-new-country">
-                        <option class="choosen-country__option" value="Выберите">Выберите страну</option>
+                      <select class="choose-new-country__select choose-new-country__select--new-country" name="choose-new-country" id="choose-new-country">
+                        <option class="choose-new-country__option" value="Выберите">Выберите страну</option>
                       </select>
                       <!-- Таблица с алфавитом и списком стран -->
                       <div class="country-list visually-hidden">
@@ -659,8 +659,8 @@
                     </div>
                     <div class="add-new-country">
                       <img class="add-new-country__circle-grey" src="images/form/add-country-grey.svg" width="8" height="8" alt="">
-                      <button class="add-new-country__button" name="add-country" id="add-country">Добавить страну
-                        <svg class="add-new-country__add-new-plus" width="14" height="14" alt="Закрыть">
+                      <button class="add-new-country__button" name="add-country-button" id="add-country-button">Добавить страну
+                        <svg class="add-new-country__add-new-plus" width="14" height="14">
                           <use xlink:href="#add-country"></use>
                         </svg>
                       </button>
@@ -677,9 +677,9 @@
                     <li class="new-plan-list__item-navigation-text">Маршрут</li>
                     <li class="new-plan-list__item-navigation-text new-plan-list__item-navigation-text--current">Развлечения</li>
                   </ul>
-                  <span class="new-plan-list__item-header new-plan-list__item-header--third">
-                    <p class="new-plan-list__item-header-step new-plan-list__item-header-step--third">Шаг 3.</p>Развлечения
-                  </span>
+                  <p class="new-plan-list__item-header new-plan-list__item-header--third">
+                    <span class="new-plan-list__item-header-step new-plan-list__item-header-step--third">Шаг 3.</span><br>Развлечения
+                  </p>
                   <p class="new-plan-list__item-text new-plan-list__item-text--step-third">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
                   <div class="new-plan-list__recreation-wrapper">
                     <div class="first-country">
@@ -694,7 +694,8 @@
                         <img class="first-country__flag" src="images/form/bosnia.png" srcset="images/form/bosnia@2x.png 2x" width="35" height="24" alt="Босния и Герцеговина">
                       </div>
                         <div class="first-country__about-my-plans-wrapper">
-                          <textarea class="first-country__about-my-plans" rows="10" cols="45" name="text" placeholder="План действий"></textarea>
+                          <label for="about-my-plans" class="first-country__about-my-plans-label visually-hidden">Мои планы</label>
+                          <textarea class="first-country__about-my-plans" rows="10" cols="45" id="about-my-plans" name="text" placeholder="План действий"></textarea>
                           <div class="first-country__error-message visually-hidden">
                             <p class="first-country__error-message-text">Это поле должно быть заполнено</p>
                           </div>
@@ -708,7 +709,8 @@
                         <img class="second-country__flag" src="images/form/czech.png" srcset="images/form/czech@2x.png 2x" width="35" height="24" alt="Чехия">
                       </div>
                       <div class="second-country__about-my-hobbies-wrapper">
-                        <textarea class="second-country__about-my-hobbies" rows="10" cols="45" name="text"></textarea>
+                        <label for="about-my-hobbies" class="second-country__about-my-hobbies-label visually-hidden">Мои хобби</label>
+                        <textarea class="second-country__about-my-hobbies" rows="10" cols="45" id="about-my-hobbies" name="text"></textarea>
                         <div class="second-country__error-message visually-hidden">
                           <p class="second-country__error-message-text">Это поле должно быть заполнено</p>
                         </div>
