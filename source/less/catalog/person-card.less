@@ -128,7 +128,8 @@
     height: 50px;
     top: 0;
     align-self: end;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -136,6 +137,8 @@
     grid-row: 3/4;
     align-self: end;
     top: 5px;
+    left: 5px;
+    margin-bottom: 14px;
   }
 }
 
@@ -238,6 +241,10 @@
 }
 
 .person-card__item-name--demin {
+  @media (min-width: @tablet-width) {
+    padding-top: 4px;
+  }
+
   @media (min-width: @desktop-width) {
     padding-top: 44px;
   }
@@ -266,7 +273,7 @@
     grid-row: 3/4;
     font-size: 20px;
     line-height: 20px;
-    padding: 12px 0 0;
+    padding: 12px 0 0 5px;
     // margin-left: 60px;
   }
 
@@ -434,7 +441,7 @@
     font-size: 20px;
     line-height: 20px;
     border-radius: 25px;
-    margin: 12px 0 0 30px;
+    margin: 8px 0 0 31px;
   }
 
   @media (min-width: @desktop-width) {
@@ -446,7 +453,7 @@
 
 .person-card__button--smolov {
   @media (min-width: @tablet-width) {
-    margin-bottom: 2px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -472,7 +479,7 @@
   text-transform: lowercase;
 
   @media (min-width: @tablet-width) {
-    margin-top: 24px;
+    margin-top: 26px;
     left: 26px;
   }
 
@@ -481,59 +488,10 @@
   }
 }
 
-.person-card__load-more {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 148px;
-  justify-content: space-between;
+.person-card__button--link {
+  display: grid;
   align-items: center;
-  margin: 20px auto;
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 30px;
-  letter-spacing: 0;
-  color: @base-text-color;
-  text-transform: uppercase;
-  text-decoration: none;
-  cursor: pointer;
-  transform: translateX(-2%);
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-    margin: 46px auto 48px;
-    min-width: 186px;
-    transform: translateX(-2%);
-  }
-
-  @media (min-width: @desktop-width) {
-    font-size: 20px;
-    line-height: 20px;
-    margin: 60px auto 68px;
-    min-width: 186px;
-    transform: translateX(-20%);
-  }
-}
-
-.person-card__load-more-icon {
-  @media (min-width: @tablet-width) {
-    width: 26px;
-    height: 26px;
-    margin-right: 10px;
-  }
-}
-
-.person-card__button-link {
+  justify-self: center;
   text-decoration: none;
   color: @secondary-text-dark;
 }
@@ -543,7 +501,7 @@
   top: 55px;
 
   @media (min-width: @tablet-width) {
-    top: 5px;
+    top: 4px;
   }
 
   @media (min-width: @desktop-width) {
@@ -589,7 +547,7 @@
   padding-bottom: 4px;
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 28px;
+    padding-bottom: 26px;
   }
 }
 
@@ -605,7 +563,7 @@
 
 .person-card__button--demin {
   @media (min-width: @desktop-width) {
-    margin-top: 20px;
+    margin-top: 24px;
   }
 }
 

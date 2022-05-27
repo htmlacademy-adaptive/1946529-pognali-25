@@ -10,13 +10,13 @@ let changeHeaderBg = document.querySelector('.main-header__burger-menu-active');
 let logoDarkg = document.querySelector('.main-header__logo-image--dark');
 let logoLight = document.querySelector('.main-header__logo-image--light');
 
-let mainMenuLogin = document.querySelector('.main-menu__login');
-let menuLoginActive = document.querySelector('.main-menu__login--active');
+let mainMenuLogin = document.querySelector('.header-login__link');
+let menuLoginActive = document.querySelector('.header-login__link--active');
 let navigationUser = document.querySelector('.navigation-user');
 let social = document.querySelector('.social');
 let menuLoginHidden = document.querySelector('.main-menu__login--hidden');
-let personCardLink = document.querySelectorAll('.person-card__button-link');
-let loadMoreCard = document.querySelector('.person-card__load-more');
+let personCardLink = document.querySelectorAll('.person-card__button--link');
+let loadMoreCard = document.querySelector('.load-more');
 
 // Скрываем класс NO JS
 
@@ -24,7 +24,7 @@ headerTop.classList.remove('main-header__top--nojs');
 loadMoreCard.removeAttribute('href');
 
 for (let card of personCardLink) {
-  card.removeAttribute('href');
+  card.classList.add('visually-hidden');
 }
 
 // Открываем/закрываем меню
@@ -36,7 +36,7 @@ for (let card of personCardLink) {
     burgerIcon.classList.add('visually-hidden');
     burgerCloseIcon.classList.remove('visually-hidden');
     mainMenu.classList.remove('visually-hidden');
-    mainMenuLogin.classList.add('main-menu__login--active');
+    mainMenuLogin.classList.add('header-login__link--active');
     navigationUser.classList.remove('visually-hidden');
     social.classList.remove('visually-hidden');
     headerTop.classList.add('main-header__check-menu-open');
@@ -49,7 +49,7 @@ for (let card of personCardLink) {
     darkBurgerIcon.classList.add('visually-hidden');
     burgerCloseIcon.classList.remove('visually-hidden');
     mainMenu.classList.remove('visually-hidden');
-    mainMenuLogin.classList.add('main-menu__login--active');
+    mainMenuLogin.classList.add('header-login__link--active');
     navigationUser.classList.remove('visually-hidden');
     social.classList.remove('visually-hidden');
     headerTop.classList.add('main-header__check-menu-open');
@@ -63,7 +63,7 @@ for (let card of personCardLink) {
       headerTop.classList.add('main-header__burger-menu-active');
       burgerCloseIcon.classList.add('visually-hidden');
       mainMenu.classList.add('visually-hidden');
-      mainMenuLogin.classList.remove('main-menu__login--active');
+      mainMenuLogin.classList.remove('header-login__link--active');
       navigationUser.classList.add('visually-hidden');
       social.classList.add('visually-hidden');
       headerTop.classList.remove('main-header__check-menu-open');
@@ -74,7 +74,7 @@ for (let card of personCardLink) {
       burgerIcon.classList.remove('visually-hidden');
       burgerCloseIcon.classList.add('visually-hidden');
       mainMenu.classList.add('visually-hidden');
-      mainMenuLogin.classList.remove('main-menu__login--active');
+      mainMenuLogin.classList.remove('header-login__link--active');
       navigationUser.classList.add('visually-hidden');
       social.classList.add('visually-hidden');
       headerTop.classList.remove('main-header__check-menu-open');
@@ -152,7 +152,7 @@ console.log(window.pageYOffset);
     // let catalogWrapper = document.querySelector('.catalog-wrapper');
     // let bgWrapperTop = document.querySelector('.bg-wrapper--dark');
     let companionsFilter = document.querySelector('.companions-filter');
-    let mainHeaderBottom = document.querySelector('.main-header__bottom');
+    let mainHeaderBottom = document.querySelector('.main-header-bottom');
     let headerBottomHeight = mainHeaderBottom.clientHeight;
     let headerTopHeight = headerTop.clientHeight;
 
@@ -210,12 +210,12 @@ let catalogTableList = document.querySelector('.catalog-table-list');
 let modalCloseButton = document.querySelector('.companions-filter__modal-close');
 let modalWrapper = document.querySelector('.companions-filter__modal-wrapper');
 
-let mainHeaderBottom = document.querySelector('.main-header__bottom');
+let mainHeaderBottom = document.querySelector('.main-header-bottom');
 let companionsFilter = document.querySelector('.companions-filter');
 let tableListWrapper = document.querySelector('.catalog-table-list-wrapper');
 let listItemHeader = document.querySelector('.catalog-table-list__item--header');
 let tableListActive = document.querySelector('.catalog-table-list--active');
-let filterIconLeft = document.querySelector('.companions-header__icon--left');
+let filterIconLeft = document.querySelector('.companions-header__icon-left');
 let showAllFilter = document.querySelector('.companions-header__show-all-text');
 
 dottedButton.addEventListener('click', ()=> {
@@ -349,7 +349,7 @@ filterIconLeft.addEventListener('click', ()=> {
 
 // Показываем меню при изменении ширины экрана больше 768px + изменяем стили верхнего меню при скроле
 
-let menuLoginWrapper = document.querySelector('.main-menu__login-wrapper');
+let menuLoginWrapper = document.querySelector('.header-login__link');
 let topPhoneLink = document.querySelector('.secondary-navigation__link--phone');
 let topEmailLink = document.querySelector('.secondary-navigation__link--email');
 let secondaryNavigation = document.querySelector('.secondary-navigation');

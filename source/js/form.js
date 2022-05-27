@@ -10,15 +10,15 @@ let changeHeaderBg = document.querySelector('.main-header__burger-menu-active');
 let logoDarkg = document.querySelector('.main-header__logo-image--dark');
 let logoLight = document.querySelector('.main-header__logo-image--light');
 
-let mainMenuLogin = document.querySelector('.main-menu__login');
-let menuLoginActive = document.querySelector('.main-menu__login--active');
+let mainMenuLogin = document.querySelector('.header-login__link');
+let menuLoginActive = document.querySelector('.header-login__link--active');
 let navigationUser = document.querySelector('.navigation-user');
 let social = document.querySelector('.social');
 let menuLoginHidden = document.querySelector('.main-menu__login--hidden');
 
 // Переменные для меню при изменении ширины экрана больше 768px
 
-let menuLoginWrapper = document.querySelector('.main-menu__login-wrapper');
+let menuLoginWrapper = document.querySelector('.header-login');
 let topPhoneLink = document.querySelector('.secondary-navigation__link--phone');
 let topEmailLink = document.querySelector('.secondary-navigation__link--email');
 let secondaryNavigation = document.querySelector('.secondary-navigation');
@@ -26,7 +26,7 @@ let secondaryNavigation = document.querySelector('.secondary-navigation');
 let menuLink = document.querySelectorAll('.main-menu__link');
 let mainMenuList = document.querySelector('.main-menu__list');
 let mainHeader = document.querySelector('.main-header');
-let mainHeaderBottom = document.querySelector('.main-header__bottom');
+let mainHeaderBottom = document.querySelector('.main-header-bottom');
 let bgWrapper = document.querySelector('.bg-wrapper--dark');
 let travelerAbout = document.querySelector('.traveler-about');
 let bgWrapperTop = document.querySelector('.bg-wrapper--dark');
@@ -44,7 +44,7 @@ headerTop.classList.remove('main-header__top--nojs');
     burgerIcon.classList.add('visually-hidden');
     burgerCloseIcon.classList.remove('visually-hidden');
     mainMenu.classList.remove('visually-hidden');
-    mainMenuLogin.classList.add('main-menu__login--active');
+    mainMenuLogin.classList.add('header-login__link--active');
     navigationUser.classList.remove('visually-hidden');
     social.classList.remove('visually-hidden');
     headerTop.classList.add('main-header__check-menu-open');
@@ -57,7 +57,7 @@ headerTop.classList.remove('main-header__top--nojs');
     darkBurgerIcon.classList.add('visually-hidden');
     burgerCloseIcon.classList.remove('visually-hidden');
     mainMenu.classList.remove('visually-hidden');
-    mainMenuLogin.classList.add('main-menu__login--active');
+    mainMenuLogin.classList.add('header-login__link--active');
     navigationUser.classList.remove('visually-hidden');
     social.classList.remove('visually-hidden');
     headerTop.classList.add('main-header__check-menu-open');
@@ -71,7 +71,7 @@ headerTop.classList.remove('main-header__top--nojs');
       headerTop.classList.add('main-header__burger-menu-active');
       burgerCloseIcon.classList.add('visually-hidden');
       mainMenu.classList.add('visually-hidden');
-      mainMenuLogin.classList.remove('main-menu__login--active');
+      mainMenuLogin.classList.remove('header-login__link--active');
       navigationUser.classList.add('visually-hidden');
       social.classList.add('visually-hidden');
       headerTop.classList.remove('main-header__check-menu-open');
@@ -82,7 +82,7 @@ headerTop.classList.remove('main-header__top--nojs');
       burgerIcon.classList.remove('visually-hidden');
       burgerCloseIcon.classList.add('visually-hidden');
       mainMenu.classList.add('visually-hidden');
-      mainMenuLogin.classList.remove('main-menu__login--active');
+      mainMenuLogin.classList.remove('header-login__link--active');
       navigationUser.classList.add('visually-hidden');
       social.classList.add('visually-hidden');
       headerTop.classList.remove('main-header__check-menu-open');
@@ -157,7 +157,7 @@ headerTop.classList.remove('main-header__top--nojs');
 
   if (document.body.clientWidth >= 1440) {
 
-    let mainHeaderBottom = document.querySelector('.main-header__bottom');
+    let mainHeaderBottom = document.querySelector('.main-header-bottom');
     let travelerAbout = document.querySelector('.traveler-about');
     let headerBottomHeight = mainHeaderBottom.clientHeight;
     let headerTopHeight = headerTop.clientHeight;
@@ -206,7 +206,7 @@ headerTop.classList.remove('main-header__top--nojs');
 
 // Показываем меню при изменении ширины экрана больше 768px
 
-let resizeOnload = function() {
+// let resizeOnload = function() {
   if (document.body.clientWidth < 1440) {
 
     if (!headerTop.classList.contains('main-header__burger-menu-active')) {
@@ -221,11 +221,11 @@ let resizeOnload = function() {
       // console.log('hello')
     }
   }
-}
+// }
 
-window.addEventListener('load', ()=> {
-  resizeOnload();
-});
+// window.addEventListener('load', ()=> {
+//   resizeOnload();
+// });
 
 
 // Изменить количество попутчиков
