@@ -80,6 +80,10 @@
   opacity: 0.3;
 }
 
+.checkbox-list__item:focus-within::before {
+  opacity: 0.3;
+}
+
 .checkbox-list__accordeon {
   position: absolute;
   bottom: 0;
@@ -107,6 +111,7 @@
   display: block;
   max-width: 170px;
   align-self: center;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     min-width: 120px;
@@ -163,5 +168,9 @@
 }
 
 .checkbox-list__wrapper:active .checkbox-list__check-mark::before {
+  opacity: 0.3;
+}
+
+.checkbox-list__wrapper:focus .checkbox-list__check-mark::before {
   opacity: 0.3;
 }

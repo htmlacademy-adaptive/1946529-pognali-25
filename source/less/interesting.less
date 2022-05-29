@@ -161,6 +161,15 @@
     opacity: 0.3;
   }
 
+  &:focus {
+    background-color: @yellow-orange;
+    color: @base-text-color-opacity;
+  }
+
+  &:focus .interesting__email-button-icon {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 80px;
@@ -203,6 +212,10 @@
 }
 
 .interesting__email-button:active::before {
+  opacity: 0.3;
+}
+
+.interesting__email-button:focus::before {
   opacity: 0.3;
 }
 

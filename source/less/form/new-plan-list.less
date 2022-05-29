@@ -29,7 +29,7 @@
   padding: 20px 25px 6px;
 
   @media (min-width: @tablet-width) {
-    padding: 44px 42px 46px 45px;
+    padding: 46px 42px 46px 45px;
   }
 
   @media (min-width: @desktop-width) {
@@ -246,7 +246,7 @@
   @media (min-width: @tablet-width) {
     content: "";
     display: block;
-    width: 100%;
+    width: 532px;
     height: 1px;
     background: @border-gray;
     position: absolute;
@@ -270,12 +270,12 @@
   display: grid;
 
   @media (min-width: @tablet-width) {
-    margin-top: 48px;
+    margin-top: 47px;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 57px;
+    margin-top: 59px;
     width: 100%;
   }
 }
@@ -322,6 +322,11 @@
     color: @base-text-color-opacity;
   }
 
+  &:focus {
+    background-color: @yellow-orange;
+    color: @base-text-color-opacity;
+  }
+
   @media (min-width: @tablet-width) {
     position: relative;
     display: flex;
@@ -359,6 +364,10 @@
 }
 
 .new-plan-list__next-button:active::after {
+  opacity: 0.3;
+}
+
+.new-plan-list__next-button:focus::after {
   opacity: 0.3;
 }
 
@@ -404,6 +413,10 @@
     opacity: 0.3;
   }
 
+  &:focus {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     position: relative;
@@ -440,12 +453,18 @@
   }
 }
 
+.new-plan-list__previous-button--last {
+  @media (min-width: @tablet-width) {
+    margin: 0 0 0;
+  }
+}
+
 .new-plan-list__send-button {
-  margin: 2px 0 0 -4px;
+  margin: 1px 0 0 -4px;
   width: 228px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 6px;
+    margin: 0;
     width: 286px;
   }
 
@@ -475,7 +494,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: 3.8fr 1px 1.1fr;
     margin-top: 60px;
-    margin-left: 0;
+    margin-left: -1px;
   }
 }
 
@@ -519,5 +538,9 @@
 }
 
 .new-plan-list__country-wrapper:active::after {
+  opacity: 0.3;
+}
+
+.new-plan-list__country-wrapper:focus::after {
   opacity: 0.3;
 }

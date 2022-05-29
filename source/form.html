@@ -91,7 +91,7 @@
           </li>
         </ul>
         <ul class="social visually-hidden">
-          <li class="social__item"><a href="#" class="social__link social__link--facebook"><span class="social__icon visually-hidden"></span></a></li>
+          <li class="social__item"><a href="#" class="social__link social__link--telegram"><span class="social__icon visually-hidden"></span></a></li>
           <li class="social__item"><a href="#" class="social__link social__link--vkontakte"><span class="social__icon visually-hidden"></span></a></li>
           <li class="social__item"><a href="#" class="social__link social__link--instagram"><span class="social__icon visually-hidden"></span></a></li>
         </ul>
@@ -206,9 +206,9 @@
                 </p>
                 <p class="new-plan-list__item-text">Укажите предпочтительное количество попутчиков, которых<br> вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
                     <div class="companions-persons">
-                      <label class="companions-persons__label" for="persons">Ищу попутчиков:</label>
-                      <p class="companions-persons__label-text">Чел.</p>
-                      <span class="companions-persons__wrapper-input">
+                      <label class="companions-persons__label companions-persons__label--first" for="persons">Ищу попутчиков:</label>
+                      <p class="companions-persons__label-text companions-persons__label-text--first">Чел.</p>
+                      <span class="companions-persons__wrapper-input companions-persons__wrapper-input--first">
                         <input id="persons" class="companions-persons__input-persons" type="number" value="2">
                         <svg class="companions-persons__control-element companions-persons__control-element--minus companions-persons__less-persons" width="14" height="2">
                           <use xlink:href="#minus-icon"></use>
@@ -217,10 +217,10 @@
                           <use xlink:href="#plus-icon"></use>
                         </svg>
                       </span>
-                      <br>
-                      <label class="companions-persons__label" for="duration">Длительность:</label>
+                      <!-- <br> -->
+                      <label class="companions-persons__label companions-persons__label--second" for="duration">Длительность:</label>
                       <p class="companions-persons__label-text companions-persons__label-text--second">Дн.</p>
-                      <span class="companions-persons__wrapper-input">
+                      <span class="companions-persons__wrapper-input companions-persons__wrapper-input--second">
                         <input id="duration" class="companions-persons__input-duration" type="number" value="3">
                         <svg class="companions-persons__control-element companions-persons__control-element--minus companions-persons__less-duration" width="14" height="2">
                           <use xlink:href="#minus-icon"></use>
@@ -229,12 +229,14 @@
                           <use xlink:href="#plus-icon"></use>
                         </svg>
                       </span>
-                      <br>
+                      <!-- <br> -->
                       <div class="companions-persons__checkbox-wrapper">
                         <input type="checkbox" class="companions-persons__with-children" id="with-children" checked>
                         <span class="companions-persons__check-mark"></span>
                         <label for="with-children" class="companions-persons__with-children-label">Можно с детьми</label>
                       </div>
+                      <!-- <span class="companions-persons__additional-row-first">Маржин!</span>
+                      <span class="companions-persons__additional-row-second">Маржин!</span> -->
                     </div>
                     <div class="arrival-date__header">
                       <button class="arrival-date__header-button arrival-date__header-button--prev">
@@ -719,7 +721,7 @@
                     <br>
                     <div class="new-plan-list__buttons-wrapper new-plan-list__buttons-wrapper--step-third">
                       <button class="new-plan-list__next-button new-plan-list__send-button">Отправить</button>
-                      <a href="#step-2" class="new-plan-list__previous-button">На шаг назад</a>
+                      <a href="#step-2" class="new-plan-list__previous-button new-plan-list__previous-button--last">На шаг назад</a>
                     </div>
                   </div>
                 </li>
