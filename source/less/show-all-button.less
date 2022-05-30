@@ -122,6 +122,18 @@
     opacity: 0.3;
   }
 
+  &:focus {
+    background-color: @main-background-dark;
+  }
+
+  &:focus ~ .show-all-button__text {
+    opacity: 0.3;
+  }
+
+  &:focus .show-all-button__icon {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     margin-top: 42px;
     padding: 0 33px;

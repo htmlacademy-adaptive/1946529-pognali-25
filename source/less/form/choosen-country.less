@@ -25,12 +25,17 @@
   letter-spacing: 0.09em;
   color: @base-text-color;
   outline: none;
+  min-height: 42px;
   text-transform: uppercase;
   padding: 10px 5px;
   box-sizing: border-box;
 
   &:hover {
     border: 1px solid @grey-hover;
+  }
+
+  &:focus {
+    border: 1px solid @secondary-text-dark;
   }
 
   @media (min-width: @tablet-width) {

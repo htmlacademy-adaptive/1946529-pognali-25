@@ -119,6 +119,10 @@
     color: rgba(255, 216, 75, 0.3);
   }
 
+  &:focus {
+    color: rgba(255, 216, 75, 0.3);
+  }
+
   @media (min-width: @tablet-width) {
     // margin-left: 23px;
     font-size: 28px;
@@ -136,6 +140,11 @@
     opacity: 0.3;
   }
 
+  &:focus .contacts__email-image {
+    fill: @base-yellow;
+    opacity: 0.3;
+  }
+
   @media (min-width: @desktop-width) {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -148,6 +157,11 @@
   }
 
   &:active .contacts__phone-image {
+    fill: @base-yellow;
+    opacity: 0.3;
+  }
+
+  &:focus .contacts__phone-image {
     fill: @base-yellow;
     opacity: 0.3;
   }

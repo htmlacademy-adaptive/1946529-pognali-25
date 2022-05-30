@@ -43,6 +43,14 @@
     opacity: 0.3;
   }
 
+  &:focus {
+    background-color: @phone-orange-hover;
+  }
+
+  &:focus .header-login__contacts-icon {
+    opacity: 0.3;
+  }
+
   @media (min-width: @desktop-width) {
     background-color: @base-orange;
   }
@@ -58,6 +66,14 @@
   }
 
   &:active .header-login__contacts-icon {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    background-color: @base-orange;
+  }
+
+  &:focus .header-login__contacts-icon {
     opacity: 0.3;
   }
 
@@ -94,6 +110,11 @@
   }
 
   &:active {
+    background-color: @yellow-orange;
+    color: @secondary-text-dark-opacity;
+  }
+
+  &:focus {
     background-color: @yellow-orange;
     color: @secondary-text-dark-opacity;
   }
